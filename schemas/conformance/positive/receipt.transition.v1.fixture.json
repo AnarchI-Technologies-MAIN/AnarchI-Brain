@@ -1,0 +1,8 @@
+{
+  "schema_id": "anarchi.brain.receipt.transition",
+  "schema_version": "1",
+  "serialization_profile": "ACS-1",
+  "transition": {
+    "transition": "test"
+  }
+}

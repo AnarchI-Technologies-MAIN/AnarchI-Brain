@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "schema_id": "anarchi.brain.validation-result",
+  "schema_version": "1",
+  "serialization_profile": "ACS-1",
+  "subject": "artifact:test",
+  "validation_contract": "validation:test"
+}

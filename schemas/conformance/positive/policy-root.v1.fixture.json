@@ -1,0 +1,9 @@
+{
+  "policy": {
+    "rule": "bounded"
+  },
+  "policy_root": "policy-root:test",
+  "schema_id": "anarchi.brain.policy-root",
+  "schema_version": "1",
+  "serialization_profile": "ACS-1"
+}

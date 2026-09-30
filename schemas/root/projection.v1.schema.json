@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "serialization_profile",
+    "schema_id",
+    "schema_version",
+    "source",
+    "projection"
+  ],
+  "properties": {
+    "serialization_profile": {
+      "type": "string",
+      "const": "ACS-1"
+    },
+    "schema_id": {
+      "type": "string",
+      "const": "anarchi.brain.projection"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "1"
+    },
+    "source": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "integer",
+        "boolean"
+      ]
+    },
+    "projection": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "integer",
+        "boolean"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,8 @@
+{
+  "qualification_contract": "qualification:test",
+  "result": "PASS",
+  "schema_id": "anarchi.brain.qualification-result",
+  "schema_version": "1",
+  "serialization_profile": "ACS-1",
+  "subject": "artifact:test"
+}

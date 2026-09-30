@@ -1,0 +1,8 @@
+{
+  "authority_dimension": "Observe",
+  "authority_root": "authority-root:test",
+  "grantee": "principal:test",
+  "schema_id": "anarchi.brain.authority-grant",
+  "schema_version": "1",
+  "serialization_profile": "ACS-1"
+}

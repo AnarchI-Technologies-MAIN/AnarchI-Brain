@@ -1,0 +1,138 @@
+{
+  "registry_version": "1",
+  "schema_dialect": "https://json-schema.org/draft/2020-12/schema",
+  "schema_count": 18,
+  "schemas": [
+    {
+      "schema_id": "anarchi.brain.observation",
+      "schema_version": "1",
+      "artifact_kind": "Observation Artifact",
+      "schema_path": "schemas/root/observation.v1.schema.json",
+      "schema_sha256": "e7542aa8423c5cd47beb268b95230d3b58a966db360717538b7cd725a10de8f1"
+    },
+    {
+      "schema_id": "anarchi.brain.validation-result",
+      "schema_version": "1",
+      "artifact_kind": "Validation Result Artifact",
+      "schema_path": "schemas/root/validation-result.v1.schema.json",
+      "schema_sha256": "d2b0a131f0d6b7bfff8dde9d55fb83a9b3ead4842d175c05b583c1122c140847"
+    },
+    {
+      "schema_id": "anarchi.brain.qualification-result",
+      "schema_version": "1",
+      "artifact_kind": "Qualification Result Artifact",
+      "schema_path": "schemas/root/qualification-result.v1.schema.json",
+      "schema_sha256": "54c3c1701750e0cc9c725197b71d8f022531493bc06cf09c1bf7ca2826f7c1e5"
+    },
+    {
+      "schema_id": "anarchi.brain.attestation",
+      "schema_version": "1",
+      "artifact_kind": "Attestation Artifact",
+      "schema_path": "schemas/root/attestation.v1.schema.json",
+      "schema_sha256": "7916876fe4e0d3a5034c918a6faf35122b750c857e6efdc127831dc9d244a984"
+    },
+    {
+      "schema_id": "anarchi.brain.proposal",
+      "schema_version": "1",
+      "artifact_kind": "Proposal Artifact",
+      "schema_path": "schemas/root/proposal.v1.schema.json",
+      "schema_sha256": "509426c2abd808daef4f922ecbc0eb0c290170f77f8cdb2068748b4c4b5cd957"
+    },
+    {
+      "schema_id": "anarchi.brain.relationship",
+      "schema_version": "1",
+      "artifact_kind": "Relationship Artifact",
+      "schema_path": "schemas/root/relationship.v1.schema.json",
+      "schema_sha256": "7cc5baa9c3cddc69ae61d33c38bbccaae0bd205fe362ebc85a9861e18fb1c068"
+    },
+    {
+      "schema_id": "anarchi.brain.authority-grant",
+      "schema_version": "1",
+      "artifact_kind": "Authority Grant Artifact",
+      "schema_path": "schemas/root/authority-grant.v1.schema.json",
+      "schema_sha256": "6a2f51458f32bb552de57e253a0b2f004ac5e80d1d16ab80e6ca455895b77e77"
+    },
+    {
+      "schema_id": "anarchi.brain.authorization",
+      "schema_version": "1",
+      "artifact_kind": "Authorization Artifact",
+      "schema_path": "schemas/root/authorization.v1.schema.json",
+      "schema_sha256": "b772d50c021a1a3e2b0d7d7453bf900d86a8d71ad3a604fd5635f0333273de2d"
+    },
+    {
+      "schema_id": "anarchi.brain.capability",
+      "schema_version": "1",
+      "artifact_kind": "Capability Artifact",
+      "schema_path": "schemas/root/capability.v1.schema.json",
+      "schema_sha256": "33371d07a09f5eed98106460ac9bee756c54fa1f2e48cda8f40e2d4b0d902d5d"
+    },
+    {
+      "schema_id": "anarchi.brain.schema",
+      "schema_version": "1",
+      "artifact_kind": "Schema Artifact",
+      "schema_path": "schemas/root/schema.v1.schema.json",
+      "schema_sha256": "35967ec28261a3640cc5b44dd2489b48f2e049a0607d4a17da49f5c0b4718e57"
+    },
+    {
+      "schema_id": "anarchi.brain.policy-root",
+      "schema_version": "1",
+      "artifact_kind": "Policy Root Artifact",
+      "schema_path": "schemas/root/policy-root.v1.schema.json",
+      "schema_sha256": "2bdea2e7c48925362a3a9e72385fe6944eee0a454d91ec4ebc6d74f24dbdb87e"
+    },
+    {
+      "schema_id": "anarchi.brain.projection",
+      "schema_version": "1",
+      "artifact_kind": "Projection Artifact",
+      "schema_path": "schemas/root/projection.v1.schema.json",
+      "schema_sha256": "1eba66c63d4f3ccdef38d9e3d3eabec6c4d9fdc4d7257dfe1d50a5fd5a4cdb62"
+    },
+    {
+      "schema_id": "anarchi.brain.integrity-epoch-record",
+      "schema_version": "1",
+      "artifact_kind": "Integrity Epoch Record Artifact",
+      "schema_path": "schemas/root/integrity-epoch-record.v1.schema.json",
+      "schema_sha256": "a82764e19f844c8c10472e20c5d41f229439bd31f358b824c6fee14e5d844f5f"
+    },
+    {
+      "schema_id": "anarchi.brain.receipt.event",
+      "schema_version": "1",
+      "artifact_kind": "Receipt Artifact",
+      "receipt_kind": "Event Receipt",
+      "schema_path": "schemas/root/receipt.event.v1.schema.json",
+      "schema_sha256": "a90f7eb41f790bc1aa5b5bc77312ec16c9bbcd7aba9296fb5760ee562c0e1566"
+    },
+    {
+      "schema_id": "anarchi.brain.receipt.decision",
+      "schema_version": "1",
+      "artifact_kind": "Receipt Artifact",
+      "receipt_kind": "Decision Receipt",
+      "schema_path": "schemas/root/receipt.decision.v1.schema.json",
+      "schema_sha256": "c6b255ef8c448fa2d7df621096d5d0fb2bb47644d58426ce373e3191259f1d6b"
+    },
+    {
+      "schema_id": "anarchi.brain.receipt.attempt",
+      "schema_version": "1",
+      "artifact_kind": "Receipt Artifact",
+      "receipt_kind": "Attempt Receipt",
+      "schema_path": "schemas/root/receipt.attempt.v1.schema.json",
+      "schema_sha256": "e6cb321e4ceff16aad7881805fbf5b23ea833e35b302d634a57e68a4e53ddc69"
+    },
+    {
+      "schema_id": "anarchi.brain.receipt.transition",
+      "schema_version": "1",
+      "artifact_kind": "Receipt Artifact",
+      "receipt_kind": "Transition Receipt",
+      "schema_path": "schemas/root/receipt.transition.v1.schema.json",
+      "schema_sha256": "bd6341f264a3146940b657b3d9717a355706f2ea052c52cb6d989995e3e07fa6"
+    },
+    {
+      "schema_id": "anarchi.brain.receipt.effect",
+      "schema_version": "1",
+      "artifact_kind": "Receipt Artifact",
+      "receipt_kind": "Effect Receipt",
+      "schema_path": "schemas/root/receipt.effect.v1.schema.json",
+      "schema_sha256": "303f8f523f14bd9dd70192b5563bf62747d8736bd9cefae78a9013fbeed74fe8"
+    }
+  ]
+}

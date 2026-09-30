@@ -1,0 +1,7 @@
+{
+  "assertion": "bounded assertion",
+  "schema_id": "anarchi.brain.attestation",
+  "schema_version": "1",
+  "serialization_profile": "ACS-1",
+  "source": "source:test"
+}

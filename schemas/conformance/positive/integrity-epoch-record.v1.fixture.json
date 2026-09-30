@@ -1,0 +1,9 @@
+{
+  "epoch": "epoch:test",
+  "record": {
+    "event": "test"
+  },
+  "schema_id": "anarchi.brain.integrity-epoch-record",
+  "schema_version": "1",
+  "serialization_profile": "ACS-1"
+}

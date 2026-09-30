@@ -1,0 +1,7 @@
+{
+  "means": "means:test",
+  "operation": "operation:test",
+  "schema_id": "anarchi.brain.capability",
+  "schema_version": "1",
+  "serialization_profile": "ACS-1"
+}

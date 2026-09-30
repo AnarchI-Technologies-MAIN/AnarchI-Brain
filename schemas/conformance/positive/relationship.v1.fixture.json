@@ -1,0 +1,10 @@
+{
+  "relationship": "related-to",
+  "schema_id": "anarchi.brain.relationship",
+  "schema_version": "1",
+  "serialization_profile": "ACS-1",
+  "subjects": [
+    "subject:a",
+    "subject:b"
+  ]
+}

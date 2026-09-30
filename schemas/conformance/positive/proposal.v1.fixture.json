@@ -1,0 +1,8 @@
+{
+  "proposal": {
+    "operation": "test"
+  },
+  "schema_id": "anarchi.brain.proposal",
+  "schema_version": "1",
+  "serialization_profile": "ACS-1"
+}

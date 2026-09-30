@@ -1,0 +1,12 @@
+{
+  "authority_source": "authority:test",
+  "conditions": {
+    "mode": "bounded"
+  },
+  "operation": "operation:test",
+  "schema_id": "anarchi.brain.authorization",
+  "schema_version": "1",
+  "scope": "scope:test",
+  "serialization_profile": "ACS-1",
+  "subject": "subject:test"
+}

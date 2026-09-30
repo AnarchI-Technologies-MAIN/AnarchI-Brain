@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "serialization_profile",
+    "schema_id",
+    "schema_version",
+    "operation",
+    "means"
+  ],
+  "properties": {
+    "serialization_profile": {
+      "type": "string",
+      "const": "ACS-1"
+    },
+    "schema_id": {
+      "type": "string",
+      "const": "anarchi.brain.capability"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "1"
+    },
+    "operation": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "integer",
+        "boolean"
+      ]
+    },
+    "means": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "integer",
+        "boolean"
+      ]
+    },
+    "scope": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "integer",
+        "boolean"
+      ]
+    },
+    "conditions": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "integer",
+        "boolean"
+      ]
+    },
+    "temporal_bounds": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "integer",
+        "boolean"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

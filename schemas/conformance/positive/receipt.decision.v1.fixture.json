@@ -1,0 +1,8 @@
+{
+  "decision": {
+    "decision": "test"
+  },
+  "schema_id": "anarchi.brain.receipt.decision",
+  "schema_version": "1",
+  "serialization_profile": "ACS-1"
+}

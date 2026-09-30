@@ -1,0 +1,10 @@
+{
+  "governed_schema_id": "example.schema",
+  "governed_schema_version": "1",
+  "schema_definition": {
+    "rule": "test"
+  },
+  "schema_id": "anarchi.brain.schema",
+  "schema_version": "1",
+  "serialization_profile": "ACS-1"
+}

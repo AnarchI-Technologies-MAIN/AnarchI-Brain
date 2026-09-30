@@ -1,0 +1,143 @@
+{
+  "acs1_fixture_rule": "persisted fixture files are transport representations; ACS-1 canonical bytes are produced from parsed semantic values in memory by the conformance runner",
+  "assertion_plan": {
+    "acs1_document_boundary": 18,
+    "acs1_key_order": 18,
+    "acs1_no_bom": 18,
+    "acs1_parse_reserialize": 18,
+    "acs1_repeat": 18,
+    "authority_dimension_invalid": 1,
+    "authority_dimension_valid": 12,
+    "authorization_omission": 5,
+    "closed_root": 18,
+    "contradictory_identity": 2,
+    "corpus_contract_digest": 1,
+    "corpus_registry_digest": 1,
+    "corpus_runner_digest": 1,
+    "cross_schema": 306,
+    "crypto_uniformity": 90,
+    "dialect": 18,
+    "fixture_digest": 18,
+    "fixture_inventory": 1,
+    "meta_schema": 18,
+    "missing_reserved": 54,
+    "optional_null": 9,
+    "positive": 18,
+    "receipt_confusion": 20,
+    "receipt_inventory": 1,
+    "registry": 3,
+    "registry_digest": 18,
+    "relationship": 2,
+    "required_null": 37,
+    "resolver_positive": 18,
+    "resolver_unresolved": 4,
+    "schema_artifact": 2,
+    "unknown_field": 18,
+    "wrong_profile": 18,
+    "wrong_schema_id": 18,
+    "wrong_schema_version": 18
+  },
+  "contract": "SW0-006",
+  "contract_sha256": "8438a40f0c043c3ed88a794b1fd998facce7fa09e389bc4e9d370d46a8bee46c",
+  "corpus_version": "1",
+  "crypto_enabled_root_schemas": [],
+  "expected_assertions": 840,
+  "fixtures": [
+    {
+      "fixture_path": "schemas/conformance/positive/attestation.v1.fixture.json",
+      "fixture_sha256": "232c03894c96f8d6c8012f1ba79fce6e2e58377ccbfb8bb557d96744253df88d",
+      "schema_id": "anarchi.brain.attestation"
+    },
+    {
+      "fixture_path": "schemas/conformance/positive/authority-grant.v1.fixture.json",
+      "fixture_sha256": "efe5a836e3ae18d2506f9606275144fd3dba174645610eabf0fc6756a53a09a0",
+      "schema_id": "anarchi.brain.authority-grant"
+    },
+    {
+      "fixture_path": "schemas/conformance/positive/authorization.v1.fixture.json",
+      "fixture_sha256": "d15b6ba8ca8b49e2273f14b01cbb0d14747af299bf1333d7a714948829e15687",
+      "schema_id": "anarchi.brain.authorization"
+    },
+    {
+      "fixture_path": "schemas/conformance/positive/capability.v1.fixture.json",
+      "fixture_sha256": "ec62cfa804ce73d4dbb8d267ecbf0788d2401e8f43292cdb3d51e54445655f33",
+      "schema_id": "anarchi.brain.capability"
+    },
+    {
+      "fixture_path": "schemas/conformance/positive/integrity-epoch-record.v1.fixture.json",
+      "fixture_sha256": "44794cefec923f288f692d7412e376b242ce3b5af8b2deb859dc803f1b491bf2",
+      "schema_id": "anarchi.brain.integrity-epoch-record"
+    },
+    {
+      "fixture_path": "schemas/conformance/positive/observation.v1.fixture.json",
+      "fixture_sha256": "98092bf4bc80b235b8296d8d901407ff21924dfcf8cec2baf81d14105298c8b1",
+      "schema_id": "anarchi.brain.observation"
+    },
+    {
+      "fixture_path": "schemas/conformance/positive/policy-root.v1.fixture.json",
+      "fixture_sha256": "d688d4c9be49b51cb83e699da8ff8ebc5f81d4605f796f970a46e0009877e0fb",
+      "schema_id": "anarchi.brain.policy-root"
+    },
+    {
+      "fixture_path": "schemas/conformance/positive/projection.v1.fixture.json",
+      "fixture_sha256": "8cc1cb61cc3a58072dc776ce0a85fc96a993096ee7af2c3f3e76b85c23a404da",
+      "schema_id": "anarchi.brain.projection"
+    },
+    {
+      "fixture_path": "schemas/conformance/positive/proposal.v1.fixture.json",
+      "fixture_sha256": "0fd9e35f5173cac94c3429b976888a8b8f8d81da675a2accb9a26e2f9c4825e1",
+      "schema_id": "anarchi.brain.proposal"
+    },
+    {
+      "fixture_path": "schemas/conformance/positive/qualification-result.v1.fixture.json",
+      "fixture_sha256": "53e1caf7fae3902f7e72bb315a27d5248cbd557397bec6d9130c44e12e755103",
+      "schema_id": "anarchi.brain.qualification-result"
+    },
+    {
+      "fixture_path": "schemas/conformance/positive/receipt.attempt.v1.fixture.json",
+      "fixture_sha256": "4ce711c9e6da2a646c529725134c499f4808d671375aad526121f0b031e90d0b",
+      "schema_id": "anarchi.brain.receipt.attempt"
+    },
+    {
+      "fixture_path": "schemas/conformance/positive/receipt.decision.v1.fixture.json",
+      "fixture_sha256": "3d96945a56bdd755bf25b6c1be6aaf620409bcc213262df94376e85f9d38f03a",
+      "schema_id": "anarchi.brain.receipt.decision"
+    },
+    {
+      "fixture_path": "schemas/conformance/positive/receipt.effect.v1.fixture.json",
+      "fixture_sha256": "651341d53fc1a990aa3665f3e7b5108b967476697726a1c318488cb61292858f",
+      "schema_id": "anarchi.brain.receipt.effect"
+    },
+    {
+      "fixture_path": "schemas/conformance/positive/receipt.event.v1.fixture.json",
+      "fixture_sha256": "9b4a2620e162b0440c6394a5b25b1b4a50df10e9a2be57d6fc41c179fe517544",
+      "schema_id": "anarchi.brain.receipt.event"
+    },
+    {
+      "fixture_path": "schemas/conformance/positive/receipt.transition.v1.fixture.json",
+      "fixture_sha256": "8c7750092cd939d9165530ed7c1b5a60e55eba633149ba13d0e8e7a6ac192867",
+      "schema_id": "anarchi.brain.receipt.transition"
+    },
+    {
+      "fixture_path": "schemas/conformance/positive/relationship.v1.fixture.json",
+      "fixture_sha256": "e0a4b24c69b6bf347047da64b95241f46c42c5144e18dd0140fa08c396f8981f",
+      "schema_id": "anarchi.brain.relationship"
+    },
+    {
+      "fixture_path": "schemas/conformance/positive/schema.v1.fixture.json",
+      "fixture_sha256": "3da25c7e198271c24bdba85a3eb674ae83227d857fb1ca8413af7fd1c9c6659a",
+      "schema_id": "anarchi.brain.schema"
+    },
+    {
+      "fixture_path": "schemas/conformance/positive/validation-result.v1.fixture.json",
+      "fixture_sha256": "d9bc700de6c4da93ea1261c999eecf64cbb0090300bc78c0689f73c89856fd0b",
+      "schema_id": "anarchi.brain.validation-result"
+    }
+  ],
+  "negative_fixture_strategy": "deterministic mutations of persisted positive fixtures",
+  "positive_fixture_count": 18,
+  "registry_sha256": "0df9a474c006a75c0e56d672e6a6a13d6cdb991b91eda818896eea7d6eb8f509",
+  "runner_path": "schemas/conformance/run_sw0_006.py",
+  "runner_sha256": "fd0e45a2bc0f23285bdca62fa5547d07f900b46f2f4fd1d78c990aa11f78edfc",
+  "schema_count": 18
+}
