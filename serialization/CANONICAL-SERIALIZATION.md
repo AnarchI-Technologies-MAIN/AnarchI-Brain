@@ -643,7 +643,9 @@ Hash-algorithm selection, domain separation, digest representation, and signatur
 
 A semantic hash must ultimately bind the exact serialization profile and schema interpretation required by its applicable hashing profile.
 
-Hash equality proves only equality of the hashed byte input under the applicable hash profile.
+Hash equality establishes only equality of the computed digest values under the applicable hash profile; it does not prove byte-for-byte equality of the hashed inputs because distinct inputs may collide.
+
+SW0-004-ERRATUM-001: this sentence corrects the original hash-equality wording without changing any ACS-1 canonical serialization rule or canonical byte sequence.
 
 Hash equality does not prove:
 
