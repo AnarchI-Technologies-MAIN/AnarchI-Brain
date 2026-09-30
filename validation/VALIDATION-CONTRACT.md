@@ -1,6 +1,8 @@
-# SW0-008 Validation Contract
+# Supplemental Validation Contract
 
-Status: CANDIDATE - SW0-008
+Status: CANDIDATE - SUPPLEMENTAL
+Role: Supporting semantic contract for SW0-010 state-machine specifications.
+
 
 ## 1. Purpose
 
@@ -88,4 +90,4 @@ The validator remains subordinate to governing contracts.
 
 ---
 
-SW0-008 candidate artifact.
+Supplemental candidate artifact for SW0-010 state-machine specification work.

@@ -1,7 +1,9 @@
 # AnarchI Brain
-# SW0-007 Resolution Contract
+# Supplemental Resolution Contract
 
-Status: CANDIDATE - SW0-007
+Status: CANDIDATE - SUPPLEMENTAL
+Role: Supporting semantic contract for SW0-010 state-machine specifications.
+
 
 ## 1. Purpose
 
@@ -97,5 +99,3 @@ The resolver MUST preserve:
 - fail-closed unknown handling
 - deterministic interpretation
 - separation from authority systems
-
-Status: CANDIDATE
