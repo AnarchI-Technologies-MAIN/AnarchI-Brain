@@ -23,8 +23,8 @@ STONEWALL-0 may freeze only after SW0-012 closes.
 
 ## Current Position
 
-The official numbered sequence is frozen through SW0-008.
-SW0-009 Organ Authority Matrix is the next unclosed numbered gate.
+The official numbered sequence is frozen through SW0-009.
+SW0-010 19 State Machine Specifications is the next unclosed numbered gate.
 
 Resolution, Validation, and Qualification are supplemental candidate contracts.
 They do not occupy SW0-007, SW0-008, or SW0-009.
