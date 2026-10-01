@@ -23,8 +23,8 @@ STONEWALL-0 may freeze only after SW0-012 closes.
 
 ## Current Position
 
-The official numbered sequence is frozen through SW0-006.
-SW0-007 Cortex Contract Boundary is the next unclosed numbered gate.
+The official numbered sequence is frozen through SW0-007.
+SW0-008 Substrate-fin Boundary is the next unclosed numbered gate.
 
 Resolution, Validation, and Qualification are supplemental candidate contracts.
 They do not occupy SW0-007, SW0-008, or SW0-009.
