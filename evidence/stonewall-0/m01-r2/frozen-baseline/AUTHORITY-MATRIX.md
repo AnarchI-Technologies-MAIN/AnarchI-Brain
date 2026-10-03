@@ -6,9 +6,9 @@ Status: FROZEN - SW0-009
 
 SW0-009 owns the final cross-organ authority enumeration.
 
-This frozen enumeration separates constitutional authority from lifecycle behavior, technical capability, operational prerequisites, state possession, requests, validation, qualification behavior, and implementation mechanics.
+This candidate separates constitutional authority from lifecycle behavior, technical capability, operational prerequisites, state possession, requests, validation, qualification behavior, and implementation mechanics.
 
-Except where an earlier frozen anchor is identified below, non-unresolved cells originated as SW0-009 candidate assignments derived from the provisional matrix. Their current declared status is FROZEN - SW0-009; their historical origin does not make them earlier frozen facts. Every cell remains subject to applicable authority roots and governing contracts. This editorial reconciliation changes no cell, dimension, bound, or authority assignment.
+Except where a frozen anchor is identified below, non-unresolved cells are SW0-009 candidate assignments derived from the existing provisional matrix. They are not represented as pre-existing frozen constitutional facts.
 
 ## 2. Authority Dimensions
 
@@ -16,14 +16,14 @@ The matrix uses exactly twelve authority dimensions: Observe, Propose, Qualify, 
 
 ## 3. Cell Vocabulary
 
-- `yes`: declared SW0-009 assignment of the named authority dimension, subject to governing contracts.
-- `bounded`: declared SW0-009 assignment only inside explicitly stated constitutional bounds.
-- `no`: declared SW0-009 assignment that the organ possesses no inherent authority in that dimension.
-- `unresolved`: SW0-009 does not establish an affirmative assignment; required use must fail closed.
+- `yes`: candidate assignment of the named authority dimension, subject to governing contracts.
+- `bounded`: candidate assignment only inside explicitly stated constitutional bounds.
+- `no`: candidate assignment that the organ possesses no inherent authority in that dimension.
+- `unresolved`: SW0-009 does not establish the assignment in this candidate; required use must fail closed.
 
 Missing authority must not be interpreted as `no`, `yes`, permission, capability, or unrestricted authority.
 
-## 4. Declared Frozen Authority Matrix
+## 4. Candidate Authority Matrix
 
 | Organ | Observe | Propose | Qualify | Authorize | Canonicalize | Project | Execute | Revoke | Migrate | Reconstruct | Attest | Administer |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -47,7 +47,7 @@ Missing authority must not be interpreted as `no`, `yes`, permission, capability
 - `UNRESOLVED_OVERLOAD`: overloaded wording is not converted into authority.
 - `UNRESOLVED_MISSING_DIMENSION`: the prior matrix supplied no assignment for that dimension.
 
-A lifecycle name does not itself grant authority. The provenance classes describe how the assignments were derived before the declared SW0-009 freeze. Appearance in a document alone does not prove gate closure; historical evidence remains independently required.
+A lifecycle name does not itself grant authority. A provisional cell does not become frozen merely by appearing in this candidate.
 
 ## 6. Legacy Normalization Register
 
@@ -80,7 +80,7 @@ The frozen Cortex contract provides the strongest pre-existing organ-specific au
 
 Qualify, Revoke, Migrate, Reconstruct, Attest, and Administer were absent from the prior matrix.
 
-This enumeration therefore preserves all sixty-six corresponding organ/dimension cells as `unresolved` rather than silently manufacturing authority or prohibition.
+This candidate therefore preserves all sixty-six corresponding organ/dimension cells as `unresolved` rather than silently manufacturing authority or prohibition.
 
 An unresolved cell is a fail-closed constitutional state, not permission and not a conclusion that the authority can never be assigned.
 
@@ -107,7 +107,7 @@ SW0-010 retains ownership of complete state-machine specifications and lifecycle
 
 This contract does not implement an authority resolver, authority-grant lifecycle, capability lifecycle, database authority tables, runtime enforcement, migration engine, reconstruction engine, Prism implementation, or state-machine implementation.
 
-The declared SW0-009 freeze required a separate adversarial review and a separate closure audit over the exact then-reviewed bytes. This editorial reconciliation creates no new closure proof. The evidence index distinguishes verified artifacts from unavailable historical receipts; neither this document nor its closure list may self-certify satisfaction.
+Freezing this candidate requires a separate adversarial review and a separate closure audit over the exact candidate bytes; neither this requirement nor the closure list may self-certify satisfaction.
 
 ## 11. Candidate Closure Conditions
 

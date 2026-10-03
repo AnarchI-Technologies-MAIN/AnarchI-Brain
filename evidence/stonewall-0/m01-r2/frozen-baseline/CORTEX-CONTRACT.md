@@ -408,4 +408,4 @@ SW0-007 may close only when machine-checkable evidence demonstrates that:
 29. SW0-010 ownership of the Cortex ingress lifecycle remains preserved.
 30. the Cortex non-collapse laws remain explicit and testable.
 
-SW0-007 is declared FROZEN by this document and STONEWALL-SEQUENCE.md. The former candidate-ending sentence is superseded by this editorial reconciliation; no authority boundary or closure condition is changed. Historical closure evidence must be independently verified through the evidence index; this status declaration is not a new closure receipt.
+Until these closure conditions are proven, SW0-007 remains a candidate.

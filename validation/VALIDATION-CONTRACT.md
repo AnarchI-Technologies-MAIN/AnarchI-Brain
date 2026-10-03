@@ -32,9 +32,11 @@ Validation has three possible outcomes:
 
 VALID means all declared validation conditions were satisfied.
 
-INVALID means validation conditions were evaluated and one or more conditions failed.
+INVALID means the required interpretation/input context was available, every required condition was evaluated, and one or more conditions failed.
 
 UNRESOLVED means required interpretation or validation context was unavailable.
+
+A report preserves satisfied, failed, unresolved and missing conditions separately. If a known failure coexists with unavailable required context, the primary result remains UNRESOLVED while the known failure remains in the report. A result label does not erase findings. No result may be interpreted without its owning validation-contract identity and version. Structural results from the schema boundary remain distinct from this lifecycle's result vocabulary.
 
 ## 4. Closed State Semantics
 

@@ -1,0 +1,13 @@
+{
+  "atomic_freshness_replay_effect_enforcement": "UNIMPLEMENTED",
+  "contract_specific_semantic_resolution": "UNIMPLEMENTED",
+  "durable_recording": "UNIMPLEMENTED",
+  "five_historical_ledger_recovery": "SEPARATE_ADDITIVE_PACKAGE_NOT_INSTALLED",
+  "frozen_text_candidate_amendments": "R2_EDITS_RETAINED_UNCHANGED_NOT_NEWLY_ADJUDICATED",
+  "independent_admission_authentication": "UNIMPLEMENTED",
+  "m01_freeze_ready": false,
+  "new_numbered_gate_or_C_step": false,
+  "original_historical_closure_receipts": "NOT_RECOVERED_BY_R3",
+  "scope": "SPECIFICATION_REFERENCE_RUNTIME_SEPARATED",
+  "whole_lifecycle_independent_qualification": "OPEN"
+}

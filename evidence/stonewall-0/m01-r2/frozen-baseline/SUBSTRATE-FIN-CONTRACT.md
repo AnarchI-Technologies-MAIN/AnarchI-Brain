@@ -474,4 +474,4 @@ SW0-008 may close only when machine-checkable evidence demonstrates that:
 34. SW0-008 does not implement database, PostgreSQL, persistence-service, migration, reconstruction, integrity-epoch, or canonical-memory runtime machinery.
 35. the Substrate-fin non-collapse laws remain explicit and machine-testable.
 
-SW0-008 is declared FROZEN by this document and STONEWALL-SEQUENCE.md. The former candidate-ending sentence is superseded by this editorial reconciliation; no authority boundary or closure condition is changed. Historical closure evidence must be independently verified through the evidence index; this status declaration is not a new closure receipt.
+Until these closure conditions are proven, SW0-008 remains a candidate.

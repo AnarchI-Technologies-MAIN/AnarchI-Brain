@@ -1,0 +1,133 @@
+{
+  "status": "R2_CANDIDATE_DISPOSITIONS",
+  "all_findings_closed": false,
+  "findings": [
+    {
+      "id": "A01",
+      "disposition": "CORRECTED_REFERENCE",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A02",
+      "disposition": "CORRECTED_REFERENCE",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A03",
+      "disposition": "CORRECTED_REFERENCE",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A04",
+      "disposition": "CORRECTED_REFERENCE",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A05",
+      "disposition": "CORRECTED_REFERENCE",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A06",
+      "disposition": "CORRECTED_REFERENCE",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A07",
+      "disposition": "CORRECTED_REFERENCE",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A08",
+      "disposition": "CONTRACTED_FAIL_CLOSED_UNIMPLEMENTED",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A09",
+      "disposition": "CORRECTED_COMPOSED_BOUNDARY",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A10",
+      "disposition": "CORRECTED_COMPOSED_BOUNDARY",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A11",
+      "disposition": "CONTRACTED_FAIL_CLOSED_UNIVERSAL_DETECTION_NOT_CLAIMED",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A12",
+      "disposition": "CORRECTED_CHECKOUT_POLICY",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A13",
+      "disposition": "EDITORIALLY_RECONCILED_NO_AUTHORITY_CHANGE",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A14",
+      "disposition": "CORRECTED_CANDIDATE_CONTRACT",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A15",
+      "disposition": "CONTRACTED_FAIL_CLOSED_SEMANTIC_RESOLVER_UNIMPLEMENTED",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A16",
+      "disposition": "BLOCKED_ORIGINAL_EVIDENCE_UNAVAILABLE",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A17",
+      "disposition": "OWNERSHIP_SPECIFIED_IMPLEMENTATION_PENDING",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A18",
+      "disposition": "REFERENCE_SCOPE_CORRECTED_DURABLE_RECORDER_UNIMPLEMENTED",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A19",
+      "disposition": "REFERENCE_BINDINGS_CORRECTED_ATOMIC_RUNTIME_UNIMPLEMENTED",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    },
+    {
+      "id": "A20",
+      "disposition": "EXPANDED_QUALIFICATION_SCOPE",
+      "original_audit": "original-audit.md",
+      "scope": "reference candidate and supplemental contracts only"
+    }
+  ],
+  "freeze_blockers": [
+    "original closure/upstream evidence unavailable",
+    "independent issuer/authority/semantic/secret-free admission unimplemented",
+    "durable lifecycle and atomic effect enforcement unimplemented",
+    "independent full lifecycle review not performed"
+  ],
+  "m01_freeze_ready": false
+}

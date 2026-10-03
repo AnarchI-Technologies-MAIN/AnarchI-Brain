@@ -20,6 +20,8 @@ A resolver MUST return exactly one resolution state:
 - INVALID
 - UNRESOLVED
 
+These are context-resolution states, not instance-validation results. In the R2 typed reference report, VALID is represented by VALID_CONTEXT and INVALID by INVALID_CONTEXT. A technical input rejection is not silently fabricated as a constitutional outcome.
+
 ## 3. VALID Resolution
 
 VALID requires:
@@ -41,8 +43,10 @@ VALID does not imply:
 
 INVALID means:
 
-- governing interpretation was successfully resolved
-- evaluated content violates the governing contract
+- a claimed interpretation-context binding was determinately evaluated
+- that binding violates its governing registry or interpretation contract
+
+Instance content violating an available schema is a validation failure, not INVALID Resolution. A known schema with invalid instance content remains VALID_CONTEXT for resolution and separately STRUCTURALLY_INVALID for structural validation. Missing or ambiguous interpretation remains UNRESOLVED.
 
 INVALID does not imply:
 

@@ -26,8 +26,8 @@ In particular, this contract preserves the distinctions established by:
 - canonical serialization;
 - cryptographic binding;
 - core schema interpretation;
-- resolution;
-- validation.
+
+Resolution and Validation remain supplemental candidate dependencies. They are not frozen constitutional anchors and must retain explicit candidate/version bindings when consumed.
 
 This supplemental contract must not silently redefine any frozen meaning.
 
