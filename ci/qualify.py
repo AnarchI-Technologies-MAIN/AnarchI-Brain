@@ -81,7 +81,7 @@ def prepare_candidate(repo, destination):
 
 
 def checkout_candidate(candidate, target, autocrlf, manifest):
-    subprocess.run(["git", "-c", "core.autocrlf=" + autocrlf, "clone",
+    subprocess.run(["git", "clone", "--config", "core.autocrlf=" + autocrlf,
                     "--quiet", "--no-local", str(candidate), str(target)], check=True)
     verify_checkout(target, manifest)
 
