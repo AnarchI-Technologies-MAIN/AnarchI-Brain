@@ -1,0 +1,39 @@
+{
+  "normal": {
+    "byte_for_byte_equal_to_existing_table": true,
+    "command": [
+      "C:\\Users\\alexg\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\alexg\\AnarchI-Brain-Development\\successor-review-v8-m08-binding-r2\\reproduce_m08_oracle.py",
+      "--output",
+      "C:\\Users\\alexg\\AnarchI-Brain-Development\\successor-review-v8-m08-binding-r2\\evidence\\m08-oracle-reproduced-normal.json"
+    ],
+    "exit_code": 0,
+    "result": {
+      "bytes": 270122,
+      "rows": 720,
+      "scope": "UNADOPTED_PURE_ORACLE_REPRODUCTION",
+      "sha256": "23de4796fa572bae329ce1de1117418d50fe9e01b3485ec3bff23f234f507ade"
+    }
+  },
+  "optimized": {
+    "byte_for_byte_equal_to_existing_table": true,
+    "command": [
+      "C:\\Users\\alexg\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "-I",
+      "-B",
+      "-O",
+      "C:\\Users\\alexg\\AnarchI-Brain-Development\\successor-review-v8-m08-binding-r2\\reproduce_m08_oracle.py",
+      "--output",
+      "C:\\Users\\alexg\\AnarchI-Brain-Development\\successor-review-v8-m08-binding-r2\\evidence\\m08-oracle-reproduced-optimized.json"
+    ],
+    "exit_code": 0,
+    "result": {
+      "bytes": 270122,
+      "rows": 720,
+      "scope": "UNADOPTED_PURE_ORACLE_REPRODUCTION",
+      "sha256": "23de4796fa572bae329ce1de1117418d50fe9e01b3485ec3bff23f234f507ade"
+    }
+  }
+}

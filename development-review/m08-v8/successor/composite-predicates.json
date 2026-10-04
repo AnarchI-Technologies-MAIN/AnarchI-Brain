@@ -1,0 +1,85 @@
+{
+  "abort_evidence": {
+    "status": "UNADOPTED_FINITE_REFERENCE_SEMANTICS_NOT_REAL_AUTHORITY",
+    "components": {
+      "binding": [
+        "MATCH",
+        "MISMATCH",
+        "MISSING",
+        "INVALID",
+        "CONTRADICTORY"
+      ],
+      "proof": [
+        "FAIL",
+        "PASS",
+        "UNKNOWN",
+        "MISSING",
+        "INVALID",
+        "CONTRADICTORY"
+      ],
+      "occurrence": [
+        "NOT_OCCURRED",
+        "OCCURRED",
+        "UNKNOWN",
+        "MISSING",
+        "CONTRADICTORY"
+      ]
+    },
+    "required_evidence": [
+      "exact attempt ID and fenced generation on proof and occurrence evidence",
+      "failed shadow/rollback proof identity and result",
+      "durable journal/current-root observation establishing cutover occurrence"
+    ],
+    "precedence": [
+      "invalid/contradictory/mismatched binding or proof/occurrence: BLOCKED",
+      "observed OCCURRED: BLOCKED",
+      "missing binding/proof or unknown/missing occurrence: UNRESOLVED",
+      "MATCH + FAIL + NOT_OCCURRED: SATISFIED",
+      "MATCH + PASS + NOT_OCCURRED: BLOCKED"
+    ],
+    "finding_retention": "retain each original component even when BLOCKED precedes UNRESOLVED; no absent receipt proves NOT_OCCURRED",
+    "permitted_result": "SATISFIED permits only pre-cutover workflow abort, never canonical-root rollback or a fresh grant"
+  },
+  "atlas_root_comparison": {
+    "status": "UNADOPTED_FINITE_REFERENCE_SEMANTICS_NOT_REAL_AUTHORITY",
+    "components": {
+      "binding": [
+        "MATCH",
+        "MISMATCH",
+        "MISSING",
+        "INVALID",
+        "CONTRADICTORY"
+      ],
+      "comparability": [
+        "MATCH",
+        "MISMATCH",
+        "MISSING",
+        "UNKNOWN"
+      ],
+      "relation": [
+        "EQUAL",
+        "DIFFERENT",
+        "UNKNOWN",
+        "CONTRADICTORY"
+      ],
+      "freshness": [
+        "CURRENT",
+        "STALE",
+        "UNKNOWN"
+      ]
+    },
+    "required_evidence": [
+      "exact view ID, original/current root digests and lengths",
+      "same root identity/schema/hash profile and tenant/object scope",
+      "trusted observation identity, generation/epoch and current read/disclosure fence",
+      "separate exact-view freshness and scope findings"
+    ],
+    "precedence": [
+      "invalid/contradictory/mismatched bindings, incomparable profiles or contradictory relation: BLOCKED",
+      "missing/unknown binding, comparability or relation: UNRESOLVED",
+      "MATCH binding and comparability + determinate relation: SATISFIED comparison, retaining EQUAL or DIFFERENT"
+    ],
+    "ordinary_access": "Only SATISFIED comparison + EQUAL + CURRENT + separately valid exact scope can qualify this reference view. All other combinations CLOSED. Equality never supplies freshness.",
+    "finding_retention": "preserve comparison and freshness independently; comparison may be SATISFIED while stale access remains CLOSED"
+  }
+}
