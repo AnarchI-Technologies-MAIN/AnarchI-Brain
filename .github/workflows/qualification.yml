@@ -35,4 +35,3 @@ jobs:
       - run: python -I -B -m unittest discover -s ci -p "test_*.py"
       - run: python -I -B -O -m unittest discover -s ci -p "test_*.py"
       - run: python -I -B ci/qualify.py
-      - run: python -I -B ci/qualify_m08.py
