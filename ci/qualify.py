@@ -11,7 +11,14 @@ with tempfile.TemporaryDirectory(prefix="brain-reference-") as directory:
  shutil.copytree(root,snapshot,ignore=shutil.ignore_patterns(".git","__pycache__","ci-results"))
  # The only deliberate change to a historical bound path is the hardened ignore file.
  # Restore its preserved preimage solely in this disposable qualification snapshot.
- shutil.copyfile(root/"ci/r3-original.gitignore",snapshot/".gitignore")
+ # Read the committed preimage as bytes; Windows checkout may rewrite line endings.
+ historical_ignore=subprocess.run(
+  ["git","-C",str(root),"show","HEAD:ci/r3-original.gitignore"],
+  check=True,capture_output=True).stdout
+ expected_ignore=json.loads(manifest.read_bytes())["bound_files"][".gitignore"]
+ if hashlib.sha256(historical_ignore).hexdigest()!=expected_ignore:
+  raise SystemExit("Historical ignore preimage does not match pinned R3 manifest")
+ (snapshot/".gitignore").write_bytes(historical_ignore)
  for optimized in (False,True):
   command=[sys.executable,"-I","-B"]
   if optimized: command.append("-O")
