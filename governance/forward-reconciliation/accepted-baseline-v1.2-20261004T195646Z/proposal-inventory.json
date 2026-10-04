@@ -1,0 +1,863 @@
+{
+  "acceptance_binding": "A later acceptance record must bind this exact catalog digest and all four selected artifact digests, with a forward effective time; no subset adoption is permitted.",
+  "accepted_procedure_sha256": "3f6f9393be17bcd448fdebc1e65f4195b700036cdb200d5f435fd90f6f558992",
+  "adoption_record": null,
+  "adoption_unit": "The adoption unit is the complete four-artifact selected set identified by this catalog. A baseline acceptance adopts all four exact artifacts atomically or none of them. No individual selected artifact becomes governing through this baseline decision in isolation.",
+  "bootstrap_clause": "This baseline does not establish or retroactively validate the authority of the procedure that adopted it; its adoption authority derives solely from the previously accepted forward reconciliation procedure identified by SHA-256 3f6f9393be17bcd448fdebc1e65f4195b700036cdb200d5f435fd90f6f558992.",
+  "candidate_version": "v1.2",
+  "input_count": 96,
+  "inputs": [
+    {
+      "bytes": 9306,
+      "original_path": ".gitattributes",
+      "path": "inputs/qualified-r3/.gitattributes",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "471a80623f820b7c2f4ec98fc54e2095dde300eabb6a0423e84b134c27b9fe2f"
+    },
+    {
+      "bytes": 49,
+      "original_path": ".gitignore",
+      "path": "inputs/qualified-r3/.gitignore",
+      "provenance_class": "HISTORICAL_PREIMAGE_RECONSTRUCTED_FOR_QUALIFICATION_ONLY",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "5fddeb7131ac77ea3af5279bd3840cb69449756c3555dc5b1fba360e424e4930"
+    },
+    {
+      "bytes": 1779,
+      "original_path": "README.md",
+      "path": "inputs/qualified-r3/README.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "770924acee36f34cc5bff095bf830f56fb5d0afea7acd60f219582c135ac0ebe"
+    },
+    {
+      "bytes": 799,
+      "original_path": "STONEWALL-0.md",
+      "path": "inputs/qualified-r3/STONEWALL-0.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "b577fc7dee9c2941fc98b0d9c48aebc72d4880b1f0df096329aabb2f1d5510c5"
+    },
+    {
+      "bytes": 1824,
+      "original_path": "STONEWALL-SEQUENCE.md",
+      "path": "inputs/qualified-r3/STONEWALL-SEQUENCE.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "24ff0bec6560f6b2fb953d5b42a6626c8f1f8413880732105d6267f174c136a2"
+    },
+    {
+      "bytes": 27939,
+      "original_path": "constitution/artifacts/ARTIFACT-RECEIPT-TAXONOMY.md",
+      "path": "inputs/qualified-r3/constitution/artifacts/ARTIFACT-RECEIPT-TAXONOMY.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "ef70aadf8bdb6000f56dbbb3af0c9218102c6fe8a84ec914817bdf0fc9805565"
+    },
+    {
+      "bytes": 16877,
+      "original_path": "constitution/authority/AUTHORITY-DIMENSIONS.md",
+      "path": "inputs/qualified-r3/constitution/authority/AUTHORITY-DIMENSIONS.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "3f4c54ee5640c8a047a180380babc90f6ec66490335305f8c074196940b48bd7"
+    },
+    {
+      "bytes": 8867,
+      "original_path": "constitution/state-machines/M01-R2-CONTRACT.md",
+      "path": "inputs/qualified-r3/constitution/state-machines/M01-R2-CONTRACT.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "96afadaa81030e99a05c19ea2f9a7cc4fa68d576ebf52f86067294fe4505f0cf"
+    },
+    {
+      "bytes": 8302,
+      "original_path": "constitution/state-machines/M01-R3-CONTRACT.md",
+      "path": "inputs/qualified-r3/constitution/state-machines/M01-R3-CONTRACT.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "58886e5f4fc22e0c33a8a9bf34a6678ea31902857c0280d8c6a0f24077a52d8a"
+    },
+    {
+      "bytes": 984,
+      "original_path": "constitution/state-machines/REGISTRY.md",
+      "path": "inputs/qualified-r3/constitution/state-machines/REGISTRY.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "adac857e934a8095f70f5426edb96b60041b8ebe072fe0ceed33294967ead5c2"
+    },
+    {
+      "bytes": 2022,
+      "original_path": "constitution/state-machines/STATUS-RECONCILIATION.md",
+      "path": "inputs/qualified-r3/constitution/state-machines/STATUS-RECONCILIATION.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "992f50335150076fe27e7e0e416f37a013ece84afcfa14559afcbbc109220d42"
+    },
+    {
+      "bytes": 13500,
+      "original_path": "contracts/cortex/CORTEX-CONTRACT.md",
+      "path": "inputs/qualified-r3/contracts/cortex/CORTEX-CONTRACT.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "80be68cf32e6b0001e25c9364e77e02425c90eff0e1f0baefca2a8f1d3f22cd5"
+    },
+    {
+      "bytes": 8835,
+      "original_path": "contracts/organs/AUTHORITY-MATRIX.md",
+      "path": "inputs/qualified-r3/contracts/organs/AUTHORITY-MATRIX.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "DIFFERING_MATRIX_CANDIDATE_FOR_EXPLICIT_RECONCILIATION",
+      "sha256": "69d72c0c9642b8c2539e33d6401bb3a6b5fb3c25f7380db567ff08a57d1b39f4"
+    },
+    {
+      "bytes": 20495,
+      "original_path": "contracts/substrate-fin/SUBSTRATE-FIN-CONTRACT.md",
+      "path": "inputs/qualified-r3/contracts/substrate-fin/SUBSTRATE-FIN-CONTRACT.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "e08ca782eaaa1edad3e7da95a895f1cf9c0474486882c3d45d644457b1e7f8f5"
+    },
+    {
+      "bytes": 5084,
+      "original_path": "evidence/stonewall-0/m01-r2/evidence-index.json",
+      "path": "inputs/qualified-r3/evidence/stonewall-0/m01-r2/evidence-index.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "8860e1bd28265f5993a17963f2c69c0a8b4993de8851760f53922767a8492eef"
+    },
+    {
+      "bytes": 4477,
+      "original_path": "evidence/stonewall-0/m01-r2/findings-ledger.json",
+      "path": "inputs/qualified-r3/evidence/stonewall-0/m01-r2/findings-ledger.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "c105f936ca14dd8fa7b060b42663e7e04b4ab8ba9106a594a19f55a49495db1e"
+    },
+    {
+      "bytes": 8289,
+      "original_path": "evidence/stonewall-0/m01-r2/frozen-baseline/AUTHORITY-MATRIX.md",
+      "path": "inputs/qualified-r3/evidence/stonewall-0/m01-r2/frozen-baseline/AUTHORITY-MATRIX.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "HISTORICAL_HEAD_MATRIX_SOURCE_ADOPTION_UNVERIFIED",
+      "sha256": "def3278a6507384ad121d6e8a0b79efd309e1a7db69cedad0480e7ee3e792203"
+    },
+    {
+      "bytes": 13219,
+      "original_path": "evidence/stonewall-0/m01-r2/frozen-baseline/CORTEX-CONTRACT.md",
+      "path": "inputs/qualified-r3/evidence/stonewall-0/m01-r2/frozen-baseline/CORTEX-CONTRACT.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "35d3bbc1e866876bd188339e4431748cb18a70edacf2cc609e4195bf46ebbc49"
+    },
+    {
+      "bytes": 20214,
+      "original_path": "evidence/stonewall-0/m01-r2/frozen-baseline/SUBSTRATE-FIN-CONTRACT.md",
+      "path": "inputs/qualified-r3/evidence/stonewall-0/m01-r2/frozen-baseline/SUBSTRATE-FIN-CONTRACT.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "fd3376a52743b4e539ecb9c5c5b1342abcc7c2c32e3b31410debd1428715819b"
+    },
+    {
+      "bytes": 14703,
+      "original_path": "evidence/stonewall-0/m01-r2/obligations.json",
+      "path": "inputs/qualified-r3/evidence/stonewall-0/m01-r2/obligations.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "7759a0d155ef5da3c870dd0bfb7114ebe853891360c3902386b5e3d88d6fe339"
+    },
+    {
+      "bytes": 58355,
+      "original_path": "evidence/stonewall-0/m01-r2/original-audit-evidence.json",
+      "path": "inputs/qualified-r3/evidence/stonewall-0/m01-r2/original-audit-evidence.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "141aa65d45190f80b23ac2f0ce5e9d6faeaa9678428d5e062f1fa9a5cc47f368"
+    },
+    {
+      "bytes": 22771,
+      "original_path": "evidence/stonewall-0/m01-r2/original-audit.md",
+      "path": "inputs/qualified-r3/evidence/stonewall-0/m01-r2/original-audit.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "293f251b8589674ed9a1f2f0c61182eb1849e9c2b8fa40d001703d8dd90f7c4c"
+    },
+    {
+      "bytes": 17430,
+      "original_path": "evidence/stonewall-0/m01-r2/preservation.json",
+      "path": "inputs/qualified-r3/evidence/stonewall-0/m01-r2/preservation.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "21992ccecbd51b8a1f145c02f6c328cddf9daff19e6f50e3c326f123e38d7007"
+    },
+    {
+      "bytes": 10344,
+      "original_path": "evidence/stonewall-0/m01-r2/repair-manifest.json",
+      "path": "inputs/qualified-r3/evidence/stonewall-0/m01-r2/repair-manifest.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "f66f82eb731b821e2ecab64f3b185b18222ca7f3c772a13a079a691fff3e67ac"
+    },
+    {
+      "bytes": 293,
+      "original_path": "evidence/stonewall-0/m01-r3/R2-gitattributes.preserved.txt",
+      "path": "inputs/qualified-r3/evidence/stonewall-0/m01-r3/R2-gitattributes.preserved.txt",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "d4c029ddbd8cc747a7132d94a54c21b08214c2c1ccf51a78b6ae8cc08d460b4a"
+    },
+    {
+      "bytes": 16963,
+      "original_path": "evidence/stonewall-0/m01-r3/historical-map.json",
+      "path": "inputs/qualified-r3/evidence/stonewall-0/m01-r3/historical-map.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "528698b5f368ec333f6f40334f7f80c5d641a299653c112ad74037fbc81144ec"
+    },
+    {
+      "bytes": 23033,
+      "original_path": "evidence/stonewall-0/m01-r3/independent-review-R2.md",
+      "path": "inputs/qualified-r3/evidence/stonewall-0/m01-r3/independent-review-R2.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "829fd535b19c03150c0b7e2e1de508ef87b5ac5bc6f98459186459dd58cfffea"
+    },
+    {
+      "bytes": 643,
+      "original_path": "evidence/stonewall-0/m01-r3/remaining-boundaries.json",
+      "path": "inputs/qualified-r3/evidence/stonewall-0/m01-r3/remaining-boundaries.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "a8fabf665e4e7e0434d808fc34fcfcfd4c699d155d689d72b193d066fe16d86a"
+    },
+    {
+      "bytes": 1757,
+      "original_path": "evidence/stonewall-0/m01-r3/repair-dispositions.json",
+      "path": "inputs/qualified-r3/evidence/stonewall-0/m01-r3/repair-dispositions.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "3f73350fa5356f7394734eb0dd363255de5c601713fbab57f3d9aaeaf26b5e39"
+    },
+    {
+      "bytes": 27642,
+      "original_path": "evidence/stonewall-0/m01-r3/repair-manifest.json",
+      "path": "inputs/qualified-r3/evidence/stonewall-0/m01-r3/repair-manifest.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "f2d48cdd98bd17f74bd826c1af96668110d98cf1205ba1dbd3ef7a758b57868c"
+    },
+    {
+      "bytes": 28201,
+      "original_path": "hashing/HASH-SIGNATURE-PROFILE.md",
+      "path": "inputs/qualified-r3/hashing/HASH-SIGNATURE-PROFILE.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "bf4290fefa8ad284b12635aa15ba45a0e673915f18acca07482bf7f2b9f1a41e"
+    },
+    {
+      "bytes": 9528,
+      "original_path": "qualification/QUALIFICATION-CONTRACT.md",
+      "path": "inputs/qualified-r3/qualification/QUALIFICATION-CONTRACT.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "6c062fc99c896a630e0a6c80a0d7bbd5285e40014241caf87977957f8296bca8"
+    },
+    {
+      "bytes": 75,
+      "original_path": "qualification/m01_r2/__init__.py",
+      "path": "inputs/qualified-r3/qualification/m01_r2/__init__.py",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "a0c7bae7cc65e5167dca3e873e9f8e5d06cea542c3e0689ce28c8e9ff5f7fb3a"
+    },
+    {
+      "bytes": 3661,
+      "original_path": "qualification/m01_r2/history/continuation_v1.md",
+      "path": "inputs/qualified-r3/qualification/m01_r2/history/continuation_v1.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "6a6dfa92c7aa31ff300e0ef572e331704e34a7a125772e1db0b319fd5a658cac"
+    },
+    {
+      "bytes": 6378,
+      "original_path": "qualification/m01_r2/history/continuation_v1.py",
+      "path": "inputs/qualified-r3/qualification/m01_r2/history/continuation_v1.py",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "0770f8bce7429d7f9efecd6c09a084effaa89a3a0d1a84563d4a264691f2b423"
+    },
+    {
+      "bytes": 355,
+      "original_path": "qualification/m01_r2/history/continuation_v1_receipt.txt",
+      "path": "inputs/qualified-r3/qualification/m01_r2/history/continuation_v1_receipt.txt",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "0f234330f8de6cfa4a8c336adfc5e902617d21ce76ddb84b6422804067659d4e"
+    },
+    {
+      "bytes": 48154,
+      "original_path": "qualification/m01_r2/history/repair_r1.py",
+      "path": "inputs/qualified-r3/qualification/m01_r2/history/repair_r1.py",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "cb8a492c4667ffaaf0ef1ac1b62f2c9883c9e90d09873d470aeb47175a100a6c"
+    },
+    {
+      "bytes": 12331,
+      "original_path": "qualification/m01_r2/history/repair_r1_contract.md",
+      "path": "inputs/qualified-r3/qualification/m01_r2/history/repair_r1_contract.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "d969a7e804c5577d1e514bed12a1b580bcc92c0e2481851e3b72b5783f478867"
+    },
+    {
+      "bytes": 2851,
+      "original_path": "qualification/m01_r2/history/repair_r1_local_receipt.txt",
+      "path": "inputs/qualified-r3/qualification/m01_r2/history/repair_r1_local_receipt.txt",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "e6abe36bd2d29984dfc4c072e398dd1e6a9601f8038377920f65d06f4ece20e5"
+    },
+    {
+      "bytes": 2395,
+      "original_path": "qualification/m01_r2/history/repair_r1_model_receipt.txt",
+      "path": "inputs/qualified-r3/qualification/m01_r2/history/repair_r1_model_receipt.txt",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "9f96635df88acb419c098f57a0ad3b2995e5f0b776ea1bd18117dd36f4804891"
+    },
+    {
+      "bytes": 15165,
+      "original_path": "qualification/m01_r2/model.py",
+      "path": "inputs/qualified-r3/qualification/m01_r2/model.py",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "0e28dac35df3bf27c0e9366ef0d993a7721287ade698230910e8966bd6c7da02"
+    },
+    {
+      "bytes": 7532,
+      "original_path": "qualification/m01_r2/qualify.py",
+      "path": "inputs/qualified-r3/qualification/m01_r2/qualify.py",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "30339793783955bc85f36a9f0500988848dbc0c7790f1717f1ef44394fa5f409"
+    },
+    {
+      "bytes": 3006,
+      "original_path": "qualification/m01_r2/rescan.py",
+      "path": "inputs/qualified-r3/qualification/m01_r2/rescan.py",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "d9a7acedb322a063a5bfb8d1ccc2fb8c500da8647a7c5bf7f24efc65b0f29f03"
+    },
+    {
+      "bytes": 75,
+      "original_path": "qualification/m01_r3/__init__.py",
+      "path": "inputs/qualified-r3/qualification/m01_r3/__init__.py",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "dc150920a77cbf2ac887d1825491a15891725cb8d8aefda001b418fd8b3c4b9b"
+    },
+    {
+      "bytes": 16557,
+      "original_path": "qualification/m01_r3/model.py",
+      "path": "inputs/qualified-r3/qualification/m01_r3/model.py",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "026d6fc8f8c9c1df16b8f21cdcf0337a693aec58c77b2ec4c1514d1a32ca2030"
+    },
+    {
+      "bytes": 4998,
+      "original_path": "qualification/m01_r3/rescan.py",
+      "path": "inputs/qualified-r3/qualification/m01_r3/rescan.py",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "b39bc768934f83f00ea6f40a53f4c74a5e065ae94a91a21a269f0b02ff9d6f73"
+    },
+    {
+      "bytes": 9017,
+      "original_path": "qualify_m01_r3.py",
+      "path": "inputs/qualified-r3/qualify_m01_r3.py",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "2fc3e870d29e8041e31f0250bde5b1ac02c362f1e24a7b0dd7124e393f72b597"
+    },
+    {
+      "bytes": 2782,
+      "original_path": "resolution/RESOLUTION-CONTRACT.md",
+      "path": "inputs/qualified-r3/resolution/RESOLUTION-CONTRACT.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "a14702e5fdf173bbb4237bea033ab47c37d98f05f054d8b754c55ab10c00f2bc"
+    },
+    {
+      "bytes": 42257,
+      "original_path": "schemas/CORE-SCHEMA-CONTRACT.md",
+      "path": "inputs/qualified-r3/schemas/CORE-SCHEMA-CONTRACT.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "8438a40f0c043c3ed88a794b1fd998facce7fa09e389bc4e9d370d46a8bee46c"
+    },
+    {
+      "bytes": 9175,
+      "original_path": "schemas/conformance/boundary_r2.py",
+      "path": "inputs/qualified-r3/schemas/conformance/boundary_r2.py",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "1ff786baedaf700d00f213e4c2df413f1e9978dca748ea327ac569c60dc08b7c"
+    },
+    {
+      "bytes": 12409,
+      "original_path": "schemas/conformance/boundary_r3.py",
+      "path": "inputs/qualified-r3/schemas/conformance/boundary_r3.py",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "841ad09bfc6766de4a162f506e70930275407270e86d980eef3261df6ccb67f3"
+    },
+    {
+      "bytes": 6077,
+      "original_path": "schemas/conformance/cases.v1.json",
+      "path": "inputs/qualified-r3/schemas/conformance/cases.v1.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "4abf8f8c343c06c8ce24bafdefda83295bccf6c716feb11a76546a2878cc4421"
+    },
+    {
+      "bytes": 171,
+      "original_path": "schemas/conformance/positive/attestation.v1.fixture.json",
+      "path": "inputs/qualified-r3/schemas/conformance/positive/attestation.v1.fixture.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "232c03894c96f8d6c8012f1ba79fce6e2e58377ccbfb8bb557d96744253df88d"
+    },
+    {
+      "bytes": 222,
+      "original_path": "schemas/conformance/positive/authority-grant.v1.fixture.json",
+      "path": "inputs/qualified-r3/schemas/conformance/positive/authority-grant.v1.fixture.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "efe5a836e3ae18d2506f9606275144fd3dba174645610eabf0fc6756a53a09a0"
+    },
+    {
+      "bytes": 282,
+      "original_path": "schemas/conformance/positive/authorization.v1.fixture.json",
+      "path": "inputs/qualified-r3/schemas/conformance/positive/authorization.v1.fixture.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "d15b6ba8ca8b49e2273f14b01cbb0d14747af299bf1333d7a714948829e15687"
+    },
+    {
+      "bytes": 165,
+      "original_path": "schemas/conformance/positive/capability.v1.fixture.json",
+      "path": "inputs/qualified-r3/schemas/conformance/positive/capability.v1.fixture.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "ec62cfa804ce73d4dbb8d267ecbf0788d2401e8f43292cdb3d51e54445655f33"
+    },
+    {
+      "bytes": 183,
+      "original_path": "schemas/conformance/positive/integrity-epoch-record.v1.fixture.json",
+      "path": "inputs/qualified-r3/schemas/conformance/positive/integrity-epoch-record.v1.fixture.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "44794cefec923f288f692d7412e376b242ce3b5af8b2deb859dc803f1b491bf2"
+    },
+    {
+      "bytes": 183,
+      "original_path": "schemas/conformance/positive/observation.v1.fixture.json",
+      "path": "inputs/qualified-r3/schemas/conformance/positive/observation.v1.fixture.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "98092bf4bc80b235b8296d8d901407ff21924dfcf8cec2baf81d14105298c8b1"
+    },
+    {
+      "bytes": 186,
+      "original_path": "schemas/conformance/positive/policy-root.v1.fixture.json",
+      "path": "inputs/qualified-r3/schemas/conformance/positive/policy-root.v1.fixture.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "d688d4c9be49b51cb83e699da8ff8ebc5f81d4605f796f970a46e0009877e0fb"
+    },
+    {
+      "bytes": 178,
+      "original_path": "schemas/conformance/positive/projection.v1.fixture.json",
+      "path": "inputs/qualified-r3/schemas/conformance/positive/projection.v1.fixture.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "8cc1cb61cc3a58072dc776ce0a85fc96a993096ee7af2c3f3e76b85c23a404da"
+    },
+    {
+      "bytes": 150,
+      "original_path": "schemas/conformance/positive/proposal.v1.fixture.json",
+      "path": "inputs/qualified-r3/schemas/conformance/positive/proposal.v1.fixture.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "0fd9e35f5173cac94c3429b976888a8b8f8d81da675a2accb9a26e2f9c4825e1"
+    },
+    {
+      "bytes": 217,
+      "original_path": "schemas/conformance/positive/qualification-result.v1.fixture.json",
+      "path": "inputs/qualified-r3/schemas/conformance/positive/qualification-result.v1.fixture.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "53e1caf7fae3902f7e72bb315a27d5248cbd557397bec6d9130c44e12e755103"
+    },
+    {
+      "bytes": 154,
+      "original_path": "schemas/conformance/positive/receipt.attempt.v1.fixture.json",
+      "path": "inputs/qualified-r3/schemas/conformance/positive/receipt.attempt.v1.fixture.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "4ce711c9e6da2a646c529725134c499f4808d671375aad526121f0b031e90d0b"
+    },
+    {
+      "bytes": 157,
+      "original_path": "schemas/conformance/positive/receipt.decision.v1.fixture.json",
+      "path": "inputs/qualified-r3/schemas/conformance/positive/receipt.decision.v1.fixture.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "3d96945a56bdd755bf25b6c1be6aaf620409bcc213262df94376e85f9d38f03a"
+    },
+    {
+      "bytes": 151,
+      "original_path": "schemas/conformance/positive/receipt.effect.v1.fixture.json",
+      "path": "inputs/qualified-r3/schemas/conformance/positive/receipt.effect.v1.fixture.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "651341d53fc1a990aa3665f3e7b5108b967476697726a1c318488cb61292858f"
+    },
+    {
+      "bytes": 148,
+      "original_path": "schemas/conformance/positive/receipt.event.v1.fixture.json",
+      "path": "inputs/qualified-r3/schemas/conformance/positive/receipt.event.v1.fixture.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "9b4a2620e162b0440c6394a5b25b1b4a50df10e9a2be57d6fc41c179fe517544"
+    },
+    {
+      "bytes": 163,
+      "original_path": "schemas/conformance/positive/receipt.transition.v1.fixture.json",
+      "path": "inputs/qualified-r3/schemas/conformance/positive/receipt.transition.v1.fixture.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "8c7750092cd939d9165530ed7c1b5a60e55eba633149ba13d0e8e7a6ac192867"
+    },
+    {
+      "bytes": 195,
+      "original_path": "schemas/conformance/positive/relationship.v1.fixture.json",
+      "path": "inputs/qualified-r3/schemas/conformance/positive/relationship.v1.fixture.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "e0a4b24c69b6bf347047da64b95241f46c42c5144e18dd0140fa08c396f8981f"
+    },
+    {
+      "bytes": 228,
+      "original_path": "schemas/conformance/positive/schema.v1.fixture.json",
+      "path": "inputs/qualified-r3/schemas/conformance/positive/schema.v1.fixture.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "3da25c7e198271c24bdba85a3eb674ae83227d857fb1ca8413af7fd1c9c6659a"
+    },
+    {
+      "bytes": 208,
+      "original_path": "schemas/conformance/positive/validation-result.v1.fixture.json",
+      "path": "inputs/qualified-r3/schemas/conformance/positive/validation-result.v1.fixture.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "d9bc700de6c4da93ea1261c999eecf64cbb0090300bc78c0689f73c89856fd0b"
+    },
+    {
+      "bytes": 28362,
+      "original_path": "schemas/conformance/run_sw0_006.py",
+      "path": "inputs/qualified-r3/schemas/conformance/run_sw0_006.py",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "fd0e45a2bc0f23285bdca62fa5547d07f900b46f2f4fd1d78c990aa11f78edfc"
+    },
+    {
+      "bytes": 5674,
+      "original_path": "schemas/registry.v1.json",
+      "path": "inputs/qualified-r3/schemas/registry.v1.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "0df9a474c006a75c0e56d672e6a6a13d6cdb991b91eda818896eea7d6eb8f509"
+    },
+    {
+      "bytes": 787,
+      "original_path": "schemas/root/attestation.v1.schema.json",
+      "path": "inputs/qualified-r3/schemas/root/attestation.v1.schema.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "7916876fe4e0d3a5034c918a6faf35122b750c857e6efdc127831dc9d244a984"
+    },
+    {
+      "bytes": 1998,
+      "original_path": "schemas/root/authority-grant.v1.schema.json",
+      "path": "inputs/qualified-r3/schemas/root/authority-grant.v1.schema.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "6a2f51458f32bb552de57e253a0b2f004ac5e80d1d16ab80e6ca455895b77e77"
+    },
+    {
+      "bytes": 1270,
+      "original_path": "schemas/root/authorization.v1.schema.json",
+      "path": "inputs/qualified-r3/schemas/root/authorization.v1.schema.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "b772d50c021a1a3e2b0d7d7453bf900d86a8d71ad3a604fd5635f0333273de2d"
+    },
+    {
+      "bytes": 1207,
+      "original_path": "schemas/root/capability.v1.schema.json",
+      "path": "inputs/qualified-r3/schemas/root/capability.v1.schema.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "33371d07a09f5eed98106460ac9bee756c54fa1f2e48cda8f40e2d4b0d902d5d"
+    },
+    {
+      "bytes": 790,
+      "original_path": "schemas/root/integrity-epoch-record.v1.schema.json",
+      "path": "inputs/qualified-r3/schemas/root/integrity-epoch-record.v1.schema.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "a82764e19f844c8c10472e20c5d41f229439bd31f358b824c6fee14e5d844f5f"
+    },
+    {
+      "bytes": 791,
+      "original_path": "schemas/root/observation.v1.schema.json",
+      "path": "inputs/qualified-r3/schemas/root/observation.v1.schema.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "e7542aa8423c5cd47beb268b95230d3b58a966db360717538b7cd725a10de8f1"
+    },
+    {
+      "bytes": 791,
+      "original_path": "schemas/root/policy-root.v1.schema.json",
+      "path": "inputs/qualified-r3/schemas/root/policy-root.v1.schema.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "2bdea2e7c48925362a3a9e72385fe6944eee0a454d91ec4ebc6d74f24dbdb87e"
+    },
+    {
+      "bytes": 788,
+      "original_path": "schemas/root/projection.v1.schema.json",
+      "path": "inputs/qualified-r3/schemas/root/projection.v1.schema.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "1eba66c63d4f3ccdef38d9e3d3eabec6c4d9fdc4d7257dfe1d50a5fd5a4cdb62"
+    },
+    {
+      "bytes": 631,
+      "original_path": "schemas/root/proposal.v1.schema.json",
+      "path": "inputs/qualified-r3/schemas/root/proposal.v1.schema.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "509426c2abd808daef4f922ecbc0eb0c290170f77f8cdb2068748b4c4b5cd957"
+    },
+    {
+      "bytes": 975,
+      "original_path": "schemas/root/qualification-result.v1.schema.json",
+      "path": "inputs/qualified-r3/schemas/root/qualification-result.v1.schema.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "54c3c1701750e0cc9c725197b71d8f022531493bc06cf09c1bf7ca2826f7c1e5"
+    },
+    {
+      "bytes": 636,
+      "original_path": "schemas/root/receipt.attempt.v1.schema.json",
+      "path": "inputs/qualified-r3/schemas/root/receipt.attempt.v1.schema.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "e6cb321e4ceff16aad7881805fbf5b23ea833e35b302d634a57e68a4e53ddc69"
+    },
+    {
+      "bytes": 639,
+      "original_path": "schemas/root/receipt.decision.v1.schema.json",
+      "path": "inputs/qualified-r3/schemas/root/receipt.decision.v1.schema.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "c6b255ef8c448fa2d7df621096d5d0fb2bb47644d58426ce373e3191259f1d6b"
+    },
+    {
+      "bytes": 633,
+      "original_path": "schemas/root/receipt.effect.v1.schema.json",
+      "path": "inputs/qualified-r3/schemas/root/receipt.effect.v1.schema.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "303f8f523f14bd9dd70192b5563bf62747d8736bd9cefae78a9013fbeed74fe8"
+    },
+    {
+      "bytes": 630,
+      "original_path": "schemas/root/receipt.event.v1.schema.json",
+      "path": "inputs/qualified-r3/schemas/root/receipt.event.v1.schema.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "a90f7eb41f790bc1aa5b5bc77312ec16c9bbcd7aba9296fb5760ee562c0e1566"
+    },
+    {
+      "bytes": 645,
+      "original_path": "schemas/root/receipt.transition.v1.schema.json",
+      "path": "inputs/qualified-r3/schemas/root/receipt.transition.v1.schema.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "bd6341f264a3146940b657b3d9717a355706f2ea052c52cb6d989995e3e07fa6"
+    },
+    {
+      "bytes": 881,
+      "original_path": "schemas/root/relationship.v1.schema.json",
+      "path": "inputs/qualified-r3/schemas/root/relationship.v1.schema.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "7cc5baa9c3cddc69ae61d33c38bbccaae0bd205fe362ebc85a9861e18fb1c068"
+    },
+    {
+      "bytes": 869,
+      "original_path": "schemas/root/schema.v1.schema.json",
+      "path": "inputs/qualified-r3/schemas/root/schema.v1.schema.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "35967ec28261a3640cc5b44dd2489b48f2e049a0607d4a17da49f5c0b4718e57"
+    },
+    {
+      "bytes": 966,
+      "original_path": "schemas/root/validation-result.v1.schema.json",
+      "path": "inputs/qualified-r3/schemas/root/validation-result.v1.schema.json",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "d2b0a131f0d6b7bfff8dde9d55fb83a9b3ead4842d175c05b583c1122c140847"
+    },
+    {
+      "bytes": 11899,
+      "original_path": "semantic-language/SEMANTIC-LANGUAGE-v1.md",
+      "path": "inputs/qualified-r3/semantic-language/SEMANTIC-LANGUAGE-v1.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "896b5f42ec658046e664ef2c1e0130bf7a5d4866fae8cf64446bc2d2eb2804fa"
+    },
+    {
+      "bytes": 25918,
+      "original_path": "serialization/CANONICAL-SERIALIZATION.md",
+      "path": "inputs/qualified-r3/serialization/CANONICAL-SERIALIZATION.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "477d76c0aa0df6cb7a3a2ec9dd87eee5aadb7b4f7b118d2565149aae0bc53b4a"
+    },
+    {
+      "bytes": 14904,
+      "original_path": "tests/conformance/test_m01_r2.py",
+      "path": "inputs/qualified-r3/tests/conformance/test_m01_r2.py",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "48e01863fd92712389f921beffc34f0867609dcbc79aa4b6d638e27e9eff3138"
+    },
+    {
+      "bytes": 15707,
+      "original_path": "tests/conformance/test_m01_r3.py",
+      "path": "inputs/qualified-r3/tests/conformance/test_m01_r3.py",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "2c79c195d8400fcd566976a122421ef9e79e2bdb21a518cc2d2873ba9b34526a"
+    },
+    {
+      "bytes": 20227,
+      "original_path": "tests/conformance/test_m01_r3_regressions.py",
+      "path": "inputs/qualified-r3/tests/conformance/test_m01_r3_regressions.py",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "bec934b67dc0e4c17045ace6a316b690ede7abff6929d59e47dfa925da3c159a"
+    },
+    {
+      "bytes": 2839,
+      "original_path": "validation/VALIDATION-CONTRACT.md",
+      "path": "inputs/qualified-r3/validation/VALIDATION-CONTRACT.md",
+      "provenance_class": "QUALIFIED_R3_CANDIDATE_NOT_ADOPTED",
+      "role": "REFERENCE_SOURCE_NOT_SELECTED_AS_FORWARD_GOVERNING",
+      "sha256": "7f770eaca948be433e9740510b4bed120fb09eacdd7e5489952f5168a1571963"
+    }
+  ],
+  "matrix_cell_changes": [],
+  "procedure_acceptance_record_sha256": "e813b8242f84fc0b6c6bb4cbf08ee8d0794c703f512c8bb8ad18d0f8aa42eac0",
+  "proposed_scope": "Forward interpretive foundation and unchanged matrix assignments only; not complete SW0-010 machine specification or runtime qualification",
+  "qualified_r3_manifest_sha256": "f2d48cdd98bd17f74bd826c1af96668110d98cf1205ba1dbd3ef7a758b57868c",
+  "schema": "BRAIN-FORWARD-BASELINE-PROPOSAL-1",
+  "selected_candidate_artifacts": {
+    "authority-dimensions.md": {
+      "bytes": 17514,
+      "delta_classes": [
+        "STATUS_RECONCILIATION",
+        "DEPENDENCY_BINDING",
+        "FORWARD_PROVENANCE_CLARIFICATION"
+      ],
+      "dependencies": [
+        "semantic-language.md"
+      ],
+      "path": "candidate/authority-dimensions.md",
+      "predecessor_sha256": "3f4c54ee5640c8a047a180380babc90f6ec66490335305f8c074196940b48bd7",
+      "sha256": "a1143481b4f6d24354cf5e28bfcdb5fa5706fcc162969601098241c124bad0fa"
+    },
+    "authority-matrix.md": {
+      "bytes": 10947,
+      "delta_classes": [
+        "STATUS_RECONCILIATION",
+        "DEPENDENCY_BINDING",
+        "FORWARD_PROVENANCE_CLARIFICATION"
+      ],
+      "dependencies": [
+        "authority-dimensions.md",
+        "cortex-contract.md"
+      ],
+      "path": "candidate/authority-matrix.md",
+      "predecessor_sha256": "69d72c0c9642b8c2539e33d6401bb3a6b5fb3c25f7380db567ff08a57d1b39f4",
+      "sha256": "1ceaf312b74500548654c7a7244ebc9222c93cf2e9bdfb2522669ad7359cb98e"
+    },
+    "cortex-contract.md": {
+      "bytes": 14694,
+      "delta_classes": [
+        "STATUS_RECONCILIATION",
+        "DEPENDENCY_BINDING",
+        "FORWARD_PROVENANCE_CLARIFICATION"
+      ],
+      "dependencies": [
+        "semantic-language.md",
+        "authority-dimensions.md"
+      ],
+      "path": "candidate/cortex-contract.md",
+      "predecessor_sha256": "80be68cf32e6b0001e25c9364e77e02425c90eff0e1f0baefca2a8f1d3f22cd5",
+      "sha256": "51da5c27fdddf24ef3c822da565b7d8e3cec9d6a7df0a8d864e35422b79d3e1a"
+    },
+    "semantic-language.md": {
+      "bytes": 12377,
+      "delta_classes": [
+        "STATUS_RECONCILIATION",
+        "DEPENDENCY_BINDING",
+        "FORWARD_PROVENANCE_CLARIFICATION"
+      ],
+      "dependencies": [],
+      "path": "candidate/semantic-language.md",
+      "predecessor_sha256": "896b5f42ec658046e664ef2c1e0130bf7a5d4866fae8cf64446bc2d2eb2804fa",
+      "sha256": "33c438c541f02c97d9e9eab205610f52bc56fe226dbfd2345776c498a630d7d3"
+    }
+  },
+  "status": "PROPOSED_NOT_ADOPTED",
+  "status_interpretation": "Selected candidate bytes reconcile historical status claims internally. Exact separate forward acceptance remains required. Historical closure/adoption is unverified.",
+  "transport_custody": {
+    "adoption_basis": "Exact catalog and member bytes; neither transport wrapper is an adoption subject.",
+    "status": "TRANSPORT_BYTE_MISMATCH_EMBEDDED_11_ARTIFACTS_VERIFIED_BY_LYRA",
+    "v11_local_wrapper_sha256": "e1868506c6d221ed79a0fe5662d1f4219b641cae972c241e74349eca74ca1c3d",
+    "v11_lyra_received_wrapper_sha256": "b6954023ad7f64ff3a255f6574243c872561b00cd9ca7b6466b291d847ea855a"
+  },
+  "unresolved_holds": [
+    "verified governing baseline adoption",
+    "M03 Route-B adoption",
+    "M04/S1 qualification authority",
+    "M09/S3 authorization",
+    "independent issuer/verifier/root enrollment and fresh effect-boundary enforcement",
+    "M14 receipt and durable recording contract",
+    "five-fin readiness profile reconciliation",
+    "three independent S2 canonical adjudications and acceptance rule",
+    "runtime-machine implementation and adversarial qualification",
+    "staging containment/SSH prerequisites",
+    "production deployment and canonical admission"
+  ]
+}

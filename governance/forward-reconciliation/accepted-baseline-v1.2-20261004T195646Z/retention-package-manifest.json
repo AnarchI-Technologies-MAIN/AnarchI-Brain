@@ -1,0 +1,50 @@
+{
+  "files": {
+    "acceptance.json": {
+      "bytes": 7551,
+      "sha256": "10bd8c050b4a39553a553bdad868f14a4f680709cb4c2b9669d01084ab3fd2bc"
+    },
+    "acceptance.json.sha256": {
+      "bytes": 82,
+      "sha256": "9fe8faeed09f6fef77947ff07134671e01d53793968cc32e07678b4f06c0870e"
+    },
+    "candidate/authority-dimensions.md": {
+      "bytes": 17514,
+      "sha256": "a1143481b4f6d24354cf5e28bfcdb5fa5706fcc162969601098241c124bad0fa"
+    },
+    "candidate/authority-matrix.md": {
+      "bytes": 10947,
+      "sha256": "1ceaf312b74500548654c7a7244ebc9222c93cf2e9bdfb2522669ad7359cb98e"
+    },
+    "candidate/cortex-contract.md": {
+      "bytes": 14694,
+      "sha256": "51da5c27fdddf24ef3c822da565b7d8e3cec9d6a7df0a8d864e35422b79d3e1a"
+    },
+    "candidate/semantic-language.md": {
+      "bytes": 12377,
+      "sha256": "33c438c541f02c97d9e9eab205610f52bc56fe226dbfd2345776c498a630d7d3"
+    },
+    "predecessor/acceptance.json": {
+      "bytes": 2151,
+      "sha256": "e813b8242f84fc0b6c6bb4cbf08ee8d0794c703f512c8bb8ad18d0f8aa42eac0"
+    },
+    "predecessor/accepted-procedure.md": {
+      "bytes": 6385,
+      "sha256": "3f6f9393be17bcd448fdebc1e65f4195b700036cdb200d5f435fd90f6f558992"
+    },
+    "proposal-inventory.json": {
+      "bytes": 43287,
+      "sha256": "421b5d5bab28a32afe557e17970a14beb75a99eddc9f536a75bb1bcda9d26eb3"
+    },
+    "question-response-provenance.json": {
+      "bytes": 1123,
+      "sha256": "b940876d1615fe9899714a3c2dde83dea121020ae488b43c48fa30f59e8b92d8"
+    },
+    "review/LYRA-SOURCE-REVIEW-DISPOSITION.json": {
+      "bytes": 574,
+      "sha256": "c4f56ae10b1810161fb295afbe9eef703cdf39b2cfe90579af6d3c976916785c"
+    }
+  },
+  "schema": "BASELINE-RETENTION-PACKAGE-1",
+  "scope": "Exact decision and interpretive baseline retention only; no runtime, gate, canonical, staging or production grant. The acceptance record stays unchanged; verified external-retention evidence is a separate successor record."
+}

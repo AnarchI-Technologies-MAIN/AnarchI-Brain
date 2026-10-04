@@ -1,0 +1,150 @@
+{
+  "schema": "FORWARD-BASELINE-HUMAN-ACCEPTANCE-RECORD-1",
+  "status": "HUMAN_ACCEPTANCE_RECORDED_EXTERNAL_RETENTION_PENDING",
+  "operative": false,
+  "notice": "Exact human decision recorded; operative publication remains held until external retention is verified. This is a procedural record, not a runtime grant.",
+  "proposal": {
+    "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-proposal-v1.2\\proposal-inventory.json",
+    "sha256": "421b5d5bab28a32afe557e17970a14beb75a99eddc9f536a75bb1bcda9d26eb3",
+    "bytes": 43287,
+    "candidate_version": "v1.2",
+    "adoption_unit": "The adoption unit is the complete four-artifact selected set identified by this catalog. A baseline acceptance adopts all four exact artifacts atomically or none of them. No individual selected artifact becomes governing through this baseline decision in isolation.",
+    "selected_candidate_artifacts": {
+      "authority-dimensions.md": {
+        "bytes": 17514,
+        "delta_classes": [
+          "STATUS_RECONCILIATION",
+          "DEPENDENCY_BINDING",
+          "FORWARD_PROVENANCE_CLARIFICATION"
+        ],
+        "dependencies": [
+          "semantic-language.md"
+        ],
+        "path": "candidate/authority-dimensions.md",
+        "predecessor_sha256": "3f4c54ee5640c8a047a180380babc90f6ec66490335305f8c074196940b48bd7",
+        "sha256": "a1143481b4f6d24354cf5e28bfcdb5fa5706fcc162969601098241c124bad0fa"
+      },
+      "authority-matrix.md": {
+        "bytes": 10947,
+        "delta_classes": [
+          "STATUS_RECONCILIATION",
+          "DEPENDENCY_BINDING",
+          "FORWARD_PROVENANCE_CLARIFICATION"
+        ],
+        "dependencies": [
+          "authority-dimensions.md",
+          "cortex-contract.md"
+        ],
+        "path": "candidate/authority-matrix.md",
+        "predecessor_sha256": "69d72c0c9642b8c2539e33d6401bb3a6b5fb3c25f7380db567ff08a57d1b39f4",
+        "sha256": "1ceaf312b74500548654c7a7244ebc9222c93cf2e9bdfb2522669ad7359cb98e"
+      },
+      "cortex-contract.md": {
+        "bytes": 14694,
+        "delta_classes": [
+          "STATUS_RECONCILIATION",
+          "DEPENDENCY_BINDING",
+          "FORWARD_PROVENANCE_CLARIFICATION"
+        ],
+        "dependencies": [
+          "semantic-language.md",
+          "authority-dimensions.md"
+        ],
+        "path": "candidate/cortex-contract.md",
+        "predecessor_sha256": "80be68cf32e6b0001e25c9364e77e02425c90eff0e1f0baefca2a8f1d3f22cd5",
+        "sha256": "51da5c27fdddf24ef3c822da565b7d8e3cec9d6a7df0a8d864e35422b79d3e1a"
+      },
+      "semantic-language.md": {
+        "bytes": 12377,
+        "delta_classes": [
+          "STATUS_RECONCILIATION",
+          "DEPENDENCY_BINDING",
+          "FORWARD_PROVENANCE_CLARIFICATION"
+        ],
+        "dependencies": [],
+        "path": "candidate/semantic-language.md",
+        "predecessor_sha256": "896b5f42ec658046e664ef2c1e0130bf7a5d4866fae8cf64446bc2d2eb2804fa",
+        "sha256": "33c438c541f02c97d9e9eab205610f52bc56fe226dbfd2345776c498a630d7d3"
+      }
+    }
+  },
+  "procedure": {
+    "document_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-reconciliation-procedure-accepted-20261004T062855Z\\accepted-procedure.md",
+    "sha256": "3f6f9393be17bcd448fdebc1e65f4195b700036cdb200d5f435fd90f6f558992",
+    "acceptance_record_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-reconciliation-procedure-accepted-20261004T062855Z\\acceptance.json",
+    "acceptance_record_sha256": "e813b8242f84fc0b6c6bb4cbf08ee8d0794c703f512c8bb8ad18d0f8aa42eac0",
+    "designated_procedural_authority": "Alexander Gudde"
+  },
+  "review_references": [
+    {
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-proposal-v1.2\\LYRA-SOURCE-REVIEW-DISPOSITION.json",
+      "sha256": "c4f56ae10b1810161fb295afbe9eef703cdf39b2cfe90579af6d3c976916785c",
+      "scope": "SOURCE_REVIEW_ONLY",
+      "disposition": "READY_FOR_SEPARATE_ATOMIC_FORWARD_BASELINE_ADOPTION_DECISION"
+    }
+  ],
+  "decision": {
+    "acceptance_response_exact": "I did not know what to do. tbh, i thought you wanted me to go merge on git which i did. I accept forward Baseline v1.2, catalog SHA-256 421....eb3 and all four selected artifacts atomically, under the accepted forward procedure.",
+    "acceptance_source_reference": {
+      "surface": "user response in this Codex conversation",
+      "thread_id": "01a102bd-7c86-77c2-9b3e-b99133e7f8f2",
+      "question_item_id": "[\"request_user_input_async\",\"call_EAydklCVwqi1qIZf0PxzIMcj\",0]",
+      "question_catalog_sha256": "421b5d5bab28a32afe557e17970a14beb75a99eddc9f536a75bb1bcda9d26eb3"
+    },
+    "digest_reference_resolution": "The abbreviated digest in the response identifies the sole full-digest v1.2 catalog explicitly named in the replied-to question. Exact response retained without expansion or alteration.",
+    "actor": "Alexander Gudde",
+    "actor_identity_evidence": "Direct user response in the ongoing Alexander Gudde session to the exact-artifact acceptance question, under the previously accepted procedure; no independent legal identity authentication claimed.",
+    "observed_at_utc": "2026-10-04T19:56:46Z",
+    "exact_event_at_utc": null,
+    "exact_event_timestamp_verified": false,
+    "effective_not_before_utc": "2026-10-04T19:56:46Z",
+    "effectiveness_rule": "Prospective only, and no earlier than verified external retention; actual publication observation is recorded separately.",
+    "accepted_scope": "Complete Forward Baseline v1.2 catalog and all four selected artifacts atomically as forward governing interpretive foundation under the accepted procedure; exclusions remain unchanged.",
+    "decision_disposition": "ACCEPT_ALL_FOUR_ATOMICALLY"
+  },
+  "predecessor_linkage": {
+    "procedure_acceptance_record_sha256": "e813b8242f84fc0b6c6bb4cbf08ee8d0794c703f512c8bb8ad18d0f8aa42eac0",
+    "catalog_bound_input_count": 96,
+    "selected_predecessor_digests": "Included individually in selected_candidate_artifacts; inputs remain reference evidence, not individually adopted",
+    "conflict_reconciliation_evidence": "Exact catalog and review disposition verified; selected predecessor identities preserved. No historical closure is inferred or created."
+  },
+  "external_retention": {
+    "required_before_operative_claim": true,
+    "location": null,
+    "record_sha256": null,
+    "retention_evidence": null,
+    "independent_retrieval_verified_at_utc": null,
+    "verified_retrieved_sha256": null,
+    "custody_limits": null
+  },
+  "unresolved_holds": [
+    "verified governing baseline adoption",
+    "M03 Route-B adoption",
+    "M04/S1 qualification authority",
+    "M09/S3 authorization",
+    "independent issuer/verifier/root enrollment and fresh effect-boundary enforcement",
+    "M14 receipt and durable recording contract",
+    "five-fin readiness profile reconciliation",
+    "three independent S2 canonical adjudications and acceptance rule",
+    "runtime-machine implementation and adversarial qualification",
+    "staging containment/SSH prerequisites",
+    "production deployment and canonical admission"
+  ],
+  "excluded_effects": [
+    "historical closure",
+    "machine-amendment adoption",
+    "cryptographic profile selection",
+    "runtime grants",
+    "issuer enrollment",
+    "numbered gate closure",
+    "canonical admission",
+    "deployment approval",
+    "production readiness"
+  ],
+  "record_integrity": {
+    "final_exact_bytes_sha256": null,
+    "publication_evidence": null,
+    "append_only_project_record_evidence": null,
+    "immutable_storage_claim": false
+  }
+}
