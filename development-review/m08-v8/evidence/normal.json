@@ -1,0 +1,1515 @@
+{
+  "command": [
+    "C:\\Users\\alexg\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-I",
+    "-B",
+    "C:\\Users\\alexg\\AnarchI-Brain-Development\\successor-review-v8-m08-binding-r2\\run_qualification.py",
+    "--child"
+  ],
+  "exit_code": 0,
+  "result": {
+    "abort_component_combinations": 150,
+    "atlas_component_combinations": 720,
+    "authority_resolved": false,
+    "baseline": {
+      "cases": 13,
+      "machines": 19,
+      "variants": 72
+    },
+    "expected_reference_substitution_rejected_at": "EXPECTED_REFERENCE_EXTERNAL_PIN (reference custody, separate from semantic mutants)",
+    "historical_gap_reproductions": [
+      {
+        "historical_checker_accepted": true,
+        "incorrect_classification": "SATISFIED",
+        "scope": "STATIC_CHECKER_GAP_REPRODUCED_NOT_RUNTIME",
+        "variant": "T01-V06"
+      },
+      {
+        "historical_checker_accepted": true,
+        "incorrect_classification": "SATISFIED",
+        "scope": "STATIC_CHECKER_GAP_REPRODUCED_NOT_RUNTIME",
+        "variant": "T01-V07"
+      }
+    ],
+    "m08_joint_routes_checked": 720,
+    "optimized": 0,
+    "positive_controls": [
+      {
+        "abort_allowed": true,
+        "classification": "SATISFIED",
+        "findings": {
+          "binding": "MATCH",
+          "occurrence": "NOT_OCCURRED",
+          "proof": "FAIL"
+        }
+      },
+      {
+        "classification": "SATISFIED",
+        "findings": {
+          "binding": "MATCH",
+          "comparability": "MATCH",
+          "freshness": "CURRENT",
+          "relation": "EQUAL",
+          "scope": "SATISFIED"
+        },
+        "ordinary_access": "ALLOWED"
+      }
+    ],
+    "production_ready": false,
+    "runtime_machine_transitions": 0,
+    "scope": "EXECUTED_PURE_REFERENCE_AND_STATIC_PROPOSAL_CHECKS_NOT_MACHINE_RUNTIME_OR_AUTHORITY",
+    "semantic_mutations": [
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "proposal_scope_without_freshness",
+        "rejected_at": "M08_FRESH_SCOPE",
+        "test_local_binding": {
+          "bytes": 589319,
+          "sha256": "6be3aa6cb73de16a5c1b2a27df41ee0412d809d0c54b33f48577ae2210b36fa4"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "missing_m08_route",
+        "rejected_at": "TRANSITION_INVENTORY:M08",
+        "test_local_binding": {
+          "bytes": 587856,
+          "sha256": "3e5a0a0756530c24f3f7ab0110d4b547b069f3f8bd9a5b3bb71679e59d8d3b0a"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "missing_m16_route",
+        "rejected_at": "TRANSITION_INVENTORY:M16",
+        "test_local_binding": {
+          "bytes": 588014,
+          "sha256": "a7d6c7531cb83ab62657bb9159601910c10db2b63d9a0eedfd1713b3802dd4d7"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "invalid_gate_outcome",
+        "rejected_at": "GATE_OUTCOME_ENUM",
+        "test_local_binding": {
+          "bytes": 589337,
+          "sha256": "985d0b54cf9362ab0af763c3fc09c196f7cb31d57ff7cb944a578b61025de4ed"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "substituted_source_state",
+        "rejected_at": "TRANSITION_INVENTORY:M16",
+        "test_local_binding": {
+          "bytes": 589341,
+          "sha256": "2540c756125ee17fd89f4704c810672cdd8edc3aace2bb54610e60d8b19faa6c"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "legacy_resource_oracle_omission",
+        "rejected_at": "VARIANT_ORACLE_OMISSION",
+        "test_local_binding": {
+          "bytes": 589200,
+          "sha256": "13e931f142aa0ec35b8d578269dda9bfb1d7563938a10f5658e2de664b6a51ea"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "legacy_consume_hides_validity",
+        "rejected_at": "M12_VALIDITY_REPLACED_BY_USE",
+        "test_local_binding": {
+          "bytes": 589339,
+          "sha256": "f298d992fe20bd66d623a410e11c44e306cd5c5c481f1904b40e80521b6cce28"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "legacy_delegation_hides_validity",
+        "rejected_at": "M12_VALIDITY_REPLACED_BY_USE",
+        "test_local_binding": {
+          "bytes": 589342,
+          "sha256": "c5be6c04c3179c61c65400c044f950c223c0dba8d50891edf0082d51244150cf"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "legacy_unknown_lease_access",
+        "rejected_at": "M10_UNKNOWN_LEASE_ACCESS",
+        "test_local_binding": {
+          "bytes": 589338,
+          "sha256": "82da9c1d78319dbb93ab255cd54e9b605220e399f074c7b9414e148cf7dc8d1e"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "legacy_closure_reopening_grant",
+        "rejected_at": "M18_CLOSURE_REQUIRES_REOPENING",
+        "test_local_binding": {
+          "bytes": 589276,
+          "sha256": "8df94582c56bd275ddb90846c4f835b6e08861f418a616a841f7104db7b7b0e7"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "legacy_closure_target",
+        "rejected_at": "M18_CLOSURE_DOES_NOT_CLOSE",
+        "test_local_binding": {
+          "bytes": 589338,
+          "sha256": "5fb249a0de8ba56a0522503a1b8b54c447e84893838285dbca1b1c8da161c80c"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "abort_target_commits",
+        "rejected_at": "TRANSITION_TARGET:M16",
+        "test_local_binding": {
+          "bytes": 589342,
+          "sha256": "9fc4c16b10a33d358dcc68c7687814a6e3b8fe787c584204a4b9fdd770c89018"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "drift_target_reopens",
+        "rejected_at": "TRANSITION_TARGET:M08",
+        "test_local_binding": {
+          "bytes": 589342,
+          "sha256": "215158c8d742dfd0718c5c0c5bd5aec5c8b047488e3f96973270d1cb8be4e2b6"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "ack_history_demoted",
+        "rejected_at": "T04_ACK_HISTORY",
+        "test_local_binding": {
+          "bytes": 589312,
+          "sha256": "8b6dd801525ec126f1ac8ba68caf5a55de2ae9fd31f42a8eabbc32e58c48acaa"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "unauthorized_ack_history_demoted",
+        "rejected_at": "T04_ACK_HISTORY",
+        "test_local_binding": {
+          "bytes": 589312,
+          "sha256": "e3cd1875e956e000bcabf9f38f77f78741399723017fd2da407c0f886b63fd27"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "precommit_ack_invented",
+        "rejected_at": "T04_PREMATURE_ACK",
+        "test_local_binding": {
+          "bytes": 589354,
+          "sha256": "25c5ac3c8f364efc0b1601fba477a0c81ee016bde174f1f5509dc9de93460acc"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "consumed_revocation_classification",
+        "rejected_at": "CLASSIFICATION:T01-V06",
+        "test_local_binding": {
+          "bytes": 589342,
+          "sha256": "b90e7eb0ac2cbb8af0d8b539821eee3de05870cd6a1a180074bf9453dbffc04d"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "parent_revocation_classification",
+        "rejected_at": "CLASSIFICATION:T01-V07",
+        "test_local_binding": {
+          "bytes": 589342,
+          "sha256": "be25a23fb89f893fb756e8236f0d99db868c8e89f2f3e97d949217b468cfb18a"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "stale_scope_reopens_access",
+        "rejected_at": "M08_STALE_ACCESS",
+        "test_local_binding": {
+          "bytes": 589370,
+          "sha256": "daf85b2641078b392b6f6b24030b7f7f515b210666a9c5f2ca84b575152ff201"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "receipt_scope_grants_data",
+        "rejected_at": "T04_DATA_SCOPE_ESCALATION",
+        "test_local_binding": {
+          "bytes": 589341,
+          "sha256": "3e5c2368545b8a7e9f560b1af5f692de290dac5c219b3f87245e49e595deabfb"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "expired_receipt_disclosure",
+        "rejected_at": "T04_UNAUTHORIZED_DISCLOSURE",
+        "test_local_binding": {
+          "bytes": 589361,
+          "sha256": "e0479954b66a9e7df150e8642c530c1859e8217b64c3a0b44f13357235326e0f"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_receipt_disclosure",
+        "rejected_at": "T04_UNAUTHORIZED_DISCLOSURE",
+        "test_local_binding": {
+          "bytes": 589361,
+          "sha256": "410c29c6163a9990396a7d7546b2f4b85141fe0dd626e9590853d1441a8dbdef"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "revoked_receipt_disclosure",
+        "rejected_at": "T04_UNAUTHORIZED_DISCLOSURE",
+        "test_local_binding": {
+          "bytes": 589361,
+          "sha256": "be3c55ae3609bf4c9f6f0021bcb999b5c57faa8824c78ad73f658e62dbab7602"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "local_commit_demoted",
+        "rejected_at": "T04_COMMIT_DEMOTION",
+        "test_local_binding": {
+          "bytes": 589323,
+          "sha256": "609a69bb8890c734db27949b997ac692f9cb23ebbf0592f32c562ef6991d3579"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "missing_variant",
+        "rejected_at": "VARIANT_COVERAGE",
+        "test_local_binding": {
+          "bytes": 588706,
+          "sha256": "1e853c0d861feb56591b8ce1744ea0be6dc8ab40c716f62d3da36244867631ba"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_variant",
+        "rejected_at": "DUPLICATE_VARIANT",
+        "test_local_binding": {
+          "bytes": 590191,
+          "sha256": "54a7d15bfed11c445ea663c3d43f885dbe96a72c7230718fe2a14caf5f10d236"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "abort_composite_bypassed",
+        "rejected_at": "M16_COMPOSITE_BYPASS",
+        "test_local_binding": {
+          "bytes": 589302,
+          "sha256": "6c683dd82123ee40c0eb6e6aa11c67d08b85d5538d01641d76cb917fa9d59505"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "composite_binding_definition_omitted",
+        "rejected_at": "COMPOSITE_DEFINITION:atlas_root_comparison",
+        "test_local_binding": {
+          "bytes": 589055,
+          "sha256": "dd0da3ef12f2d9cb3e2232d08a2832f774baab8feab4df421a70372e335cdb55"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "freshness_predicate_omitted",
+        "rejected_at": "M08_FRESHNESS_OMITTED",
+        "test_local_binding": {
+          "bytes": 589302,
+          "sha256": "2fda1a6f8d09936cb912339086a8a567377c45967c9e27d3abfcb0fad319da7a"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M10_0",
+        "rejected_at": "TRANSITION_INVENTORY:M10",
+        "test_local_binding": {
+          "bytes": 587834,
+          "sha256": "ed4c76484776fa2fae218e56fc50f5275db82695c7a5254e0bdcfea0afb4cf9b"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M10_1",
+        "rejected_at": "TRANSITION_INVENTORY:M10",
+        "test_local_binding": {
+          "bytes": 588144,
+          "sha256": "bc20ab53118020406b823c37c6b2404812065ee48f5ab7063f4bc2c5000bfdc5"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M10_2",
+        "rejected_at": "TRANSITION_INVENTORY:M10",
+        "test_local_binding": {
+          "bytes": 588138,
+          "sha256": "8e0d715657d43d44927fa04c01a724b11ac3a1c07a32a682de80a7f4ac8e0c74"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M10_3",
+        "rejected_at": "TRANSITION_INVENTORY:M10",
+        "test_local_binding": {
+          "bytes": 588027,
+          "sha256": "8051ad7e0395cce7acf37faf2ac290aef2983c28edd91debc04f845f22caf18e"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M10_4",
+        "rejected_at": "TRANSITION_INVENTORY:M10",
+        "test_local_binding": {
+          "bytes": 588061,
+          "sha256": "52a665d0093a032fb0f04f4cf4a1ada7405cce65a52f436fe9eee9f3a2d60b2f"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M10_5",
+        "rejected_at": "TRANSITION_INVENTORY:M10",
+        "test_local_binding": {
+          "bytes": 588055,
+          "sha256": "57e491687a0d0463f8175a0072081bf8501f502dd0a88ac856ab449aba3a4173"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M10_6",
+        "rejected_at": "TRANSITION_INVENTORY:M10",
+        "test_local_binding": {
+          "bytes": 588023,
+          "sha256": "cc6d437bc3de83c84a5d8ce2f1a7a3896618b1076fdff10e2d935c1cf9e16689"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M10_7",
+        "rejected_at": "TRANSITION_INVENTORY:M10",
+        "test_local_binding": {
+          "bytes": 588069,
+          "sha256": "a20e5c36d6735f6b6bf7b2c0e39f2351ad494c6831e8bc8b758c4b3d0c9f9465"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M10_8",
+        "rejected_at": "TRANSITION_INVENTORY:M10",
+        "test_local_binding": {
+          "bytes": 588063,
+          "sha256": "9f1812b9427366ef9969faa1684b12391e116a827abbe6deb65659d803f39455"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M10_9",
+        "rejected_at": "TRANSITION_INVENTORY:M10",
+        "test_local_binding": {
+          "bytes": 587823,
+          "sha256": "4f283c53b6afb68e3e6571b93101aa59e948070bb784e106b71665a3dcc9d9b0"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M10_10",
+        "rejected_at": "TRANSITION_INVENTORY:M10",
+        "test_local_binding": {
+          "bytes": 588065,
+          "sha256": "64c503c750c5a1d5c4829f3e6d512feb65f5b850c5da39eb4772ecae46a0c42d"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M10_11",
+        "rejected_at": "TRANSITION_INVENTORY:M10",
+        "test_local_binding": {
+          "bytes": 588059,
+          "sha256": "23d89137c3049e02db74df54abf0594f85a3c4314d07eb687dbb09a3445bfbad"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_0",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 587818,
+          "sha256": "cf697c04df27d32beca239dcdf56babe64399509704ca3e5773994988b6336bd"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_1",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 588130,
+          "sha256": "da827b33faa4520b2b32edeb3162e07092ee0920db7360b6490dd751dbfee7f7"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_2",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 588124,
+          "sha256": "3516f2b528df26c3c0c64f15a2a42d37223c296d4e351761de9eadc9c690f680"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_3",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 588104,
+          "sha256": "9029d43ed1c6bb6e1d2b95eea1d9c90c9699e5692b8a5debc82c1ba7709a4270"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_4",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 588168,
+          "sha256": "2569b6176c45a41ce2935b28839f393f711a1542e0a3e61e35a87dddb0ca88c6"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_5",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 588162,
+          "sha256": "2361ab63b6aaf47668dac5a0699a5e91bc379fe14061d0066c293b8e4a4de20a"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_6",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 588104,
+          "sha256": "e667669f9f2348dc453db1d3cda2dd5d4de4840bbe5f137a83b7c27ccc3b89bc"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_7",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 588168,
+          "sha256": "579dfae04f9b198cc15386b41191cf88327fcc8f8bc789f3cda7a5a1fa3d1588"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_8",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 588162,
+          "sha256": "53246fc3b986e90981fd23d48d1f877a348b6224030824a14581c931189583c1"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_9",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 587870,
+          "sha256": "152d45a9b7e458db8bad45a0988bbdf8380b27a4e09f05f2b97106ded5c7bc82"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_10",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 588148,
+          "sha256": "977479c88b340460c1bf08f0f64a5af908edefc2cce3bd930735f4060b2fa637"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_11",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 588142,
+          "sha256": "578955aab286d14d7cb78826966f18e26314d15744cfc272b3125035e32c2908"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_12",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 587518,
+          "sha256": "1257a99f6f6ddda7fee73f1aa60b6b268e974dc0b6416bcb5ca84ade1e3a199a"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_13",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 587879,
+          "sha256": "58ce1bb1fb9905d14c5a99437c56b225a56dca1db74d08d00a4909e375698743"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_14",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 587873,
+          "sha256": "d99b449a5c9c3df5597aeadee3107f22159065e2ee3ee5716bf1ef45a0e1a161"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_15",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 587542,
+          "sha256": "bf6f358cd2ade80544eaab6553f42449ba1852790a59077e45e44502bd497284"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_16",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 587887,
+          "sha256": "96f02a3e0290cafbc7b23f097f98184df544f6afaf78e5d1f755ee286625fd3c"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_17",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 587881,
+          "sha256": "d362003df71bb13020b35b6f4922323f87d5b06398d197e56ca518c34ec180c6"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_18",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 587880,
+          "sha256": "64757befa9c78a96d3f7c4df45960c7277c254ef3d10e573bbdcfaf97645de99"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_19",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 588154,
+          "sha256": "edacd157a042417561acb8ac7e0fc1ea00b17c919e6546f859d85f1abf6ba88a"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_20",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 588148,
+          "sha256": "d5213d7128b53bf09f8f0644533ec4f3a7f8d5e575c19fde88c78a109efdded9"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_21",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 587812,
+          "sha256": "7779717cb8f8bd75d6da1df838b6328eaec2647e1aeb25e0db55539854eb8097"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_22",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 588132,
+          "sha256": "cded9ed34e9aeb5d57d176cd75f141bddd5b4d9f9ad29656cef68f8cf870d37f"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M12_23",
+        "rejected_at": "TRANSITION_INVENTORY:M12",
+        "test_local_binding": {
+          "bytes": 588126,
+          "sha256": "75c5666cc17c7be945255f22273859c95aad44a537abbe12e2e3cd8bd219bb21"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M18_0",
+        "rejected_at": "TRANSITION_INVENTORY:M18",
+        "test_local_binding": {
+          "bytes": 587772,
+          "sha256": "947d3921ad7c593b279dd51c960e5653026641c1f676af3103e3130e1bb02d24"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M18_1",
+        "rejected_at": "TRANSITION_INVENTORY:M18",
+        "test_local_binding": {
+          "bytes": 588124,
+          "sha256": "c1d00b52d86f5fb0561f4f076e26d5eab994c0f58869192a0254f1016f9b236a"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M18_2",
+        "rejected_at": "TRANSITION_INVENTORY:M18",
+        "test_local_binding": {
+          "bytes": 588118,
+          "sha256": "45bd694a4ced54f711355f8b550ebc235701e58c96c26b668b984e81b531837c"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M18_3",
+        "rejected_at": "TRANSITION_INVENTORY:M18",
+        "test_local_binding": {
+          "bytes": 587833,
+          "sha256": "728b8d592e8abfb98753c0290db328976e43feac22acfa1f10621af4d9aa3fb4"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M18_4",
+        "rejected_at": "TRANSITION_INVENTORY:M18",
+        "test_local_binding": {
+          "bytes": 588122,
+          "sha256": "b430d356100aa56fbbad192614a10630ae57b6806365ff764badc3be90232894"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M18_5",
+        "rejected_at": "TRANSITION_INVENTORY:M18",
+        "test_local_binding": {
+          "bytes": 588116,
+          "sha256": "3d4f89b85e75f97f0f6f1825569cbc2b61b19900bcd10e6a6cdfd252dc241d38"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M18_6",
+        "rejected_at": "TRANSITION_INVENTORY:M18",
+        "test_local_binding": {
+          "bytes": 587897,
+          "sha256": "a372872b179f32af627a4c75080db4e0ba5dcdbd7ee40c934877094cf0b30155"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M18_7",
+        "rejected_at": "TRANSITION_INVENTORY:M18",
+        "test_local_binding": {
+          "bytes": 587959,
+          "sha256": "e5c12797f2467cf7dd346a979bb04d754b5dbcfcba5e0f07ae6c7cfc81c56e95"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M18_8",
+        "rejected_at": "TRANSITION_INVENTORY:M18",
+        "test_local_binding": {
+          "bytes": 587953,
+          "sha256": "e344e7f3b2d6f1ecff77c51c19b5603642259d2263d4569ec2ad08afed9070ce"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M18_9",
+        "rejected_at": "TRANSITION_INVENTORY:M18",
+        "test_local_binding": {
+          "bytes": 587913,
+          "sha256": "9a504696d1691f3a55052ac7e5012a11ab318acff3a3f5d42e03ca64acec55c0"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M18_10",
+        "rejected_at": "TRANSITION_INVENTORY:M18",
+        "test_local_binding": {
+          "bytes": 587975,
+          "sha256": "2772c0d95905ca2d04b943acaf9df88879a8c9bc33274629a53a0e25b88fddfc"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M18_11",
+        "rejected_at": "TRANSITION_INVENTORY:M18",
+        "test_local_binding": {
+          "bytes": 587969,
+          "sha256": "9f811dd8c80d71d394706f1d34622eec949f8ba0f92509a6cddb5c1bdca2afa8"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M18_12",
+        "rejected_at": "TRANSITION_INVENTORY:M18",
+        "test_local_binding": {
+          "bytes": 587900,
+          "sha256": "4473c527af5e60719f2cf81e5b214254f5eaa06698e9f8952624436e3b592dae"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M18_13",
+        "rejected_at": "TRANSITION_INVENTORY:M18",
+        "test_local_binding": {
+          "bytes": 587962,
+          "sha256": "19d97629a0656f19fd6cdd3168d49810f8964ed0d41b3c2f8f2f348339f8d0fa"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M18_14",
+        "rejected_at": "TRANSITION_INVENTORY:M18",
+        "test_local_binding": {
+          "bytes": 587956,
+          "sha256": "6f8298555515bb383af306c65fd6f23789223525038fb3aa2da34cd53131772b"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M08_denial_binding_12_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589291,
+          "sha256": "0ca721eb954dfe8d80d76f62aa24dec9ed95d03e70df4d01e133a3600f991449"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M08_denial_binding_12_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589302,
+          "sha256": "ea37c4de6792ffc2c9372fe982b04fe5e304b711d0150ac670fd32670407329d"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_M08_denial_binding_12_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589333,
+          "sha256": "67fd136ebe8e870be8a4f2da3dec5c677df3cbc6d89e120661f28e756cca910b"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "contradictory_M08_denial_binding_12_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589382,
+          "sha256": "364f86e1edd79145b6f5a0ae6622866131d93ab9565c21945497b63ab188ce1f"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_M08_denial_binding_12_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589389,
+          "sha256": "80d0a3d1cbab557df4e9be0c1f15b86771d48516fca1551d2dc0022a5eb2e724"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_M08_denial_binding_12_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589338,
+          "sha256": "a58e7f7669ff68e0b5158d785a01ad468a3618c18aa3435396465639bd47f731"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "contradictory_M08_denial_binding_12_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589376,
+          "sha256": "9abf3bbadd17fa138d56883f92c5960a0e481c477834675bcde26ade455919ce"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_M08_denial_binding_12_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589378,
+          "sha256": "4d0f7d5b8f336f507787ea680e3c613b908a46bdbae282a4dd9f211914e57621"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "substitution_M08_denial_binding_12",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589230,
+          "sha256": "0e7a639138983bf3cd570a53b6a7cdfb86f20ba42e2992c0473505f3a60f569b"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M08_denial_binding_13_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589291,
+          "sha256": "41ba656ea40c85fda896e6e625050a7d2eda078ff13670ce8e4c7319e9df6895"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M08_denial_binding_13_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589304,
+          "sha256": "204b3382c6192a749d111529dd9d64c9d60a32c12d4cd0312d66c7bb9c552acd"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_M08_denial_binding_13_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589333,
+          "sha256": "1d301162f2c6ca25322513f90c3935bf07a3cfb44bfcfd042020dbf1cd23470e"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "contradictory_M08_denial_binding_13_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589382,
+          "sha256": "2fb62585f2df893770ba834496860a263b2b579a4e33b28f48a72fcb830369ec"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_M08_denial_binding_13_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589389,
+          "sha256": "ae8e8272db765978cdac1a5fd4ac78cb30d4e6d22265839fc01df43e9702c72e"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_M08_denial_binding_13_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589340,
+          "sha256": "b17c4a85737e8faf3eaa402ee1095f29cf0e37bdb6a6b63f3b8adb42bc7d844f"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "contradictory_M08_denial_binding_13_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589376,
+          "sha256": "ba2f5c7eba05a4e98b5eb72804f3f7d07b2a836344c76242df5468475e0177f1"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_M08_denial_binding_13_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589376,
+          "sha256": "7acc269c08d9caeca3fa314e8617fd8484303df832ae58a3b682f41ef5a1eed3"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "substitution_M08_denial_binding_13",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589270,
+          "sha256": "289b3d64311dfce489f94c03cc8a95b00a497884b7510805065a543924fd0083"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M08_denial_binding_14_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589291,
+          "sha256": "535ba56e33604265dd4ebc390b0317fd33f19c9931dc2aa27f2066d1dfc1e2ce"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M08_denial_binding_14_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589301,
+          "sha256": "c24727afca325cee69096fa4b01e2c3619c0fb983022ee6dce858bc373d5dec0"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_M08_denial_binding_14_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589333,
+          "sha256": "2502956b1190456033321f98f8867fcc6c228186983899ed196aa6d485f39fbd"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "contradictory_M08_denial_binding_14_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589382,
+          "sha256": "0a764667b6487bc23b440568e0340cd60df278eb7f2e739fd844c1c7daa860a1"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_M08_denial_binding_14_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589389,
+          "sha256": "c69f8d1bcf28c4cb9216667321015fbcbd19fc807b3fd95e0959cf79a7578c45"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_M08_denial_binding_14_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589337,
+          "sha256": "7b59dc04a3dcf816ecd45f23e05e4b617a8282bec2f051790ff22908c097da62"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "contradictory_M08_denial_binding_14_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589376,
+          "sha256": "081e213b4ffa1084b8ba6676e685bc0e1a4d80c321c052ce4653be99576ea16b"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_M08_denial_binding_14_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589379,
+          "sha256": "cc5ca61d10dfbd80642c1bcb572e38618d81c7844076a5b7b95377a5dce908f7"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "substitution_M08_denial_binding_14",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589267,
+          "sha256": "a2693e3ce67d85a34bc2de70eaf11c5e7505e01e690b3d909562ab3c1d010157"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M08_denial_binding_15_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589284,
+          "sha256": "2aa55c046a7716a52c03edecfc33028542e08fb613db03f5fce26afbcb1b2a23"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M08_denial_binding_15_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589302,
+          "sha256": "c9ec5415851afb751475bc2279b5806c215e25b4e0c692253e6c1ca505ffef3a"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_M08_denial_binding_15_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589326,
+          "sha256": "a63107c7aee697401ae469b27bb6b4908939cf9b5376437239eee2eb6b4ad8ae"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "contradictory_M08_denial_binding_15_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589382,
+          "sha256": "d1dce97f5172fb17e0ca495b82fa27a050dc33b3144ab58028c9c19c63045fa9"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_M08_denial_binding_15_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589396,
+          "sha256": "c604715beebb8776f0063100388308f4492b6e518e0b0c5d7909a5b3a48b23e9"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_M08_denial_binding_15_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589338,
+          "sha256": "a10ca0f918ebb66431987630fde8601b43ae46709d43f645fb8566b752b9aacc"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "contradictory_M08_denial_binding_15_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589376,
+          "sha256": "0cc610c8e0af1892a891030c741a5f9832b21aa1b2a73967e540d83e8d1eb153"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_M08_denial_binding_15_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589378,
+          "sha256": "8befa799d4d8d9bdfa48ac33cbab85225a850517e9c5c262f0d9bdfb21986d15"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "substitution_M08_denial_binding_15",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589261,
+          "sha256": "7290a33d1ed961344820a32f165432fd5d3acc8a509b1579aa34f3f6c7cb2fe8"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M08_denial_binding_16_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589284,
+          "sha256": "e50b9106eb21f0cfb6698cdb9cbe08139bd590972ae9addd02fc468d3f8e1bf4"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M08_denial_binding_16_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589304,
+          "sha256": "3af1d31c6f7fae0c0b3e4bc9eadc27be4e780c1a1aaead5ee1670d670d59021b"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_M08_denial_binding_16_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589326,
+          "sha256": "7b6dde6ba903d148511113705148d8e104b6b22e9f990b82c8708734e19a62e6"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "contradictory_M08_denial_binding_16_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589382,
+          "sha256": "dc197856b237f543d752595a573a3b7922a2baf7ab1e5ae781b3d96e23d806b5"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_M08_denial_binding_16_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589396,
+          "sha256": "3fe7fa1c17402fedbb1670d3ce97fee8d97c6dd1cdd6d0d1674951247ed01c0e"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_M08_denial_binding_16_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589340,
+          "sha256": "0233099b6f909c0f0021bb38cf4276488cf9fa909f5cf079b03b414f02834fb2"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "contradictory_M08_denial_binding_16_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589376,
+          "sha256": "1364cd5ec71e9a2a967a930f7cd29f55d5b53faa2fa2fd6565f8ca4ca8e6df77"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_M08_denial_binding_16_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589376,
+          "sha256": "d768d0c8c5c1d995e8185efcfe603de22a72c9f029f182d26abfc325e4d6cedd"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "substitution_M08_denial_binding_16",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589263,
+          "sha256": "e03a5746ff4369ff5a3c0b8da2920947c1a75c4d38cdd3877adfb6f645c5262f"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M08_denial_binding_17_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589284,
+          "sha256": "b7974b887bd9e409b8b59dff3663cb42a5bf8509d55a21716e8bdb3d245c0252"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M08_denial_binding_17_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589301,
+          "sha256": "59ed5a011474180fef70b02d262f95cbe639918b0174339ad23cdc34d1be272c"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_M08_denial_binding_17_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589326,
+          "sha256": "fa97f73a99395d235ca0197c4b7dfacbb9276aedba8c5102f56b9043ddf63203"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "contradictory_M08_denial_binding_17_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589382,
+          "sha256": "951bd58255cf3abf0943d9ffcfbfa63416c85a16fb4cfad6a5f9f06c348c0a26"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_M08_denial_binding_17_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589396,
+          "sha256": "475277368107b807962f00b64943945fab6cf9ea03d51b51899360f99d789ae1"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_M08_denial_binding_17_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589337,
+          "sha256": "0816662201691e813af7369d3e6f888957150e553781ae3563b31e57272613a0"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "contradictory_M08_denial_binding_17_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589376,
+          "sha256": "d7b3fe0e051f9949194886561ae6104a5aae7b08e3134c1e571e649ba6e73ae4"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_M08_denial_binding_17_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589379,
+          "sha256": "ec3782edf802b07190eda25b744597b5caf346e4471d678e2804222b7ea5b8b0"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "substitution_M08_denial_binding_17",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589260,
+          "sha256": "72ebe1ec01b4ba696424647e87b77dbbca0fa03a04c36e8a949e20a4af064536"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M08_denial_binding_18_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589279,
+          "sha256": "f2bdec2e0edcd56c90e9af9736d7ca81a18ffd93ba7c9268febd0ffec1de6753"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M08_denial_binding_18_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589302,
+          "sha256": "daa6448b6db4023ff378008a64cdcf74a208611f439204838065b765ea408068"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_M08_denial_binding_18_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589321,
+          "sha256": "1643c879fd35702d46b98c806b4936a936b3f518b8d626a641a4e772bd1652ec"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "contradictory_M08_denial_binding_18_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589382,
+          "sha256": "a842ad76e31903b115bbf5eed2a6160813594ac636e283a4b70db38ae025c461"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_M08_denial_binding_18_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589401,
+          "sha256": "af76d474288ed39df34a5e9839eab2908484dc926e94085060ef2741d093fa35"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_M08_denial_binding_18_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589338,
+          "sha256": "33e9631944b4471cce1706af349594dbd2d09fda3e74de8d08e07199d9353dab"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "contradictory_M08_denial_binding_18_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589376,
+          "sha256": "16997517ced99695a630a10a1427eb1c4d1da21dd5e254973db0866d10ab8335"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_M08_denial_binding_18_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589378,
+          "sha256": "5456b3c988a3305aaa8e322059526273ebe68b1a627c5ada27b2b4f037622bed"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "substitution_M08_denial_binding_18",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589256,
+          "sha256": "ba6bb6de8ccacb43071968ff9a2205754778fa864820d66aa4db83f75e99178f"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M08_denial_binding_19_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589279,
+          "sha256": "c83084458b1f63ac6f22f70f9e1e2e70e10350a342b20a141a0dad49fc76f9ae"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M08_denial_binding_19_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589304,
+          "sha256": "5e6ebb82cf1b0c42731dccb66ed2f577d614456bb9e26eb5640b13476171738a"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_M08_denial_binding_19_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589321,
+          "sha256": "a5528d6924bce80f64b26b7115c89cbbd9d44a7a4d995c521c97663a9dd112fc"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "contradictory_M08_denial_binding_19_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589382,
+          "sha256": "900b802c5b726fdf929b0fc95a8b3d481cc434a92b34c933d243d6523b302d41"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_M08_denial_binding_19_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589401,
+          "sha256": "536a082e780142dbb693076885523052514681594b932f13974b3607064e20f4"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_M08_denial_binding_19_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589340,
+          "sha256": "be05851f7b3d87aa0a6babe987a7a5e3be68f90e16bb20668173cbf29bd39f73"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "contradictory_M08_denial_binding_19_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589376,
+          "sha256": "65d8ce4ba9ebc5ccfd73ed3b3122c53a22c2e61ac997d88f48b03422da12a23e"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_M08_denial_binding_19_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589376,
+          "sha256": "17d7a87f2aaccea6181b77c1899bd45a8ec3c4fcdd7e1fd5ba5466839ecc8ce0"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "substitution_M08_denial_binding_19",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589258,
+          "sha256": "6b0f3e4a3de48779bf26cf57c9ef628be704f7ef9ed79c44c4f5dc29a61a62bd"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M08_denial_binding_20_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589279,
+          "sha256": "317deca2d6fd1aabd35c85345a8b7e22462439c608b5718ef5e8a98d5e4434cd"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "omission_M08_denial_binding_20_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589301,
+          "sha256": "f83d718dc9a77091b2ed33a40d69037a94351856167c46fbc12171daf53d57ef"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_M08_denial_binding_20_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589321,
+          "sha256": "c2419563c7eb531963f5dd27fbff7c0baa7f50f1796c8a1c7f406fd4818756ee"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "contradictory_M08_denial_binding_20_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589382,
+          "sha256": "8a246fb6c9c136cac9828e105e96ba6d23a77c8b361fcf340d5c2bea2fa6d836"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_M08_denial_binding_20_0",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589401,
+          "sha256": "c8f885d0bbff6e140e24d02b10f5aa1635f26f7670ca8711b6f58eab19bd9487"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "wrong_M08_denial_binding_20_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589337,
+          "sha256": "351d044b0b65caabaca1803d7a75eead5a148904a2db6ae957416fa10afb9ae4"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "contradictory_M08_denial_binding_20_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589376,
+          "sha256": "f6c2f4097b4267b4b5c879b0c143959d9d6f0fa616b036caeee0fcd0ba6bb514"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "duplicate_M08_denial_binding_20_1",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589379,
+          "sha256": "3bb711dbb170b5f70bfa1630d87950781cfb9a66b8a94ed2fd38fa63156722c6"
+        }
+      },
+      {
+        "classification_stage": "SEMANTIC_NOT_CUSTODY",
+        "name": "substitution_M08_denial_binding_20",
+        "rejected_at": "M08_DENIAL_ROUTE_BINDING",
+        "test_local_binding": {
+          "bytes": 589255,
+          "sha256": "258751d86b8b93a5b547dbfbe9e1540cee06ffb566033bbfd76666cf368da518"
+        }
+      }
+    ],
+    "source_buffers_compiled": true,
+    "verified_input_files": 65
+  }
+}

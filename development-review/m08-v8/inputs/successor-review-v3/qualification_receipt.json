@@ -1,0 +1,165 @@
+{
+  "receipt_type": "V3_PROPOSAL_AND_INTAKE_MAPPING_CUSTODY_NOT_CANONICAL_AUTHORITY",
+  "created_at": "2026-10-03T19:42:44.090897+00:00",
+  "evidence_root": "C:\\Users\\alexg\\AnarchI-Brain-Development\\implementation-preflight-20261003-133645-d7a416b0",
+  "prior_receipt": "successor-review-v2/qualification_receipt.json",
+  "prior_receipt_sha256": "97baf4fc19556686fe753e3c4600569deeff0a25b1f18cb05d05e09d92c87b1b",
+  "artifacts": {
+    "successor-review-v2/qualification_receipt.json": {
+      "sha256": "97baf4fc19556686fe753e3c4600569deeff0a25b1f18cb05d05e09d92c87b1b",
+      "bytes": 611237
+    },
+    "revise_machine_drafts_v3.py": {
+      "sha256": "d62dd2410684b69b9d2e21e2c7e272157eb4ebcf08db4928cb6befb6d2e5cf45",
+      "bytes": 12008
+    },
+    "revise_adversarial_fixtures_v2.py": {
+      "sha256": "1888241006d3eddd534ec26c0d51983224a7977ff6b1af2e30d190dc7e5c2823",
+      "bytes": 9009
+    },
+    "adversarial_fixtures_v2.json": {
+      "sha256": "183de17d4cc1c2c4d8f29b21b1983a382ce33ceb49f1410f9950ef9dba3d170a",
+      "bytes": 117591
+    },
+    "check_review_proposals_v3.py": {
+      "sha256": "96490bacb675c5b54a616c7d3c6dd0fc39ea39dc3a54f9f695dc83a13e6559c1",
+      "bytes": 4592
+    },
+    "evidence/review-proposals-v3-checks.json": {
+      "sha256": "3c27db8c67306ca175649e0c83b85e83730cd5480d7f879f7b614d62e9de2b6d",
+      "bytes": 946
+    },
+    "build_candidate_review_queue.py": {
+      "sha256": "f7d4c2740cc7bc1d4beb6fb4ebdebc17ad80d2da6db30850bd198ede5072df78",
+      "bytes": 4370
+    },
+    "bind_review_v3.py": {
+      "sha256": "aa06c80387e3510a5949dbb43c06f23f6b278008b54c0a051df8a6d6fef4999e",
+      "bytes": 5412
+    },
+    "specification-drafts-v3/index.json": {
+      "sha256": "1baf13f8ba298f72b09c23f51ab95152789588a9ce7dca49e738d1828df20798",
+      "bytes": 654
+    },
+    "specification-drafts-v3/M01.proposal.json": {
+      "sha256": "7ed0f88bee221cf577bdd92cea1190a8f0d056dddf659d818934860b93818e85",
+      "bytes": 27401
+    },
+    "specification-drafts-v3/M02.proposal.json": {
+      "sha256": "a2b839fe701be6fdc31b044a4af823750a34b6019ddb42675832619438d65cf2",
+      "bytes": 23014
+    },
+    "specification-drafts-v3/M03.proposal.json": {
+      "sha256": "7d4d39d27001723c8740469ef8bbd0d69230f435691e69ead43bd0200ede6ffd",
+      "bytes": 19087
+    },
+    "specification-drafts-v3/M04.proposal.json": {
+      "sha256": "8d6d18fa4fb8b726fe905d3734daf44ad1541afc243251c648777bf58de688a7",
+      "bytes": 18743
+    },
+    "specification-drafts-v3/M05.proposal.json": {
+      "sha256": "a0073caa5a82d497eff5f39b9f9149e03a060cd687e6088cf81d8f334912d475",
+      "bytes": 23624
+    },
+    "specification-drafts-v3/M06.proposal.json": {
+      "sha256": "9b41a58066d6f07d7205e7b3b33c9a8e9587395461c420c7edf8907f19b6c507",
+      "bytes": 31853
+    },
+    "specification-drafts-v3/M07.proposal.json": {
+      "sha256": "7c2a3b8a0a6a37ba12a9583a3fcac5a731e22543f7474ca922f7a1f1a3327ba6",
+      "bytes": 37010
+    },
+    "specification-drafts-v3/M08.proposal.json": {
+      "sha256": "1878e0f4de6010e3a650ceac8adb6d9745734ca7cfdf5afeceadf1895589e8f0",
+      "bytes": 37553
+    },
+    "specification-drafts-v3/M09.proposal.json": {
+      "sha256": "81e620fad556ed2db89793e40d881a9a0317097c16083b0872b9b763a8ae07e1",
+      "bytes": 27550
+    },
+    "specification-drafts-v3/M10.proposal.json": {
+      "sha256": "ec290ed1a87fb606f7b7f3bac57cd896bc5d489298236424ad7122e0b5aed982",
+      "bytes": 28194
+    },
+    "specification-drafts-v3/M11.proposal.json": {
+      "sha256": "5a6a2e3554ffac2530b386b24d227499770b99596f002d07d64e94c9bfd3ddcc",
+      "bytes": 22959
+    },
+    "specification-drafts-v3/M12.proposal.json": {
+      "sha256": "f545e783e70b647cae9e57c1b7bf3213f1faf951cf62f31fccf2109bc9e1af42",
+      "bytes": 48138
+    },
+    "specification-drafts-v3/M13.proposal.json": {
+      "sha256": "f6ec2f65a0db3dd065d8b0e3f826f0813740480908795ab2d39b84b799ba1269",
+      "bytes": 27642
+    },
+    "specification-drafts-v3/M14.proposal.json": {
+      "sha256": "7604566955705c379df77f240d75cff969e9803a91bdd0d16fefeec47882c83c",
+      "bytes": 23988
+    },
+    "specification-drafts-v3/M15.proposal.json": {
+      "sha256": "d339e19e43370e03e70e17249ebc3738274e5fa402084cd1a4263a7c089955ec",
+      "bytes": 23430
+    },
+    "specification-drafts-v3/M16.proposal.json": {
+      "sha256": "5735c1f944547dff51c8f27eaa5bfd32b4c2affa63ddcacea930a8ccdb343dec",
+      "bytes": 33139
+    },
+    "specification-drafts-v3/M17.proposal.json": {
+      "sha256": "549e4d6d20a298eb7c84e3594010e5aa22fe51e57b2d32f6b29d544b939759dd",
+      "bytes": 23652
+    },
+    "specification-drafts-v3/M18.proposal.json": {
+      "sha256": "919998b9a619c8fdb3e16cc4e00c4ee8665bf1c38d0df41c20b4b9c9c51806cf",
+      "bytes": 33903
+    },
+    "specification-drafts-v3/M19.proposal.json": {
+      "sha256": "05e4203a4c042001906fb2d92c9c92ae01e5884ea79b95f98b3fff4ba9086d2b",
+      "bytes": 37187
+    },
+    "epistemaddy-intake-review-v2/candidate_review_queue.jsonl": {
+      "sha256": "c56af11078d0b02d04d0999f8e6d7fb3d1bd5554613abd9a338f8a894577980a",
+      "bytes": 7687402
+    },
+    "epistemaddy-intake-review-v2/review_queue_receipt.json": {
+      "sha256": "8891d8f6bb7b9eca281a9b8ef4950f5746d17f46d190b241a53a93716d1f7678",
+      "bytes": 464
+    },
+    "successor-review-v3/current_state.md": {
+      "sha256": "73842dcdc83c2599c394cb9d4168195dba41e360df721811ccdfc643612e8713",
+      "bytes": 731
+    },
+    "successor-review-v3/findings.md": {
+      "sha256": "4ad860951f7d6112adfd7f2569cf1cb9eda7cc32dbfe258c612377867c07f269",
+      "bytes": 765
+    },
+    "successor-review-v3/integration_contract_plan.md": {
+      "sha256": "9c33b0d704067579673afe9305969fa31d42f36cb4f778289eddb2678322d087",
+      "bytes": 701
+    },
+    "successor-review-v3/next_gate_plan.md": {
+      "sha256": "3dde6464fc3f230b1c4f34d62a123b843e25ca8229383cde33ee77089eef52f4",
+      "bytes": 498
+    },
+    "successor-review-v3/scope_and_authority.md": {
+      "sha256": "6ef2786d0cee1f0ef31d7e09bf47989221ce618e10e8864ca3333c6ba8f395af",
+      "bytes": 441
+    }
+  },
+  "proposal_machines": 19,
+  "fixture_cases": 13,
+  "fixture_variants": 68,
+  "runtime_transitions_executed": 0,
+  "canonical_admissions_performed": 0,
+  "candidate_applied": false,
+  "m01_freeze_ready": false,
+  "production_ready": false,
+  "lyra_release_approval": "NOT_GRANTED",
+  "open_prerequisites": [
+    "governing issuer/verifier and S1/S3 authority",
+    "historical closure/adoption evidence",
+    "adopted exact machine/receipt/semantic contracts",
+    "constitutional exit",
+    "qualified actual storage/fence/recovery runtime"
+  ]
+}

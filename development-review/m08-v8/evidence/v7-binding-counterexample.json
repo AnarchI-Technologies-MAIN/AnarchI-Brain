@@ -1,0 +1,30 @@
+{
+  "scope": "STATIC_CHECKER_GAP_NOT_RUNTIME_AUTHORITY",
+  "v7_accepted_omitted_binding": true,
+  "mutated_row": {
+    "authorizer": "NO_POSITIVE_MAINTENANCE_AUTHORITY_REQUIRED_TO_DENY",
+    "concrete_receipt": "ATTEMPT",
+    "crash_replay": "Same idempotency key and exact subject returns original terminal receipt only if freshly authorized to disclose it; changed subject rejects key reuse; missing terminal receipt remains UNRESOLVED, never blind effect replay.",
+    "event": "denial_with_insufficient_freshness",
+    "exact_input_binding": [
+      "subject/package/dependencies",
+      "consumer/tenant/job/purpose/recipient",
+      "policy/schema/authority roots",
+      "predecessor root",
+      "epoch/external generation",
+      "operation/idempotency identity"
+    ],
+    "from": "PROPOSED",
+    "gate_outcome": "SATISFIED",
+    "ordinary_access_eligibility": "CLOSED",
+    "proposer": "Librarian",
+    "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+    "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+    "required_predicates": [],
+    "root_comparison_rule": "Trusted exact byte/root identity equality or inequality at governed current read boundary; missing current root UNRESOLVED. EQUAL and DIFFERENT mutually exclusive.",
+    "side_effect": "DENY_ONLY_NO_PROTECTED_EFFECT",
+    "state_update": "PROPOSED -> STALE; retain comparison and routing findings separately; no canonical mutation or positive authorization",
+    "to": "STALE"
+  },
+  "predecessor_model_sha256": "18eda716fe7987f5641b8eb362806d4f128d8a2150c58d4f374326f6e8f75d84"
+}

@@ -1,0 +1,6972 @@
+{
+  "abort_evidence": {
+    "status": "UNADOPTED_REFERENCE_MODEL_TABLE",
+    "rows": [
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "FAIL",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "SATISFIED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "FAIL",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": true
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "FAIL",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "FAIL",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "FAIL",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "FAIL",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "FAIL",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "FAIL",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "FAIL",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "FAIL",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "PASS",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "PASS",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "PASS",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "PASS",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "PASS",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "PASS",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "PASS",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "PASS",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "PASS",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "PASS",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "UNKNOWN",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "UNKNOWN",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "UNKNOWN",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "UNKNOWN",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "UNKNOWN",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "UNKNOWN",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "UNKNOWN",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "UNKNOWN",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "UNKNOWN",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "UNKNOWN",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "MISSING",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "MISSING",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "MISSING",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "MISSING",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "MISSING",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "MISSING",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "MISSING",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "MISSING",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "MISSING",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "MISSING",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "INVALID",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "INVALID",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "INVALID",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "INVALID",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "INVALID",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "INVALID",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "INVALID",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "INVALID",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "INVALID",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "INVALID",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "CONTRADICTORY",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "CONTRADICTORY",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "CONTRADICTORY",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "CONTRADICTORY",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "CONTRADICTORY",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "CONTRADICTORY",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "CONTRADICTORY",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "CONTRADICTORY",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "proof": "CONTRADICTORY",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "proof": "CONTRADICTORY",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "FAIL",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "FAIL",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "FAIL",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "FAIL",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "FAIL",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "FAIL",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "FAIL",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "FAIL",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "FAIL",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "FAIL",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "PASS",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "PASS",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "PASS",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "PASS",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "PASS",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "PASS",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "PASS",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "PASS",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "PASS",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "PASS",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "UNKNOWN",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "UNKNOWN",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "UNKNOWN",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "UNKNOWN",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "UNKNOWN",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "UNKNOWN",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "UNKNOWN",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "UNKNOWN",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "UNKNOWN",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "UNKNOWN",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "MISSING",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "MISSING",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "MISSING",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "MISSING",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "MISSING",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "MISSING",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "MISSING",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "MISSING",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "MISSING",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "MISSING",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "INVALID",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "INVALID",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "INVALID",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "INVALID",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "INVALID",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "INVALID",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "INVALID",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "INVALID",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "INVALID",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "INVALID",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "CONTRADICTORY",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "CONTRADICTORY",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "CONTRADICTORY",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "CONTRADICTORY",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "CONTRADICTORY",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "CONTRADICTORY",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "CONTRADICTORY",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "CONTRADICTORY",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "proof": "CONTRADICTORY",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "proof": "CONTRADICTORY",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "FAIL",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "FAIL",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "FAIL",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "FAIL",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "FAIL",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "FAIL",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "FAIL",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "FAIL",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "FAIL",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "FAIL",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "PASS",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "PASS",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "PASS",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "PASS",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "PASS",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "PASS",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "PASS",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "PASS",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "PASS",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "PASS",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "UNKNOWN",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "UNKNOWN",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "UNKNOWN",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "UNKNOWN",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "UNKNOWN",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "UNKNOWN",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "UNKNOWN",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "UNKNOWN",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "UNKNOWN",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "UNKNOWN",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "MISSING",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "MISSING",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "MISSING",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "MISSING",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "MISSING",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "MISSING",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "MISSING",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "MISSING",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "MISSING",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "MISSING",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "INVALID",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "INVALID",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "INVALID",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "INVALID",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "INVALID",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "INVALID",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "INVALID",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "INVALID",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "INVALID",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "INVALID",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "CONTRADICTORY",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "CONTRADICTORY",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "CONTRADICTORY",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "CONTRADICTORY",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "CONTRADICTORY",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "CONTRADICTORY",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "CONTRADICTORY",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "CONTRADICTORY",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "proof": "CONTRADICTORY",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "proof": "CONTRADICTORY",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "FAIL",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "FAIL",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "FAIL",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "FAIL",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "FAIL",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "FAIL",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "FAIL",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "FAIL",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "FAIL",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "FAIL",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "PASS",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "PASS",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "PASS",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "PASS",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "PASS",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "PASS",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "PASS",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "PASS",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "PASS",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "PASS",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "UNKNOWN",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "UNKNOWN",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "UNKNOWN",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "UNKNOWN",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "UNKNOWN",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "UNKNOWN",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "UNKNOWN",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "UNKNOWN",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "UNKNOWN",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "UNKNOWN",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "MISSING",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "MISSING",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "MISSING",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "MISSING",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "MISSING",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "MISSING",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "MISSING",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "MISSING",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "MISSING",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "MISSING",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "INVALID",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "INVALID",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "INVALID",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "INVALID",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "INVALID",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "INVALID",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "INVALID",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "INVALID",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "INVALID",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "INVALID",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "CONTRADICTORY",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "CONTRADICTORY",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "CONTRADICTORY",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "CONTRADICTORY",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "CONTRADICTORY",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "CONTRADICTORY",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "CONTRADICTORY",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "CONTRADICTORY",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "proof": "CONTRADICTORY",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "proof": "CONTRADICTORY",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "FAIL",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "FAIL",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "FAIL",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "FAIL",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "FAIL",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "FAIL",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "FAIL",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "FAIL",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "FAIL",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "FAIL",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "PASS",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "PASS",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "PASS",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "PASS",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "PASS",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "PASS",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "PASS",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "PASS",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "PASS",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "PASS",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "UNKNOWN",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "UNKNOWN",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "UNKNOWN",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "UNKNOWN",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "UNKNOWN",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "UNKNOWN",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "UNKNOWN",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "UNKNOWN",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "UNKNOWN",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "UNKNOWN",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "MISSING",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "MISSING",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "MISSING",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "MISSING",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "MISSING",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "MISSING",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "MISSING",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "MISSING",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "MISSING",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "MISSING",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "INVALID",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "INVALID",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "INVALID",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "INVALID",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "INVALID",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "INVALID",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "INVALID",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "INVALID",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "INVALID",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "INVALID",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "CONTRADICTORY",
+          "occurrence": "NOT_OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "CONTRADICTORY",
+            "occurrence": "NOT_OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "CONTRADICTORY",
+          "occurrence": "OCCURRED"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "CONTRADICTORY",
+            "occurrence": "OCCURRED"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "CONTRADICTORY",
+          "occurrence": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "CONTRADICTORY",
+            "occurrence": "UNKNOWN"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "CONTRADICTORY",
+          "occurrence": "MISSING"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "CONTRADICTORY",
+            "occurrence": "MISSING"
+          },
+          "abort_allowed": false
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "proof": "CONTRADICTORY",
+          "occurrence": "CONTRADICTORY"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "proof": "CONTRADICTORY",
+            "occurrence": "CONTRADICTORY"
+          },
+          "abort_allowed": false
+        }
+      }
+    ]
+  },
+  "atlas_root_comparison": {
+    "status": "UNADOPTED_REFERENCE_MODEL_TABLE",
+    "rows": [
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MATCH",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "SATISFIED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MATCH",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "ALLOWED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MATCH",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "SATISFIED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MATCH",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MATCH",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "SATISFIED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MATCH",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MATCH",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "SATISFIED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MATCH",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MATCH",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "SATISFIED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MATCH",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MATCH",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "SATISFIED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MATCH",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MATCH",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MATCH",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MATCH",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MATCH",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MATCH",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MATCH",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISMATCH",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISMATCH",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISMATCH",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISMATCH",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISMATCH",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISMATCH",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISMATCH",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISMATCH",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISMATCH",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISMATCH",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISMATCH",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISMATCH",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISMATCH",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISMATCH",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISMATCH",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISMATCH",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISMATCH",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISMATCH",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISMATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISMATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISMATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISMATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISMATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISMATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISSING",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISSING",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISSING",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISSING",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISSING",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISSING",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISSING",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISSING",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISSING",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISSING",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISSING",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISSING",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISSING",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISSING",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISSING",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISSING",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISSING",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISSING",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISSING",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISSING",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISSING",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISSING",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "MISSING",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "MISSING",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "UNKNOWN",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "UNKNOWN",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "UNKNOWN",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "UNKNOWN",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "UNKNOWN",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "UNKNOWN",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "UNKNOWN",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "UNKNOWN",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "UNKNOWN",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "UNKNOWN",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "UNKNOWN",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "UNKNOWN",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "UNKNOWN",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "UNKNOWN",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "UNKNOWN",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "UNKNOWN",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "UNKNOWN",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "UNKNOWN",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "UNKNOWN",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "UNKNOWN",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "UNKNOWN",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "UNKNOWN",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MATCH",
+          "comparability": "UNKNOWN",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MATCH",
+            "comparability": "UNKNOWN",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MATCH",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MATCH",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MATCH",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MATCH",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MATCH",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MATCH",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MATCH",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MATCH",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MATCH",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MATCH",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MATCH",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MATCH",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MATCH",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MATCH",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MATCH",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MATCH",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MATCH",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MATCH",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISMATCH",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISMATCH",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISMATCH",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISMATCH",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISMATCH",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISMATCH",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISMATCH",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISMATCH",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISMATCH",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISMATCH",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISMATCH",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISMATCH",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISMATCH",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISMATCH",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISMATCH",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISMATCH",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISMATCH",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISMATCH",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISMATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISMATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISMATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISMATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISMATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISMATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISSING",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISSING",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISSING",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISSING",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISSING",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISSING",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISSING",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISSING",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISSING",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISSING",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISSING",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISSING",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISSING",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISSING",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISSING",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISSING",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISSING",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISSING",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISSING",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISSING",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISSING",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISSING",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "MISSING",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "MISSING",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "UNKNOWN",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "UNKNOWN",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "UNKNOWN",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "UNKNOWN",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "UNKNOWN",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "UNKNOWN",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "UNKNOWN",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "UNKNOWN",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "UNKNOWN",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "UNKNOWN",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "UNKNOWN",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "UNKNOWN",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "UNKNOWN",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "UNKNOWN",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "UNKNOWN",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "UNKNOWN",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "UNKNOWN",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "UNKNOWN",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "UNKNOWN",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "UNKNOWN",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "UNKNOWN",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "UNKNOWN",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISMATCH",
+          "comparability": "UNKNOWN",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISMATCH",
+            "comparability": "UNKNOWN",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MATCH",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MATCH",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MATCH",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MATCH",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MATCH",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MATCH",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MATCH",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MATCH",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MATCH",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MATCH",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MATCH",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MATCH",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MATCH",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MATCH",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MATCH",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MATCH",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MATCH",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MATCH",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISMATCH",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISMATCH",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISMATCH",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISMATCH",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISMATCH",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISMATCH",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISMATCH",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISMATCH",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISMATCH",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISMATCH",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISMATCH",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISMATCH",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISMATCH",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISMATCH",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISMATCH",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISMATCH",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISMATCH",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISMATCH",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISMATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISMATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISMATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISMATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISMATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISMATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISSING",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISSING",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISSING",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISSING",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISSING",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISSING",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISSING",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISSING",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISSING",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISSING",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISSING",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISSING",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISSING",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISSING",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISSING",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISSING",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISSING",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISSING",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISSING",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISSING",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISSING",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISSING",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "MISSING",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "MISSING",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "UNKNOWN",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "UNKNOWN",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "UNKNOWN",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "UNKNOWN",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "UNKNOWN",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "UNKNOWN",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "UNKNOWN",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "UNKNOWN",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "UNKNOWN",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "UNKNOWN",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "UNKNOWN",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "UNKNOWN",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "UNKNOWN",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "UNKNOWN",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "UNKNOWN",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "UNKNOWN",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "UNKNOWN",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "UNRESOLVED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "UNKNOWN",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "UNKNOWN",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "UNKNOWN",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "UNKNOWN",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "UNKNOWN",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "MISSING",
+          "comparability": "UNKNOWN",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "MISSING",
+            "comparability": "UNKNOWN",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MATCH",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MATCH",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MATCH",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MATCH",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MATCH",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MATCH",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MATCH",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MATCH",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MATCH",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MATCH",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MATCH",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MATCH",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MATCH",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MATCH",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MATCH",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MATCH",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MATCH",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MATCH",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISMATCH",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISMATCH",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISMATCH",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISMATCH",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISMATCH",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISMATCH",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISMATCH",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISMATCH",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISMATCH",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISMATCH",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISMATCH",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISMATCH",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISMATCH",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISMATCH",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISMATCH",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISMATCH",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISMATCH",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISMATCH",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISMATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISMATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISMATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISMATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISMATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISMATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISSING",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISSING",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISSING",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISSING",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISSING",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISSING",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISSING",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISSING",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISSING",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISSING",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISSING",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISSING",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISSING",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISSING",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISSING",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISSING",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISSING",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISSING",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISSING",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISSING",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISSING",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISSING",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "MISSING",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "MISSING",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "UNKNOWN",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "UNKNOWN",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "UNKNOWN",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "UNKNOWN",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "UNKNOWN",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "UNKNOWN",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "UNKNOWN",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "UNKNOWN",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "UNKNOWN",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "UNKNOWN",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "UNKNOWN",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "UNKNOWN",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "UNKNOWN",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "UNKNOWN",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "UNKNOWN",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "UNKNOWN",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "UNKNOWN",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "UNKNOWN",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "UNKNOWN",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "UNKNOWN",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "UNKNOWN",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "UNKNOWN",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "INVALID",
+          "comparability": "UNKNOWN",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "INVALID",
+            "comparability": "UNKNOWN",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MATCH",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MATCH",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MATCH",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MATCH",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MATCH",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MATCH",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MATCH",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MATCH",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MATCH",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MATCH",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MATCH",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MATCH",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MATCH",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MATCH",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MATCH",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MATCH",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MATCH",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MATCH",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISMATCH",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISMATCH",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISMATCH",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISMATCH",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISMATCH",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISMATCH",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISMATCH",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISMATCH",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISMATCH",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISMATCH",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISMATCH",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISMATCH",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISMATCH",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISMATCH",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISMATCH",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISMATCH",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISMATCH",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISMATCH",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISMATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISMATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISMATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISMATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISMATCH",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISMATCH",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISSING",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISSING",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISSING",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISSING",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISSING",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISSING",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISSING",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISSING",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISSING",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISSING",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISSING",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISSING",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISSING",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISSING",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISSING",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISSING",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISSING",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISSING",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISSING",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISSING",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISSING",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISSING",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "MISSING",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "MISSING",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "UNKNOWN",
+          "relation": "EQUAL",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "UNKNOWN",
+            "relation": "EQUAL",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "UNKNOWN",
+          "relation": "EQUAL",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "UNKNOWN",
+            "relation": "EQUAL",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "UNKNOWN",
+          "relation": "EQUAL",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "UNKNOWN",
+            "relation": "EQUAL",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "UNKNOWN",
+          "relation": "DIFFERENT",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "UNKNOWN",
+            "relation": "DIFFERENT",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "UNKNOWN",
+          "relation": "DIFFERENT",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "UNKNOWN",
+            "relation": "DIFFERENT",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "UNKNOWN",
+          "relation": "DIFFERENT",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "UNKNOWN",
+            "relation": "DIFFERENT",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "UNKNOWN",
+          "relation": "UNKNOWN",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "UNKNOWN",
+            "relation": "UNKNOWN",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "UNKNOWN",
+          "relation": "UNKNOWN",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "UNKNOWN",
+            "relation": "UNKNOWN",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "UNKNOWN",
+          "relation": "UNKNOWN",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "UNKNOWN",
+            "relation": "UNKNOWN",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "UNKNOWN",
+          "relation": "CONTRADICTORY",
+          "freshness": "CURRENT"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "UNKNOWN",
+            "relation": "CONTRADICTORY",
+            "freshness": "CURRENT",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "UNKNOWN",
+          "relation": "CONTRADICTORY",
+          "freshness": "STALE"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "UNKNOWN",
+            "relation": "CONTRADICTORY",
+            "freshness": "STALE",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      },
+      {
+        "components": {
+          "binding": "CONTRADICTORY",
+          "comparability": "UNKNOWN",
+          "relation": "CONTRADICTORY",
+          "freshness": "UNKNOWN"
+        },
+        "result": {
+          "classification": "BLOCKED",
+          "findings": {
+            "binding": "CONTRADICTORY",
+            "comparability": "UNKNOWN",
+            "relation": "CONTRADICTORY",
+            "freshness": "UNKNOWN",
+            "scope": "SATISFIED"
+          },
+          "ordinary_access": "CLOSED"
+        }
+      }
+    ]
+  }
+}
