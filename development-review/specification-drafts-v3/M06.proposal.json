@@ -1,0 +1,572 @@
+{
+  "authority_resolution": "UNRESOLVED_REQUIRES_GOVERNING_CONTRACT_NOT_ROLE_NAME",
+  "evidence_required": [
+    "immutable subject and original-byte reference",
+    "scope: consumer, tenant, recipient, job, purpose, operation, resource/version",
+    "pinned contract/schema/policy and authority roots",
+    "fresh integrity epoch and external fencing generation",
+    "issuer-verifier admission evidence or explicit UNRESOLVED",
+    "causal predecessor and expected current state root",
+    "idempotency key bound to exact subject and operation",
+    "bounded resources and explicit representation/dependency closure"
+  ],
+  "receipt_required": [
+    "type: CANDIDATE/DECISION/TRANSITION/EFFECT/ATTEMPT as adopted",
+    "exact subject, operation, predecessor and state roots",
+    "authority/root/generation/epoch references",
+    "all BLOCKED and UNRESOLVED findings without Boolean collapse",
+    "actual terminal state and durable commit identity; no final success before actual commit"
+  ],
+  "replay": "Same idempotency key and exact subject returns original terminal receipt only if freshly authorized to disclose it; changed subject rejects key reuse; missing terminal receipt remains UNRESOLVED, never blind effect replay.",
+  "failure": "No protected effect on BLOCKED or UNRESOLVED; preserve prior committed state, retain evidence under permitted scope; recognized verifier compromise closes shared epoch. Durable recording failure cannot imply success.",
+  "illegal_transitions": "Every unlisted (source,event,gate_outcome) is forbidden. Failure findings are orthogonal; a rejected attempt cannot publish canon or restore revoked access.",
+  "idempotency": "Identity is scoped to consumer/tenant/job/purpose/operation/subject/predecessor and fenced generation. No wall-clock or caller string alone establishes global uniqueness.",
+  "machine": "M06",
+  "registry_name": "S2 canonicalization lifecycle",
+  "owner": "S2",
+  "source_responsibilities": [
+    "canonical-domain admission",
+    "independent prerequisite satisfaction"
+  ],
+  "status": "REVISED_V3_PROPOSAL_UNADOPTED_NOT_RUNTIME",
+  "normative_source": "captured-r2-source/evidence/stonewall-0/m01-r2/obligations.json",
+  "states": [
+    "ACKNOWLEDGEABLE",
+    "ACKNOWLEDGED",
+    "ADMITTED",
+    "COMMITTED",
+    "PROPOSED",
+    "REJECTED"
+  ],
+  "legal_transitions": [
+    {
+      "from": "PROPOSED",
+      "event": "adjudicate_exact_subject",
+      "to": "ADMITTED",
+      "proposer": "S2",
+      "authorizer": "UNRESOLVED_GOVERNING_AUTHORITY",
+      "required_predicates": [
+        "M06.adjudicate_exact_subject.exact_subject=SATISFIED",
+        "M06.adjudicate_exact_subject.applicable_semantics=SATISFIED",
+        "M06.adjudicate_exact_subject.current_predecessor=SATISFIED",
+        "M06.adjudicate_exact_subject.applicable_authority=SATISFIED",
+        "M06.adjudicate_exact_subject.resource_bounds=SATISFIED"
+      ],
+      "gate_outcome": "SATISFIED",
+      "concrete_receipt": "DECISION",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "state_update": "PROPOSED -> ADMITTED; exact causal receipt required before claiming corresponding result",
+      "side_effect": "EXACT_SCOPED_EVENT_ONLY_AFTER_GOVERNED_FENCE",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "crash_replay": "Restore CLOSED; reconcile exact commit/receipt roots and complete dependency prefix before any ACK. Unknown local outcome remains UNRESOLVED until durable evidence resolves it.",
+      "ordinary_access_eligibility": "ONLY_IF_SEPARATE_CURRENT_SCOPE_VALID"
+    },
+    {
+      "from": "PROPOSED",
+      "event": "adjudicate_exact_subject",
+      "to": "PROPOSED",
+      "proposer": "S2",
+      "authorizer": "NO_POSITIVE_AUTHORITY_REQUIRED_TO_REFUSE_OR_HOLD",
+      "required_predicates": [
+        "M06.adjudicate_exact_subject.evaluation=BLOCKED"
+      ],
+      "gate_outcome": "BLOCKED",
+      "concrete_receipt": "ATTEMPT",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "state_update": "preserve actual prior lifecycle state; retain all findings; no protected effect",
+      "side_effect": "NONE",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "crash_replay": "Restore CLOSED; reconcile exact commit/receipt roots and complete dependency prefix before any ACK. Unknown local outcome remains UNRESOLVED until durable evidence resolves it.",
+      "ordinary_access_eligibility": "CLOSED"
+    },
+    {
+      "from": "PROPOSED",
+      "event": "adjudicate_exact_subject",
+      "to": "PROPOSED",
+      "proposer": "S2",
+      "authorizer": "NO_POSITIVE_AUTHORITY_REQUIRED_TO_REFUSE_OR_HOLD",
+      "required_predicates": [
+        "M06.adjudicate_exact_subject.evaluation=UNRESOLVED"
+      ],
+      "gate_outcome": "UNRESOLVED",
+      "concrete_receipt": "ATTEMPT",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "state_update": "preserve actual prior lifecycle state; retain all findings; no protected effect",
+      "side_effect": "NONE",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "crash_replay": "Restore CLOSED; reconcile exact commit/receipt roots and complete dependency prefix before any ACK. Unknown local outcome remains UNRESOLVED until durable evidence resolves it.",
+      "ordinary_access_eligibility": "CLOSED"
+    },
+    {
+      "from": "PROPOSED",
+      "event": "deny_admission",
+      "to": "REJECTED",
+      "proposer": "S2",
+      "authorizer": "UNRESOLVED_GOVERNING_AUTHORITY",
+      "required_predicates": [
+        "M06.deny_admission.decision=BLOCKED",
+        "M06.deny_admission.exact_attempt_identity=SATISFIED"
+      ],
+      "gate_outcome": "SATISFIED",
+      "concrete_receipt": "ATTEMPT",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "state_update": "PROPOSED -> REJECTED; exact causal receipt required before claiming corresponding result",
+      "side_effect": "DENY_ONLY_NO_PROTECTED_EFFECT",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "crash_replay": "Restore CLOSED; reconcile exact commit/receipt roots and complete dependency prefix before any ACK. Unknown local outcome remains UNRESOLVED until durable evidence resolves it.",
+      "ordinary_access_eligibility": "ONLY_IF_SEPARATE_CURRENT_SCOPE_VALID"
+    },
+    {
+      "from": "PROPOSED",
+      "event": "deny_admission",
+      "to": "PROPOSED",
+      "proposer": "S2",
+      "authorizer": "NO_POSITIVE_AUTHORITY_REQUIRED_TO_REFUSE_OR_HOLD",
+      "required_predicates": [
+        "M06.deny_admission.evaluation=BLOCKED"
+      ],
+      "gate_outcome": "BLOCKED",
+      "concrete_receipt": "ATTEMPT",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "state_update": "preserve actual prior lifecycle state; retain all findings; no protected effect",
+      "side_effect": "NONE",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "crash_replay": "Restore CLOSED; reconcile exact commit/receipt roots and complete dependency prefix before any ACK. Unknown local outcome remains UNRESOLVED until durable evidence resolves it.",
+      "ordinary_access_eligibility": "CLOSED"
+    },
+    {
+      "from": "PROPOSED",
+      "event": "deny_admission",
+      "to": "PROPOSED",
+      "proposer": "S2",
+      "authorizer": "NO_POSITIVE_AUTHORITY_REQUIRED_TO_REFUSE_OR_HOLD",
+      "required_predicates": [
+        "M06.deny_admission.evaluation=UNRESOLVED"
+      ],
+      "gate_outcome": "UNRESOLVED",
+      "concrete_receipt": "ATTEMPT",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "state_update": "preserve actual prior lifecycle state; retain all findings; no protected effect",
+      "side_effect": "NONE",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "crash_replay": "Restore CLOSED; reconcile exact commit/receipt roots and complete dependency prefix before any ACK. Unknown local outcome remains UNRESOLVED until durable evidence resolves it.",
+      "ordinary_access_eligibility": "CLOSED"
+    },
+    {
+      "from": "ADMITTED",
+      "event": "durably_commit_guarded",
+      "to": "COMMITTED",
+      "proposer": "S2",
+      "authorizer": "UNRESOLVED_GOVERNING_AUTHORITY",
+      "required_predicates": [
+        "M06.durably_commit_guarded.exact_subject=SATISFIED",
+        "M06.durably_commit_guarded.applicable_semantics=SATISFIED",
+        "M06.durably_commit_guarded.current_predecessor=SATISFIED",
+        "M06.durably_commit_guarded.applicable_authority=SATISFIED",
+        "M06.durably_commit_guarded.resource_bounds=SATISFIED"
+      ],
+      "gate_outcome": "SATISFIED",
+      "concrete_receipt": "TRANSITION",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "state_update": "ADMITTED -> COMMITTED; exact causal receipt required before claiming corresponding result",
+      "side_effect": "EXACT_SCOPED_EVENT_ONLY_AFTER_GOVERNED_FENCE",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "crash_replay": "Restore CLOSED; reconcile exact commit/receipt roots and complete dependency prefix before any ACK. Unknown local outcome remains UNRESOLVED until durable evidence resolves it.",
+      "ordinary_access_eligibility": "ONLY_IF_SEPARATE_CURRENT_SCOPE_VALID"
+    },
+    {
+      "from": "ADMITTED",
+      "event": "durably_commit_guarded",
+      "to": "ADMITTED",
+      "proposer": "S2",
+      "authorizer": "NO_POSITIVE_AUTHORITY_REQUIRED_TO_REFUSE_OR_HOLD",
+      "required_predicates": [
+        "M06.durably_commit_guarded.evaluation=BLOCKED"
+      ],
+      "gate_outcome": "BLOCKED",
+      "concrete_receipt": "ATTEMPT",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "state_update": "preserve actual prior lifecycle state; retain all findings; no protected effect",
+      "side_effect": "NONE",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "crash_replay": "Restore CLOSED; reconcile exact commit/receipt roots and complete dependency prefix before any ACK. Unknown local outcome remains UNRESOLVED until durable evidence resolves it.",
+      "ordinary_access_eligibility": "CLOSED"
+    },
+    {
+      "from": "ADMITTED",
+      "event": "durably_commit_guarded",
+      "to": "ADMITTED",
+      "proposer": "S2",
+      "authorizer": "NO_POSITIVE_AUTHORITY_REQUIRED_TO_REFUSE_OR_HOLD",
+      "required_predicates": [
+        "M06.durably_commit_guarded.evaluation=UNRESOLVED"
+      ],
+      "gate_outcome": "UNRESOLVED",
+      "concrete_receipt": "ATTEMPT",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "state_update": "preserve actual prior lifecycle state; retain all findings; no protected effect",
+      "side_effect": "NONE",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "crash_replay": "Restore CLOSED; reconcile exact commit/receipt roots and complete dependency prefix before any ACK. Unknown local outcome remains UNRESOLVED until durable evidence resolves it.",
+      "ordinary_access_eligibility": "CLOSED"
+    },
+    {
+      "from": "COMMITTED",
+      "event": "verify_offhost_complete_commit",
+      "to": "ACKNOWLEDGEABLE",
+      "proposer": "S2",
+      "authorizer": "UNRESOLVED_GOVERNING_AUTHORITY",
+      "required_predicates": [
+        "M06.verify_offhost_complete_commit.exact_subject=SATISFIED",
+        "M06.verify_offhost_complete_commit.applicable_semantics=SATISFIED",
+        "M06.verify_offhost_complete_commit.current_predecessor=SATISFIED",
+        "M06.verify_offhost_complete_commit.applicable_authority=SATISFIED",
+        "M06.verify_offhost_complete_commit.resource_bounds=SATISFIED"
+      ],
+      "gate_outcome": "SATISFIED",
+      "concrete_receipt": "ATTEMPT",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "state_update": "COMMITTED -> ACKNOWLEDGEABLE; exact causal receipt required before claiming corresponding result",
+      "side_effect": "EXACT_SCOPED_EVENT_ONLY_AFTER_GOVERNED_FENCE",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "crash_replay": "Restore CLOSED; reconcile exact commit/receipt roots and complete dependency prefix before any ACK. Unknown local outcome remains UNRESOLVED until durable evidence resolves it.",
+      "ordinary_access_eligibility": "ONLY_IF_SEPARATE_CURRENT_SCOPE_VALID"
+    },
+    {
+      "from": "COMMITTED",
+      "event": "verify_offhost_complete_commit",
+      "to": "COMMITTED",
+      "proposer": "S2",
+      "authorizer": "NO_POSITIVE_AUTHORITY_REQUIRED_TO_REFUSE_OR_HOLD",
+      "required_predicates": [
+        "M06.verify_offhost_complete_commit.evaluation=BLOCKED"
+      ],
+      "gate_outcome": "BLOCKED",
+      "concrete_receipt": "ATTEMPT",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "state_update": "preserve actual prior lifecycle state; retain all findings; no protected effect",
+      "side_effect": "NONE",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "crash_replay": "Restore CLOSED; reconcile exact commit/receipt roots and complete dependency prefix before any ACK. Unknown local outcome remains UNRESOLVED until durable evidence resolves it.",
+      "ordinary_access_eligibility": "CLOSED"
+    },
+    {
+      "from": "COMMITTED",
+      "event": "verify_offhost_complete_commit",
+      "to": "COMMITTED",
+      "proposer": "S2",
+      "authorizer": "NO_POSITIVE_AUTHORITY_REQUIRED_TO_REFUSE_OR_HOLD",
+      "required_predicates": [
+        "M06.verify_offhost_complete_commit.evaluation=UNRESOLVED"
+      ],
+      "gate_outcome": "UNRESOLVED",
+      "concrete_receipt": "ATTEMPT",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "state_update": "preserve actual prior lifecycle state; retain all findings; no protected effect",
+      "side_effect": "NONE",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "crash_replay": "Restore CLOSED; reconcile exact commit/receipt roots and complete dependency prefix before any ACK. Unknown local outcome remains UNRESOLVED until durable evidence resolves it.",
+      "ordinary_access_eligibility": "CLOSED"
+    },
+    {
+      "from": "ACKNOWLEDGEABLE",
+      "event": "emit_ack",
+      "to": "ACKNOWLEDGED",
+      "proposer": "S2",
+      "authorizer": "UNRESOLVED_GOVERNING_AUTHORITY",
+      "required_predicates": [
+        "M06.emit_ack.exact_subject=SATISFIED",
+        "M06.emit_ack.applicable_semantics=SATISFIED",
+        "M06.emit_ack.current_predecessor=SATISFIED",
+        "M06.emit_ack.applicable_authority=SATISFIED",
+        "M06.emit_ack.resource_bounds=SATISFIED"
+      ],
+      "gate_outcome": "SATISFIED",
+      "concrete_receipt": "ACKNOWLEDGMENT",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "state_update": "ACKNOWLEDGEABLE -> ACKNOWLEDGED; exact causal receipt required before claiming corresponding result",
+      "side_effect": "EXACT_SCOPED_EVENT_ONLY_AFTER_GOVERNED_FENCE",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "crash_replay": "Restore CLOSED; reconcile exact commit/receipt roots and complete dependency prefix before any ACK. Unknown local outcome remains UNRESOLVED until durable evidence resolves it.",
+      "ordinary_access_eligibility": "ONLY_IF_SEPARATE_CURRENT_SCOPE_VALID"
+    },
+    {
+      "from": "ACKNOWLEDGEABLE",
+      "event": "emit_ack",
+      "to": "ACKNOWLEDGEABLE",
+      "proposer": "S2",
+      "authorizer": "NO_POSITIVE_AUTHORITY_REQUIRED_TO_REFUSE_OR_HOLD",
+      "required_predicates": [
+        "M06.emit_ack.evaluation=BLOCKED"
+      ],
+      "gate_outcome": "BLOCKED",
+      "concrete_receipt": "ATTEMPT",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "state_update": "preserve actual prior lifecycle state; retain all findings; no protected effect",
+      "side_effect": "NONE",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "crash_replay": "Restore CLOSED; reconcile exact commit/receipt roots and complete dependency prefix before any ACK. Unknown local outcome remains UNRESOLVED until durable evidence resolves it.",
+      "ordinary_access_eligibility": "CLOSED"
+    },
+    {
+      "from": "ACKNOWLEDGEABLE",
+      "event": "emit_ack",
+      "to": "ACKNOWLEDGEABLE",
+      "proposer": "S2",
+      "authorizer": "NO_POSITIVE_AUTHORITY_REQUIRED_TO_REFUSE_OR_HOLD",
+      "required_predicates": [
+        "M06.emit_ack.evaluation=UNRESOLVED"
+      ],
+      "gate_outcome": "UNRESOLVED",
+      "concrete_receipt": "ATTEMPT",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "state_update": "preserve actual prior lifecycle state; retain all findings; no protected effect",
+      "side_effect": "NONE",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "crash_replay": "Restore CLOSED; reconcile exact commit/receipt roots and complete dependency prefix before any ACK. Unknown local outcome remains UNRESOLVED until durable evidence resolves it.",
+      "ordinary_access_eligibility": "CLOSED"
+    }
+  ],
+  "machine_specific_semantics": {
+    "commit": "COMMITTED means local durable publication only. Offhost failure preserves COMMITTED and pending ACK, never emits success ACK or blindly undoes canon. Lost response after ACK returns same receipt after disclosure reauthorization.",
+    "recovery": "Restore CLOSED; reconcile exact commit/receipt roots and complete dependency prefix before any ACK. Unknown local outcome remains UNRESOLVED until durable evidence resolves it."
+  },
+  "state_model": "Machine lifecycle state plus orthogonal attempt findings and receipt/durability status; failure findings do not themselves mutate canonical state.",
+  "predicate_semantics": "SATISFIED/BLOCKED/UNRESOLVED remain separate findings. Positive admission requires all applicable resolved predicates SATISFIED; no missing callback defaults true. This is proposed conservative routing, not amendment of pinned R3 composition.",
+  "issuer": "UNRESOLVED_REQUIRES_EXACT_GOVERNING_CONTRACT; logical fin ownership is not a principal or permission grant.",
+  "predicate_definitions": {
+    "exact_subject": {
+      "bindings": [
+        "captured immutable source bytes SHA256+length",
+        "separate normalized representation SHA256+schema",
+        "package digest and dependency root",
+        "decision subject digest"
+      ],
+      "SATISFIED": "All referenced immutable bytes are present, within bounds, and recomputed digest/length/schema/decision subject identities agree.",
+      "BLOCKED": "A present required byte/identity binding is determinate contradictory or structurally invalid.",
+      "UNRESOLVED": "Required bytes, applicable representation profile, or source evidence unavailable. No substitute normalized bytes."
+    },
+    "applicable_semantics": {
+      "bindings": [
+        "contract identity/version/digest",
+        "operation semantics profile",
+        "resolver identity/version",
+        "input meanings and lineage",
+        "all required predicate findings"
+      ],
+      "SATISFIED": "Named adopted resolver interprets exact pinned subject under the applicable contract; all required dimensions satisfied.",
+      "BLOCKED": "Resolved applicable semantics identify determinate incompatible/forbidden input.",
+      "UNRESOLVED": "No adopted resolver/profile, ambiguous meaning, or missing required premise. Default here remains UNRESOLVED."
+    },
+    "current_predecessor": {
+      "bindings": [
+        "expected predecessor commit/root",
+        "actual guarded current commit/root",
+        "causal operation identity"
+      ],
+      "SATISFIED": "At actual boundary, both exact predecessor and state roots equal and causal ordering is valid.",
+      "BLOCKED": "At boundary, observed roots differ or causal ordering contradicts required predecessor.",
+      "UNRESOLVED": "Current root cannot be obtained through trusted boundary or causal evidence incomplete."
+    },
+    "applicable_authority": {
+      "bindings": [
+        "grant exact bytes/signature",
+        "issuer/key/version and authority-root",
+        "scope operation/consumer/tenant/recipient/job/purpose/resource/version",
+        "parent delegation chain",
+        "revocation/expiry and external generation/epoch"
+      ],
+      "SATISFIED": "Adopted issuer/verifier authenticates grant, every parent and scope subset, current revocation/expiry/generation at effect boundary, and grant permits this exact operation.",
+      "BLOCKED": "Authentically resolved scope mismatch, revocation, expiry, ancestor invalidity or rejected signature.",
+      "UNRESOLVED": "Issuer/verifier/governing grant contract or trusted freshness source unavailable. Role ownership is never substituted."
+    },
+    "resource_bounds": {
+      "bindings": [
+        "pinned request budget/profile",
+        "measured node/depth/byte/decompression/time limits",
+        "declared original/decoded lengths"
+      ],
+      "SATISFIED": "Validated nonnegative integer limits from applicable adopted profile are enforced before allocation/traversal/disclosure and actual use stays within them.",
+      "BLOCKED": "Known malformed limits, exceeded bound or length contradiction.",
+      "UNRESOLVED": "Applicable profile or measurement unavailable; no unbounded default."
+    },
+    "evaluation": {
+      "bindings": [
+        "all original independent findings",
+        "exact subject and event",
+        "applicable composition contract"
+      ],
+      "SATISFIED": "Required predicate set resolved and satisfied; lossless findings remain.",
+      "BLOCKED": "Determinate denial route under applicable composition; no protected effect.",
+      "UNRESOLVED": "Required governing semantics/evidence incomplete; known blocks still retained. No Boolean coercion."
+    },
+    "decision": {
+      "bindings": [
+        "exact attempt subject/predecessor",
+        "named decision issuer and contract",
+        "lossless decision findings"
+      ],
+      "SATISFIED": "Resolved admitted decision for this exact subject, not canonicality inferred from receipt shape.",
+      "BLOCKED": "Resolved determinate denial; safe refusal does not require a positive action grant.",
+      "UNRESOLVED": "No actual admitted decision/interpretation; never manufacture rejection of truth or success."
+    },
+    "exact_attempt_identity": {
+      "bindings": [
+        "attempt ID",
+        "submitted-byte identity",
+        "job/purpose/resource scope",
+        "causal predecessor"
+      ],
+      "SATISFIED": "Bounded attempt captured with exact supplied identities; receipt discloses only authorized nonsensitive fields.",
+      "BLOCKED": "Supplied identity is determinately malformed or contradictory.",
+      "UNRESOLVED": "Cannot establish exact attempt binding; only bounded local diagnostic possible, no false subject-bound receipt."
+    },
+    "fail_closed_trigger_observed": {
+      "bindings": [
+        "governed monitor result or loss of required trust/freshness",
+        "current integrity epoch",
+        "fail-safe executor identity/policy"
+      ],
+      "SATISFIED": "Recognized compromise or required trust becomes unknown; governed executor latches CLOSED without a reopening grant.",
+      "BLOCKED": "Monitor report fails authenticity; required trust becomes unknown and ordinary eligibility still closes pending reconciliation.",
+      "UNRESOLVED": "Signal or executor trust cannot be resolved; ordinary eligibility remains CLOSED. No automatic reopening."
+    },
+    "lifecycle_trigger_observed": {
+      "bindings": [
+        "exact lease/grant/capability/root identity",
+        "governed clock/causal lifecycle event",
+        "current generation/revocation lineage"
+      ],
+      "SATISFIED": "Exact expiry/revocation/completion/root-drift event observed through applicable governed source.",
+      "BLOCKED": "Known contradiction in lifecycle evidence; refuse ordinary use pending reconciliation.",
+      "UNRESOLVED": "Validity cannot be freshly established; retain history while closing managed access."
+    }
+  },
+  "receipt_schema_resolution": "UNRESOLVED: kinds below are proposed event distinctions; governing exact schema/issuer must be adopted before issuance.",
+  "machine_specific_predicates": {
+    "shadow_or_rollback_evidence": "BLOCKED only for determinate failed exact shadow-reconstruction/rollback proof; missing evidence UNRESOLVED.",
+    "cutover_occurrence": "NOT_OCCURRED only when durable journal/current canonical root establish no cutover; missing receipt is not this proof.",
+    "atlas_root_vs_current_canonical_root": "EQUAL/DIFFERENT only from exact trusted observed roots; unknown observation UNRESOLVED.",
+    "maintained_history_vs_access": "Historical lifecycle retention never implies managed access eligibility. Separate exact current lease/authority fence must satisfy before any retrieval."
+  }
+}

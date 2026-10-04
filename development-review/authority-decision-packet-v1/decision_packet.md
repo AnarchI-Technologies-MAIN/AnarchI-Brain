@@ -1,0 +1,17 @@
+# Exact authority/adoption decision packet — proposal only
+
+No assignment, grant, freeze or gate change is adopted here. Resolve actual governing baseline/adoption evidence first. Current worktree matrix differs from the HEAD/frozen-copy identity; both full digests are recorded in authority_crosswalk.json. Inclusion of the seven R2 amendments does not approve them.
+
+Decisions requiring explicit governing adjudication:
+
+1. M03 Cartologist Qualify is unresolved in the declared matrix and required by the candidate obligations map. Choose a bounded qualification assignment with exact non-truth semantics, or amend the machine responsibility to structural normalization under explicitly permitted authority. A rename alone cannot grant authority or silently amend SW0-009.
+2. M04 S1 Qualify is unresolved. Specify the exact admissible subject/evidence qualification scope, independent issuer/verifier/root, predicate contract and receipt. Qualification must remain distinct from truth, canonical admission and action permission.
+3. M09 S3 currently has bounded Project, but Authorize remains unresolved. The proposed S3-P/S3-M adjudication versus external grant verification/consumption must be reconciled explicitly. Two entrypoints remain one fin. If authorizing decisions are assigned, name exact scope and issuing authority; if only consuming grants, specify the distinct independently authorized lifecycle path. Do not infer power from the word authorize in a transition name.
+4. M12 issuer/delegation/enrollment/rotation/governance-root replacement: specification ownership is not a matrix principal. Name actual trusted issuer/verifier and externally materialized roots, scope hierarchy, expiry/revocation chain and generation custody. Anar Core is intended, not verified implementation.
+5. M16 Migrate, M17 Reconstruct and M19 Revoke all need actual governing assignment/issuer resolution. The matrix retains every organ's cells in those dimensions unresolved. Safe exclusion on lost trust must not require a positive reopening grant, but the fail-safe executor/policy still requires adopted specification.
+6. M14 receipt issuance/attestation, M15 policy-root changes, M18 epoch closure/recovery and physical reduction require exact owning authority paths, event schemas and effects. Do not equate a signing key, administrator, recorder or object store with constitutional authority.
+7. Adopt the exact five-logical-fin readiness profile versus the older independent-runtime/unanimity design through an explicit reconciliation amendment; no fabricated blend. Named principal independence and compromise domain must be defined.
+
+Each decision needs: exact reviewed baseline bytes; affected matrix cells/machines; proposed text and limits; authority/evidence basis; denied/unresolved/replay/crash/disclosure counterexamples; independent review; exact adopted artifact/version/digest and adoption receipt through the governing procedure. Current packets carry no approving signature or authoritative adoption claim.
+
+Separate decisions remain separate: approving a proposal, adopting an exact isolated R3 delta, adopting authority amendments, satisfying machine qualification, constitutional closure, source mutation and deployment. The original repository remains read-only. Recovered historical evidence must be distinguished from any newly adjudicated adoption; missing historical closure cannot be backdated or replaced with invented old receipts.

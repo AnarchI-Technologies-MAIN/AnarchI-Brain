@@ -1,0 +1,40 @@
+{
+  "all_original_findings_closed": false,
+  "candidate": "M01-Repair-R3",
+  "findings": [
+    {
+      "disposition": "REFERENCE_REPAIR_CANDIDATE",
+      "id": "R2-REV-01",
+      "scope": "Verified in-memory repository-source compilation and explicit external manifest pin; Python/dependency trust remains external."
+    },
+    {
+      "disposition": "REFERENCE_REPAIR_CANDIDATE",
+      "id": "R2-REV-02",
+      "scope": "RecordingTarget in admitted Assessment binds attempt and exact predecessor; same-input replay preserved, runtime uniqueness remains external."
+    },
+    {
+      "disposition": "REFERENCE_REPAIR_CANDIDATE",
+      "id": "R2-REV-03",
+      "scope": "Exact per-path checkout policy for every R3 manifest-bound file, including manifest and attributes; historical representations not normalized."
+    },
+    {
+      "disposition": "REFERENCE_REPAIR_CANDIDATE",
+      "id": "R2-REV-04",
+      "scope": "Bounded independent payload snapshot and immutable ReviewSubject shared by both admission interfaces."
+    },
+    {
+      "disposition": "REFERENCE_REPAIR_CANDIDATE",
+      "id": "R2-REV-05",
+      "scope": "Separate structural, content-screening, content-admission, and semantic outcomes with payload-free failure codes."
+    },
+    {
+      "disposition": "REFERENCE_REPAIR_CANDIDATE",
+      "id": "R2-REV-06",
+      "scope": "Exact 56 original identity mappings, 49 unchanged-file checks and 9 preserved copies, independent of current root."
+    }
+  ],
+  "m01_freeze_ready": false,
+  "qualification": "Fresh receipts outside the candidate bind this manifest; no historical pass counts imported.",
+  "source_review_sha256": "829fd535b19c03150c0b7e2e1de508ef87b5ac5bc6f98459186459dd58cfffea",
+  "status": "UNFROZEN_REFERENCE_CANDIDATE"
+}

@@ -1,0 +1,7 @@
+# Persisted conformance digests bind exact file bytes, not normalized text.
+schemas/** -text
+qualification/m01_r2/history/** -text
+evidence/** -text
+# New reference candidate sources have a deterministic checkout representation.
+qualification/m01_r2/*.py text eol=lf
+tests/**/*.py text eol=lf

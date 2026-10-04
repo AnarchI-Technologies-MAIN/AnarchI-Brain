@@ -1,0 +1,113 @@
+{
+  "status": "NEW_SOURCE_EVIDENCE_INDEX_NOT_A_HISTORICAL_CLOSURE_RECEIPT",
+  "baseline_head": "79fd607b3b8983fdd2d0254f3af59df9a92257b8",
+  "frozen_anchors": [
+    {
+      "gate": "SW0-001",
+      "path": "semantic-language/SEMANTIC-LANGUAGE-v1.md",
+      "declared_status": "FROZEN",
+      "baseline_git_blob_sha256": "d02f71e6985c885b384bf65079e12c0b6148b9adeae5a67c99bf313447299b77",
+      "current_file_sha256": "896b5f42ec658046e664ef2c1e0130bf7a5d4866fae8cf64446bc2d2eb2804fa",
+      "original_closure_receipt": "UNAVAILABLE",
+      "closure_evidence_status": "NOT_INDEPENDENTLY_REVERIFIED",
+      "editorial_reconciliation": false
+    },
+    {
+      "gate": "SW0-002",
+      "path": "constitution/authority/AUTHORITY-DIMENSIONS.md",
+      "declared_status": "FROZEN",
+      "baseline_git_blob_sha256": "452acd6e8166b9f1a06834fd4ebb8d07c3ec691cba5c711754733f29aca7c9df",
+      "current_file_sha256": "3f4c54ee5640c8a047a180380babc90f6ec66490335305f8c074196940b48bd7",
+      "original_closure_receipt": "UNAVAILABLE",
+      "closure_evidence_status": "NOT_INDEPENDENTLY_REVERIFIED",
+      "editorial_reconciliation": false
+    },
+    {
+      "gate": "SW0-003",
+      "path": "constitution/artifacts/ARTIFACT-RECEIPT-TAXONOMY.md",
+      "declared_status": "FROZEN",
+      "baseline_git_blob_sha256": "ef70aadf8bdb6000f56dbbb3af0c9218102c6fe8a84ec914817bdf0fc9805565",
+      "current_file_sha256": "ef70aadf8bdb6000f56dbbb3af0c9218102c6fe8a84ec914817bdf0fc9805565",
+      "original_closure_receipt": "UNAVAILABLE",
+      "closure_evidence_status": "NOT_INDEPENDENTLY_REVERIFIED",
+      "editorial_reconciliation": false
+    },
+    {
+      "gate": "SW0-004",
+      "path": "serialization/CANONICAL-SERIALIZATION.md",
+      "declared_status": "FROZEN",
+      "baseline_git_blob_sha256": "477d76c0aa0df6cb7a3a2ec9dd87eee5aadb7b4f7b118d2565149aae0bc53b4a",
+      "current_file_sha256": "477d76c0aa0df6cb7a3a2ec9dd87eee5aadb7b4f7b118d2565149aae0bc53b4a",
+      "original_closure_receipt": "UNAVAILABLE",
+      "closure_evidence_status": "NOT_INDEPENDENTLY_REVERIFIED",
+      "editorial_reconciliation": false
+    },
+    {
+      "gate": "SW0-005",
+      "path": "hashing/HASH-SIGNATURE-PROFILE.md",
+      "declared_status": "FROZEN",
+      "baseline_git_blob_sha256": "bf4290fefa8ad284b12635aa15ba45a0e673915f18acca07482bf7f2b9f1a41e",
+      "current_file_sha256": "bf4290fefa8ad284b12635aa15ba45a0e673915f18acca07482bf7f2b9f1a41e",
+      "original_closure_receipt": "UNAVAILABLE",
+      "closure_evidence_status": "NOT_INDEPENDENTLY_REVERIFIED",
+      "editorial_reconciliation": false
+    },
+    {
+      "gate": "SW0-006",
+      "path": "schemas/CORE-SCHEMA-CONTRACT.md",
+      "declared_status": "FROZEN",
+      "baseline_git_blob_sha256": "8438a40f0c043c3ed88a794b1fd998facce7fa09e389bc4e9d370d46a8bee46c",
+      "current_file_sha256": "8438a40f0c043c3ed88a794b1fd998facce7fa09e389bc4e9d370d46a8bee46c",
+      "original_closure_receipt": "UNAVAILABLE",
+      "closure_evidence_status": "NOT_INDEPENDENTLY_REVERIFIED",
+      "editorial_reconciliation": false
+    },
+    {
+      "gate": "SW0-007",
+      "path": "contracts/cortex/CORTEX-CONTRACT.md",
+      "declared_status": "FROZEN",
+      "baseline_git_blob_sha256": "35d3bbc1e866876bd188339e4431748cb18a70edacf2cc609e4195bf46ebbc49",
+      "current_file_sha256": "80be68cf32e6b0001e25c9364e77e02425c90eff0e1f0baefca2a8f1d3f22cd5",
+      "original_closure_receipt": "UNAVAILABLE",
+      "closure_evidence_status": "NOT_INDEPENDENTLY_REVERIFIED",
+      "editorial_reconciliation": true
+    },
+    {
+      "gate": "SW0-008",
+      "path": "contracts/substrate-fin/SUBSTRATE-FIN-CONTRACT.md",
+      "declared_status": "FROZEN",
+      "baseline_git_blob_sha256": "fd3376a52743b4e539ecb9c5c5b1342abcc7c2c32e3b31410debd1428715819b",
+      "current_file_sha256": "e08ca782eaaa1edad3e7da95a895f1cf9c0474486882c3d45d644457b1e7f8f5",
+      "original_closure_receipt": "UNAVAILABLE",
+      "closure_evidence_status": "NOT_INDEPENDENTLY_REVERIFIED",
+      "editorial_reconciliation": true
+    },
+    {
+      "gate": "SW0-009",
+      "path": "contracts/organs/AUTHORITY-MATRIX.md",
+      "declared_status": "FROZEN",
+      "baseline_git_blob_sha256": "def3278a6507384ad121d6e8a0b79efd309e1a7db69cedad0480e7ee3e792203",
+      "current_file_sha256": "69d72c0c9642b8c2539e33d6401bb3a6b5fb3c25f7380db567ff08a57d1b39f4",
+      "original_closure_receipt": "UNAVAILABLE",
+      "closure_evidence_status": "NOT_INDEPENDENTLY_REVERIFIED",
+      "editorial_reconciliation": true
+    }
+  ],
+  "historical_candidate_policy": "R1 and continuation-v1 are retained byte-exact and retired from active APIs",
+  "available_executables": [
+    "schemas/conformance/run_sw0_006.py",
+    "qualification/m01_r2/qualify.py",
+    "qualification/m01_r2/rescan.py",
+    "tests/conformance/test_m01_r2.py"
+  ],
+  "unavailable_upstream_candidate_bytes": [
+    "C6",
+    "C7",
+    "C8_R1",
+    "C11",
+    "C12"
+  ],
+  "historical_receipts_preserved": "preservation.json",
+  "independent_admission_implementation": "UNIMPLEMENTED_FAIL_CLOSED",
+  "m01_freeze_ready": false
+}

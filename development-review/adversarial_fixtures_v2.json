@@ -1,0 +1,2070 @@
+{
+  "status": "PER_VARIANT_REVIEW_SPECIFICATIONS_V2_NOT_RUNTIME_RESULTS",
+  "cases": [
+    {
+      "id": "T01",
+      "machines": [
+        "M01",
+        "M02",
+        "M12",
+        "M15"
+      ],
+      "name": "Invocation authority and subject binding",
+      "counterexample": "Substitute consumer/job/purpose/schema/subject bytes",
+      "required_result": "Reject or UNRESOLVED; no admission",
+      "status": "NOT_EXECUTED_RUNTIME_PREREQUISITES_OPEN",
+      "fixture": {
+        "synthetic_only": true,
+        "baseline": "signed grant G1 bound to tenant A, consumer website-v1, job J1, subject H1 and root R1",
+        "deterministic_clock": "fixture-controlled expiry; causal order separate",
+        "identities": "tenant-A/tenant-B; consumer-website-v1; job-J1; no credentials",
+        "roots": {
+          "canonical_before": "R0",
+          "proposed_after": "R1",
+          "policy": "P1",
+          "authority": "AFIX1",
+          "epoch": "E1",
+          "external_generation": "F1"
+        },
+        "resource_budget": {
+          "max_nodes": 128,
+          "max_depth": 4,
+          "max_returned_bytes": 1048576,
+          "max_decoded_bytes": 8388608,
+          "max_steps": 10000
+        },
+        "budget_status": "SYNTHETIC_TEST_LIMITS_REQUIRE_ADOPTED_TEST_PROFILE; no production default implied",
+        "authority_status": "Named isolated test issuer/signature/root must be independently admitted by adopted test policy; actual production issuer remains unresolved; never always-true verifier."
+      },
+      "negative_variants": [
+        "replace tenant with B",
+        "replace subject H1 with H2",
+        "expire G1",
+        "remove issuer proof",
+        "reuse idempotency key with changed purpose"
+      ],
+      "execution_steps": [
+        "capture request",
+        "resolve grant independently",
+        "attempt exact boundary admission"
+      ],
+      "oracles": [
+        "no admitted artifact or protected effect",
+        "missing issuer is UNRESOLVED",
+        "retain all separate structural/content/semantic axes"
+      ],
+      "evidence_outputs": [
+        "pinned build and contract hashes",
+        "fixture/mutation identity",
+        "ordered boundary and fault transcript",
+        "before/after state roots",
+        "emitted receipts or explicit absence",
+        "resource measurements where applicable",
+        "actual exit and runtime identity"
+      ],
+      "positive_control": {
+        "subject": "exact unchanged subject/roots with intact dependencies and independently admitted synthetic applicable authority",
+        "expected": "only named machine transition for the fixture; exact concrete receipt and root change; canonicality only where S2 adopted test contract explicitly permits",
+        "limitations": "NOT_EXECUTED; real authority/semantic executor not implemented or substituted with trivial callbacks."
+      },
+      "prerequisites": [
+        "adopted corresponding machine/authority contract",
+        "qualified real executor/storage/fence when testing real effects",
+        "independent admissible fixture authority, clearly distinguished from production identity"
+      ],
+      "variants": [
+        {
+          "id": "T01-V01",
+          "mutation": "replace tenant with B",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        },
+        {
+          "id": "T01-V02",
+          "mutation": "replace subject H1 with H2",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        },
+        {
+          "id": "T01-V03",
+          "mutation": "expire G1",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        },
+        {
+          "id": "T01-V04",
+          "mutation": "remove issuer proof",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        },
+        {
+          "id": "T01-V05",
+          "mutation": "reuse idempotency key with changed purpose",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        },
+        {
+          "id": "T01-V06",
+          "mutation": "revoke grant after consumption before effect",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0",
+          "expected_receipt": "ATTEMPT denied at actual effect fence",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no consumed/delegated grant bypass",
+            "no child effect after parent exclusion"
+          ],
+          "causal_oracle": "Consumption/delegation precedes revocation; revocation linearizes before attempted effect; current complete ancestor chain checked.",
+          "resource_oracle": "Delegation ancestry bounded by adopted fixture profile; unknown ancestor yields UNRESOLVED/no effect."
+        },
+        {
+          "id": "T01-V07",
+          "mutation": "revoke parent after delegation while child pending",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0",
+          "expected_receipt": "ATTEMPT denied at actual effect fence",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no consumed/delegated grant bypass",
+            "no child effect after parent exclusion"
+          ],
+          "causal_oracle": "Consumption/delegation precedes revocation; revocation linearizes before attempted effect; current complete ancestor chain checked.",
+          "resource_oracle": "Delegation ancestry bounded by adopted fixture profile; unknown ancestor yields UNRESOLVED/no effect."
+        }
+      ]
+    },
+    {
+      "id": "T02",
+      "machines": [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "name": "Evidence and relationship independence",
+      "counterexample": "Circular/shared evidence and contradicting neighborhood proposal",
+      "required_result": "Preserve contradictions/lineage; no manufactured corroboration",
+      "status": "NOT_EXECUTED_RUNTIME_PREREQUISITES_OPEN",
+      "fixture": {
+        "synthetic_only": true,
+        "baseline": "two source references E1/E2 both derived from one original O1, with opposite claims and cyclic edges",
+        "deterministic_clock": "fixture-controlled expiry; causal order separate",
+        "identities": "tenant-A/tenant-B; consumer-website-v1; job-J1; no credentials",
+        "roots": {
+          "canonical_before": "R0",
+          "proposed_after": "R1",
+          "policy": "P1",
+          "authority": "AFIX1",
+          "epoch": "E1",
+          "external_generation": "F1"
+        },
+        "resource_budget": {
+          "max_nodes": 128,
+          "max_depth": 4,
+          "max_returned_bytes": 1048576,
+          "max_decoded_bytes": 8388608,
+          "max_steps": 10000
+        },
+        "budget_status": "SYNTHETIC_TEST_LIMITS_REQUIRE_ADOPTED_TEST_PROFILE; no production default implied",
+        "authority_status": "Named isolated test issuer/signature/root must be independently admitted by adopted test policy; actual production issuer remains unresolved; never always-true verifier."
+      },
+      "negative_variants": [
+        "present copies as independent sources",
+        "introduce missing original dependency",
+        "cross visible/hidden endpoint scope"
+      ],
+      "execution_steps": [
+        "normalize provenance",
+        "derive authorized neighborhood",
+        "qualify candidate relationships"
+      ],
+      "oracles": [
+        "one source dependency, never two independent corroborations",
+        "contradiction retained",
+        "missing lineage unresolved",
+        "graph cycles bounded explicitly"
+      ],
+      "evidence_outputs": [
+        "pinned build and contract hashes",
+        "fixture/mutation identity",
+        "ordered boundary and fault transcript",
+        "before/after state roots",
+        "emitted receipts or explicit absence",
+        "resource measurements where applicable",
+        "actual exit and runtime identity"
+      ],
+      "positive_control": {
+        "subject": "exact unchanged subject/roots with intact dependencies and independently admitted synthetic applicable authority",
+        "expected": "only named machine transition for the fixture; exact concrete receipt and root change; canonicality only where S2 adopted test contract explicitly permits",
+        "limitations": "NOT_EXECUTED; real authority/semantic executor not implemented or substituted with trivial callbacks."
+      },
+      "prerequisites": [
+        "adopted corresponding machine/authority contract",
+        "qualified real executor/storage/fence when testing real effects",
+        "independent admissible fixture authority, clearly distinguished from production identity"
+      ],
+      "variants": [
+        {
+          "id": "T02-V01",
+          "mutation": "present copies as independent sources",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "QUALIFICATION_ATTEMPT retaining source dependence/contradictions; no independent corroboration or canonical receipt",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "NONCANONICAL_WITH_LINEAGE_AND_CONTRADICTIONS_RETAINED"
+        },
+        {
+          "id": "T02-V02",
+          "mutation": "introduce missing original dependency",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "QUALIFICATION_ATTEMPT retaining source dependence/contradictions; no independent corroboration or canonical receipt",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "NONCANONICAL_WITH_LINEAGE_AND_CONTRADICTIONS_RETAINED"
+        },
+        {
+          "id": "T02-V03",
+          "mutation": "cross visible/hidden endpoint scope",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "QUALIFICATION_ATTEMPT retaining source dependence/contradictions; no independent corroboration or canonical receipt",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "NONCANONICAL_WITH_LINEAGE_AND_CONTRADICTIONS_RETAINED"
+        }
+      ]
+    },
+    {
+      "id": "T03",
+      "machines": [
+        "M06",
+        "M07",
+        "M14"
+      ],
+      "name": "Exact canonical commit",
+      "counterexample": "Change package/relationship/predecessor after adjudication",
+      "required_result": "No publication or final success receipt",
+      "status": "NOT_EXECUTED_RUNTIME_PREREQUISITES_OPEN",
+      "fixture": {
+        "synthetic_only": true,
+        "baseline": "admitted package P1, bytes H1, predecessor R1 and exact decision D1; changed P2",
+        "deterministic_clock": "fixture-controlled expiry; causal order separate",
+        "identities": "tenant-A/tenant-B; consumer-website-v1; job-J1; no credentials",
+        "roots": {
+          "canonical_before": "R0",
+          "proposed_after": "R1",
+          "policy": "P1",
+          "authority": "AFIX1",
+          "epoch": "E1",
+          "external_generation": "F1"
+        },
+        "resource_budget": {
+          "max_nodes": 128,
+          "max_depth": 4,
+          "max_returned_bytes": 1048576,
+          "max_decoded_bytes": 8388608,
+          "max_steps": 10000
+        },
+        "budget_status": "SYNTHETIC_TEST_LIMITS_REQUIRE_ADOPTED_TEST_PROFILE; no production default implied",
+        "authority_status": "Named isolated test issuer/signature/root must be independently admitted by adopted test policy; actual production issuer remains unresolved; never always-true verifier."
+      },
+      "negative_variants": [
+        "swap package after decision",
+        "swap predecessor",
+        "change relationship root",
+        "supply candidate receipt as final"
+      ],
+      "execution_steps": [
+        "stage package",
+        "pin decision subject",
+        "attempt guarded commit"
+      ],
+      "oracles": [
+        "no changed-subject publication",
+        "no final success receipt on denied transition",
+        "prior canonical root retained"
+      ],
+      "evidence_outputs": [
+        "pinned build and contract hashes",
+        "fixture/mutation identity",
+        "ordered boundary and fault transcript",
+        "before/after state roots",
+        "emitted receipts or explicit absence",
+        "resource measurements where applicable",
+        "actual exit and runtime identity"
+      ],
+      "positive_control": {
+        "subject": "exact unchanged subject/roots with intact dependencies and independently admitted synthetic applicable authority",
+        "expected": "only named machine transition for the fixture; exact concrete receipt and root change; canonicality only where S2 adopted test contract explicitly permits",
+        "limitations": "NOT_EXECUTED; real authority/semantic executor not implemented or substituted with trivial callbacks."
+      },
+      "prerequisites": [
+        "adopted corresponding machine/authority contract",
+        "qualified real executor/storage/fence when testing real effects",
+        "independent admissible fixture authority, clearly distinguished from production identity"
+      ],
+      "variants": [
+        {
+          "id": "T03-V01",
+          "mutation": "swap package after decision",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        },
+        {
+          "id": "T03-V02",
+          "mutation": "swap predecessor",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        },
+        {
+          "id": "T03-V03",
+          "mutation": "change relationship root",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        },
+        {
+          "id": "T03-V04",
+          "mutation": "supply candidate receipt as final",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        }
+      ]
+    },
+    {
+      "id": "T04",
+      "machines": [
+        "M06",
+        "M14",
+        "M17"
+      ],
+      "name": "Cross-store publication",
+      "counterexample": "Crash before/after each object, journal, receipt and acknowledgment boundary",
+      "required_result": "Recover exact terminal state; no partial canon or duplicate effect",
+      "status": "NOT_EXECUTED_RUNTIME_PREREQUISITES_OPEN",
+      "fixture": {
+        "synthetic_only": true,
+        "baseline": "object store/journal/receipt/offhost ACK protocol with injectable crash at each write and response",
+        "deterministic_clock": "fixture-controlled expiry; causal order separate",
+        "identities": "tenant-A/tenant-B; consumer-website-v1; job-J1; no credentials",
+        "roots": {
+          "canonical_before": "R0",
+          "proposed_after": "R1",
+          "policy": "P1",
+          "authority": "AFIX1",
+          "epoch": "E1",
+          "external_generation": "F1"
+        },
+        "resource_budget": {
+          "max_nodes": 128,
+          "max_depth": 4,
+          "max_returned_bytes": 1048576,
+          "max_decoded_bytes": 8388608,
+          "max_steps": 10000
+        },
+        "budget_status": "SYNTHETIC_TEST_LIMITS_REQUIRE_ADOPTED_TEST_PROFILE; no production default implied",
+        "authority_status": "Named isolated test issuer/signature/root must be independently admitted by adopted test policy; actual production issuer remains unresolved; never always-true verifier."
+      },
+      "negative_variants": [
+        "object upload succeeds journal fails",
+        "journal partial",
+        "final receipt missing",
+        "offhost commit incomplete",
+        "response lost after durable ACK"
+      ],
+      "execution_steps": [
+        "enumerate durable boundaries",
+        "inject one crash per boundary",
+        "restart CLOSED",
+        "reconcile by commit identity"
+      ],
+      "oracles": [
+        "precommit crash: R0 remains canonical, staged bytes noncanonical; no final commit receipt/ACK",
+        "local commit crash: R1 and exact final local receipt survive, ACK pending; never demote committed state to candidate",
+        "offhost incomplete: local COMMITTED R1 preserved, no ACK",
+        "complete offhost prefix with lost response: same ACKed R1/receipt reconciled after fresh disclosure authority, no second transition",
+        "uncertain actual commit: restore CLOSED until exact journal/receipt/root reconciliation; no blind replay"
+      ],
+      "evidence_outputs": [
+        "pinned build and contract hashes",
+        "fixture/mutation identity",
+        "ordered boundary and fault transcript",
+        "before/after state roots",
+        "emitted receipts or explicit absence",
+        "resource measurements where applicable",
+        "actual exit and runtime identity"
+      ],
+      "positive_control": {
+        "subject": "exact unchanged subject/roots with intact dependencies and independently admitted synthetic applicable authority",
+        "expected": "only named machine transition for the fixture; exact concrete receipt and root change; canonicality only where S2 adopted test contract explicitly permits",
+        "limitations": "NOT_EXECUTED; real authority/semantic executor not implemented or substituted with trivial callbacks."
+      },
+      "prerequisites": [
+        "adopted corresponding machine/authority contract",
+        "qualified real executor/storage/fence when testing real effects",
+        "independent admissible fixture authority, clearly distinguished from production identity"
+      ],
+      "variants": [
+        {
+          "id": "T04-V01",
+          "mutation": "object upload succeeds journal fails",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R0",
+          "expected_receipt": "ATTEMPT_UNRESOLVED_NO_COMMIT",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no duplicate transition",
+            "no demotion of known COMMITTED R1",
+            "no ACK before complete offhost durability"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "PRECOMMIT"
+        },
+        {
+          "id": "T04-V02",
+          "mutation": "journal partial",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "UNRESOLVED until journal reconciliation",
+          "expected_receipt": "ATTEMPT_UNRESOLVED_NO_ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no duplicate transition",
+            "no demotion of known COMMITTED R1",
+            "no ACK before complete offhost durability"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "UNKNOWN_LOCAL_COMMIT"
+        },
+        {
+          "id": "T04-V03",
+          "mutation": "final receipt missing",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R1 if exact journal commit observed; otherwise CLOSED_UNRESOLVED",
+          "expected_receipt": "no fabricated final receipt; reconcile exact missing receipt",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no duplicate transition",
+            "no demotion of known COMMITTED R1",
+            "no ACK before complete offhost durability"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "LOCAL_COMMIT_UNACKNOWLEDGED"
+        },
+        {
+          "id": "T04-V04",
+          "mutation": "offhost commit incomplete",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R1",
+          "expected_receipt": "LOCAL_COMMIT_TRANSITION retained; ACK absent",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no duplicate transition",
+            "no demotion of known COMMITTED R1",
+            "no ACK before complete offhost durability"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "LOCAL_COMMITTED_ACK_PENDING"
+        },
+        {
+          "id": "T04-V05",
+          "mutation": "response lost after durable ACK",
+          "expected_classification": "SATISFIED",
+          "expected_canonical_root": "R1",
+          "expected_receipt": "ORIGINAL_ACK_RECEIPT_ONLY_AFTER_REAUTHORIZATION",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no duplicate transition",
+            "no demotion of known COMMITTED R1",
+            "no ACK before complete offhost durability"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "ACKNOWLEDGED_RESPONSE_LOST"
+        }
+      ]
+    },
+    {
+      "id": "T05",
+      "machines": [
+        "M08",
+        "M09",
+        "M10",
+        "M11",
+        "M12"
+      ],
+      "name": "Authority before recall",
+      "counterexample": "Hidden atlas endpoints, opaque edge leakage, stale projection grant",
+      "required_result": "No protected reference exposure; explicit bounded omission",
+      "status": "NOT_EXECUTED_RUNTIME_PREREQUISITES_OPEN",
+      "fixture": {
+        "synthetic_only": true,
+        "baseline": "visible node V1 and hidden node H1 linked; authorized projection scope V1 only",
+        "deterministic_clock": "fixture-controlled expiry; causal order separate",
+        "identities": "tenant-A/tenant-B; consumer-website-v1; job-J1; no credentials",
+        "roots": {
+          "canonical_before": "R0",
+          "proposed_after": "R1",
+          "policy": "P1",
+          "authority": "AFIX1",
+          "epoch": "E1",
+          "external_generation": "F1"
+        },
+        "resource_budget": {
+          "max_nodes": 128,
+          "max_depth": 4,
+          "max_returned_bytes": 1048576,
+          "max_decoded_bytes": 8388608,
+          "max_steps": 10000
+        },
+        "budget_status": "SYNTHETIC_TEST_LIMITS_REQUIRE_ADOPTED_TEST_PROFILE; no production default implied",
+        "authority_status": "Named isolated test issuer/signature/root must be independently admitted by adopted test policy; actual production issuer remains unresolved; never always-true verifier."
+      },
+      "negative_variants": [
+        "hidden endpoint label",
+        "edge-degree metadata side channel",
+        "stale atlas root",
+        "projection exceeds node/byte budget",
+        "missing S3-P grant"
+      ],
+      "execution_steps": [
+        "rebuild authorized atlas",
+        "request projection",
+        "inspect all fields and managed retrieval"
+      ],
+      "oracles": [
+        "no hidden names/digests unless independently authorized",
+        "opaque edge policy explicit",
+        "truncation reason explicit",
+        "missing authorization no projection"
+      ],
+      "evidence_outputs": [
+        "pinned build and contract hashes",
+        "fixture/mutation identity",
+        "ordered boundary and fault transcript",
+        "before/after state roots",
+        "emitted receipts or explicit absence",
+        "resource measurements where applicable",
+        "actual exit and runtime identity"
+      ],
+      "positive_control": {
+        "subject": "exact unchanged subject/roots with intact dependencies and independently admitted synthetic applicable authority",
+        "expected": "only named machine transition for the fixture; exact concrete receipt and root change; canonicality only where S2 adopted test contract explicitly permits",
+        "limitations": "NOT_EXECUTED; real authority/semantic executor not implemented or substituted with trivial callbacks."
+      },
+      "prerequisites": [
+        "adopted corresponding machine/authority contract",
+        "qualified real executor/storage/fence when testing real effects",
+        "independent admissible fixture authority, clearly distinguished from production identity"
+      ],
+      "variants": [
+        {
+          "id": "T05-V01",
+          "mutation": "hidden endpoint label",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        },
+        {
+          "id": "T05-V02",
+          "mutation": "edge-degree metadata side channel",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        },
+        {
+          "id": "T05-V03",
+          "mutation": "stale atlas root",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        },
+        {
+          "id": "T05-V04",
+          "mutation": "projection exceeds node/byte budget",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        },
+        {
+          "id": "T05-V05",
+          "mutation": "missing S3-P grant",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        }
+      ]
+    },
+    {
+      "id": "T06",
+      "machines": [
+        "M10",
+        "M11",
+        "M18",
+        "M19"
+      ],
+      "name": "Reference lease fencing",
+      "counterexample": "Wrong recipient, completed job, expiry, revocation or old generation",
+      "required_result": "Protected retrieval/disclosure denied",
+      "status": "NOT_EXECUTED_RUNTIME_PREREQUISITES_OPEN",
+      "fixture": {
+        "synthetic_only": true,
+        "baseline": "managed reference lease L1 bound to recipient A/job J1/generation F1",
+        "deterministic_clock": "fixture-controlled expiry; causal order separate",
+        "identities": "tenant-A/tenant-B; consumer-website-v1; job-J1; no credentials",
+        "roots": {
+          "canonical_before": "R0",
+          "proposed_after": "R1",
+          "policy": "P1",
+          "authority": "AFIX1",
+          "epoch": "E1",
+          "external_generation": "F1"
+        },
+        "resource_budget": {
+          "max_nodes": 128,
+          "max_depth": 4,
+          "max_returned_bytes": 1048576,
+          "max_decoded_bytes": 8388608,
+          "max_steps": 10000
+        },
+        "budget_status": "SYNTHETIC_TEST_LIMITS_REQUIRE_ADOPTED_TEST_PROFILE; no production default implied",
+        "authority_status": "Named isolated test issuer/signature/root must be independently admitted by adopted test policy; actual production issuer remains unresolved; never always-true verifier."
+      },
+      "negative_variants": [
+        "recipient B",
+        "job complete",
+        "expiry",
+        "revocation effective before fetch",
+        "external generation F2",
+        "old callback retries"
+      ],
+      "execution_steps": [
+        "issue reference fixture",
+        "advance one lifecycle boundary",
+        "attempt retrieval and disclosure"
+      ],
+      "oracles": [
+        "each fetch rechecks at actual guarded boundary",
+        "old reference never bypasses fencing",
+        "expiry does not claim erasure of prior plaintext"
+      ],
+      "evidence_outputs": [
+        "pinned build and contract hashes",
+        "fixture/mutation identity",
+        "ordered boundary and fault transcript",
+        "before/after state roots",
+        "emitted receipts or explicit absence",
+        "resource measurements where applicable",
+        "actual exit and runtime identity"
+      ],
+      "positive_control": {
+        "subject": "exact unchanged subject/roots with intact dependencies and independently admitted synthetic applicable authority",
+        "expected": "only named machine transition for the fixture; exact concrete receipt and root change; canonicality only where S2 adopted test contract explicitly permits",
+        "limitations": "NOT_EXECUTED; real authority/semantic executor not implemented or substituted with trivial callbacks."
+      },
+      "prerequisites": [
+        "adopted corresponding machine/authority contract",
+        "qualified real executor/storage/fence when testing real effects",
+        "independent admissible fixture authority, clearly distinguished from production identity"
+      ],
+      "variants": [
+        {
+          "id": "T06-V01",
+          "mutation": "recipient B",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        },
+        {
+          "id": "T06-V02",
+          "mutation": "job complete",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        },
+        {
+          "id": "T06-V03",
+          "mutation": "expiry",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        },
+        {
+          "id": "T06-V04",
+          "mutation": "revocation effective before fetch",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        },
+        {
+          "id": "T06-V05",
+          "mutation": "external generation F2",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        },
+        {
+          "id": "T06-V06",
+          "mutation": "old callback retries",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled."
+        }
+      ]
+    },
+    {
+      "id": "T07",
+      "machines": [
+        "M07",
+        "M08",
+        "M09",
+        "M05",
+        "M17"
+      ],
+      "name": "Retirement denial",
+      "counterexample": "Deny retirement of active and separately quarantined fixtures",
+      "required_result": "Prior state preserved; optional remap is separately adjudicated",
+      "status": "NOT_EXECUTED_RUNTIME_PREREQUISITES_OPEN",
+      "fixture": {
+        "synthetic_only": true,
+        "baseline": "separate ACTIVE artifact A1 and QUARANTINED artifact Q1 with maintenance DENY",
+        "deterministic_clock": "fixture-controlled expiry; causal order separate",
+        "identities": "tenant-A/tenant-B; consumer-website-v1; job-J1; no credentials",
+        "roots": {
+          "canonical_before": "R0",
+          "proposed_after": "R1",
+          "policy": "P1",
+          "authority": "AFIX1",
+          "epoch": "E1",
+          "external_generation": "F1"
+        },
+        "resource_budget": {
+          "max_nodes": 128,
+          "max_depth": 4,
+          "max_returned_bytes": 1048576,
+          "max_decoded_bytes": 8388608,
+          "max_steps": 10000
+        },
+        "budget_status": "SYNTHETIC_TEST_LIMITS_REQUIRE_ADOPTED_TEST_PROFILE; no production default implied",
+        "authority_status": "Named isolated test issuer/signature/root must be independently admitted by adopted test policy; actual production issuer remains unresolved; never always-true verifier."
+      },
+      "negative_variants": [
+        "deny retirement for A1",
+        "deny retirement for Q1",
+        "attempt automatic readmission on remap",
+        "reuse maintenance grant for projection"
+      ],
+      "execution_steps": [
+        "submit burn candidate",
+        "adjudicate deny",
+        "compare exact prior canonical states",
+        "attempt independent remap"
+      ],
+      "oracles": [
+        "A1 stays ACTIVE; Q1 stays QUARANTINED",
+        "denial emits no retirement transition",
+        "remap is fresh proposal requiring admission",
+        "S3-M grants do not authorize S3-P"
+      ],
+      "evidence_outputs": [
+        "pinned build and contract hashes",
+        "fixture/mutation identity",
+        "ordered boundary and fault transcript",
+        "before/after state roots",
+        "emitted receipts or explicit absence",
+        "resource measurements where applicable",
+        "actual exit and runtime identity"
+      ],
+      "positive_control": {
+        "subject": "exact unchanged subject/roots with intact dependencies and independently admitted synthetic applicable authority",
+        "expected": "only named machine transition for the fixture; exact concrete receipt and root change; canonicality only where S2 adopted test contract explicitly permits",
+        "limitations": "NOT_EXECUTED; real authority/semantic executor not implemented or substituted with trivial callbacks."
+      },
+      "prerequisites": [
+        "adopted corresponding machine/authority contract",
+        "qualified real executor/storage/fence when testing real effects",
+        "independent admissible fixture authority, clearly distinguished from production identity"
+      ],
+      "variants": [
+        {
+          "id": "T07-V01",
+          "mutation": "deny retirement for A1",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "ACTIVE remains ACTIVE; separately tested QUARANTINED remains QUARANTINED; no remap readmission"
+        },
+        {
+          "id": "T07-V02",
+          "mutation": "deny retirement for Q1",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "ACTIVE remains ACTIVE; separately tested QUARANTINED remains QUARANTINED; no remap readmission"
+        },
+        {
+          "id": "T07-V03",
+          "mutation": "attempt automatic readmission on remap",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "ACTIVE remains ACTIVE; separately tested QUARANTINED remains QUARANTINED; no remap readmission"
+        },
+        {
+          "id": "T07-V04",
+          "mutation": "reuse maintenance grant for projection",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "ACTIVE remains ACTIVE; separately tested QUARANTINED remains QUARANTINED; no remap readmission"
+        }
+      ]
+    },
+    {
+      "id": "T08",
+      "machines": [
+        "M07",
+        "M09",
+        "M17"
+      ],
+      "name": "Poison resurrection and reduction",
+      "counterexample": "Retired capsule via stale index; missing reconstruction dependency",
+      "required_result": "No ordinary recall/readmission; failed reduction retains full bytes",
+      "status": "NOT_EXECUTED_RUNTIME_PREREQUISITES_OPEN",
+      "fixture": {
+        "synthetic_only": true,
+        "baseline": "retired representation P1 with capsule C1 and dependencies D1/D2",
+        "deterministic_clock": "fixture-controlled expiry; causal order separate",
+        "identities": "tenant-A/tenant-B; consumer-website-v1; job-J1; no credentials",
+        "roots": {
+          "canonical_before": "R0",
+          "proposed_after": "R1",
+          "policy": "P1",
+          "authority": "AFIX1",
+          "epoch": "E1",
+          "external_generation": "F1"
+        },
+        "resource_budget": {
+          "max_nodes": 128,
+          "max_depth": 4,
+          "max_returned_bytes": 1048576,
+          "max_decoded_bytes": 8388608,
+          "max_steps": 10000
+        },
+        "budget_status": "SYNTHETIC_TEST_LIMITS_REQUIRE_ADOPTED_TEST_PROFILE; no production default implied",
+        "authority_status": "Named isolated test issuer/signature/root must be independently admitted by adopted test policy; actual production issuer remains unresolved; never always-true verifier."
+      },
+      "negative_variants": [
+        "stale active index",
+        "missing D2",
+        "corrupt capsule",
+        "transitive dependency cycle",
+        "change schema without historical decoder"
+      ],
+      "execution_steps": [
+        "deny ordinary recall",
+        "attempt authorized reconstruction",
+        "request physical reduction"
+      ],
+      "oracles": [
+        "no resurrection via indexes/capsules",
+        "failed dependency proof retains full original bytes",
+        "history retention separate from active status",
+        "bounded cycles do not hang"
+      ],
+      "evidence_outputs": [
+        "pinned build and contract hashes",
+        "fixture/mutation identity",
+        "ordered boundary and fault transcript",
+        "before/after state roots",
+        "emitted receipts or explicit absence",
+        "resource measurements where applicable",
+        "actual exit and runtime identity"
+      ],
+      "positive_control": {
+        "subject": "exact unchanged subject/roots with intact dependencies and independently admitted synthetic applicable authority",
+        "expected": "only named machine transition for the fixture; exact concrete receipt and root change; canonicality only where S2 adopted test contract explicitly permits",
+        "limitations": "NOT_EXECUTED; real authority/semantic executor not implemented or substituted with trivial callbacks."
+      },
+      "prerequisites": [
+        "adopted corresponding machine/authority contract",
+        "qualified real executor/storage/fence when testing real effects",
+        "independent admissible fixture authority, clearly distinguished from production identity"
+      ],
+      "variants": [
+        {
+          "id": "T08-V01",
+          "mutation": "stale active index",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "RETIRED_OR_QUARANTINED eligibility remains excluded; full original bytes retained on missing/corrupt reconstruction proof"
+        },
+        {
+          "id": "T08-V02",
+          "mutation": "missing D2",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "RETIRED_OR_QUARANTINED eligibility remains excluded; full original bytes retained on missing/corrupt reconstruction proof"
+        },
+        {
+          "id": "T08-V03",
+          "mutation": "corrupt capsule",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "RETIRED_OR_QUARANTINED eligibility remains excluded; full original bytes retained on missing/corrupt reconstruction proof"
+        },
+        {
+          "id": "T08-V04",
+          "mutation": "transitive dependency cycle",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "RETIRED_OR_QUARANTINED eligibility remains excluded; full original bytes retained on missing/corrupt reconstruction proof"
+        },
+        {
+          "id": "T08-V05",
+          "mutation": "change schema without historical decoder",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "RETIRED_OR_QUARANTINED eligibility remains excluded; full original bytes retained on missing/corrupt reconstruction proof"
+        }
+      ]
+    },
+    {
+      "id": "T09",
+      "machines": [
+        "M18",
+        "M19",
+        "M01",
+        "M06",
+        "M09",
+        "M11"
+      ],
+      "name": "Global airlock",
+      "counterexample": "Close epoch concurrently with commits, retrieval and disclosure",
+      "required_result": "Mutually ordered closure/effects; stale in-flight operations fenced",
+      "status": "NOT_EXECUTED_RUNTIME_PREREQUISITES_OPEN",
+      "fixture": {
+        "synthetic_only": true,
+        "baseline": "OPEN epoch E1 and three concurrent operations: commit, fetch, disclosure",
+        "deterministic_clock": "fixture-controlled expiry; causal order separate",
+        "identities": "tenant-A/tenant-B; consumer-website-v1; job-J1; no credentials",
+        "roots": {
+          "canonical_before": "R0",
+          "proposed_after": "R1",
+          "policy": "P1",
+          "authority": "AFIX1",
+          "epoch": "E1",
+          "external_generation": "F1"
+        },
+        "resource_budget": {
+          "max_nodes": 128,
+          "max_depth": 4,
+          "max_returned_bytes": 1048576,
+          "max_decoded_bytes": 8388608,
+          "max_steps": 10000
+        },
+        "budget_status": "SYNTHETIC_TEST_LIMITS_REQUIRE_ADOPTED_TEST_PROFILE; no production default implied",
+        "authority_status": "Named isolated test issuer/signature/root must be independently admitted by adopted test policy; actual production issuer remains unresolved; never always-true verifier."
+      },
+      "negative_variants": [
+        "close before effect fence",
+        "close after effect fence",
+        "close between cached check and boundary",
+        "revocation concurrent with retry",
+        "unavailable fence authority"
+      ],
+      "execution_steps": [
+        "enumerate both orders for every boundary",
+        "inject closure",
+        "collect causal boundary transcript"
+      ],
+      "oracles": [
+        "every effect ordered before closure or rejected after",
+        "no unfenced stale callback",
+        "unknown fence remains CLOSED",
+        "HTTP health never substitutes integrity readiness"
+      ],
+      "evidence_outputs": [
+        "pinned build and contract hashes",
+        "fixture/mutation identity",
+        "ordered boundary and fault transcript",
+        "before/after state roots",
+        "emitted receipts or explicit absence",
+        "resource measurements where applicable",
+        "actual exit and runtime identity"
+      ],
+      "positive_control": {
+        "subject": "exact unchanged subject/roots with intact dependencies and independently admitted synthetic applicable authority",
+        "expected": "only named machine transition for the fixture; exact concrete receipt and root change; canonicality only where S2 adopted test contract explicitly permits",
+        "limitations": "NOT_EXECUTED; real authority/semantic executor not implemented or substituted with trivial callbacks."
+      },
+      "prerequisites": [
+        "adopted corresponding machine/authority contract",
+        "qualified real executor/storage/fence when testing real effects",
+        "independent admissible fixture authority, clearly distinguished from production identity"
+      ],
+      "variants": [
+        {
+          "id": "T09-V01",
+          "mutation": "close before effect fence",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Effect linearization point strictly precedes closure OR effect denied; cached check order alone never suffices.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "EPOCH_CLOSED"
+        },
+        {
+          "id": "T09-V02",
+          "mutation": "close after effect fence",
+          "expected_classification": "SATISFIED",
+          "expected_canonical_root": "R1 only for effect causally ordered BEFORE closure",
+          "expected_receipt": "one exact prior-effect receipt; closure receipt; later effects denied",
+          "expected_ordinary_access": "DENIED_AFTER_CLOSURE",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Effect linearization point strictly precedes closure OR effect denied; cached check order alone never suffices.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "EPOCH_CLOSED"
+        },
+        {
+          "id": "T09-V03",
+          "mutation": "close between cached check and boundary",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Effect linearization point strictly precedes closure OR effect denied; cached check order alone never suffices.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "EPOCH_CLOSED"
+        },
+        {
+          "id": "T09-V04",
+          "mutation": "revocation concurrent with retry",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Effect linearization point strictly precedes closure OR effect denied; cached check order alone never suffices.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "EPOCH_CLOSED"
+        },
+        {
+          "id": "T09-V05",
+          "mutation": "unavailable fence authority",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Effect linearization point strictly precedes closure OR effect denied; cached check order alone never suffices.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "EPOCH_CLOSED"
+        }
+      ]
+    },
+    {
+      "id": "T10",
+      "machines": [
+        "M12",
+        "M15",
+        "M18",
+        "M19"
+      ],
+      "name": "Independent recovery",
+      "counterexample": "Verifier self-attestation, unknown trust, compromised host/admin",
+      "required_result": "CLOSED until independent trusted recovery; RTO never bypasses authority",
+      "status": "NOT_EXECUTED_RUNTIME_PREREQUISITES_OPEN",
+      "fixture": {
+        "synthetic_only": true,
+        "baseline": "CLOSED epoch and recovery trust root held outside compromised domain",
+        "deterministic_clock": "fixture-controlled expiry; causal order separate",
+        "identities": "tenant-A/tenant-B; consumer-website-v1; job-J1; no credentials",
+        "roots": {
+          "canonical_before": "R0",
+          "proposed_after": "R1",
+          "policy": "P1",
+          "authority": "AFIX1",
+          "epoch": "E1",
+          "external_generation": "F1"
+        },
+        "resource_budget": {
+          "max_nodes": 128,
+          "max_depth": 4,
+          "max_returned_bytes": 1048576,
+          "max_decoded_bytes": 8388608,
+          "max_steps": 10000
+        },
+        "budget_status": "SYNTHETIC_TEST_LIMITS_REQUIRE_ADOPTED_TEST_PROFILE; no production default implied",
+        "authority_status": "Named isolated test issuer/signature/root must be independently admitted by adopted test policy; actual production issuer remains unresolved; never always-true verifier."
+      },
+      "negative_variants": [
+        "same verifier self-attestation",
+        "process-only failure with verified independent root",
+        "host/admin compromise",
+        "unknown external anchor",
+        "RTO deadline expires"
+      ],
+      "execution_steps": [
+        "classify trust domain",
+        "verify recovery evidence independently",
+        "attempt fresh-epoch publication"
+      ],
+      "oracles": [
+        "self-attestation never sufficient",
+        "only proven bounded process failure auto-recovers",
+        "host compromise clean recovery required",
+        "unknown anchor stays CLOSED",
+        "RTO creates no authority"
+      ],
+      "evidence_outputs": [
+        "pinned build and contract hashes",
+        "fixture/mutation identity",
+        "ordered boundary and fault transcript",
+        "before/after state roots",
+        "emitted receipts or explicit absence",
+        "resource measurements where applicable",
+        "actual exit and runtime identity"
+      ],
+      "positive_control": {
+        "subject": "exact unchanged subject/roots with intact dependencies and independently admitted synthetic applicable authority",
+        "expected": "only named machine transition for the fixture; exact concrete receipt and root change; canonicality only where S2 adopted test contract explicitly permits",
+        "limitations": "NOT_EXECUTED; real authority/semantic executor not implemented or substituted with trivial callbacks."
+      },
+      "prerequisites": [
+        "adopted corresponding machine/authority contract",
+        "qualified real executor/storage/fence when testing real effects",
+        "independent admissible fixture authority, clearly distinguished from production identity"
+      ],
+      "variants": [
+        {
+          "id": "T10-V01",
+          "mutation": "same verifier self-attestation",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "CLOSED unless independently trusted bounded-process recovery proof fully satisfies all fresh-generation/prefix predicates"
+        },
+        {
+          "id": "T10-V02",
+          "mutation": "process-only failure with verified independent root",
+          "expected_classification": "SATISFIED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "RECOVERY_TRANSITION to fresh epoch only after exact independent proof; never self-attestation",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "CLOSED unless independently trusted bounded-process recovery proof fully satisfies all fresh-generation/prefix predicates"
+        },
+        {
+          "id": "T10-V03",
+          "mutation": "host/admin compromise",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "CLOSED unless independently trusted bounded-process recovery proof fully satisfies all fresh-generation/prefix predicates"
+        },
+        {
+          "id": "T10-V04",
+          "mutation": "unknown external anchor",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "CLOSED unless independently trusted bounded-process recovery proof fully satisfies all fresh-generation/prefix predicates"
+        },
+        {
+          "id": "T10-V05",
+          "mutation": "RTO deadline expires",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "CLOSED unless independently trusted bounded-process recovery proof fully satisfies all fresh-generation/prefix predicates"
+        }
+      ]
+    },
+    {
+      "id": "T11",
+      "machines": [
+        "M14",
+        "M17",
+        "M18",
+        "M19"
+      ],
+      "name": "Off-host acknowledged history",
+      "counterexample": "Host loss after acknowledgment; missing revocation/replay suffix",
+      "required_result": "Complete acknowledged prefix restored or remain CLOSED; no blind replay",
+      "status": "NOT_EXECUTED_RUNTIME_PREREQUISITES_OPEN",
+      "fixture": {
+        "synthetic_only": true,
+        "baseline": "ACKed complete commit K1 including artifacts, receipts, journal, authority/revocation roots and replay keys, external F2 anchor",
+        "deterministic_clock": "fixture-controlled expiry; causal order separate",
+        "identities": "tenant-A/tenant-B; consumer-website-v1; job-J1; no credentials",
+        "roots": {
+          "canonical_before": "R0",
+          "proposed_after": "R1",
+          "policy": "P1",
+          "authority": "AFIX1",
+          "epoch": "E1",
+          "external_generation": "F1"
+        },
+        "resource_budget": {
+          "max_nodes": 128,
+          "max_depth": 4,
+          "max_returned_bytes": 1048576,
+          "max_decoded_bytes": 8388608,
+          "max_steps": 10000
+        },
+        "budget_status": "SYNTHETIC_TEST_LIMITS_REQUIRE_ADOPTED_TEST_PROFILE; no production default implied",
+        "authority_status": "Named isolated test issuer/signature/root must be independently admitted by adopted test policy; actual production issuer remains unresolved; never always-true verifier."
+      },
+      "negative_variants": [
+        "host loss after ACK",
+        "missing revocation suffix",
+        "missing artifact dependency",
+        "rollback anchor to F1",
+        "restart old host",
+        "ACK before offhost durability"
+      ],
+      "execution_steps": [
+        "destroy only isolated host fixture",
+        "restore offhost snapshot CLOSED",
+        "compare ACK prefix and dependency closure",
+        "fence old identities"
+      ],
+      "oracles": [
+        "zero ACKed history loss",
+        "incomplete restore stays CLOSED",
+        "old hosts/grants/refs fenced",
+        "rebuildable RPO15m state cannot include decision dependencies",
+        "same-host copy is not host-loss evidence"
+      ],
+      "evidence_outputs": [
+        "pinned build and contract hashes",
+        "fixture/mutation identity",
+        "ordered boundary and fault transcript",
+        "before/after state roots",
+        "emitted receipts or explicit absence",
+        "resource measurements where applicable",
+        "actual exit and runtime identity"
+      ],
+      "positive_control": {
+        "subject": "exact unchanged subject/roots with intact dependencies and independently admitted synthetic applicable authority",
+        "expected": "only named machine transition for the fixture; exact concrete receipt and root change; canonicality only where S2 adopted test contract explicitly permits",
+        "limitations": "NOT_EXECUTED; real authority/semantic executor not implemented or substituted with trivial callbacks."
+      },
+      "prerequisites": [
+        "adopted corresponding machine/authority contract",
+        "qualified real executor/storage/fence when testing real effects",
+        "independent admissible fixture authority, clearly distinguished from production identity"
+      ],
+      "variants": [
+        {
+          "id": "T11-V01",
+          "mutation": "host loss after ACK",
+          "expected_classification": "SATISFIED",
+          "expected_canonical_root": "Exact complete acknowledged R1 prefix restored as evidence; eligibility CLOSED until qualified recovery",
+          "expected_receipt": "RECOVERY_ATTEMPT pinned to complete ACK-prefix digest; no ordinary action permission",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection",
+            "no reopened writes from incomplete suffix",
+            "no old host generation effect",
+            "no blind replay from missing terminal receipt"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "RESTORE_CLOSED, prior host/grants/refs/callbacks fenced"
+        },
+        {
+          "id": "T11-V02",
+          "mutation": "missing revocation suffix",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection",
+            "no reopened writes from incomplete suffix",
+            "no old host generation effect",
+            "no blind replay from missing terminal receipt"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "RESTORE_CLOSED, prior host/grants/refs/callbacks fenced"
+        },
+        {
+          "id": "T11-V03",
+          "mutation": "missing artifact dependency",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection",
+            "no reopened writes from incomplete suffix",
+            "no old host generation effect",
+            "no blind replay from missing terminal receipt"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "RESTORE_CLOSED, prior host/grants/refs/callbacks fenced"
+        },
+        {
+          "id": "T11-V04",
+          "mutation": "rollback anchor to F1",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection",
+            "no reopened writes from incomplete suffix",
+            "no old host generation effect",
+            "no blind replay from missing terminal receipt"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "RESTORE_CLOSED, prior host/grants/refs/callbacks fenced"
+        },
+        {
+          "id": "T11-V05",
+          "mutation": "restart old host",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection",
+            "no reopened writes from incomplete suffix",
+            "no old host generation effect",
+            "no blind replay from missing terminal receipt"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "RESTORE_CLOSED, prior host/grants/refs/callbacks fenced"
+        },
+        {
+          "id": "T11-V06",
+          "mutation": "ACK before offhost durability",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection",
+            "no reopened writes from incomplete suffix",
+            "no old host generation effect",
+            "no blind replay from missing terminal receipt"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "RESTORE_CLOSED, prior host/grants/refs/callbacks fenced"
+        }
+      ]
+    },
+    {
+      "id": "T12",
+      "machines": [
+        "M16",
+        "M17",
+        "M15"
+      ],
+      "name": "Historical representation",
+      "counterexample": "Codec/schema migration, Unicode/line endings, corrupt capsule, decompression bomb",
+      "required_result": "Exact promised bytes or fail closed with bounded resources",
+      "status": "NOT_EXECUTED_RUNTIME_PREREQUISITES_OPEN",
+      "fixture": {
+        "synthetic_only": true,
+        "baseline": "source bytes with mixed CRLF/LF and Unicode plus versioned codecs and explicit compressed/uncompressed bounds",
+        "deterministic_clock": "fixture-controlled expiry; causal order separate",
+        "identities": "tenant-A/tenant-B; consumer-website-v1; job-J1; no credentials",
+        "roots": {
+          "canonical_before": "R0",
+          "proposed_after": "R1",
+          "policy": "P1",
+          "authority": "AFIX1",
+          "epoch": "E1",
+          "external_generation": "F1"
+        },
+        "resource_budget": {
+          "max_nodes": 128,
+          "max_depth": 4,
+          "max_returned_bytes": 1048576,
+          "max_decoded_bytes": 8388608,
+          "max_steps": 10000
+        },
+        "budget_status": "SYNTHETIC_TEST_LIMITS_REQUIRE_ADOPTED_TEST_PROFILE; no production default implied",
+        "authority_status": "Named isolated test issuer/signature/root must be independently admitted by adopted test policy; actual production issuer remains unresolved; never always-true verifier."
+      },
+      "negative_variants": [
+        "unknown codec",
+        "invalid Unicode in governed representation",
+        "one-byte corruption",
+        "decompression bomb",
+        "historical schema removed",
+        "contextual fidelity mistaken for exact reconstruction"
+      ],
+      "execution_steps": [
+        "package exact source fixture",
+        "decode under pinned historical contract",
+        "compare promised fidelity and original bytes",
+        "measure bounds"
+      ],
+      "oracles": [
+        "exact promised bytes equal source digest and length",
+        "unsupported/corrupt/missing dependency rejected",
+        "resource bound enforced before allocation",
+        "contextual omissions explicit and never exactness claim"
+      ],
+      "evidence_outputs": [
+        "pinned build and contract hashes",
+        "fixture/mutation identity",
+        "ordered boundary and fault transcript",
+        "before/after state roots",
+        "emitted receipts or explicit absence",
+        "resource measurements where applicable",
+        "actual exit and runtime identity"
+      ],
+      "positive_control": {
+        "subject": "exact unchanged subject/roots with intact dependencies and independently admitted synthetic applicable authority",
+        "expected": "only named machine transition for the fixture; exact concrete receipt and root change; canonicality only where S2 adopted test contract explicitly permits",
+        "limitations": "NOT_EXECUTED; real authority/semantic executor not implemented or substituted with trivial callbacks."
+      },
+      "prerequisites": [
+        "adopted corresponding machine/authority contract",
+        "qualified real executor/storage/fence when testing real effects",
+        "independent admissible fixture authority, clearly distinguished from production identity"
+      ],
+      "variants": [
+        {
+          "id": "T12-V01",
+          "mutation": "unknown codec",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "RECONSTRUCTION_ATTEMPT with exact BLOCKED versus UNRESOLVED axis; no exact-byte success on contextual fidelity",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "RECONSTRUCTION_UNRESOLVED for missing codec/decoder/dependency; BLOCKED for known corruption/bound violation; original retained"
+        },
+        {
+          "id": "T12-V02",
+          "mutation": "invalid Unicode in governed representation",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "RECONSTRUCTION_ATTEMPT with exact BLOCKED versus UNRESOLVED axis; no exact-byte success on contextual fidelity",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "RECONSTRUCTION_UNRESOLVED for missing codec/decoder/dependency; BLOCKED for known corruption/bound violation; original retained"
+        },
+        {
+          "id": "T12-V03",
+          "mutation": "one-byte corruption",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "RECONSTRUCTION_ATTEMPT with exact BLOCKED versus UNRESOLVED axis; no exact-byte success on contextual fidelity",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "RECONSTRUCTION_UNRESOLVED for missing codec/decoder/dependency; BLOCKED for known corruption/bound violation; original retained"
+        },
+        {
+          "id": "T12-V04",
+          "mutation": "decompression bomb",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "RECONSTRUCTION_ATTEMPT with exact BLOCKED versus UNRESOLVED axis; no exact-byte success on contextual fidelity",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "RECONSTRUCTION_UNRESOLVED for missing codec/decoder/dependency; BLOCKED for known corruption/bound violation; original retained"
+        },
+        {
+          "id": "T12-V05",
+          "mutation": "historical schema removed",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "RECONSTRUCTION_ATTEMPT with exact BLOCKED versus UNRESOLVED axis; no exact-byte success on contextual fidelity",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "RECONSTRUCTION_UNRESOLVED for missing codec/decoder/dependency; BLOCKED for known corruption/bound violation; original retained"
+        },
+        {
+          "id": "T12-V06",
+          "mutation": "contextual fidelity mistaken for exact reconstruction",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "RECONSTRUCTION_ATTEMPT with exact BLOCKED versus UNRESOLVED axis; no exact-byte success on contextual fidelity",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "RECONSTRUCTION_UNRESOLVED for missing codec/decoder/dependency; BLOCKED for known corruption/bound violation; original retained"
+        }
+      ]
+    },
+    {
+      "id": "T13",
+      "machines": [
+        "M01",
+        "M11",
+        "M13",
+        "M14"
+      ],
+      "name": "Consumer lifecycle",
+      "counterexample": "Detach/disable/incompatible schema/duplicate or partial delivery",
+      "required_result": "No authority downgrade; existing manual behavior survives",
+      "status": "NOT_EXECUTED_RUNTIME_PREREQUISITES_OPEN",
+      "fixture": {
+        "synthetic_only": true,
+        "baseline": "zero-model versioned consumer adapter with manual operation independent of optional enrichment",
+        "deterministic_clock": "fixture-controlled expiry; causal order separate",
+        "identities": "tenant-A/tenant-B; consumer-website-v1; job-J1; no credentials",
+        "roots": {
+          "canonical_before": "R0",
+          "proposed_after": "R1",
+          "policy": "P1",
+          "authority": "AFIX1",
+          "epoch": "E1",
+          "external_generation": "F1"
+        },
+        "resource_budget": {
+          "max_nodes": 128,
+          "max_depth": 4,
+          "max_returned_bytes": 1048576,
+          "max_decoded_bytes": 8388608,
+          "max_steps": 10000
+        },
+        "budget_status": "SYNTHETIC_TEST_LIMITS_REQUIRE_ADOPTED_TEST_PROFILE; no production default implied",
+        "authority_status": "Named isolated test issuer/signature/root must be independently admitted by adopted test policy; actual production issuer remains unresolved; never always-true verifier."
+      },
+      "negative_variants": [
+        "duplicate dispatch",
+        "partial acknowledgment",
+        "detach provider",
+        "incompatible adapter version",
+        "disabled adapter",
+        "missing required authority",
+        "out-of-order source event"
+      ],
+      "execution_steps": [
+        "execute synthetic consumer lifecycle",
+        "disable enrichment",
+        "replay scoped delivery",
+        "attempt action from recalled context"
+      ],
+      "oracles": [
+        "manual allowed flow unchanged when optional enrichment unavailable",
+        "required authorization absence blocks",
+        "no duplicate canonical effect",
+        "no context-to-action permission inheritance",
+        "separate website/Blogger version qualification"
+      ],
+      "evidence_outputs": [
+        "pinned build and contract hashes",
+        "fixture/mutation identity",
+        "ordered boundary and fault transcript",
+        "before/after state roots",
+        "emitted receipts or explicit absence",
+        "resource measurements where applicable",
+        "actual exit and runtime identity"
+      ],
+      "positive_control": {
+        "subject": "exact unchanged subject/roots with intact dependencies and independently admitted synthetic applicable authority",
+        "expected": "only named machine transition for the fixture; exact concrete receipt and root change; canonicality only where S2 adopted test contract explicitly permits",
+        "limitations": "NOT_EXECUTED; real authority/semantic executor not implemented or substituted with trivial callbacks."
+      },
+      "prerequisites": [
+        "adopted corresponding machine/authority contract",
+        "qualified real executor/storage/fence when testing real effects",
+        "independent admissible fixture authority, clearly distinguished from production identity"
+      ],
+      "variants": [
+        {
+          "id": "T13-V01",
+          "mutation": "duplicate dispatch",
+          "expected_classification": "SATISFIED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "Existing terminal receipt on authorized duplicate, or no Brain effect/receipt when disabled; no second admission",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "adapter delivery state separate from product manual-operation state"
+        },
+        {
+          "id": "T13-V02",
+          "mutation": "partial acknowledgment",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "adapter delivery state separate from product manual-operation state"
+        },
+        {
+          "id": "T13-V03",
+          "mutation": "detach provider",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "adapter delivery state separate from product manual-operation state"
+        },
+        {
+          "id": "T13-V04",
+          "mutation": "incompatible adapter version",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "adapter delivery state separate from product manual-operation state"
+        },
+        {
+          "id": "T13-V05",
+          "mutation": "disabled adapter",
+          "expected_classification": "SATISFIED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "Existing terminal receipt on authorized duplicate, or no Brain effect/receipt when disabled; no second admission",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "adapter delivery state separate from product manual-operation state"
+        },
+        {
+          "id": "T13-V06",
+          "mutation": "missing required authority",
+          "expected_classification": "UNRESOLVED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "adapter delivery state separate from product manual-operation state"
+        },
+        {
+          "id": "T13-V07",
+          "mutation": "out-of-order source event",
+          "expected_classification": "BLOCKED",
+          "expected_canonical_root": "R0 unchanged unless specific durable-commit/restore control below",
+          "expected_receipt": "ATTEMPT with exact subject/operation/predecessor and lossless BLOCKED/UNRESOLVED findings; no final effect/commit/ACK",
+          "expected_ordinary_access": "DENIED",
+          "forbidden_effects": [
+            "no unqualified canon publication",
+            "no cross-tenant/recipient disclosure",
+            "no new authority grant from recall/projection"
+          ],
+          "causal_oracle": "Pinned mutation observed before actual governed boundary; transcript binds attempted operation, current roots/epoch/generation, receipt presence/absence and measured limits.",
+          "resource_oracle": "No traversal/allocation/decoding exceeds pinned fixture bounds; refusal itself bounded; truncation/omissions labeled.",
+          "expected_state": "adapter delivery state separate from product manual-operation state"
+        }
+      ]
+    }
+  ],
+  "production_ready": false,
+  "machine_draft_reference": "specification-drafts-v3"
+}

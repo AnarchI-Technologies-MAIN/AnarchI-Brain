@@ -1,0 +1,379 @@
+{
+  "baseline_head": "79fd607b3b8983fdd2d0254f3af59df9a92257b8",
+  "baseline_tree": "2bc508ef199311208cc4b7c68398f61b22d4adf1",
+  "baseline_index_sha256": "358eac46592c69debdb49e6eeccb27ccc0e7006a56148d507eb58c6347e47806",
+  "original_sources": {
+    "C:\\AnarchI-Brain\\.gitignore": {
+      "sha256": "5fddeb7131ac77ea3af5279bd3840cb69449756c3555dc5b1fba360e424e4930",
+      "bytes": 49,
+      "lines": 6
+    },
+    "C:\\AnarchI-Brain\\constitution\\artifacts\\ARTIFACT-RECEIPT-TAXONOMY.md": {
+      "sha256": "ef70aadf8bdb6000f56dbbb3af0c9218102c6fe8a84ec914817bdf0fc9805565",
+      "bytes": 27939,
+      "lines": 878
+    },
+    "C:\\AnarchI-Brain\\constitution\\authority\\AUTHORITY-DIMENSIONS.md": {
+      "sha256": "3f4c54ee5640c8a047a180380babc90f6ec66490335305f8c074196940b48bd7",
+      "bytes": 16877,
+      "lines": 453
+    },
+    "C:\\AnarchI-Brain\\constitution\\state-machines\\REGISTRY.md": {
+      "sha256": "adac857e934a8095f70f5426edb96b60041b8ebe072fe0ceed33294967ead5c2",
+      "bytes": 984,
+      "lines": 40
+    },
+    "C:\\AnarchI-Brain\\contracts\\cortex\\CORTEX-CONTRACT.md": {
+      "sha256": "35d3bbc1e866876bd188339e4431748cb18a70edacf2cc609e4195bf46ebbc49",
+      "bytes": 13219,
+      "lines": 411
+    },
+    "C:\\AnarchI-Brain\\contracts\\organs\\AUTHORITY-MATRIX.md": {
+      "sha256": "def3278a6507384ad121d6e8a0b79efd309e1a7db69cedad0480e7ee3e792203",
+      "bytes": 8289,
+      "lines": 131
+    },
+    "C:\\AnarchI-Brain\\contracts\\substrate-fin\\SUBSTRATE-FIN-CONTRACT.md": {
+      "sha256": "fd3376a52743b4e539ecb9c5c5b1342abcc7c2c32e3b31410debd1428715819b",
+      "bytes": 20214,
+      "lines": 477
+    },
+    "C:\\AnarchI-Brain\\hashing\\HASH-SIGNATURE-PROFILE.md": {
+      "sha256": "bf4290fefa8ad284b12635aa15ba45a0e673915f18acca07482bf7f2b9f1a41e",
+      "bytes": 28201,
+      "lines": 1064
+    },
+    "C:\\AnarchI-Brain\\qualification\\QUALIFICATION-CONTRACT.md": {
+      "sha256": "bd247c590a170fe427286373dedbed1916fed9d876b6604eeb40ad02a1733028",
+      "bytes": 9374,
+      "lines": 234
+    },
+    "C:\\AnarchI-Brain\\README.md": {
+      "sha256": "b1a2c45fd3c62e2ea68757615beb1f79cd8dab88afc715b1bda99ed8db52c45d",
+      "bytes": 888,
+      "lines": 26
+    },
+    "C:\\AnarchI-Brain\\resolution\\RESOLUTION-CONTRACT.md": {
+      "sha256": "5bc384d264e62b0b8ef516d626b073cbabd15a054caa768946392a5a1978b9cf",
+      "bytes": 2185,
+      "lines": 101
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\cases.v1.json": {
+      "sha256": "4abf8f8c343c06c8ce24bafdefda83295bccf6c716feb11a76546a2878cc4421",
+      "bytes": 6077,
+      "lines": 143
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\positive\\attestation.v1.fixture.json": {
+      "sha256": "232c03894c96f8d6c8012f1ba79fce6e2e58377ccbfb8bb557d96744253df88d",
+      "bytes": 171,
+      "lines": 7
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\positive\\authority-grant.v1.fixture.json": {
+      "sha256": "efe5a836e3ae18d2506f9606275144fd3dba174645610eabf0fc6756a53a09a0",
+      "bytes": 222,
+      "lines": 8
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\positive\\authorization.v1.fixture.json": {
+      "sha256": "d15b6ba8ca8b49e2273f14b01cbb0d14747af299bf1333d7a714948829e15687",
+      "bytes": 282,
+      "lines": 12
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\positive\\capability.v1.fixture.json": {
+      "sha256": "ec62cfa804ce73d4dbb8d267ecbf0788d2401e8f43292cdb3d51e54445655f33",
+      "bytes": 165,
+      "lines": 7
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\positive\\integrity-epoch-record.v1.fixture.json": {
+      "sha256": "44794cefec923f288f692d7412e376b242ce3b5af8b2deb859dc803f1b491bf2",
+      "bytes": 183,
+      "lines": 9
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\positive\\observation.v1.fixture.json": {
+      "sha256": "98092bf4bc80b235b8296d8d901407ff21924dfcf8cec2baf81d14105298c8b1",
+      "bytes": 183,
+      "lines": 9
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\positive\\policy-root.v1.fixture.json": {
+      "sha256": "d688d4c9be49b51cb83e699da8ff8ebc5f81d4605f796f970a46e0009877e0fb",
+      "bytes": 186,
+      "lines": 9
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\positive\\projection.v1.fixture.json": {
+      "sha256": "8cc1cb61cc3a58072dc776ce0a85fc96a993096ee7af2c3f3e76b85c23a404da",
+      "bytes": 178,
+      "lines": 9
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\positive\\proposal.v1.fixture.json": {
+      "sha256": "0fd9e35f5173cac94c3429b976888a8b8f8d81da675a2accb9a26e2f9c4825e1",
+      "bytes": 150,
+      "lines": 8
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\positive\\qualification-result.v1.fixture.json": {
+      "sha256": "53e1caf7fae3902f7e72bb315a27d5248cbd557397bec6d9130c44e12e755103",
+      "bytes": 217,
+      "lines": 8
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\positive\\receipt.attempt.v1.fixture.json": {
+      "sha256": "4ce711c9e6da2a646c529725134c499f4808d671375aad526121f0b031e90d0b",
+      "bytes": 154,
+      "lines": 8
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\positive\\receipt.decision.v1.fixture.json": {
+      "sha256": "3d96945a56bdd755bf25b6c1be6aaf620409bcc213262df94376e85f9d38f03a",
+      "bytes": 157,
+      "lines": 8
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\positive\\receipt.effect.v1.fixture.json": {
+      "sha256": "651341d53fc1a990aa3665f3e7b5108b967476697726a1c318488cb61292858f",
+      "bytes": 151,
+      "lines": 8
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\positive\\receipt.event.v1.fixture.json": {
+      "sha256": "9b4a2620e162b0440c6394a5b25b1b4a50df10e9a2be57d6fc41c179fe517544",
+      "bytes": 148,
+      "lines": 8
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\positive\\receipt.transition.v1.fixture.json": {
+      "sha256": "8c7750092cd939d9165530ed7c1b5a60e55eba633149ba13d0e8e7a6ac192867",
+      "bytes": 163,
+      "lines": 8
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\positive\\relationship.v1.fixture.json": {
+      "sha256": "e0a4b24c69b6bf347047da64b95241f46c42c5144e18dd0140fa08c396f8981f",
+      "bytes": 195,
+      "lines": 10
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\positive\\schema.v1.fixture.json": {
+      "sha256": "3da25c7e198271c24bdba85a3eb674ae83227d857fb1ca8413af7fd1c9c6659a",
+      "bytes": 228,
+      "lines": 10
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\positive\\validation-result.v1.fixture.json": {
+      "sha256": "d9bc700de6c4da93ea1261c999eecf64cbb0090300bc78c0689f73c89856fd0b",
+      "bytes": 208,
+      "lines": 8
+    },
+    "C:\\AnarchI-Brain\\schemas\\conformance\\run_sw0_006.py": {
+      "sha256": "fd0e45a2bc0f23285bdca62fa5547d07f900b46f2f4fd1d78c990aa11f78edfc",
+      "bytes": 28362,
+      "lines": 1223
+    },
+    "C:\\AnarchI-Brain\\schemas\\CORE-SCHEMA-CONTRACT.md": {
+      "sha256": "8438a40f0c043c3ed88a794b1fd998facce7fa09e389bc4e9d370d46a8bee46c",
+      "bytes": 42257,
+      "lines": 1471
+    },
+    "C:\\AnarchI-Brain\\schemas\\registry.v1.json": {
+      "sha256": "0df9a474c006a75c0e56d672e6a6a13d6cdb991b91eda818896eea7d6eb8f509",
+      "bytes": 5674,
+      "lines": 138
+    },
+    "C:\\AnarchI-Brain\\schemas\\root\\attestation.v1.schema.json": {
+      "sha256": "7916876fe4e0d3a5034c918a6faf35122b750c857e6efdc127831dc9d244a984",
+      "bytes": 787,
+      "lines": 44
+    },
+    "C:\\AnarchI-Brain\\schemas\\root\\authority-grant.v1.schema.json": {
+      "sha256": "6a2f51458f32bb552de57e253a0b2f004ac5e80d1d16ab80e6ca455895b77e77",
+      "bytes": 1998,
+      "lines": 116
+    },
+    "C:\\AnarchI-Brain\\schemas\\root\\authorization.v1.schema.json": {
+      "sha256": "b772d50c021a1a3e2b0d7d7453bf900d86a8d71ad3a604fd5635f0333273de2d",
+      "bytes": 1270,
+      "lines": 74
+    },
+    "C:\\AnarchI-Brain\\schemas\\root\\capability.v1.schema.json": {
+      "sha256": "33371d07a09f5eed98106460ac9bee756c54fa1f2e48cda8f40e2d4b0d902d5d",
+      "bytes": 1207,
+      "lines": 71
+    },
+    "C:\\AnarchI-Brain\\schemas\\root\\integrity-epoch-record.v1.schema.json": {
+      "sha256": "a82764e19f844c8c10472e20c5d41f229439bd31f358b824c6fee14e5d844f5f",
+      "bytes": 790,
+      "lines": 44
+    },
+    "C:\\AnarchI-Brain\\schemas\\root\\observation.v1.schema.json": {
+      "sha256": "e7542aa8423c5cd47beb268b95230d3b58a966db360717538b7cd725a10de8f1",
+      "bytes": 791,
+      "lines": 44
+    },
+    "C:\\AnarchI-Brain\\schemas\\root\\policy-root.v1.schema.json": {
+      "sha256": "2bdea2e7c48925362a3a9e72385fe6944eee0a454d91ec4ebc6d74f24dbdb87e",
+      "bytes": 791,
+      "lines": 44
+    },
+    "C:\\AnarchI-Brain\\schemas\\root\\projection.v1.schema.json": {
+      "sha256": "1eba66c63d4f3ccdef38d9e3d3eabec6c4d9fdc4d7257dfe1d50a5fd5a4cdb62",
+      "bytes": 788,
+      "lines": 44
+    },
+    "C:\\AnarchI-Brain\\schemas\\root\\proposal.v1.schema.json": {
+      "sha256": "509426c2abd808daef4f922ecbc0eb0c290170f77f8cdb2068748b4c4b5cd957",
+      "bytes": 631,
+      "lines": 34
+    },
+    "C:\\AnarchI-Brain\\schemas\\root\\qualification-result.v1.schema.json": {
+      "sha256": "54c3c1701750e0cc9c725197b71d8f022531493bc06cf09c1bf7ca2826f7c1e5",
+      "bytes": 975,
+      "lines": 54
+    },
+    "C:\\AnarchI-Brain\\schemas\\root\\receipt.attempt.v1.schema.json": {
+      "sha256": "e6cb321e4ceff16aad7881805fbf5b23ea833e35b302d634a57e68a4e53ddc69",
+      "bytes": 636,
+      "lines": 34
+    },
+    "C:\\AnarchI-Brain\\schemas\\root\\receipt.decision.v1.schema.json": {
+      "sha256": "c6b255ef8c448fa2d7df621096d5d0fb2bb47644d58426ce373e3191259f1d6b",
+      "bytes": 639,
+      "lines": 34
+    },
+    "C:\\AnarchI-Brain\\schemas\\root\\receipt.effect.v1.schema.json": {
+      "sha256": "303f8f523f14bd9dd70192b5563bf62747d8736bd9cefae78a9013fbeed74fe8",
+      "bytes": 633,
+      "lines": 34
+    },
+    "C:\\AnarchI-Brain\\schemas\\root\\receipt.event.v1.schema.json": {
+      "sha256": "a90f7eb41f790bc1aa5b5bc77312ec16c9bbcd7aba9296fb5760ee562c0e1566",
+      "bytes": 630,
+      "lines": 34
+    },
+    "C:\\AnarchI-Brain\\schemas\\root\\receipt.transition.v1.schema.json": {
+      "sha256": "bd6341f264a3146940b657b3d9717a355706f2ea052c52cb6d989995e3e07fa6",
+      "bytes": 645,
+      "lines": 34
+    },
+    "C:\\AnarchI-Brain\\schemas\\root\\relationship.v1.schema.json": {
+      "sha256": "7cc5baa9c3cddc69ae61d33c38bbccaae0bd205fe362ebc85a9861e18fb1c068",
+      "bytes": 881,
+      "lines": 48
+    },
+    "C:\\AnarchI-Brain\\schemas\\root\\schema.v1.schema.json": {
+      "sha256": "35967ec28261a3640cc5b44dd2489b48f2e049a0607d4a17da49f5c0b4718e57",
+      "bytes": 869,
+      "lines": 44
+    },
+    "C:\\AnarchI-Brain\\schemas\\root\\validation-result.v1.schema.json": {
+      "sha256": "d2b0a131f0d6b7bfff8dde9d55fb83a9b3ead4842d175c05b583c1122c140847",
+      "bytes": 966,
+      "lines": 54
+    },
+    "C:\\AnarchI-Brain\\semantic-language\\SEMANTIC-LANGUAGE-v1.md": {
+      "sha256": "896b5f42ec658046e664ef2c1e0130bf7a5d4866fae8cf64446bc2d2eb2804fa",
+      "bytes": 11899,
+      "lines": 317
+    },
+    "C:\\AnarchI-Brain\\serialization\\CANONICAL-SERIALIZATION.md": {
+      "sha256": "477d76c0aa0df6cb7a3a2ec9dd87eee5aadb7b4f7b118d2565149aae0bc53b4a",
+      "bytes": 25918,
+      "lines": 856
+    },
+    "C:\\AnarchI-Brain\\STONEWALL-0.md": {
+      "sha256": "b577fc7dee9c2941fc98b0d9c48aebc72d4880b1f0df096329aabb2f1d5510c5",
+      "bytes": 799,
+      "lines": 34
+    },
+    "C:\\AnarchI-Brain\\STONEWALL-SEQUENCE.md": {
+      "sha256": "24ff0bec6560f6b2fb953d5b42a6626c8f1f8413880732105d6267f174c136a2",
+      "bytes": 1824,
+      "lines": 51
+    },
+    "C:\\AnarchI-Brain\\validation\\VALIDATION-CONTRACT.md": {
+      "sha256": "d0645096ff67059ed18072ddfa843be92bd85760487a7350d7e2910b82b60cc0",
+      "bytes": 2315,
+      "lines": 93
+    },
+    "C:\\Users\\alexg\\Documents\\Codex\\2026-10-01\\https-chatgpt-com-share-6abe93f2-a810\\.codex-remote-attachments\\01a0f872-8619-7f91-887d-933c3537b712\\dabcea15-549f-4bfa-9e54-f02e7ae1675f\\1-sw0_010_m01_repair_r1.py": {
+      "sha256": "cb8a492c4667ffaaf0ef1ac1b62f2c9883c9e90d09873d470aeb47175a100a6c",
+      "bytes": 48154,
+      "lines": 775
+    },
+    "C:\\Users\\alexg\\Documents\\Codex\\2026-10-01\\https-chatgpt-com-share-6abe93f2-a810\\.codex-remote-attachments\\01a0f872-8619-7f91-887d-933c3537b712\\dabcea15-549f-4bfa-9e54-f02e7ae1675f\\2-sw0_010_m01_repair_r1_contract.md": {
+      "sha256": "d969a7e804c5577d1e514bed12a1b580bcc92c0e2481851e3b72b5783f478867",
+      "bytes": 12331,
+      "lines": 156
+    },
+    "C:\\Users\\alexg\\Documents\\Codex\\2026-10-01\\https-chatgpt-com-share-6abe93f2-a810\\.codex-remote-attachments\\01a0f872-8619-7f91-887d-933c3537b712\\dabcea15-549f-4bfa-9e54-f02e7ae1675f\\3-sw0_010_m01_repair_r1_test_receipt.txt": {
+      "sha256": "9f96635df88acb419c098f57a0ad3b2995e5f0b776ea1bd18117dd36f4804891",
+      "bytes": 2395,
+      "lines": 56
+    },
+    "C:\\Users\\alexg\\Documents\\Codex\\2026-10-01\\https-chatgpt-com-share-6abe93f2-a810\\M01-next-candidate-qualification.txt": {
+      "sha256": "0f234330f8de6cfa4a8c336adfc5e902617d21ce76ddb84b6422804067659d4e",
+      "bytes": 355,
+      "lines": 13
+    },
+    "C:\\Users\\alexg\\Documents\\Codex\\2026-10-01\\https-chatgpt-com-share-6abe93f2-a810\\M01-next-candidate.md": {
+      "sha256": "6a6dfa92c7aa31ff300e0ef572e331704e34a7a125772e1db0b319fd5a658cac",
+      "bytes": 3661,
+      "lines": 42
+    },
+    "C:\\Users\\alexg\\Documents\\Codex\\2026-10-01\\https-chatgpt-com-share-6abe93f2-a810\\M01-Repair-R1-local-qualification.txt": {
+      "sha256": "e6abe36bd2d29984dfc4c072e398dd1e6a9601f8038377920f65d06f4ece20e5",
+      "bytes": 2851,
+      "lines": 66
+    },
+    "C:\\Users\\alexg\\Documents\\Codex\\2026-10-01\\https-chatgpt-com-share-6abe93f2-a810\\qualify_m01_next.py": {
+      "sha256": "0770f8bce7429d7f9efecd6c09a084effaa89a3a0d1a84563d4a264691f2b423",
+      "bytes": 6378,
+      "lines": 133
+    }
+  },
+  "preserved_copies": [
+    {
+      "path": "qualification/m01_r2/history/repair_r1.py",
+      "sha256": "cb8a492c4667ffaaf0ef1ac1b62f2c9883c9e90d09873d470aeb47175a100a6c",
+      "source": "C:\\Users\\alexg\\Documents\\Codex\\2026-10-01\\https-chatgpt-com-share-6abe93f2-a810\\.codex-remote-attachments\\01a0f872-8619-7f91-887d-933c3537b712\\dabcea15-549f-4bfa-9e54-f02e7ae1675f\\1-sw0_010_m01_repair_r1.py",
+      "status": "HISTORICAL_PRESERVED_NOT_ACTIVE"
+    },
+    {
+      "path": "qualification/m01_r2/history/repair_r1_contract.md",
+      "sha256": "d969a7e804c5577d1e514bed12a1b580bcc92c0e2481851e3b72b5783f478867",
+      "source": "C:\\Users\\alexg\\Documents\\Codex\\2026-10-01\\https-chatgpt-com-share-6abe93f2-a810\\.codex-remote-attachments\\01a0f872-8619-7f91-887d-933c3537b712\\dabcea15-549f-4bfa-9e54-f02e7ae1675f\\2-sw0_010_m01_repair_r1_contract.md",
+      "status": "HISTORICAL_PRESERVED_NOT_ACTIVE"
+    },
+    {
+      "path": "qualification/m01_r2/history/repair_r1_model_receipt.txt",
+      "sha256": "9f96635df88acb419c098f57a0ad3b2995e5f0b776ea1bd18117dd36f4804891",
+      "source": "C:\\Users\\alexg\\Documents\\Codex\\2026-10-01\\https-chatgpt-com-share-6abe93f2-a810\\.codex-remote-attachments\\01a0f872-8619-7f91-887d-933c3537b712\\dabcea15-549f-4bfa-9e54-f02e7ae1675f\\3-sw0_010_m01_repair_r1_test_receipt.txt",
+      "status": "HISTORICAL_PRESERVED_NOT_ACTIVE"
+    },
+    {
+      "path": "qualification/m01_r2/history/continuation_v1.py",
+      "sha256": "0770f8bce7429d7f9efecd6c09a084effaa89a3a0d1a84563d4a264691f2b423",
+      "source": "C:\\Users\\alexg\\Documents\\Codex\\2026-10-01\\https-chatgpt-com-share-6abe93f2-a810\\qualify_m01_next.py",
+      "status": "HISTORICAL_PRESERVED_NOT_ACTIVE"
+    },
+    {
+      "path": "qualification/m01_r2/history/continuation_v1.md",
+      "sha256": "6a6dfa92c7aa31ff300e0ef572e331704e34a7a125772e1db0b319fd5a658cac",
+      "source": "C:\\Users\\alexg\\Documents\\Codex\\2026-10-01\\https-chatgpt-com-share-6abe93f2-a810\\M01-next-candidate.md",
+      "status": "HISTORICAL_PRESERVED_NOT_ACTIVE"
+    },
+    {
+      "path": "qualification/m01_r2/history/continuation_v1_receipt.txt",
+      "sha256": "0f234330f8de6cfa4a8c336adfc5e902617d21ce76ddb84b6422804067659d4e",
+      "source": "C:\\Users\\alexg\\Documents\\Codex\\2026-10-01\\https-chatgpt-com-share-6abe93f2-a810\\M01-next-candidate-qualification.txt",
+      "status": "HISTORICAL_PRESERVED_NOT_ACTIVE"
+    },
+    {
+      "path": "qualification/m01_r2/history/repair_r1_local_receipt.txt",
+      "sha256": "e6abe36bd2d29984dfc4c072e398dd1e6a9601f8038377920f65d06f4ece20e5",
+      "source": "C:\\Users\\alexg\\Documents\\Codex\\2026-10-01\\https-chatgpt-com-share-6abe93f2-a810\\M01-Repair-R1-local-qualification.txt",
+      "status": "HISTORICAL_PRESERVED_NOT_ACTIVE"
+    },
+    {
+      "path": "evidence/stonewall-0/m01-r2/original-audit.md",
+      "sha256": "293f251b8589674ed9a1f2f0c61182eb1849e9c2b8fa40d001703d8dd90f7c4c",
+      "source": "C:\\Users\\alexg\\Documents\\Codex\\2026-10-01\\https-chatgpt-com-share-6abe93f2-a810\\M01-seam-audit.md",
+      "status": "HISTORICAL_PRESERVED_NOT_ACTIVE"
+    },
+    {
+      "path": "evidence/stonewall-0/m01-r2/original-audit-evidence.json",
+      "sha256": "141aa65d45190f80b23ac2f0ce5e9d6faeaa9678428d5e062f1fa9a5cc47f368",
+      "source": "C:\\Users\\alexg\\Documents\\Codex\\2026-10-01\\https-chatgpt-com-share-6abe93f2-a810\\M01-seam-audit-evidence.json",
+      "status": "HISTORICAL_PRESERVED_NOT_ACTIVE"
+    }
+  ],
+  "authorization": "User requested fixes to all audit findings followed by rescan; no freeze, commit, push or deployment."
+}

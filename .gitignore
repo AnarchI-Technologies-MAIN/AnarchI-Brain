@@ -1,6 +1,37 @@
-target/
+# Local runtime and generated output
 .anarchi/
+target/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+node_modules/
+dist/
+build/
+*.egg-info/
 *.tmp
 *.log
 .DS_Store
 Thumbs.db
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+.ssh/
+# Corpus and database payloads require a separate governed intake
+*.sqlite
+*.sqlite3
+*.db
+*.xlsx
+*.zip
+# Local qualification output
+ci-results/
