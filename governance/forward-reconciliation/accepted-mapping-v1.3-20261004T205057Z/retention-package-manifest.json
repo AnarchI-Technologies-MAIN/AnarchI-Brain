@@ -1,0 +1,151 @@
+{
+  "files": [
+    {
+      "bytes": 5829,
+      "path": "acceptance.json",
+      "sha256": "810fd63b517c513c9dfead469368d5d01938daaac66b35826fb6fb68cce5f5ee",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\mapping-v1.3-accepted-20261004T205057Z\\acceptance.json"
+    },
+    {
+      "bytes": 82,
+      "path": "acceptance.json.sha256",
+      "sha256": "db02d283ac2f7246081e2f23259a6de322bdeaf2fb04f2a4cf692252945f5f74",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\mapping-v1.3-accepted-20261004T205057Z\\acceptance.json.sha256"
+    },
+    {
+      "bytes": 11651,
+      "path": "contract/CORTEX-FILAMENT-MAPPING-DRAFT.md",
+      "sha256": "61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\CORTEX-FILAMENT-MAPPING-DRAFT.md"
+    },
+    {
+      "bytes": 6385,
+      "path": "predecessor/accepted-procedure.md",
+      "sha256": "3f6f9393be17bcd448fdebc1e65f4195b700036cdb200d5f435fd90f6f558992",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-reconciliation-procedure-accepted-20261004T062855Z\\accepted-procedure.md"
+    },
+    {
+      "bytes": 2151,
+      "path": "predecessor/procedure-acceptance.json",
+      "sha256": "e813b8242f84fc0b6c6bb4cbf08ee8d0794c703f512c8bb8ad18d0f8aa42eac0",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-reconciliation-procedure-accepted-20261004T062855Z\\acceptance.json"
+    },
+    {
+      "bytes": 7551,
+      "path": "predecessor/baseline-acceptance.json",
+      "sha256": "10bd8c050b4a39553a553bdad868f14a4f680709cb4c2b9669d01084ab3fd2bc",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-accepted-20261004T195646Z\\acceptance.json"
+    },
+    {
+      "bytes": 5807,
+      "path": "predecessor/baseline-external-retention-receipt.json",
+      "sha256": "8aa2d5af0c3f46d0fba46e784d86d459d104954467552a9dad0a6b8849da8742",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-accepted-20261004T195646Z\\external-retention-receipt.json"
+    },
+    {
+      "bytes": 43287,
+      "path": "predecessor/proposal-inventory.json",
+      "sha256": "421b5d5bab28a32afe557e17970a14beb75a99eddc9f536a75bb1bcda9d26eb3",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-proposal-v1.2\\proposal-inventory.json"
+    },
+    {
+      "bytes": 1208,
+      "path": "review/LYRA-SOURCE-DISPOSITION-v13.json",
+      "sha256": "6b9eac7786399e261c0b152da3728578648398654749234e343dbd19b409e059",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\LYRA-SOURCE-DISPOSITION-v13.json"
+    },
+    {
+      "bytes": 78430,
+      "path": "review/lyra-v13-source-review.json",
+      "sha256": "f5ea1aff2b714b52396574254600eab38e014a817e0373a68a35b4770231431c",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\lyra-v13-source-review.json"
+    },
+    {
+      "bytes": 3571,
+      "path": "qualification/qualification_receipt-v13.json",
+      "sha256": "eed0653c1dec9e8a6c16a6220941c417d35dae5d67e89826b0f0610e411c8978",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\qualification_receipt-v13.json"
+    },
+    {
+      "bytes": 5085,
+      "path": "qualification/WINDOWS-QUALIFICATION-RESULTS-r2.json",
+      "sha256": "8d824fbfcf4de56dbfcc8f2d919c28669b7abc8644e8209c513e7ac9f91c1dc3",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\WINDOWS-QUALIFICATION-RESULTS-r2.json"
+    },
+    {
+      "bytes": 11140,
+      "path": "qualification/ubuntu-verification-results.json",
+      "sha256": "2027dbd6c8a9a4cf9f06fe12205655f9ecc70f3bfb7ecf24287aefed1127998b",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\ubuntu-verification-r2-20261004T2007\\ubuntu-verification-results.json"
+    },
+    {
+      "bytes": 17514,
+      "path": "predecessor/candidate/authority-dimensions.md",
+      "sha256": "a1143481b4f6d24354cf5e28bfcdb5fa5706fcc162969601098241c124bad0fa",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-proposal-v1.2\\candidate\\authority-dimensions.md"
+    },
+    {
+      "bytes": 10947,
+      "path": "predecessor/candidate/authority-matrix.md",
+      "sha256": "1ceaf312b74500548654c7a7244ebc9222c93cf2e9bdfb2522669ad7359cb98e",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-proposal-v1.2\\candidate\\authority-matrix.md"
+    },
+    {
+      "bytes": 14694,
+      "path": "predecessor/candidate/cortex-contract.md",
+      "sha256": "51da5c27fdddf24ef3c822da565b7d8e3cec9d6a7df0a8d864e35422b79d3e1a",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-proposal-v1.2\\candidate\\cortex-contract.md"
+    },
+    {
+      "bytes": 12377,
+      "path": "predecessor/candidate/semantic-language.md",
+      "sha256": "33c438c541f02c97d9e9eab205610f52bc56fe226dbfd2345776c498a630d7d3",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-proposal-v1.2\\candidate\\semantic-language.md"
+    },
+    {
+      "bytes": 5952,
+      "path": "supporting-source/mapping_reference.py",
+      "sha256": "7561f2222762fca9904e4f1e8494d21b8b5b99dfc87d48d572922d52db5ac162",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\mapping_reference.py"
+    },
+    {
+      "bytes": 9618,
+      "path": "supporting-source/qualify_mapping_reference.py",
+      "sha256": "dca04c960875ba11f29ab2c8ee8b6c823cfb1ca93153c3ca1b41a42df15372e5",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\qualify_mapping_reference.py"
+    },
+    {
+      "bytes": 3619,
+      "path": "supporting-source/source-register.json",
+      "sha256": "796b0e8277d19f439a3ed11a9b18096bc60aafdf44f159f5508925527687f80e",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\source-register.json"
+    },
+    {
+      "bytes": 5618,
+      "path": "supporting-source/test_mapping_baseline_context.py",
+      "sha256": "d9409b716d19bc6d45ec855044b8b078255df2b3d14c83908b03e76d15f25424",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\test_mapping_baseline_context.py"
+    },
+    {
+      "bytes": 10042,
+      "path": "supporting-source/test_mapping_custody.py",
+      "sha256": "97df7cf7f1d17a6def7907e554250327a75eb5ca36e564a16e6c132c46cf8eab",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\test_mapping_custody.py"
+    },
+    {
+      "bytes": 1844,
+      "path": "supporting-source/test_mapping_qualification.py",
+      "sha256": "9a88c88f003d8a4f774343a3089635c9c99718cb51ae5423830b1b9391700187",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\test_mapping_qualification.py"
+    },
+    {
+      "bytes": 5934,
+      "path": "supporting-source/test_mapping_reference.py",
+      "sha256": "f54a92e796fe3c3331478303ac81184e5239593f06bb3d9b04c5672d7de0ee65",
+      "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\test_mapping_reference.py"
+    }
+  ],
+  "normative_unit": "contract/CORTEX-FILAMENT-MAPPING-DRAFT.md",
+  "schema": "EXACT-MAPPING-RETENTION-PACKAGE-1",
+  "supporting_files_do_not_grant_runtime_authority": true
+}
