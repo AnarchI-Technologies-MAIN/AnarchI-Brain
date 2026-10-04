@@ -28,3 +28,4 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install jsonschema==4.26.0
       - run: python -I -B ci/qualify.py
+      - run: python -I -B ci/qualify_m08.py

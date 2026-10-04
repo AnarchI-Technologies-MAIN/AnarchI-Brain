@@ -1,0 +1,27 @@
+{
+  "status": "UNADOPTED_V3_REVIEW_PROPOSALS",
+  "sw0_010_closed": false,
+  "runtime_implemented": false,
+  "production_ready": false,
+  "drafts": [
+    "M01.proposal.json",
+    "M02.proposal.json",
+    "M03.proposal.json",
+    "M04.proposal.json",
+    "M05.proposal.json",
+    "M06.proposal.json",
+    "M07.proposal.json",
+    "M08.proposal.json",
+    "M09.proposal.json",
+    "M10.proposal.json",
+    "M11.proposal.json",
+    "M12.proposal.json",
+    "M13.proposal.json",
+    "M14.proposal.json",
+    "M15.proposal.json",
+    "M16.proposal.json",
+    "M17.proposal.json",
+    "M18.proposal.json",
+    "M19.proposal.json"
+  ]
+}

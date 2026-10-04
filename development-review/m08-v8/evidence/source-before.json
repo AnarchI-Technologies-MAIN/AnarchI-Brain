@@ -1,0 +1,13 @@
+{
+  "head": "79fd607b3b8983fdd2d0254f3af59df9a92257b8",
+  "index_sha256": "358eac46592c69debdb49e6eeccb27ccc0e7006a56148d507eb58c6347e47806",
+  "historical_modified_files": {
+    "README.md": "770924acee36f34cc5bff095bf830f56fb5d0afea7acd60f219582c135ac0ebe",
+    "contracts/cortex/CORTEX-CONTRACT.md": "80be68cf32e6b0001e25c9364e77e02425c90eff0e1f0baefca2a8f1d3f22cd5",
+    "contracts/organs/AUTHORITY-MATRIX.md": "69d72c0c9642b8c2539e33d6401bb3a6b5fb3c25f7380db567ff08a57d1b39f4",
+    "contracts/substrate-fin/SUBSTRATE-FIN-CONTRACT.md": "e08ca782eaaa1edad3e7da95a895f1cf9c0474486882c3d45d644457b1e7f8f5",
+    "qualification/QUALIFICATION-CONTRACT.md": "6c062fc99c896a630e0a6c80a0d7bbd5285e40014241caf87977957f8296bca8",
+    "resolution/RESOLUTION-CONTRACT.md": "a14702e5fdf173bbb4237bea033ab47c37d98f05f054d8b754c55ab10c00f2bc",
+    "validation/VALIDATION-CONTRACT.md": "7f770eaca948be433e9740510b4bed120fb09eacdd7e5489952f5168a1571963"
+  }
+}
