@@ -1,0 +1,12 @@
+{
+  "scope": "SOURCE_REVIEW_ONLY",
+  "reviewer": "persistent regular Lyra-Brain",
+  "conversation": "https://chatgpt.com/c/6ac173bf-82bc-83e9-8669-80b62d674507",
+  "disposition": "READY_FOR_SEPARATE_ATOMIC_FORWARD_BASELINE_ADOPTION_DECISION",
+  "catalog_sha256": "421b5d5bab28a32afe557e17970a14beb75a99eddc9f536a75bb1bcda9d26eb3",
+  "received_wrapper_sha256": "d598e8614f06204fcd9b0b354890941fd1edecf67fdf4e6503724ab3e67d5158",
+  "received_wrapper_bytes": 79893,
+  "embedded_files_verified_by_lyra": 7,
+  "baseline_adopted": false,
+  "production_ready": false
+}
