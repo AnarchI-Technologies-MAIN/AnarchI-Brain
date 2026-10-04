@@ -1,0 +1,473 @@
+{
+  "cross_lifecycle_dependencies": [
+    {
+      "dependency": "admission",
+      "obligation": "issuer/root/subject/policy/epoch/completeness/independence verification",
+      "owner": "M01",
+      "participants": [
+        "M02",
+        "M12",
+        "M15",
+        "M18"
+      ],
+      "status": "UNIMPLEMENTED_FAIL_CLOSED"
+    },
+    {
+      "dependency": "secret_free_content",
+      "obligation": "opaque payload admission and projection/disclosure screening",
+      "owner": "M01",
+      "participants": [
+        "M08",
+        "M10",
+        "M11"
+      ],
+      "status": "UNIMPLEMENTED_FAIL_CLOSED"
+    },
+    {
+      "dependency": "key_management",
+      "obligation": "dedicated custody contract; no private keys in artifact payloads",
+      "owner": "M12",
+      "participants": [
+        "M18",
+        "M19"
+      ],
+      "status": "UNIMPLEMENTED_FAIL_CLOSED"
+    },
+    {
+      "dependency": "atomic_effect_fence",
+      "obligation": "recheck at effect, no stale cached eligibility",
+      "owner": "M09",
+      "participants": [
+        "M01",
+        "M11",
+        "M12",
+        "M13",
+        "M18",
+        "M19"
+      ],
+      "status": "UNIMPLEMENTED_FAIL_CLOSED"
+    },
+    {
+      "dependency": "receipt_issuance",
+      "obligation": "governed durable occurrence records, no retroactive authority",
+      "owner": "M14",
+      "participants": [
+        "M09",
+        "M18"
+      ],
+      "status": "UNIMPLEMENTED_FAIL_CLOSED"
+    }
+  ],
+  "m01_freeze_ready": false,
+  "machines": [
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M01",
+      "registry_name": "Cortex ingress lifecycle",
+      "required_dimensions_where_applicable": [
+        "Observe",
+        "Propose",
+        "Execute"
+      ],
+      "required_evidence": [
+        "resolved applicable contract and authority path",
+        "independent admission",
+        "enumerated transitions and receipts",
+        "revocation/replay/idempotency qualification"
+      ],
+      "responsibilities": [
+        "entry",
+        "Authorization consumption",
+        "input admission",
+        "source-state attribution",
+        "opaque content secrecy"
+      ],
+      "specification_owner": "Cortex",
+      "status": "SPECIFIED_UNIMPLEMENTED"
+    },
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M02",
+      "registry_name": "S0 validation lifecycle",
+      "required_dimensions_where_applicable": [
+        "Observe"
+      ],
+      "required_evidence": [
+        "resolved applicable contract and authority path",
+        "independent admission",
+        "enumerated transitions and receipts",
+        "revocation/replay/idempotency qualification"
+      ],
+      "responsibilities": [
+        "schema context resolution",
+        "structural validation",
+        "contract-specific validation results"
+      ],
+      "specification_owner": "S0",
+      "status": "SPECIFIED_UNIMPLEMENTED"
+    },
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M03",
+      "registry_name": "Cartologist normalization and proposal lifecycle",
+      "required_dimensions_where_applicable": [
+        "Observe",
+        "Propose"
+      ],
+      "required_evidence": [
+        "exact source identity and retained original bytes",
+        "normalization schema/version and original-to-normalized derivation binding",
+        "applicable Observe/Propose authority path under adopted governing baseline",
+        "predecessor/policy/scope/freshness evidence",
+        "bounded resource enforcement",
+        "exact bounded non-authoritative attempt/proposal recording",
+        "explicit separation from downstream M04/S1 qualification and S2 canonical admission"
+      ],
+      "responsibilities": [
+        "lossless source custody and provenance normalization",
+        "separately identified normalized representation",
+        "bounded noncanonical proposal with ambiguity and contradiction retained"
+      ],
+      "specification_owner": "Cartologist",
+      "status": "AMENDMENT_DRAFT_UNADOPTED_UNIMPLEMENTED"
+    },
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M04",
+      "registry_name": "S1 evidence qualification lifecycle",
+      "required_dimensions_where_applicable": [
+        "Qualify"
+      ],
+      "required_evidence": [
+        "resolved applicable contract and authority path",
+        "independent admission",
+        "enumerated transitions and receipts",
+        "revocation/replay/idempotency qualification"
+      ],
+      "responsibilities": [
+        "evidence admission",
+        "lineage and corroboration independence"
+      ],
+      "specification_owner": "S1",
+      "status": "SPECIFIED_UNIMPLEMENTED"
+    },
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M05",
+      "registry_name": "Wavesmith relationship/proposal lifecycle",
+      "required_dimensions_where_applicable": [
+        "Observe",
+        "Propose"
+      ],
+      "required_evidence": [
+        "resolved applicable contract and authority path",
+        "independent admission",
+        "enumerated transitions and receipts",
+        "revocation/replay/idempotency qualification"
+      ],
+      "responsibilities": [
+        "proposal origin",
+        "relationship subjects",
+        "no self-authorization"
+      ],
+      "specification_owner": "Wavesmith",
+      "status": "SPECIFIED_UNIMPLEMENTED"
+    },
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M06",
+      "registry_name": "S2 canonicalization lifecycle",
+      "required_dimensions_where_applicable": [
+        "Canonicalize"
+      ],
+      "required_evidence": [
+        "resolved applicable contract and authority path",
+        "independent admission",
+        "enumerated transitions and receipts",
+        "revocation/replay/idempotency qualification"
+      ],
+      "responsibilities": [
+        "canonical-domain admission",
+        "independent prerequisite satisfaction"
+      ],
+      "specification_owner": "S2",
+      "status": "SPECIFIED_UNIMPLEMENTED"
+    },
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M07",
+      "registry_name": "canonical / noncanonical / quarantine memory lifecycle",
+      "required_dimensions_where_applicable": [],
+      "required_evidence": [
+        "resolved applicable contract and authority path",
+        "independent admission",
+        "enumerated transitions and receipts",
+        "revocation/replay/idempotency qualification"
+      ],
+      "responsibilities": [
+        "domain-relative classifications",
+        "historical retention",
+        "quarantine versus unresolved"
+      ],
+      "specification_owner": "Canonical Memory",
+      "status": "SPECIFIED_UNIMPLEMENTED"
+    },
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M08",
+      "registry_name": "Librarian processing lifecycle",
+      "required_dimensions_where_applicable": [
+        "Observe",
+        "Propose"
+      ],
+      "required_evidence": [
+        "resolved applicable contract and authority path",
+        "independent admission",
+        "enumerated transitions and receipts",
+        "revocation/replay/idempotency qualification"
+      ],
+      "responsibilities": [
+        "bounded derived processing",
+        "opaque content secrecy",
+        "lineage preservation"
+      ],
+      "specification_owner": "Librarian",
+      "status": "SPECIFIED_UNIMPLEMENTED"
+    },
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M09",
+      "registry_name": "S3 transition lifecycle",
+      "required_dimensions_where_applicable": [
+        "Project"
+      ],
+      "required_evidence": [
+        "resolved applicable contract and authority path",
+        "independent admission",
+        "enumerated transitions and receipts",
+        "revocation/replay/idempotency qualification"
+      ],
+      "responsibilities": [
+        "transition authorization path",
+        "subject version",
+        "atomic effect fence"
+      ],
+      "specification_owner": "S3",
+      "status": "SPECIFIED_UNIMPLEMENTED"
+    },
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M10",
+      "registry_name": "Prism projection lifecycle",
+      "required_dimensions_where_applicable": [
+        "Observe",
+        "Project"
+      ],
+      "required_evidence": [
+        "resolved applicable contract and authority path",
+        "independent admission",
+        "enumerated transitions and receipts",
+        "revocation/replay/idempotency qualification"
+      ],
+      "responsibilities": [
+        "projection audience",
+        "disclosure",
+        "opaque content secrecy"
+      ],
+      "specification_owner": "Prism",
+      "status": "SPECIFIED_UNIMPLEMENTED"
+    },
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M11",
+      "registry_name": "S4 egress lifecycle",
+      "required_dimensions_where_applicable": [
+        "Execute"
+      ],
+      "required_evidence": [
+        "resolved applicable contract and authority path",
+        "independent admission",
+        "enumerated transitions and receipts",
+        "revocation/replay/idempotency qualification"
+      ],
+      "responsibilities": [
+        "egress authorization",
+        "effect fencing",
+        "durable idempotency"
+      ],
+      "specification_owner": "S4",
+      "status": "SPECIFIED_UNIMPLEMENTED"
+    },
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M12",
+      "registry_name": "authority grant lifecycle",
+      "required_dimensions_where_applicable": [
+        "Authorize"
+      ],
+      "required_evidence": [
+        "resolved applicable contract and authority path",
+        "independent admission",
+        "enumerated transitions and receipts",
+        "revocation/replay/idempotency qualification"
+      ],
+      "responsibilities": [
+        "grant issuance",
+        "delegation",
+        "Authorization issuance/use/expiry submachine",
+        "identity/key enrollment",
+        "key rotation",
+        "governance-root replacement"
+      ],
+      "specification_owner": "Authority Grant lifecycle",
+      "status": "SPECIFIED_UNIMPLEMENTED"
+    },
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M13",
+      "registry_name": "capability lifecycle",
+      "required_dimensions_where_applicable": [],
+      "required_evidence": [
+        "resolved applicable contract and authority path",
+        "independent admission",
+        "enumerated transitions and receipts",
+        "revocation/replay/idempotency qualification"
+      ],
+      "responsibilities": [
+        "means scope",
+        "effectiveness",
+        "expiry",
+        "separate permission"
+      ],
+      "specification_owner": "Capability lifecycle",
+      "status": "SPECIFIED_UNIMPLEMENTED"
+    },
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M14",
+      "registry_name": "receipt lifecycle",
+      "required_dimensions_where_applicable": [],
+      "required_evidence": [
+        "resolved applicable contract and authority path",
+        "independent admission",
+        "enumerated transitions and receipts",
+        "revocation/replay/idempotency qualification"
+      ],
+      "responsibilities": [
+        "bounded record issuance",
+        "durability",
+        "failure of recording",
+        "causal occurrence binding",
+        "receipt carriers"
+      ],
+      "specification_owner": "Receipt lifecycle",
+      "status": "SPECIFIED_UNIMPLEMENTED"
+    },
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M15",
+      "registry_name": "schema/policy-root lifecycle",
+      "required_dimensions_where_applicable": [],
+      "required_evidence": [
+        "resolved applicable contract and authority path",
+        "independent admission",
+        "enumerated transitions and receipts",
+        "revocation/replay/idempotency qualification"
+      ],
+      "responsibilities": [
+        "historical schema interpretation",
+        "context registry",
+        "policy snapshot",
+        "root-governance relationships"
+      ],
+      "specification_owner": "Schema/policy-root lifecycle",
+      "status": "SPECIFIED_UNIMPLEMENTED"
+    },
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M16",
+      "registry_name": "migration lifecycle",
+      "required_dimensions_where_applicable": [
+        "Migrate"
+      ],
+      "required_evidence": [
+        "resolved applicable contract and authority path",
+        "independent admission",
+        "enumerated transitions and receipts",
+        "revocation/replay/idempotency qualification"
+      ],
+      "responsibilities": [
+        "semantic version change",
+        "original provenance",
+        "explicit destination"
+      ],
+      "specification_owner": "Migration lifecycle",
+      "status": "SPECIFIED_UNIMPLEMENTED"
+    },
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M17",
+      "registry_name": "reconstruction lifecycle",
+      "required_dimensions_where_applicable": [
+        "Reconstruct"
+      ],
+      "required_evidence": [
+        "resolved applicable contract and authority path",
+        "independent admission",
+        "enumerated transitions and receipts",
+        "revocation/replay/idempotency qualification"
+      ],
+      "responsibilities": [
+        "permitted inputs",
+        "no reconstructed authority",
+        "historical byte identities"
+      ],
+      "specification_owner": "Reconstruction lifecycle",
+      "status": "SPECIFIED_UNIMPLEMENTED"
+    },
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M18",
+      "registry_name": "integrity epoch lifecycle",
+      "required_dimensions_where_applicable": [],
+      "required_evidence": [
+        "resolved applicable contract and authority path",
+        "independent admission",
+        "enumerated transitions and receipts",
+        "revocation/replay/idempotency qualification"
+      ],
+      "responsibilities": [
+        "trusted epoch/time admission",
+        "integrity witnesses",
+        "check-at-effect protocol"
+      ],
+      "specification_owner": "Integrity epoch lifecycle",
+      "status": "SPECIFIED_UNIMPLEMENTED"
+    },
+    {
+      "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+      "id": "M19",
+      "registry_name": "revocation lifecycle",
+      "required_dimensions_where_applicable": [
+        "Revoke"
+      ],
+      "required_evidence": [
+        "resolved applicable contract and authority path",
+        "independent admission",
+        "enumerated transitions and receipts",
+        "revocation/replay/idempotency qualification"
+      ],
+      "responsibilities": [
+        "in-flight expiry/revocation",
+        "key revocation",
+        "historical validity",
+        "compensation is a new operation"
+      ],
+      "specification_owner": "Revocation lifecycle",
+      "status": "SPECIFIED_UNIMPLEMENTED"
+    }
+  ],
+  "registry_machine_count": 19,
+  "status": "CANDIDATE_UNFROZEN",
+  "substrate_fin": "adapter under owning lifecycle; no inferred independent authority"
+}

@@ -1,0 +1,323 @@
+{
+  "scope": "CODEX_RECORDED_OFFLINE_EXECUTION_NOT_INDEPENDENT_LYRA_EXECUTION",
+  "status": "PASS",
+  "catalog": {
+    "path": "ingress-review-foundation-unit-a-v1.2-20261004/unit-a-catalog.json",
+    "bytes": 4532,
+    "sha256": "7db495b0a1034c9211c3d08c90569c3b0bccc3209a31f9f9e1885889b99b75c3"
+  },
+  "checks": [
+    {
+      "label": "windows-focused-O0",
+      "command": [
+        "C:\\Users\\alexg\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-I",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\alexg\\AnarchI-Brain-Development\\ingress-review-foundation-unit-a-v1.2-20261004",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "started_at_utc": "2026-10-04T21:56:51.874601+00:00",
+      "elapsed_seconds": 26.063,
+      "log_sha256": "6f7b7d299e074a166b38eac78bd9c9995c40c7391f0f8af0eea078a0ad1187ea"
+    },
+    {
+      "label": "windows-corpus-O0",
+      "command": [
+        "C:\\Users\\alexg\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-I",
+        "-B",
+        "C:\\Users\\alexg\\AnarchI-Brain-Development\\ingress-review-foundation-unit-a-v1.2-20261004\\qualify_unit_a.py",
+        "--catalog-sha256",
+        "7db495b0a1034c9211c3d08c90569c3b0bccc3209a31f9f9e1885889b99b75c3",
+        "--out",
+        "C:\\Users\\alexg\\AnarchI-Brain-Development\\unit-a-verification-v1.2-20261004\\windows-corpus-O0.json"
+      ],
+      "exit_code": 0,
+      "started_at_utc": "2026-10-04T21:57:17.947902+00:00",
+      "elapsed_seconds": 23.282,
+      "log_sha256": "8aa028080e885a3f092a80d41712fa46edae8be5a0092d1a9fc6d1e3b7804bcf"
+    },
+    {
+      "label": "ubuntu-focused-O0",
+      "command": [
+        "docker",
+        "run",
+        "--rm",
+        "--read-only",
+        "--network",
+        "none",
+        "--cap-drop",
+        "ALL",
+        "--security-opt",
+        "no-new-privileges:true",
+        "--pids-limit",
+        "32",
+        "--cpus",
+        "1",
+        "--memory",
+        "512m",
+        "--memory-swap",
+        "512m",
+        "--tmpfs",
+        "/tmp:rw,noexec,nosuid,size=64m,mode=1777",
+        "--mount",
+        "type=bind,source=C:\\Users\\alexg\\AnarchI-Brain-Development,target=/development,readonly",
+        "--mount",
+        "type=bind,source=C:\\Users\\alexg\\AnarchI-Brain-Development\\unit-a-verification-v1.2-20261004,target=/output",
+        "sha256:44139036372a7d324887594267fb91391ef50fbcf00b549e609efc64d871e47c",
+        "python3",
+        "-I",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/development/ingress-review-foundation-unit-a-v1.2-20261004",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "started_at_utc": "2026-10-04T21:57:41.244040+00:00",
+      "elapsed_seconds": 295.375,
+      "log_sha256": "d043d067e3c060798b855229f508a5b0425ebaf24556359460f64c4be8389ba4"
+    },
+    {
+      "label": "ubuntu-corpus-O0",
+      "command": [
+        "docker",
+        "run",
+        "--rm",
+        "--read-only",
+        "--network",
+        "none",
+        "--cap-drop",
+        "ALL",
+        "--security-opt",
+        "no-new-privileges:true",
+        "--pids-limit",
+        "32",
+        "--cpus",
+        "1",
+        "--memory",
+        "512m",
+        "--memory-swap",
+        "512m",
+        "--tmpfs",
+        "/tmp:rw,noexec,nosuid,size=64m,mode=1777",
+        "--mount",
+        "type=bind,source=C:\\Users\\alexg\\AnarchI-Brain-Development,target=/development,readonly",
+        "--mount",
+        "type=bind,source=C:\\Users\\alexg\\AnarchI-Brain-Development\\unit-a-verification-v1.2-20261004,target=/output",
+        "sha256:44139036372a7d324887594267fb91391ef50fbcf00b549e609efc64d871e47c",
+        "python3",
+        "-I",
+        "-B",
+        "/development/ingress-review-foundation-unit-a-v1.2-20261004/qualify_unit_a.py",
+        "--catalog-sha256",
+        "7db495b0a1034c9211c3d08c90569c3b0bccc3209a31f9f9e1885889b99b75c3",
+        "--out",
+        "/output/ubuntu-corpus-O0.json"
+      ],
+      "exit_code": 0,
+      "started_at_utc": "2026-10-04T22:02:36.662377+00:00",
+      "elapsed_seconds": 161.953,
+      "log_sha256": "9bb4763baf7d349973a85a5badcba088777eee730e6252b2b5eb3ec896dfb7ca"
+    },
+    {
+      "label": "windows-focused-O1",
+      "command": [
+        "C:\\Users\\alexg\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-I",
+        "-B",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\alexg\\AnarchI-Brain-Development\\ingress-review-foundation-unit-a-v1.2-20261004",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "started_at_utc": "2026-10-04T22:05:18.640017+00:00",
+      "elapsed_seconds": 15.016,
+      "log_sha256": "a0ac5c0a99c111413fc731f2eb1cebcb45976852892bbc1321dbf540862ca0af"
+    },
+    {
+      "label": "windows-corpus-O1",
+      "command": [
+        "C:\\Users\\alexg\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-I",
+        "-B",
+        "-O",
+        "C:\\Users\\alexg\\AnarchI-Brain-Development\\ingress-review-foundation-unit-a-v1.2-20261004\\qualify_unit_a.py",
+        "--catalog-sha256",
+        "7db495b0a1034c9211c3d08c90569c3b0bccc3209a31f9f9e1885889b99b75c3",
+        "--out",
+        "C:\\Users\\alexg\\AnarchI-Brain-Development\\unit-a-verification-v1.2-20261004\\windows-corpus-O1.json"
+      ],
+      "exit_code": 0,
+      "started_at_utc": "2026-10-04T22:05:33.692406+00:00",
+      "elapsed_seconds": 16.719,
+      "log_sha256": "8aa028080e885a3f092a80d41712fa46edae8be5a0092d1a9fc6d1e3b7804bcf"
+    },
+    {
+      "label": "ubuntu-focused-O1",
+      "command": [
+        "docker",
+        "run",
+        "--rm",
+        "--read-only",
+        "--network",
+        "none",
+        "--cap-drop",
+        "ALL",
+        "--security-opt",
+        "no-new-privileges:true",
+        "--pids-limit",
+        "32",
+        "--cpus",
+        "1",
+        "--memory",
+        "512m",
+        "--memory-swap",
+        "512m",
+        "--tmpfs",
+        "/tmp:rw,noexec,nosuid,size=64m,mode=1777",
+        "--mount",
+        "type=bind,source=C:\\Users\\alexg\\AnarchI-Brain-Development,target=/development,readonly",
+        "--mount",
+        "type=bind,source=C:\\Users\\alexg\\AnarchI-Brain-Development\\unit-a-verification-v1.2-20261004,target=/output",
+        "sha256:44139036372a7d324887594267fb91391ef50fbcf00b549e609efc64d871e47c",
+        "python3",
+        "-I",
+        "-B",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/development/ingress-review-foundation-unit-a-v1.2-20261004",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "started_at_utc": "2026-10-04T22:05:50.407431+00:00",
+      "elapsed_seconds": 162.734,
+      "log_sha256": "35a125ddeab7001d42da61b9ea7cfe13dde0448ca6f9ca50de33d9d48319a28c"
+    },
+    {
+      "label": "ubuntu-corpus-O1",
+      "command": [
+        "docker",
+        "run",
+        "--rm",
+        "--read-only",
+        "--network",
+        "none",
+        "--cap-drop",
+        "ALL",
+        "--security-opt",
+        "no-new-privileges:true",
+        "--pids-limit",
+        "32",
+        "--cpus",
+        "1",
+        "--memory",
+        "512m",
+        "--memory-swap",
+        "512m",
+        "--tmpfs",
+        "/tmp:rw,noexec,nosuid,size=64m,mode=1777",
+        "--mount",
+        "type=bind,source=C:\\Users\\alexg\\AnarchI-Brain-Development,target=/development,readonly",
+        "--mount",
+        "type=bind,source=C:\\Users\\alexg\\AnarchI-Brain-Development\\unit-a-verification-v1.2-20261004,target=/output",
+        "sha256:44139036372a7d324887594267fb91391ef50fbcf00b549e609efc64d871e47c",
+        "python3",
+        "-I",
+        "-B",
+        "-O",
+        "/development/ingress-review-foundation-unit-a-v1.2-20261004/qualify_unit_a.py",
+        "--catalog-sha256",
+        "7db495b0a1034c9211c3d08c90569c3b0bccc3209a31f9f9e1885889b99b75c3",
+        "--out",
+        "/output/ubuntu-corpus-O1.json"
+      ],
+      "exit_code": 0,
+      "started_at_utc": "2026-10-04T22:08:33.172328+00:00",
+      "elapsed_seconds": 72.688,
+      "log_sha256": "9bb4763baf7d349973a85a5badcba088777eee730e6252b2b5eb3ec896dfb7ca"
+    }
+  ],
+  "corpus_receipts": {
+    "ubuntu-corpus-O0.json": {
+      "path": "unit-a-verification-v1.2-20261004/ubuntu-corpus-O0.json",
+      "bytes": 5882501,
+      "sha256": "eee6e6d258f5c1f43174b39960d0e7021416331d8547f00a7eab4f348c6c2a1b"
+    },
+    "ubuntu-corpus-O1.json": {
+      "path": "unit-a-verification-v1.2-20261004/ubuntu-corpus-O1.json",
+      "bytes": 5882501,
+      "sha256": "eee6e6d258f5c1f43174b39960d0e7021416331d8547f00a7eab4f348c6c2a1b"
+    },
+    "windows-corpus-O0.json": {
+      "path": "unit-a-verification-v1.2-20261004/windows-corpus-O0.json",
+      "bytes": 5882501,
+      "sha256": "eee6e6d258f5c1f43174b39960d0e7021416331d8547f00a7eab4f348c6c2a1b"
+    },
+    "windows-corpus-O1.json": {
+      "path": "unit-a-verification-v1.2-20261004/windows-corpus-O1.json",
+      "bytes": 5882501,
+      "sha256": "eee6e6d258f5c1f43174b39960d0e7021416331d8547f00a7eab4f348c6c2a1b"
+    }
+  },
+  "focused_test_methods": 50,
+  "checked_subjects_per_corpus": 2736,
+  "routing_cases_per_corpus": 720,
+  "corpus_bytes_identical_across_platform_and_optimization": true,
+  "source_review_package": {
+    "path": "unit-a-lyra-source-package-v1.2.json",
+    "bytes": 183412,
+    "sha256": "07093ec6f0ee6f7e35733c984a24bdb8353e4711c68023f1157cb4e68bd0440d"
+  },
+  "kiln_reported": {
+    "mutations": 68,
+    "fractures": 63,
+    "survivors": 5,
+    "execution_failures": 0
+  },
+  "kiln_independently_separated": {
+    "executed_test_failures": 54,
+    "setup_loader_failures_not_behavioral_coverage": 9,
+    "survivors_reviewed": 5
+  },
+  "kiln_evidence": [
+    {
+      "path": "unit-a-kiln-evidence-v1.2-r2-20261004/INDEPENDENT-EVIDENCE-DISPOSITION.json",
+      "bytes": 3715,
+      "sha256": "67c06fd168c1660b66183ea0539f90acbb0ff6863f88d932e00b60247c1cbae0"
+    },
+    {
+      "path": "unit-a-kiln-evidence-v1.2-r2-20261004/SURVIVOR-REVIEW.json",
+      "bytes": 2741,
+      "sha256": "a187ab8b6d153ed75e24acc54179c067fee428de089df21cf17b03481c8509b3"
+    },
+    {
+      "path": "unit-a-kiln-evidence-v1.2-r2-20261004/KILN-CYCLE-B10583DA3F396D717C3A/cycle-result.json",
+      "bytes": 273869,
+      "sha256": "a9353aebdd25fef69a5b4f6048150344e8e61d6de23f048c9d4087c320d68ce4"
+    }
+  ],
+  "unit_adopted": false,
+  "runtime_crossings": 0,
+  "canonical_admissions": 0,
+  "production_ready": false,
+  "limitation": "Bounded trusted-local first-party fixture evidence; no hostile Python containment or exhaustive attack-surface proof. Lyra source disposition is separately recorded."
+}

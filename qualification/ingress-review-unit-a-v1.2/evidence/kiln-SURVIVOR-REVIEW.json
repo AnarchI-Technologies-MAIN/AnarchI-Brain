@@ -1,0 +1,53 @@
+{
+  "scope": "BOUNDED_SOURCE_SURVIVOR_REVIEW_NOT_ADOPTION_OR_PRODUCTION",
+  "cycle_id": "KILN-CYCLE-B10583DA3F396D717C3A",
+  "source_commit": "38757d9f66dd91e6825e4bf54435bf1677081166",
+  "core_source_sha256": "a52d1def780fc53bc485dab2f9321670842b57f4ecd8990ad24259f10a5399d3",
+  "concrete_coverage_findings_repaired": [
+    "Frozen Dependencies ordinary reassignment now tested",
+    "Exact sorted canonical dependency, subject and fixture-context identities now independently pinned in tests",
+    "Unicode six-field subject identity now tests UTF-8 encoding",
+    "Lone UTF8 surrogate independent subject strings refuse without exception",
+    "Fixture profile requires exact str rather than caller custom equality"
+  ],
+  "survivors": [
+    {
+      "mutation_id": "KILN-MUTATION-A4B64CE54F8CCF99A79F",
+      "line": 92,
+      "finding": "DEFENSIVE_FLAG_RETAINED",
+      "reason": "Changing dont_inherit has no observed difference in this inspected module without inherited future compiler flags. This does not establish equivalence for different code or compilation profiles."
+    },
+    {
+      "mutation_id": "KILN-MUTATION-B538A09D2806A10779B7",
+      "line": 122,
+      "finding": "DOCUMENTATION_ONLY",
+      "reason": "Removing not from a docstring changes no executable checks. Preserve the correct documentation."
+    },
+    {
+      "mutation_id": "KILN-MUTATION-FEDB7CA6D38914CB0879",
+      "line": 135,
+      "finding": "EQUIVALENT_WITHIN_VALIDATED_ASCII_DOMAIN",
+      "reason": "Dependency identity contains fixed ASCII keys/source labels and validated lowercase hexadecimal digests only. ensure_ascii has identical bytes on this finite domain."
+    },
+    {
+      "mutation_id": "KILN-MUTATION-3B613A028CB980DFA564",
+      "line": 166,
+      "finding": "REDUNDANT_DEFENSE_RETAINED",
+      "reason": "The later exact captured custody.verify_pair independently decodes the same source field with validate=True. Relaxing this earlier flag cannot admit invalid Base64 through that later check. No removal of the defensive flag is proposed."
+    },
+    {
+      "mutation_id": "KILN-MUTATION-D02DCDE3276032E084CB",
+      "line": 188,
+      "finding": "EQUIVALENT_WITHIN_VALIDATED_ASCII_DOMAIN",
+      "reason": "Context identity contains fixed ASCII profile/keys, validated hexadecimal root digests, bounded integer epochs or null only. ensure_ascii has identical bytes on this finite domain."
+    }
+  ],
+  "independent_executed_test_failures": 54,
+  "setup_or_loader_failures_not_behavioral_kills": 9,
+  "survivor_count": 5,
+  "kiln_reported_execution_failures": 0,
+  "non_exhaustive": true,
+  "runtime_crossings": 0,
+  "canonical_admissions": 0,
+  "production_ready": false
+}
