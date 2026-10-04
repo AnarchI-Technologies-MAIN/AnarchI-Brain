@@ -8,7 +8,7 @@
 
 ## Branches
 
-`main` is the reviewed baseline; `development` is the integration candidate. Both require pull requests, current passing Linux/Windows checks, one approving review, code-owner review, dismissal of stale approvals and resolved conversations. Force pushes and branch deletion are prohibited, including for administrators. Git HEAD is a commit pointer, and origin is a remote alias; neither is a separately protectable server branch.
+`main` is the reviewed baseline; `development` is the integration candidate. As inspected on 2026-10-04, both require pull requests, current passing Linux/Windows qualification checks, linear history and resolved conversations, including for administrators. Approving-review count is zero; code-owner review, last-push approval and required commit signatures are disabled. Stale-review dismissal remains enabled. Force pushes and branch deletion are prohibited. This supports a solo maintainer without requiring another human's approval. GitHub settings are the operational source of truth; this document does not configure them. Git HEAD is a commit pointer, and origin is a remote alias; neither is a separately protectable server branch.
 
 ## Deployment
 
