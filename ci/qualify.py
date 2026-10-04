@@ -1,7 +1,7 @@
 """CI reference qualification; no adoption or deployment."""
 import hashlib,json,pathlib,shutil,subprocess,sys,tempfile
 root=pathlib.Path(__file__).resolve().parents[1]
-pin="f2d48cdd98bd17f74bd826c1af96668110d98cf1205ba1dbd3ef7a758b57868c"
+pin="6ddbd0ed83fdf6a0cde0563282abeccf1aa5337e"
 manifest=root/"evidence/stonewall-0/m01-r3/repair-manifest.json"
 if hashlib.sha256(manifest.read_bytes()).hexdigest()!=pin: raise SystemExit("Historical R3 manifest changed")
 for path in root.rglob("*.json"):
