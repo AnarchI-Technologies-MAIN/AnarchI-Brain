@@ -27,8 +27,10 @@ The existing AnarchI Engine may be used only as an external execution/proof work
 
 ## Current unfrozen M01 qualification candidate
 
-The active repair candidate is R2, described in `constitution/state-machines/M01-R2-CONTRACT.md`. R1 and continuation-v1 are preserved under `qualification/m01_r2/history` as historical reference evidence; they are not active admission or transition APIs.
+The active reference qualification candidate is R3, described in `constitution/state-machines/M01-R3-CONTRACT.md`. R2 and earlier evidence remain historical; their launchers are not qualification entrypoints for the R3 overlay.
 
-Run `py -3 -B qualification/m01_r2/qualify.py` for the current reference qualification and `py -3 -B qualification/m01_r2/rescan.py` for its findings/evidence checks. Neither command implements an authority resolver or executes protected effects. Missing admission dependencies remain fail-closed. The candidate and all supplemental contracts remain unfrozen; SW0-010 is not advanced.
+From a committed checkout with Python 3.12, Git and `jsonschema==4.26.0` installed, run `python -I -B ci/qualify.py`. This qualifies committed HEAD, so commit candidate changes first. It preserves the historical manifest pin, restores the manifest-bound README and ignore preimages only in a disposable candidate, checks the full manifest after real Git checkouts with both `core.autocrlf=false` and `true`, and verifies and compiles the launcher's exact bytes before execution in normal and optimized Python. The current README and ignore file are publication overlays, not revised historical evidence. Directly executing the historical R3 launcher is not the supported invoking handoff.
+
+Run `python -I -B -m unittest discover -s ci -p "test_*.py"` for the CI boundary regressions. These tests cover launcher tampering, checkout conversion, full-manifest rejection and preserved preimages. Qualification does not implement an authority resolver or execute protected effects. Missing admission dependencies remain fail-closed. The candidate and supplemental contracts remain unfrozen; SW0-010 is not advanced and `M01_FREEZE_READY=False`.
 
 `evidence/stonewall-0/m01-r2/evidence-index.json` records available source identities and explicitly missing historical closure receipts. Declared frozen status does not replace independent proof.
