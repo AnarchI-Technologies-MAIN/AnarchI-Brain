@@ -1,0 +1,37 @@
+{
+  "acceptance_observed_at_utc": "2026-10-04T06:28:55Z",
+  "acceptance_response_exact": "Accept the exact procedure",
+  "acceptance_source_question_id": "call_5lVL8cFs3IvchfKkgAyMCADx",
+  "accepted_effects": [
+    "Establish the reviewed forward reconciliation process",
+    "Designate its human procedural decision authority prospectively",
+    "Prepare and independently review exact forward governing baseline proposal"
+  ],
+  "actor": "Alexander Gudde",
+  "actor_identity_basis": "Explicit user acceptance in current co-engineering conversation; not a runtime cryptographic issuer enrollment",
+  "custody_scope": "Create-only project decision evidence; filesystem and Git history are not immutable or hostile-admin-proof storage. This is not a software-verifiable authority grant.",
+  "disposition": "ACCEPTED_FORWARD_PROCEDURE_ONLY",
+  "effective_not_before_utc": "2026-10-04T06:28:55Z",
+  "exact_event_timestamp_verified": false,
+  "later_adoption_requires": "Separate explicit acceptance of each exact reviewed baseline/amendment and a new forward-dated decision record",
+  "not_established": [
+    "historical SW0-009/SW0-010 closure",
+    "governing baseline selection or adoption",
+    "M03 amendment adoption",
+    "runtime authority grant or issuer enrollment",
+    "numbered gate closure",
+    "deployment approval",
+    "canonical admission",
+    "production readiness"
+  ],
+  "procedure_authority": "Alexander Gudde, forward reconciliation human decision authority from this acceptance onward only",
+  "procedure_bytes": 6385,
+  "procedure_document_status_at_submission": "PROPOSED_NOT_ADOPTED; acceptance is recorded separately without rewriting accepted bytes",
+  "procedure_sha256": "3f6f9393be17bcd448fdebc1e65f4195b700036cdb200d5f435fd90f6f558992",
+  "review_reference": {
+    "chat": "https://chatgpt.com/c/6ac173bf-82bc-83e9-8669-80b62d674507",
+    "delivery_sha256": "22bc4dde4602deaef289c6cadd3e59f9d8203efd42511b86a117745d502943a4",
+    "scope": "Lyra independently reviewed exact procedure source and cleared it for Alexander decision; no runtime execution by Lyra"
+  },
+  "schema": "BRAIN-FORWARD-PROCEDURE-ACCEPTANCE-1"
+}

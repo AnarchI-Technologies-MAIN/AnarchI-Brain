@@ -1,0 +1,217 @@
+{
+  "authority_granted_by_crosswalk": false,
+  "cell_count": 132,
+  "changes": [
+    {
+      "dimension": "Qualify",
+      "predecessor": "unresolved",
+      "principal": "S1",
+      "successor": "bounded"
+    }
+  ],
+  "matrix_sha256": "796d3cf128b7843c1e3897cc0567fc9b819f40c0e64d805cd4f0ae550e9b1e8b",
+  "named_bound": "YES_BOUNDED_NONCANONICAL_QUALIFICATION",
+  "organs": {
+    "Canonical Memory": {
+      "Administer": "unresolved",
+      "Attest": "unresolved",
+      "Authorize": "no",
+      "Canonicalize": "no",
+      "Execute": "no",
+      "Migrate": "unresolved",
+      "Observe": "unresolved",
+      "Project": "no",
+      "Propose": "no",
+      "Qualify": "unresolved",
+      "Reconstruct": "unresolved",
+      "Revoke": "unresolved"
+    },
+    "Cartologist": {
+      "Administer": "unresolved",
+      "Attest": "unresolved",
+      "Authorize": "no",
+      "Canonicalize": "no",
+      "Execute": "no",
+      "Migrate": "unresolved",
+      "Observe": "yes",
+      "Project": "no",
+      "Propose": "yes",
+      "Qualify": "unresolved",
+      "Reconstruct": "unresolved",
+      "Revoke": "unresolved"
+    },
+    "Cortex": {
+      "Administer": "unresolved",
+      "Attest": "unresolved",
+      "Authorize": "no",
+      "Canonicalize": "no",
+      "Execute": "bounded",
+      "Migrate": "unresolved",
+      "Observe": "yes",
+      "Project": "unresolved",
+      "Propose": "bounded",
+      "Qualify": "unresolved",
+      "Reconstruct": "unresolved",
+      "Revoke": "unresolved"
+    },
+    "Librarian": {
+      "Administer": "unresolved",
+      "Attest": "unresolved",
+      "Authorize": "no",
+      "Canonicalize": "no",
+      "Execute": "no",
+      "Migrate": "unresolved",
+      "Observe": "yes",
+      "Project": "no",
+      "Propose": "bounded",
+      "Qualify": "unresolved",
+      "Reconstruct": "unresolved",
+      "Revoke": "unresolved"
+    },
+    "Prism": {
+      "Administer": "unresolved",
+      "Attest": "unresolved",
+      "Authorize": "no",
+      "Canonicalize": "no",
+      "Execute": "no",
+      "Migrate": "unresolved",
+      "Observe": "bounded",
+      "Project": "yes",
+      "Propose": "unresolved",
+      "Qualify": "unresolved",
+      "Reconstruct": "unresolved",
+      "Revoke": "unresolved"
+    },
+    "S0": {
+      "Administer": "unresolved",
+      "Attest": "unresolved",
+      "Authorize": "unresolved",
+      "Canonicalize": "no",
+      "Execute": "no",
+      "Migrate": "unresolved",
+      "Observe": "yes",
+      "Project": "no",
+      "Propose": "no",
+      "Qualify": "unresolved",
+      "Reconstruct": "unresolved",
+      "Revoke": "unresolved"
+    },
+    "S1": {
+      "Administer": "unresolved",
+      "Attest": "unresolved",
+      "Authorize": "unresolved",
+      "Canonicalize": "no",
+      "Execute": "no",
+      "Migrate": "unresolved",
+      "Observe": "yes",
+      "Project": "no",
+      "Propose": "unresolved",
+      "Qualify": "bounded",
+      "Reconstruct": "unresolved",
+      "Revoke": "unresolved"
+    },
+    "S2": {
+      "Administer": "unresolved",
+      "Attest": "unresolved",
+      "Authorize": "unresolved",
+      "Canonicalize": "yes",
+      "Execute": "no",
+      "Migrate": "unresolved",
+      "Observe": "yes",
+      "Project": "no",
+      "Propose": "no",
+      "Qualify": "unresolved",
+      "Reconstruct": "unresolved",
+      "Revoke": "unresolved"
+    },
+    "S3": {
+      "Administer": "unresolved",
+      "Attest": "unresolved",
+      "Authorize": "unresolved",
+      "Canonicalize": "no",
+      "Execute": "no",
+      "Migrate": "unresolved",
+      "Observe": "yes",
+      "Project": "bounded",
+      "Propose": "no",
+      "Qualify": "unresolved",
+      "Reconstruct": "unresolved",
+      "Revoke": "unresolved"
+    },
+    "S4": {
+      "Administer": "unresolved",
+      "Attest": "unresolved",
+      "Authorize": "unresolved",
+      "Canonicalize": "no",
+      "Execute": "bounded",
+      "Migrate": "unresolved",
+      "Observe": "yes",
+      "Project": "no",
+      "Propose": "no",
+      "Qualify": "unresolved",
+      "Reconstruct": "unresolved",
+      "Revoke": "unresolved"
+    },
+    "Wavesmith": {
+      "Administer": "unresolved",
+      "Attest": "unresolved",
+      "Authorize": "no",
+      "Canonicalize": "no",
+      "Execute": "no",
+      "Migrate": "unresolved",
+      "Observe": "yes",
+      "Project": "no",
+      "Propose": "yes",
+      "Qualify": "unresolved",
+      "Reconstruct": "unresolved",
+      "Revoke": "unresolved"
+    }
+  },
+  "other_machine_rows_adopted": false,
+  "predecessor_matrix_sha256": "1ceaf312b74500548654c7a7244ebc9222c93cf2e9bdfb2522669ad7359cb98e",
+  "scope": "ONLY_UNIT_A_SEMANTIC_ELIGIBILITY_NOT_OPERATIVE_GRANTS",
+  "selected_machine_dimension_rows": [
+    {
+      "authority_granted_by_crosswalk": false,
+      "declared_owner_cells": {
+        "Observe": "yes",
+        "Propose": "yes"
+      },
+      "machine": "M03",
+      "owner_is_matrix_organ": true,
+      "required_dimensions_from_candidate_map": [
+        "Observe",
+        "Propose"
+      ],
+      "specification_owner": "Cartologist"
+    },
+    {
+      "authority_granted_by_crosswalk": false,
+      "declared_owner_cells": {
+        "Qualify": "bounded"
+      },
+      "machine": "M04",
+      "named_qualification_bound": "YES_BOUNDED_NONCANONICAL_QUALIFICATION",
+      "owner_is_matrix_organ": true,
+      "required_dimensions_from_candidate_map": [
+        "Qualify"
+      ],
+      "specification_owner": "S1"
+    },
+    {
+      "authority_granted_by_crosswalk": false,
+      "declared_owner_cells": {
+        "Observe": "yes",
+        "Propose": "bounded"
+      },
+      "machine": "M08",
+      "owner_is_matrix_organ": true,
+      "required_dimensions_from_candidate_map": [
+        "Observe",
+        "Propose"
+      ],
+      "specification_owner": "Librarian"
+    }
+  ],
+  "status": "PROPOSED_NOT_ADOPTED"
+}
