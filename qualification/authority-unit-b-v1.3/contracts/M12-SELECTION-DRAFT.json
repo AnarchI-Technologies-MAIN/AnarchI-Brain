@@ -1,0 +1,53 @@
+{
+  "actual_root_selection": "UNRESOLVED",
+  "context": {
+    "unit_a_acceptance_sha256": "79d46e4c1a41c48bcca88a04c42cc2b08068134c971df456a7a59f0aff0d8d1c",
+    "unit_a_catalog_sha256": "7db495b0a1034c9211c3d08c90569c3b0bccc3209a31f9f9e1885889b99b75c3",
+    "unit_a_retention_sha256": "fc95e1f43f40dc576ab7295435bad3effd8ad99e6fc8be4f9263e8d55154a155"
+  },
+  "evaluation_layers": [
+    "GrantEvaluation",
+    "AuthorizationEvaluation",
+    "ConsumptionEvaluation"
+  ],
+  "excluded": [
+    "actual_enrollment",
+    "grant_issuance",
+    "authorization_issuance",
+    "delegation",
+    "rotation",
+    "root_replacement",
+    "revocation_publication",
+    "durable_consumption"
+  ],
+  "historical_source": {
+    "original_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\github-m08-review-20261004\\development-review\\m08-v8\\successor\\machines\\M12.proposal.json",
+    "path": "inputs/historical_m12.json",
+    "role": "HISTORICAL_OBLIGATIONS_ONLY",
+    "sha256": "f545e783e70b647cae9e57c1b7bf3213f1faf951cf62f31fccf2109bc9e1af42"
+  },
+  "modeled_roles": [
+    "grant_issuer",
+    "issuer",
+    "verifier",
+    "grantee"
+  ],
+  "operative_authority": "UNRESOLVED",
+  "other_machines_adopted": false,
+  "runtime_activation": false,
+  "schema": "UNIT-B-M12-SELECTION-DRAFT-1",
+  "selected_contracts": [
+    "contracts/BOOTSTRAP-DRAFT.md",
+    "contracts/PRINCIPAL-INDEPENDENCE-DRAFT.md",
+    "contracts/KEY-CUSTODY-INTERFACE-DRAFT.md",
+    "contracts/GRANT-EVALUATION-DRAFT.md"
+  ],
+  "selected_scope": "FINITE_AUTHORITY_REFERENCE_INTERPRETATION_ONLY",
+  "separate_objects": [
+    "grant",
+    "authorization",
+    "requested_effect"
+  ],
+  "specification_owner_is_runtime_principal": false,
+  "status": "PROPOSED_NOT_ADOPTED"
+}

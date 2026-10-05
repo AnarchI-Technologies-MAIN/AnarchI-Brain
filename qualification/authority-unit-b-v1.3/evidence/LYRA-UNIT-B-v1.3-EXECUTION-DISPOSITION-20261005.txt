@@ -1,0 +1,210 @@
+- heading "ChatGPT said:" [level=4]
+  - paragraph:
+    - text: I independently verified the supplied
+    - strong: Unit B v1.3 execution-closure wrapper
+    - text: and its nested custody. I did
+    - strong: not
+    - text: independently execute Unit B.
+  - paragraph:
+    - text: The outer wrapper is exactly
+    - strong: 69,994 bytes
+    - text: "and independently hashes to:"
+  - paragraph: 81063c9ea89d77ccc5994933221c68a1cc53d97c52e8942097ec7adfe38457a2
+  - paragraph: "Its two embedded files both decode cleanly and reproduce their declared identities:"
+  - list:
+    - text: "execution qualification receipt:"
+    - strong: 62,369 bytes
+    - text: ", SHA-256"
+    - text: 7ffe8f0e23f6f70538642e1a16de3ed831d599d4f28dbecf26b136bfeed80df7
+    - text: "runtime provenance:"
+    - strong: 42,268 bytes
+    - text: ", SHA-256"
+    - text: d146df76c5d0b84b5e68a805f6af4a24f446a2c763726ad90698d1e474472f10
+    - button "Open preview of Pasted text.txt":
+      - generic: Pasted text
+  - heading "Execution receipt custody" [level=2]
+  - paragraph:
+    - text: I then independently decoded
+    - strong: all 21 artifacts embedded inside the execution receipt
+    - text: .
+  - paragraph: "Result:"
+  - paragraph:
+    - strong: 21/21 reproduce both declared byte count and SHA-256 exactly.
+  - paragraph: "Those include:"
+  - list:
+    - listitem: 16 Windows/Ubuntu execution logs
+    - listitem: qualification/custody/reference logs
+    - listitem: verification results
+    - listitem: Kiln cycle result
+    - listitem: source binding
+    - listitem: survivor review
+    - listitem: independent evidence disposition
+  - paragraph: So the execution receipt is not merely internally referential. Its enclosed evidence payload is byte-consistent.
+  - heading "Exact candidate binding" [level=2]
+  - paragraph: "The receipt binds execution to the same exact source I reviewed:"
+  - list:
+    - text: Unit B v1.3 source wrapper
+    - text: 8b2d52db7e7cd9dadac8d327dac0383542593edfcc2cacc29d764bad6f53219c
+    - text: catalog
+    - text: e51c99c81c61cc1cc69ddbfd193503a1b659fcf694ffcc2d5d76cc47ba6d5792
+  - paragraph:
+    - text: The wrapper itself also records the catalog identity and explicitly identifies the execution actor as Codex rather than independent Lyra execution.
+    - button "Open preview of Pasted text.txt":
+      - generic: Pasted text
+  - heading "Cross-platform closure" [level=2]
+  - paragraph:
+    - text: The nested verification-results.json contains exactly
+    - strong: 16 execution records
+    - text: ", and every one reports:"
+  - paragraph: exit_code = 0
+  - paragraph: "covering all four contexts:"
+  - list:
+    - listitem: Windows normal
+    - listitem: Windows -O
+    - listitem: Ubuntu normal
+    - listitem: Ubuntu -O
+  - paragraph: "across:"
+  - list:
+    - listitem: reference tests
+    - listitem: custody tests
+    - listitem: full/unit discovery
+    - listitem: qualification
+  - paragraph:
+    - text: The receipt records
+    - strong: 66 methods per context
+    - text: ":"
+  - list:
+    - listitem: 42 reference/core
+    - listitem: 16 custody
+    - listitem: 8 catalog
+  - paragraph: and records identical qualification values across contexts.
+  - paragraph: "The Ubuntu commands are additionally bounded with:"
+  - list:
+    - listitem: read-only container
+    - listitem: no network
+    - listitem: all capabilities dropped
+    - listitem: no-new-privileges
+    - listitem: PID/CPU/memory limits
+    - listitem: bounded tmpfs
+    - listitem: development tree mounted read-only
+  - paragraph:
+    - text: That remains
+    - strong: trusted-local/containerized qualification evidence
+    - text: ", not hostile-runtime containment proof."
+  - heading "Kiln closure" [level=2]
+  - paragraph: "The fresh campaign is materially stronger than the earlier one:"
+  - list:
+    - strong: 137 mutations
+    - strong: 133 behavioral failures
+    - strong: 4 survivors
+    - strong: 0 loader/setup failures
+    - strong: 0 execution failures
+  - paragraph: Importantly, the positive-Authorization comparison mutation is reported killed, so the exact semantic repair that created v1.3 is represented in the mutation evidence rather than merely in prose.
+  - paragraph: The four survivors are explicitly bounded/reviewed rather than counted as kills. I see no reason from the supplied evidence to reinterpret them as hidden authority or canonical-effect bypasses.
+  - heading "Runtime provenance limit" [level=2]
+  - paragraph: "The runtime-provenance artifact is correctly scoped as:"
+  - blockquote:
+    - paragraph:
+      - strong: post-campaign current runtime identity, not retroactive execution proof
+  - paragraph:
+    - text: That distinction matters and is preserved in the wrapper.
+    - button "Open preview of Pasted text.txt":
+      - generic: Pasted text
+  - paragraph:
+    - text: So I am
+    - strong: not
+    - text: using it to rewrite historical execution identity.
+  - heading "Non-effecting gates remain intact" [level=2]
+  - paragraph: "The receipt preserves:"
+  - list:
+    - listitem: runtime_authority = false
+    - listitem: operative_grant = false
+    - listitem: effect_permitted = false
+    - listitem: durable_consumption = false
+    - listitem: production_ready = false
+  - paragraph:
+    - text: and the enclosing wrapper separately states production readiness false.
+    - button "Open preview of Pasted text.txt":
+      - generic: Pasted text
+  - paragraph: "Nothing in this execution closure establishes:"
+  - list:
+    - listitem: an enrolled root
+    - listitem: a live principal
+    - listitem: actual cryptographic signing authority
+    - listitem: an operative grant
+    - listitem: an actual Authorization
+    - listitem: a durable M14 claim
+    - listitem: a consequential effect
+    - listitem: deployment
+    - listitem: production readiness
+  - heading "Final bounded disposition" [level=1]
+  - paragraph: "Combining:"
+  - list:
+    - listitem: my prior independent exact-byte/source review of Unit B v1.3,
+    - listitem: closure of the Authorization semantic defect,
+    - listitem: clean 57-file source custody,
+    - listitem: clean 24-input required-capture custody,
+    - listitem: clean 16-member atomic catalog,
+    - listitem: this exact execution receipt tied to the same catalog/source bytes,
+    - listitem: 16/16 reported cross-platform checks PASS,
+    - text: and the fresh 137-mutation campaign with
+    - strong: 133 behavioral kills / 4 reviewed survivors / zero setup or execution failures
+    - text: ","
+  - paragraph: "my disposition is:"
+  - blockquote:
+    - paragraph:
+      - strong: Unit B v1.3 is READY to be presented to Alexander for the exact ONE atomic documentary adoption decision.
+  - paragraph:
+    - text: I find
+    - strong: no remaining concrete source, custody, semantic, or execution-closure repair
+    - text: required before that question.
+  - paragraph:
+    - text: The adoption question must still remain documentary and exact-byte bound. Acceptance would establish the
+    - strong: Authority Interpretation & Consumption Foundation
+    - text: ", not live authority."
+  - paragraph: "After such adoption, these remain explicitly unresolved:"
+  - list:
+    - listitem: actual root/bootstrap enrollment
+    - listitem: principal/key custody
+    - listitem: issuer/verifier operational independence
+    - listitem: cryptographic authentication
+    - listitem: current revocation/freshness publication
+    - listitem: operative Authorize grants
+    - listitem: actual issued Authorizations
+    - listitem: M14 durable claim implementation
+    - listitem: crash/recovery qualification
+    - listitem: point-of-effect fencing
+    - listitem: canonical effects
+    - listitem: deployment
+    - listitem: production readiness
+  - paragraph: "Your proposed next phase is also correctly ordered:"
+  - paragraph:
+    - strong: offline M14 durable-claim/crash-recovery zero-effect reference + enrollment contract
+  - paragraph:
+    - text: with actual roots, identities, controls, revocation state, and grants still treated as prerequisites rather than fixtures pretending to be reality.
+    - button "View analysis":
+  - button "Copy":
+  - button "Share":
+  - button "Read aloud":
+  - button "Regenerate response":
+  - button "React":
+  - button "Bad response":
+  - button "More actions":
+  - button "Sources":
+  - generic: ChatGPT can make mistakes. Check important info.
+  - button "Scroll to bottom":
+  - heading "Latest response" [level=4]
+  - status
+  - button "Add files and more":
+  - textbox "Ask ChatGPT":
+    - paragraph: Ask ChatGPT
+  - button "Select ChatGPT model":
+    - generic: Medium
+  - button "Dictate":
+  - button "Start Voice":
+- status
+- status: Response complete
+- status
+- status
+- status
+- status

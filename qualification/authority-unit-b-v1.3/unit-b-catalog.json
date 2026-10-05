@@ -1,0 +1,199 @@
+{
+  "S3_Authorize": "UNRESOLVED",
+  "adoption_record": null,
+  "adoption_unit": "All sixteen selected artifacts atomically or none. Documentary authority interpretation and non-effecting external-authorization consumption fixture foundation only.",
+  "atomic_adoption": true,
+  "canonical_membership": false,
+  "durable_consumption": false,
+  "effect_permitted": false,
+  "exclusions": [
+    "actual bootstrap root selection",
+    "runtime enrollment",
+    "grant issuance",
+    "root replacement",
+    "delegation",
+    "actual cryptographic authentication",
+    "M14 implementation",
+    "durable effect execution",
+    "S2 canonical adjudication",
+    "canonical commit",
+    "staging",
+    "deployment"
+  ],
+  "input_registers": {
+    "chain-supplement-register.json": {
+      "bytes": 3516,
+      "path": "chain-supplement-register.json",
+      "sha256": "50ca2ff423f72b8d83d21ebbab34515f1750fbb7f7c388c24792f318381f3c91"
+    },
+    "custody/matrix-support-register.json": {
+      "bytes": 475,
+      "path": "custody/matrix-support-register.json",
+      "sha256": "a3784a3017a35776ab6c0aa6572835db375a4f05d318c88a50985d0f4fa219f9"
+    },
+    "input-register.json": {
+      "bytes": 4528,
+      "path": "input-register.json",
+      "sha256": "ac4b28b82307b604b9cfe32309573cd70e176ec7306a4511d87d0d74c5a530ff"
+    }
+  },
+  "matrix_cell_changes": [],
+  "operative_grant": false,
+  "predecessors": {
+    "baseline_catalog_sha256": "421b5d5bab28a32afe557e17970a14beb75a99eddc9f536a75bb1bcda9d26eb3",
+    "mapping_contract_sha256": "61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4",
+    "unit_a_acceptance_sha256": "79d46e4c1a41c48bcca88a04c42cc2b08068134c971df456a7a59f0aff0d8d1c",
+    "unit_a_catalog_sha256": "7db495b0a1034c9211c3d08c90569c3b0bccc3209a31f9f9e1885889b99b75c3",
+    "unit_a_effective_not_before_utc": "2026-10-04T22:28:23Z",
+    "unit_a_retention_sha256": "fc95e1f43f40dc576ab7295435bad3effd8ad99e6fc8be4f9263e8d55154a155"
+  },
+  "production_ready": false,
+  "profile": "OFFLINE_FIXTURE_ONLY",
+  "runtime_authority": false,
+  "schema": "PROPOSED-AUTHORITY-INTERPRETATION-CONSUMPTION-UNIT-B-1",
+  "selected_artifacts": {
+    "M09_contract": {
+      "bytes": 4515,
+      "path": "contracts/M09-CONSUMPTION-DRAFT.md",
+      "sha256": "5c225397ecec419edb168dadc02094166983ff05282562e6c545b74ba6540452"
+    },
+    "M09_reconciliation": {
+      "bytes": 1887,
+      "path": "contracts/M09-RECONCILIATION-DRAFT.json",
+      "sha256": "4a349883b06c854981672153a90cca4ee5f19463b5f1b748c58dde356275778e"
+    },
+    "M12_selection": {
+      "bytes": 1786,
+      "path": "contracts/M12-SELECTION-DRAFT.json",
+      "sha256": "43dd6e1d6cd6c1145cc0efec50a70aed7d00e228841fb3b662b92f6faa45b20b"
+    },
+    "M14_interface": {
+      "bytes": 4813,
+      "path": "contracts/M14-RECORDING-INTERFACE-DRAFT.md",
+      "sha256": "1e2214c72f018e1d2696d64fa8931ff5ba56df5e6a40f7b9f72d87658d113d25"
+    },
+    "authority_crosswalk": {
+      "bytes": 5061,
+      "path": "contracts/AUTHORITY-CROSSWALK-UNIT-B-DRAFT.json",
+      "sha256": "7775c202d4c48e27ad5c5f6824cf4842516891bad33fce02266ab3a6baf76dc3"
+    },
+    "authority_matrix": {
+      "bytes": 11726,
+      "path": "inputs/unit_a_matrix.md",
+      "sha256": "796d3cf128b7843c1e3897cc0567fc9b819f40c0e64d805cd4f0ae550e9b1e8b"
+    },
+    "authorization_schema": {
+      "bytes": 40984,
+      "path": "schemas/AUTHORIZATION-v1.schema.json",
+      "sha256": "c4d70d46d26b6763ad63805d86729a6998d37d6951757e43af59bd1c9f4bae34"
+    },
+    "bootstrap_contract": {
+      "bytes": 3060,
+      "path": "contracts/BOOTSTRAP-DRAFT.md",
+      "sha256": "5ee93c9e440b82909c424bba6d1e96eab4d95842f5f61842e533bbb16383d32b"
+    },
+    "evaluation_contract": {
+      "bytes": 13933,
+      "path": "contracts/GRANT-EVALUATION-DRAFT.md",
+      "sha256": "19177070c2f42b20442e39544bb6149975b8d7a527cf72a0040a9bd7841b944d"
+    },
+    "fixture_schema": {
+      "bytes": 40970,
+      "path": "schemas/AUTHORITY-FIXTURE-v1.schema.json",
+      "sha256": "38fe56d292b20d2586084d314d5e0c4d33b3df207a61cdc3ce8c4e9ccc45a6d9"
+    },
+    "grant_schema": {
+      "bytes": 40968,
+      "path": "schemas/AUTHORITY-GRANT-v2.schema.json",
+      "sha256": "bde35fe1103cb9a674ba16b12500772ecb1a69b0510227751082e7b45be82b21"
+    },
+    "interface_inventory": {
+      "bytes": 11468,
+      "path": "reference/API-INVENTORY.json",
+      "sha256": "8bbd0afda0eccb416c588ba8892a50f7c48686742d578f1806ac8828f07f9f33"
+    },
+    "key_binding_contract": {
+      "bytes": 1676,
+      "path": "contracts/KEY-CUSTODY-INTERFACE-DRAFT.md",
+      "sha256": "16ca2cde9dc63e351bec14b1aaf43f0bf8563bf7a4451b662964339d3f425dfe"
+    },
+    "principal_contract": {
+      "bytes": 3548,
+      "path": "contracts/PRINCIPAL-INDEPENDENCE-DRAFT.md",
+      "sha256": "8324d801e7d83172884fc4e24671b8717ecd4237b3dcdaaae3dcce726e90522c"
+    },
+    "reference": {
+      "bytes": 38532,
+      "path": "reference/authority_reference.py",
+      "sha256": "b19f737eeac70934ffcc56dfd66c2124047a995001a28dcfee0024fef631ab32"
+    },
+    "unchanged_matrix_proof": {
+      "bytes": 5484,
+      "path": "contracts/UNCHANGED-MATRIX-PROOF-DRAFT.json",
+      "sha256": "521fc0139de218c3d4b3950fccf2212773ac5868aa76c21414bd020cf0dee7a7"
+    }
+  },
+  "status": "PROPOSED_NOT_ADOPTED",
+  "supporting_artifacts": {
+    "DIRECTION-APPROVAL.json": {
+      "bytes": 724,
+      "path": "DIRECTION-APPROVAL.json",
+      "sha256": "2a89b0810bffcc4f2030d9dc006c21e6f43b7a655a77f98b9cc0cc4c115ac5bf"
+    },
+    "REVIEW-EXCERPT-PROVENANCE.json": {
+      "bytes": 1313,
+      "path": "REVIEW-EXCERPT-PROVENANCE.json",
+      "sha256": "9379e64ae00e28b28a87cdb678f20f1e70d51f1d482101b785caf7f531187c38"
+    },
+    "SUCCESSOR-CUSTODY-NOTE.json": {
+      "bytes": 1073,
+      "path": "SUCCESSOR-CUSTODY-NOTE.json",
+      "sha256": "11817703ea2e3d840c2cacbe0bb8e111a1b8b853457ae253b4d1bb81fa4bd919"
+    },
+    "TEST-STRENGTHENING-SUCCESSOR-NOTE.json": {
+      "bytes": 1405,
+      "path": "TEST-STRENGTHENING-SUCCESSOR-NOTE.json",
+      "sha256": "afc4af84c5dd03acabb33f947b7e083cd61417d43105468214204effbbbeb0c9"
+    },
+    "custody/expected-capture-identities.json": {
+      "bytes": 8281,
+      "path": "custody/expected-capture-identities.json",
+      "sha256": "c6fe32a4a58ce7775ddc2433f29c6f9259f76b6055606249d9b9cd262df1f172"
+    },
+    "custody/qualify_custody.py": {
+      "bytes": 14968,
+      "path": "custody/qualify_custody.py",
+      "sha256": "246a3ec873636b2e710760123d37fd262855a6b96cc8b040f651c9a9ad82a5af"
+    },
+    "custody/test_custody.py": {
+      "bytes": 7072,
+      "path": "custody/test_custody.py",
+      "sha256": "7afe6550e0fdfb723b9fdd37a978608519e9e99253ff1c80ab4f27001e46696a"
+    },
+    "inputs/lyra_authorization_repair.txt": {
+      "bytes": 14045,
+      "path": "inputs/lyra_authorization_repair.txt",
+      "sha256": "c5c0cfd752bbce15c6be941a3f4d52e507db309204bad30d286c1fa017f71eb5"
+    },
+    "qualify_unit_b.py": {
+      "bytes": 13217,
+      "path": "qualify_unit_b.py",
+      "sha256": "041e151617b9486850dc37abef853364c0185b510399d42abf04e6499ba7c27d"
+    },
+    "reference/fixture_factory.py": {
+      "bytes": 9786,
+      "path": "reference/fixture_factory.py",
+      "sha256": "bfd05885b48a9fbff61df01fd60d5ae34db43aed9d5f3f9619d7f62d7753e9b3"
+    },
+    "reference/test_authority_reference.py": {
+      "bytes": 27539,
+      "path": "reference/test_authority_reference.py",
+      "sha256": "2de63754a3e544450ca661396c87e0a6c9d70a8eec34edd0c8fae5bac80b32d0"
+    },
+    "test_catalog.py": {
+      "bytes": 3336,
+      "path": "test_catalog.py",
+      "sha256": "0e7fbd1371d746ed0f8033774b27e30fc76117b9352d8007c5ac036bc39b6774"
+    }
+  }
+}

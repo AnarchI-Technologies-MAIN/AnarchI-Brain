@@ -1,0 +1,366 @@
+{
+  "status": "PROPOSED_INTERFACE_FOR_COORDINATION",
+  "profile": "OFFLINE_FIXTURE_ONLY",
+  "limits": {
+    "bytes": 65536,
+    "depth": 32,
+    "nodes": 5000,
+    "text_chars": 512,
+    "description_chars": 2048,
+    "list_items": 64,
+    "lineage_items": 8,
+    "integer_max": 9223372036854775807
+  },
+  "operations": [
+    "CONSUME_PROJECTION_AUTHORIZATION",
+    "CONSUME_MAINTENANCE_AUTHORIZATION"
+  ],
+  "objects": {
+    "bundle": {
+      "profile": "profile",
+      "grant": "grant",
+      "requested_effect": "requested_effect",
+      "governance_selection": "governance_selection",
+      "bootstrap": "bootstrap",
+      "principals": "principals",
+      "key_bindings": "key_bindings",
+      "issuer_attestation": "issuer_attestation",
+      "verifier_admission": "verifier_admission",
+      "current_observation": "current_observation",
+      "consumption": "consumption",
+      "authorization": "authorization",
+      "grant_attestation": "grant_attestation"
+    },
+    "grant": {
+      "grant_id": "text",
+      "grant_version": "positive_int",
+      "issuer_principal_id": "text",
+      "issuer_key_id": "text",
+      "grantee_principal_id": "text",
+      "authority_dimension": "text",
+      "operation": "operation",
+      "subject_id": "text",
+      "subject_version": "positive_int",
+      "subject_digest": "digest",
+      "tenant": "text",
+      "consumer": "text",
+      "job": "text",
+      "purpose": "text",
+      "recipient": "text",
+      "resource_id": "text",
+      "resource_version": "positive_int",
+      "resource_class": "text",
+      "effect_class": "text",
+      "effect_description_digest": "digest",
+      "policy_digest": "digest",
+      "contract_digest": "digest",
+      "predecessor_digest": "digest_or_none_tag",
+      "root_id": "text",
+      "root_digest": "digest",
+      "root_lineage": "lineage",
+      "generation": "nonnegative_int",
+      "epoch": "nonnegative_int",
+      "not_before": "nonnegative_int",
+      "expires_at": "nonnegative_int",
+      "revocation_ref": "text",
+      "delegation": "bool",
+      "verifier_admission_ref": "text",
+      "revocation_generation": "nonnegative_int",
+      "revocation_state": "revocation_state",
+      "evidence_time": "nonnegative_int",
+      "effect_actor_principal_id": "text",
+      "schema_id": "text",
+      "schema_version": "positive_int",
+      "schema_digest": "digest",
+      "supersedes_grant_id": "text"
+    },
+    "requested_effect": {
+      "operation": "operation",
+      "subject_id": "text",
+      "subject_version": "positive_int",
+      "subject_digest": "digest",
+      "tenant": "text",
+      "consumer": "text",
+      "job": "text",
+      "purpose": "text",
+      "recipient": "text",
+      "resource_id": "text",
+      "resource_version": "positive_int",
+      "resource_class": "text",
+      "effect_class": "text",
+      "effect_description": "description",
+      "effect_description_digest": "digest",
+      "policy_digest": "digest",
+      "contract_digest": "digest",
+      "predecessor_digest": "digest_or_none_tag",
+      "grantee_principal_id": "text",
+      "effect_actor_principal_id": "text",
+      "schema_id": "text",
+      "schema_version": "positive_int",
+      "schema_digest": "digest"
+    },
+    "governance_selection": {
+      "kind": "governance_kind",
+      "selection_origin": "selection_origin",
+      "decision_ref": "text",
+      "selected_bootstrap_sha256": "digest",
+      "status": "selection_status"
+    },
+    "bootstrap": {
+      "documentary_status": "documentary_status",
+      "selection_ref": "text",
+      "bootstrap_procedure_digest": "digest",
+      "root_class": "text",
+      "root_id": "text",
+      "root_digest": "digest",
+      "root_generation": "nonnegative_int",
+      "root_lineage": "lineage",
+      "genesis_predecessor": "digest_or_none_tag",
+      "effective_not_before": "nonnegative_int",
+      "authority_dimensions": "texts",
+      "minimum_generation": "nonnegative_int",
+      "minimum_epoch": "nonnegative_int",
+      "minimum_revocation_generation": "nonnegative_int",
+      "maximum_evidence_age": "nonnegative_int",
+      "admitted_principals": "principals",
+      "admitted_key_bindings": "key_bindings"
+    },
+    "principals": {
+      "issuer": "principal",
+      "verifier": "principal",
+      "grantee": "principal",
+      "grant_issuer": "principal"
+    },
+    "principal": {
+      "principal_id": "text",
+      "principal_class": "text",
+      "authority_purpose": "text",
+      "jurisdiction": "text",
+      "effective_controller_id": "text",
+      "admin_domain_id": "text",
+      "signing_custody_domain_id": "text",
+      "evidence_provenance_domain_id": "text",
+      "authority_lineage_ref": "text"
+    },
+    "key_bindings": {
+      "issuer": "key_binding",
+      "verifier": "key_binding",
+      "grantee": "key_binding",
+      "grant_issuer": "key_binding"
+    },
+    "key_binding": {
+      "principal_id": "text",
+      "key_id": "text",
+      "key_fingerprint": "digest",
+      "generation": "nonnegative_int",
+      "activation_time": "nonnegative_int",
+      "predecessor_key_id": "text",
+      "issuer_authority_ref": "text",
+      "verifier_admission_ref": "text"
+    },
+    "issuer_attestation": {
+      "attestation_kind": "attestation_kind",
+      "issuer_principal_id": "text",
+      "issuer_key_id": "text",
+      "issuer_key_fingerprint": "digest",
+      "grant_sha256": "digest",
+      "selection_ref": "text",
+      "evidence_time": "nonnegative_int",
+      "authorization_sha256": "digest"
+    },
+    "verifier_admission": {
+      "admission_kind": "admission_kind",
+      "admission_ref": "text",
+      "verifier_principal_id": "text",
+      "verifier_key_id": "text",
+      "verifier_key_fingerprint": "digest",
+      "root_id": "text",
+      "root_digest": "digest",
+      "selection_ref": "text"
+    },
+    "current_observation": {
+      "root_status": "observation_status",
+      "root_id": "nullable_text",
+      "root_digest": "nullable_digest",
+      "root_generation": "nullable_int",
+      "generation": "nullable_int",
+      "epoch": "nullable_int",
+      "revocation_generation": "nullable_int",
+      "verifier_status": "verifier_status",
+      "time_status": "observation_status",
+      "now_earliest": "nullable_int",
+      "now_latest": "nullable_int",
+      "principal_key_generations": "observed_key_generations",
+      "revocation_feed_status": "feed_status",
+      "revoked_refs": "texts",
+      "denial_feed_status": "feed_status",
+      "denials": "denials",
+      "authorization_revocation_feed_status": "feed_status",
+      "revoked_authorization_refs": "texts"
+    },
+    "observed_key_generations": {
+      "issuer": "nullable_int",
+      "verifier": "nullable_int",
+      "grantee": "nullable_int",
+      "grant_issuer": "nullable_int"
+    },
+    "denial": {
+      "denial_id": "text",
+      "scope": "requested_effect",
+      "source_ref": "text"
+    },
+    "consumption": {
+      "state": "consumption_state",
+      "grant_id": "text",
+      "grant_digest": "digest",
+      "request_digest": "digest",
+      "context_digest": "digest",
+      "generation": "nonnegative_int",
+      "evaluation_digest": "digest",
+      "effect_observation": "effect_observation",
+      "terminal_receipt_digest": "nullable_digest",
+      "authorization_id": "text",
+      "authorization_version": "positive_int",
+      "authorization_digest": "digest"
+    },
+    "lineage_entry": {
+      "root_id": "text",
+      "root_digest": "digest",
+      "predecessor_root_digest": "digest_or_none_tag"
+    },
+    "grant_attestation": {
+      "attestation_kind": "attestation_kind",
+      "issuer_principal_id": "text",
+      "issuer_key_id": "text",
+      "issuer_key_fingerprint": "digest",
+      "grant_sha256": "digest",
+      "selection_ref": "text",
+      "evidence_time": "nonnegative_int"
+    },
+    "authorization": {
+      "operation": "operation",
+      "subject_id": "text",
+      "subject_version": "positive_int",
+      "subject_digest": "digest",
+      "tenant": "text",
+      "consumer": "text",
+      "job": "text",
+      "purpose": "text",
+      "recipient": "text",
+      "resource_id": "text",
+      "resource_version": "positive_int",
+      "resource_class": "text",
+      "effect_class": "text",
+      "effect_description_digest": "digest",
+      "policy_digest": "digest",
+      "contract_digest": "digest",
+      "predecessor_digest": "digest_or_none_tag",
+      "authorization_id": "text",
+      "authorization_version": "positive_int",
+      "issuer_principal_id": "text",
+      "issuer_key_id": "text",
+      "consumer_principal_id": "text",
+      "verifier_principal_id": "text",
+      "verifier_admission_ref": "text",
+      "decision_disposition": "authorization_disposition",
+      "grant_digest": "digest",
+      "requested_effect_digest": "digest",
+      "root_id": "text",
+      "root_digest": "digest",
+      "generation": "nonnegative_int",
+      "epoch": "nonnegative_int",
+      "revocation_generation": "nonnegative_int",
+      "evidence_time": "nonnegative_int",
+      "issued_at": "nonnegative_int",
+      "not_before": "nonnegative_int",
+      "expires_at": "nonnegative_int",
+      "conditions": "authorization_conditions",
+      "effect_actor_principal_id": "text",
+      "schema_id": "text",
+      "schema_version": "positive_int",
+      "schema_digest": "digest",
+      "revocation_ref": "text",
+      "revocation_state": "revocation_state",
+      "supersedes_authorization_id": "text"
+    },
+    "authorization_conditions": {
+      "generation": "text",
+      "epoch": "text",
+      "revocation": "text",
+      "time": "text",
+      "prior_consumption": "text",
+      "extra_conditions": "text"
+    }
+  },
+  "enums": {
+    "profile": [
+      "OFFLINE_FIXTURE_ONLY"
+    ],
+    "operation": [
+      "CONSUME_PROJECTION_AUTHORIZATION",
+      "CONSUME_MAINTENANCE_AUTHORIZATION"
+    ],
+    "governance_kind": [
+      "MODELED_GOVERNANCE_SELECTION_NOT_ADOPTED"
+    ],
+    "selection_origin": [
+      "EXTERNAL_MODELED_GOVERNANCE",
+      "ROOT_SELF_ATTESTATION"
+    ],
+    "selection_status": [
+      "SELECTED",
+      "UNKNOWN",
+      "CONFLICT"
+    ],
+    "documentary_status": [
+      "PRESENT_FIXTURE",
+      "MISSING",
+      "CONFLICT"
+    ],
+    "revocation_state": [
+      "ACTIVE",
+      "REVOKED",
+      "UNKNOWN"
+    ],
+    "attestation_kind": [
+      "DOCUMENTARY_FIXTURE_BINDING",
+      "SELF_ATTESTED_ROOT"
+    ],
+    "admission_kind": [
+      "DOCUMENTARY_FIXTURE_ADMISSION",
+      "SELF_ADMISSION"
+    ],
+    "observation_status": [
+      "KNOWN_FIXTURE",
+      "UNKNOWN",
+      "CONFLICT"
+    ],
+    "feed_status": [
+      "COMPLETE_FIXTURE",
+      "UNKNOWN"
+    ],
+    "consumption_state": [
+      "NOT_CONSUMED",
+      "PREPARED",
+      "CONSUMED",
+      "UNKNOWN"
+    ],
+    "effect_observation": [
+      "NOT_OCCURRED",
+      "OCCURRED",
+      "UNKNOWN",
+      "PARTIAL_EFFECT",
+      "RECEIPT_WITHOUT_EFFECT",
+      "EFFECT_WITHOUT_RECEIPT",
+      "CRASH_AFTER_FENCE"
+    ],
+    "verifier_status": [
+      "KNOWN_FIXTURE",
+      "UNKNOWN",
+      "COMPROMISED"
+    ],
+    "authorization_disposition": [
+      "AUTHORIZE"
+    ]
+  }
+}

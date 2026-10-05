@@ -1,0 +1,23 @@
+{
+  "schema": "UNIT-B-LYRA-BOUNDED-REVIEW-RETENTION-1",
+  "catalog_sha256": "e51c99c81c61cc1cc69ddbfd193503a1b659fcf694ffcc2d5d76cc47ba6d5792",
+  "source": "Regular original Lyra-Brain chat https://chatgpt.com/c/6ac173bf-82bc-83e9-8669-80b62d674507",
+  "disposition": "READY_FOR_ONE_EXACT_ATOMIC_DOCUMENTARY_ADOPTION_QUESTION",
+  "lyra_execution": "NOT_INDEPENDENTLY_EXECUTED",
+  "source_review": "Independent exact-byte custody and source review",
+  "execution_review": "Independent supplied evidence custody review; actual execution by Codex",
+  "production_ready": false,
+  "adopted": false,
+  "review_excerpts": [
+    {
+      "path": "LYRA-UNIT-B-v1.3-SOURCE-DISPOSITION-20261005.txt",
+      "bytes": 10615,
+      "sha256": "6ec975cf70dd16ef4b60b0fee7d97132023b5944e45501e714cc81cfb60a03fa"
+    },
+    {
+      "path": "LYRA-UNIT-B-v1.3-EXECUTION-DISPOSITION-20261005.txt",
+      "bytes": 8733,
+      "sha256": "6f68f98fcec636054a81b75e40a7bb27cc553889210e05379aa81ce268a72ef2"
+    }
+  ]
+}

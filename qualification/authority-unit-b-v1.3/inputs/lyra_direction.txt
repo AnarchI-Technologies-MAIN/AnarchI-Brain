@@ -1,0 +1,487 @@
+  - heading "ChatGPT said:" [level=4]
+  - paragraph:
+    - text: Yes. The smallest coherent Unit B should
+    - strong: not
+    - text: grant S3/Authorize yet.
+  - paragraph: "The cleaner architecture is:"
+  - blockquote:
+    - paragraph:
+      - strong: M09 verifies and consumes externally issued, already-authorized projection/maintenance decisions. It does not originate Authorization.
+  - paragraph:
+    - text: That resolves the ambiguity without smuggling an authority grant through a machine transition name. S3's existing bounded
+    - strong: Project
+    - text: capability stays intact, while
+    - strong: S3/Authorize remains unresolved
+    - text: . A future move to let S3 itself issue Authorizations would require an explicit matrix delta and a visibly separate authority decision.
+  - paragraph: That keeps Unit B substantial without turning it into Unit B+C wearing a trench coat.
+  - heading "Proposed Unit B" [level=2]
+  - heading "Authority Interpretation & Consumption Foundation v1" [level=3]:
+    - strong: Authority Interpretation & Consumption Foundation v1
+  - paragraph: "One atomic documentary unit containing four tightly coupled seams:"
+  - list:
+    - strong: Bootstrap / Root / Principal model
+    - strong: Grant representation + deterministic evaluator
+    - strong: M09 authorization-consumption contract
+    - strong: Minimal M14 effect-boundary interface contract
+  - paragraph: No live roots, enrolled principals, operative grants, durable effects, or runtime activation.
+  - heading "Unit B's permitted conclusion" [level=3]
+  - paragraph: "Its strongest positive result should be something like:"
+  - paragraph: AUTHORITY_CANDIDATE_EFFECTIVE_FOR_BOUNDED_CONSUMPTION
+  - paragraph: but only inside a finite fixture model.
+  - paragraph:
+    - text: Even that result must
+    - strong: not
+    - text: "mean:"
+  - list:
+    - listitem: live authority exists;
+    - listitem: issuer identity is authenticated;
+    - listitem: verifier independence is operationally proven;
+    - listitem: grant was issued;
+    - listitem: effect may execute;
+    - listitem: durable consumption occurred.
+  - paragraph: The runtime equivalent remains unavailable until real bootstrap, enrollment, freshness, grant and M14 evidence exist.
+  - separator
+  - heading "1. Bootstrap should be deliberately asymmetric" [level=1]
+  - paragraph:
+    - text: Do
+    - strong: not
+    - text: let the initial root establish itself.
+  - paragraph: "Define an explicit:"
+  - heading "BOOTSTRAP_COMMITMENT" [level=3]
+  - paragraph: "It should bind at minimum:"
+  - list:
+    - listitem: governance decision identity
+    - listitem: root-generation identifier
+    - listitem: root public-key fingerprint or root material digest
+    - listitem: permitted authority dimensions
+    - listitem: issuer principal identity
+    - listitem: verifier principal identity/class
+    - listitem: effective-not-before
+    - listitem: bootstrap procedure identity
+    - listitem: predecessor, probably NONE for genesis
+    - listitem: explicit non-runtime/documentary status until enrollment
+  - paragraph: "The genesis rule should effectively be:"
+  - blockquote:
+    - paragraph: A root becomes eligible for enrollment only because an already-adopted governance artifact names its exact identity. The candidate root cannot sign itself into legitimacy.
+  - paragraph:
+    - text: Alexander's existing forward decision authority can authorize the
+    - strong: documentary selection of a bootstrap commitment
+    - text: ", but that should remain explicitly different from runtime enrollment."
+  - heading "Root replacement" [level=3]
+  - paragraph: Keep it closed in Unit B.
+  - paragraph: "Unit B should define the invariant:"
+  - blockquote:
+    - paragraph:
+      - strong: A root cannot solely authorize its own replacement or successor.
+  - paragraph: But do not yet implement generalized root rotation/recovery.
+  - separator
+  - heading "2. Principal identity must not equal a key" [level=1]
+  - paragraph: "Use a stable principal record such as:"
+  - paragraph: PrincipalIdentity
+  - paragraph: "with distinct fields for:"
+  - list:
+    - listitem: principal identifier
+    - listitem: principal class
+    - listitem: owner/control domain
+    - listitem: purpose/jurisdiction
+    - listitem: key binding
+    - listitem: binding generation
+    - listitem: issuer
+    - listitem: verifier
+    - listitem: activation state
+    - listitem: predecessor identity
+  - paragraph:
+    - text: A fingerprint proves a key identity. It does
+    - strong: not
+    - text: prove who controls it.
+  - paragraph: "So model separately:"
+  - paragraph:
+    - text: Principal
+    - text: → KeyBinding
+    - text: → IssuerAttestation
+    - text: → VerifierAdmission
+  - paragraph: That separation becomes extremely valuable later when a key rotates without pretending the principal itself changed.
+  - heading "Independence" [level=3]
+  - paragraph: For Unit B, independence should be representable, not operationally claimed.
+  - paragraph: "At minimum capture:"
+  - list:
+    - listitem: issuer principal
+    - listitem: verifier principal
+    - listitem: effective controller/root lineage
+    - listitem: shared administrator/control domain
+    - listitem: shared signing custody
+    - listitem: shared evidence provenance
+  - paragraph: "If required independence cannot be established from supplied facts:"
+  - paragraph: INDEPENDENCE_UNRESOLVED
+  - paragraph: not PASS.
+  - separator
+  - heading "3. Grant schema should be closed-world" [level=1]
+  - paragraph: I strongly agree with your concern about the historical broad grant schema.
+  - paragraph:
+    - text: For the selected Unit B operations, define a
+    - strong: complete mandatory coordinate space
+    - text: ", not a bag of optional strings."
+  - paragraph: "I would require these coordinates:"
+  - list:
+    - listitem: grant ID/version
+    - listitem: grant generation
+    - listitem: grantee principal
+    - listitem: issuer principal
+    - listitem: verifier admission reference
+    - listitem: authority root
+    - listitem: authority dimension
+    - listitem: exact operation
+    - listitem: exact subject identity
+    - listitem: subject version/digest
+    - listitem: purpose
+    - listitem: tenant/consumer/job/recipient, when applicable
+    - listitem: resource class
+    - listitem: policy identity
+    - listitem: schema/contract identity
+    - listitem: predecessor grant
+    - listitem: root lineage
+    - listitem: activation boundary
+    - listitem: expiry boundary
+    - listitem: revocation generation/state
+    - listitem: delegation permission
+    - listitem: effect class
+  - heading "Omission rule" [level=3]
+  - paragraph: "Default:"
+  - blockquote:
+    - paragraph:
+      - strong: Missing coordinate = UNRESOLVED, never wildcard.
+  - paragraph: "If unrestricted scope is ever permitted, the unrestricted coordinate must be an explicit governing value such as:"
+  - paragraph: ANY_SUBJECT_EXPLICITLY_PERMITTED_BY_ROOT
+  - paragraph: rather than absent/null.
+  - paragraph: That kills an enormous family of scope-escalation bugs.
+  - separator
+  - heading "4. Do not use string-prefix scope containment" [level=1]
+  - paragraph: Represent scope as typed coordinates.
+  - paragraph: "For example, conceptually:"
+  - paragraph: GrantScope(tenant, operation, subject, purpose, resource, policy, ...)
+  - paragraph: Then each coordinate has an explicit containment relation.
+  - paragraph: "Possible results:"
+  - list:
+    - listitem: EXACT
+    - listitem: CONTAINED
+    - listitem: NOT_CONTAINED
+    - listitem: CONFLICT
+    - listitem: UNRESOLVED
+  - paragraph: "Never:"
+  - paragraph: requested_scope.startswith(granted_scope)
+  - paragraph: or any textual cousin of it.
+  - heading "Denial precedence" [level=3]
+  - paragraph: "Make this invariant explicit:"
+  - blockquote:
+    - paragraph: Any applicable DENY dominates positive permission for the same requested effect unless an adopted contract defines a narrower deterministic override rule.
+  - paragraph: For Unit B, I would avoid overrides entirely.
+  - paragraph: "Simpler:"
+  - paragraph:
+    - strong: DENY > CONFLICT > UNRESOLVED > ALLOW
+  - paragraph: That is beautifully boring, which is exactly what authority evaluation should be.
+  - separator
+  - heading "5. Freshness needs three different clocks" [level=1]
+  - paragraph: Don't collapse freshness into one timestamp.
+  - paragraph: "Model:"
+  - heading "Evidence time" [level=3]
+  - paragraph: When the grant/attestation was produced.
+  - heading "Authority generation" [level=3]
+  - paragraph: Which root/revocation epoch governs it.
+  - heading "Evaluation observation" [level=3]
+  - paragraph: When this verifier considered the fixture.
+  - paragraph: "Unit B's reference evaluator should only consume a finite object like:"
+  - paragraph: FixtureAuthorityState
+  - paragraph: "containing:"
+  - list:
+    - listitem: modeled current generation
+    - listitem: modeled revocation set
+    - listitem: modeled observation instant/window
+    - listitem: uncertainty bound
+    - listitem: known root
+    - listitem: known principal/key binding
+  - paragraph: "and be branded everywhere:"
+  - paragraph: OFFLINE_FIXTURE_ONLY
+  - paragraph: No operating-system clock, network fetch, filesystem “latest,” Git branch head, or mutable external state.
+  - heading "Failure rules" [level=3]
+  - list:
+    - listitem: stale generation → STALE_AUTHORITY
+    - listitem: missing generation → UNRESOLVED
+    - listitem: rollback detected → CONFLICT
+    - listitem: expiry uncertain → UNRESOLVED
+    - listitem: revocation state unavailable → UNRESOLVED
+    - listitem: verifier compromised/unknown → HOLD
+  - paragraph: A missing revocation feed must never mean “probably not revoked.”
+  - separator
+  - heading "6. M09 should consume, not issue" [level=1]
+  - paragraph: This is the architectural hinge.
+  - paragraph: "I recommend selecting only two M09 operations:"
+  - list:
+    - listitem: CONSUME_PROJECTION_AUTHORIZATION
+    - listitem: CONSUME_MAINTENANCE_AUTHORIZATION
+  - paragraph: or similarly explicit names.
+  - paragraph:
+    - text: Historical authorize_projection / authorize_maintenance names should be reconciled as
+    - strong: descriptions of the authorization subject being verified
+    - text: ", not proof that M09 possesses Authorize authority."
+  - paragraph: The contract should say this very plainly.
+  - paragraph: "M09 may:"
+  - list:
+    - listitem: validate structural binding;
+    - listitem: evaluate grant applicability;
+    - listitem: verify modeled current effectiveness;
+    - listitem: reject/hold;
+    - listitem: construct a non-effecting consumption candidate.
+  - paragraph:
+    - text: M09 may
+    - strong: not
+    - text: ":"
+  - list:
+    - listitem: mint a grant;
+    - listitem: extend a grant;
+    - listitem: delegate;
+    - listitem: change scope;
+    - listitem: alter expiry;
+    - listitem: revoke;
+    - listitem: authorize itself;
+    - listitem: treat remembered context as permission.
+  - paragraph: That lets the historical transition semantics survive without constitutional sleight of hand.
+  - separator
+  - heading "7. Point-of-effect recheck must be a first-class boundary" [level=1]
+  - paragraph: The evaluator saying “eligible” is not enough.
+  - paragraph: "Define a separate object:"
+  - heading "EffectAuthorizationCandidate" [level=3]
+  - paragraph: "Binding:"
+  - list:
+    - listitem: grant digest
+    - listitem: subject digest
+    - listitem: operation
+    - listitem: purpose
+    - listitem: exact effect description
+    - listitem: authority generation
+    - listitem: evaluator version
+    - listitem: evaluation digest
+    - listitem: intended recipient/resource
+    - listitem: freshness observation
+  - paragraph:
+    - text: Then require an eventual
+    - strong: point-of-effect recheck
+    - text: .
+  - paragraph: "Unit B can specify this protocol without implementing the effect:"
+  - paragraph: evaluation → candidate → M14 durable fence → fresh recheck → effect
+  - paragraph: Today, the sequence stops before M14 success.
+  - heading "Replay identity" [level=3]
+  - paragraph: "Consumption identity should bind something equivalent to:"
+  - paragraph: grant + subject + operation + purpose + effect + generation
+  - paragraph: Repeating exactly the same authorized effect may become idempotent later.
+  - paragraph: Changing even one of those should require fresh evaluation.
+  - paragraph: A grant ID alone must never be the replay key.
+  - separator
+  - heading "8. Minimal M14 interface, not M14 implementation" [level=1]
+  - paragraph: Unit B should include a contract interface for M14, because M09 consumption is meaningless without knowing where durable effects eventually begin.
+  - paragraph:
+    - text: But
+    - strong: do not adopt M14's implementation/lifecycle
+    - text: yet.
+  - paragraph: "Define only required calls/states such as:"
+  - list:
+    - listitem: prepare_effect(...)
+    - listitem: record_authority_evaluation(...)
+    - listitem: acquire_effect_fence(...)
+    - listitem: record_consumption(...)
+    - listitem: commit_effect(...)
+    - listitem: abort_effect(...)
+    - listitem: recover_incomplete_effect(...)
+  - paragraph: "The crucial Unit B invariant:"
+  - blockquote:
+    - paragraph:
+      - strong: No AUTHORITY_EFFECTIVE evaluation is itself evidence that an effect occurred or may proceed without the required durable fence.
+  - paragraph: "And:"
+  - blockquote:
+    - paragraph: failure to durably record consumption means the operation is not safely complete.
+  - paragraph: "If crash recovery cannot distinguish “effect happened” from “receipt failed,” state must become something like:"
+  - paragraph: EFFECT_OUTCOME_UNRESOLVED
+  - paragraph: not retries forever.
+  - paragraph: That gives Unit C something concrete to implement.
+  - separator
+  - heading "Exact atomic adoption unit" [level=1]
+  - paragraph:
+    - text: I would package
+    - strong: one
+    - text: ":"
+  - heading "Authority Interpretation & Consumption Foundation v1" [level=2]
+  - paragraph: "Its normative selected artifacts should probably be approximately:"
+  - list:
+    - listitem: AUTHORITY-BOOTSTRAP-CONTRACT.md
+    - listitem: PRINCIPAL-IDENTITY-CONTRACT.md
+    - listitem: KEY-BINDING-CONTRACT.md
+    - listitem: AUTHORITY-GRANT-v2.schema.json
+    - listitem: AUTHORITY-EVALUATION-CONTRACT.md
+    - listitem: M09-CONSUMPTION-CONTRACT.md
+    - listitem: selected M09 machine reconciliation
+    - listitem: M12-INTERPRETATION-SELECTION.json
+    - listitem: M14-EFFECT-BOUNDARY-INTERFACE.md
+    - listitem: authority matrix delta/unchanged-cell proof
+    - listitem: crosswalk
+    - listitem: pure authority_reference.py
+    - listitem: atomic Unit B catalog
+  - paragraph:
+    - text: Exact count does not matter.
+    - strong: Semantic completeness does.
+  - paragraph: "The atomic catalog must explicitly say:"
+  - blockquote:
+    - paragraph: adopts all selected Unit B artifacts as one documentary authority-interpretation-and-consumption foundation, or none.
+  - separator
+  - heading "Matrix treatment" [level=1]
+  - paragraph:
+    - text: For this design, I would make
+    - strong: no S3/Authorize positive matrix change
+    - text: .
+  - paragraph: That is important.
+  - paragraph: If another cell genuinely needs bounded documentary interpretation eligibility, expose it explicitly, but don't mutate S3 Authorize merely to make the reference convenient.
+  - paragraph: "Keep:"
+  - paragraph:
+    - strong: S3 / Authorize = UNRESOLVED
+  - paragraph:
+    - text: Unit B defines how an external valid Authorization
+    - emphasis: would be represented, evaluated and consumed
+    - text: . It does not declare who presently has power to issue one.
+  - paragraph: "This cleanly postpones the politically and cryptographically heavier question:"
+  - blockquote:
+    - paragraph:
+      - strong: Who may issue an operative Authorization?
+  - paragraph: That belongs after actual root/bootstrap evidence exists.
+  - separator
+  - heading "Pure deterministic reference" [level=1]
+  - paragraph: "Build one reference with three layers:"
+  - paragraph: validate → evaluate → prepare_consumption
+  - heading "Inputs" [level=3]
+  - paragraph: "All fixture-only:"
+  - list:
+    - listitem: exact adopted baseline identity
+    - listitem: retained mapping adoption
+    - text: retained Unit A adoption,
+    - strong: once its retention is verified
+    - listitem: bootstrap candidate
+    - listitem: root identity
+    - listitem: principal/key bindings
+    - listitem: grant set
+    - listitem: denial/revocation set
+    - listitem: modeled authority generation
+    - listitem: requested effect
+    - listitem: M09 operation
+    - listitem: fixture time/freshness state
+  - heading "Outputs" [level=3]
+  - paragraph: "Use a richer algebra than boolean:"
+  - list:
+    - listitem: MALFORMED
+    - listitem: UNKNOWN_PRINCIPAL
+    - listitem: ROOT_UNRESOLVED
+    - listitem: ISSUER_UNRESOLVED
+    - listitem: VERIFIER_UNRESOLVED
+    - listitem: INDEPENDENCE_UNRESOLVED
+    - listitem: GRANT_NOT_APPLICABLE
+    - listitem: DENIED
+    - listitem: CONFLICT
+    - listitem: REVOKED
+    - listitem: STALE
+    - listitem: EXPIRED
+    - listitem: FRESHNESS_UNRESOLVED
+    - listitem: AUTHORITY_MODEL_SATISFIED
+    - listitem: CONSUMPTION_CANDIDATE_PREPARED
+  - paragraph: "Even its strongest result should preserve:"
+  - paragraph:
+    - text: runtime_authority=False
+    - text: operative_grant=False
+    - text: effect_permitted=False
+    - text: durable_consumption=False
+    - text: production_ready=False
+  - paragraph: That makes the model testable without accidentally becoming a grant engine.
+  - separator
+  - heading "Adversarial corpus I would require" [level=1]
+  - paragraph: "The most valuable attacks are not random mutations. Build deliberate constitutional traps:"
+  - list:
+    - listitem: self-signed genesis root
+    - listitem: root authorizes its own replacement
+    - listitem: issuer == verifier where independence required
+    - listitem: same controller under different principal names
+    - listitem: valid signature, wrong subject
+    - listitem: valid subject, wrong version
+    - listitem: same grant reused for changed operation
+    - listitem: purpose widening
+    - listitem: tenant mismatch
+    - listitem: resource mismatch
+    - listitem: omitted scope coordinate interpreted as wildcard
+    - listitem: textual prefix escalation
+    - listitem: stale generation
+    - listitem: future generation
+    - listitem: rollback to older revocation state
+    - listitem: revoked grant with cached ALLOW
+    - listitem: conflicting positive and negative grants
+    - listitem: circular delegation
+    - listitem: delegation when delegation=false
+    - listitem: unknown principal
+    - listitem: key rotated but stale binding used
+    - listitem: same authorization double-consumed
+    - listitem: partial effect then receipt failure
+    - listitem: receipt exists without effect
+    - listitem: effect exists without receipt
+    - listitem: crash between fence and commit
+    - listitem: replay after recovery
+    - listitem: disclosure requested outside visibility scope
+    - listitem: current grant but stale root
+    - listitem: exact grant with wrong policy/schema predecessor
+  - paragraph:
+    - text: Run normal/-O, Windows/Linux, then Kiln against the
+    - strong: core reference
+    - text: ", exactly as you learned from Unit A."
+  - separator
+  - heading "Proven inputs still missing" [level=1]
+  - paragraph: "Before Unit B could ever move from documentary foundation into live authority, you still need:"
+  - list:
+    - listitem: externally retained Unit A adoption evidence
+    - listitem: exact selected bootstrap-governance decision
+    - listitem: actual root fingerprint/material
+    - listitem: root-generation custody
+    - listitem: actual principal identities
+    - listitem: actual principal-to-key bindings
+    - listitem: issuer identity/control evidence
+    - listitem: verifier identity/control evidence
+    - listitem: independence assessment
+    - listitem: real freshness/generation source
+    - listitem: real revocation publication mechanism
+    - listitem: operative grants
+    - listitem: current policy identities
+    - listitem: authenticated request context
+    - listitem: qualified M14 durable store
+    - listitem: crash/recovery evidence
+    - listitem: atomic effect fence
+    - listitem: qualified projection/maintenance target
+    - listitem: resource budgets
+  - paragraph: None should be fabricated in fixtures.
+  - separator
+  - heading "Dependency path after Unit B" [level=2]
+  - paragraph: "This gives you a much cleaner three-stage ascent:"
+  - paragraph:
+    - strong: Unit A
+    - text: noncanonical structure/provenance review
+  - paragraph:
+    - text: →
+    - strong: Unit B
+    - text: authority representation, validation, external-authorization consumption, effect-boundary contract
+  - paragraph:
+    - text: →
+    - strong: Unit C
+    - text: actual bootstrap enrollment + M09/S3 issuance decision if desired + M12 operational issuer/verifier/root lifecycle + M14 durable effect fencing/recovery
+  - paragraph:
+    - text: →
+    - strong: Unit D
+    - text: S2 three-way adjudication + canonical packaging/commit + organism readiness
+  - paragraph: "So my recommendation is decisive:"
+  - blockquote:
+    - paragraph:
+      - strong: Do not assign bounded S3/Authorize in Unit B. Make Unit B the complete deterministic constitution for recognizing and safely consuming an externally issued authorization, while proving that no such live authorization presently exists.
+  - paragraph: That is a genuinely weight-bearing next unit. It advances the Brain from “we can review a proposal” to “we know exactly what valid authority would have to look like and how it could eventually be consumed” without pretending you possess the root, principals, keys, grants, or durable effect machinery yet.
+  - paragraph:
+    - text: "And one continuity caveat: Alexander's Unit A approval has occurred, but until its new external-retention floor is verified, Unit B should bind Unit A as"
+    - strong: accepted/pending operative retention
+    - text: ", not yet silently assume its prospective effectiveness."
