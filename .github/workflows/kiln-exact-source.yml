@@ -1,0 +1,108 @@
+name: Kiln exact-source qualification
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened, ready_for_review]
+  workflow_dispatch:
+    inputs:
+      pull_request_number:
+        description: Exact open PR number to qualify
+        required: true
+        type: number
+      source_head_sha:
+        description: Exact current PR head SHA
+        required: true
+        type: string
+      source_base_sha:
+        description: Exact current main/base SHA
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: kiln-exact-source-${{ github.event.inputs.pull_request_number || github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  authorize:
+    name: Kiln exact-source qualification
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    outputs:
+      source_repository: ${{ steps.bind.outputs.source_repository }}
+      source_head_sha: ${{ steps.bind.outputs.source_head_sha }}
+      source_base_sha: ${{ steps.bind.outputs.source_base_sha }}
+      pull_request_number: ${{ steps.bind.outputs.pull_request_number }}
+    steps:
+      - name: Require explicit exact-SHA owner dispatch
+        id: bind
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          ACTOR: ${{ github.actor }}
+          PR_NUMBER: ${{ inputs.pull_request_number }}
+          EXPECTED_HEAD: ${{ inputs.source_head_sha }}
+          EXPECTED_BASE: ${{ inputs.source_base_sha }}
+          TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          test "$EVENT_NAME" = workflow_dispatch || {
+            echo "Fail-closed: run this check with owner_exact_sha_dispatch after selecting the exact PR/head/base SHAs." >&2
+            exit 1
+          }
+          test "$ACTOR" = alexander-gudde || {
+            echo "Fail-closed: only the configured owner may authorize this dispatch." >&2
+            exit 1
+          }
+          python - <<'PY'
+          import json, os, re, urllib.request
+          repo = "AnarchI-Technologies-MAIN/AnarchI-Brain"
+          number = os.environ["PR_NUMBER"]
+          head_expected = os.environ["EXPECTED_HEAD"]
+          base_expected = os.environ["EXPECTED_BASE"]
+          sha = re.compile(r"^[0-9a-f]{40}$")
+          if not sha.fullmatch(head_expected) or not sha.fullmatch(base_expected):
+              raise SystemExit("head/base inputs must be full lowercase commit SHAs")
+          req = urllib.request.Request(
+              f"https://api.github.com/repos/{repo}/pulls/{number}",
+              headers={"Authorization": f"Bearer {os.environ['TOKEN']}",
+                       "Accept": "application/vnd.github+json"})
+          with urllib.request.urlopen(req, timeout=20) as response:
+              pr = json.load(response)
+          if pr.get("state") != "open" or pr.get("draft") is True:
+              raise SystemExit("PR must be open and non-draft")
+          if pr.get("base", {}).get("ref") != "main":
+              raise SystemExit("PR base must be main")
+          if pr.get("base", {}).get("repo", {}).get("full_name") != repo:
+              raise SystemExit("unexpected base repository")
+          if pr.get("head", {}).get("repo", {}).get("full_name") != repo:
+              raise SystemExit("fork or non-first-party source is not allowed")
+          if pr.get("head", {}).get("sha") != head_expected:
+              raise SystemExit("dispatch head SHA is stale")
+          if pr.get("base", {}).get("sha") != base_expected:
+              raise SystemExit("dispatch base SHA is stale")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
+              out.write(f"source_repository={repo}\n")
+              out.write(f"source_head_sha={head_expected}\n")
+              out.write(f"source_base_sha={base_expected}\n")
+              out.write(f"pull_request_number={int(number)}\n")
+          PY
+
+  kiln:
+    name: Kiln bounded campaign
+    needs: authorize
+    if: needs.authorize.result == 'success'
+    uses: AnarchI-Technologies-MAIN/kiln/.github/workflows/kiln-exact-source.yml@051bf7808ebb638ceb4cd8e4caf1f722096e21d1
+    with:
+      source_repository: ${{ needs.authorize.outputs.source_repository }}
+      source_head_sha: ${{ needs.authorize.outputs.source_head_sha }}
+      source_base_sha: ${{ needs.authorize.outputs.source_base_sha }}
+      pull_request_number: ${{ needs.authorize.outputs.pull_request_number }}
+      authorization_actor: ${{ github.actor }}
+      authorization_method: owner_exact_sha_dispatch
+      kiln_ref: 051bf7808ebb638ceb4cd8e4caf1f722096e21d1
+      max_passes: 8
+      until: stable
