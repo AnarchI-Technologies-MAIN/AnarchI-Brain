@@ -99,7 +99,7 @@ jobs:
     name: Kiln bounded campaign
     needs: authorize
     if: needs.authorize.result == 'success'
-    uses: AnarchI-Technologies-MAIN/kiln/.github/workflows/kiln-exact-source.yml@7ae023a380e406731bdcadafe133c7db207f156e
+    uses: AnarchI-Technologies-MAIN/kiln/.github/workflows/kiln-exact-source.yml@d219e3454e96698f843fe3ad05819b6e140ceb6e
     with:
       source_repository: ${{ needs.authorize.outputs.source_repository }}
       source_head_sha: ${{ needs.authorize.outputs.source_head_sha }}
