@@ -84,6 +84,10 @@ jobs:
               raise SystemExit("dispatch head SHA is stale")
           if pr.get("base", {}).get("sha") != base_expected:
               raise SystemExit("dispatch base SHA is stale")
+          if os.environ.get("GITHUB_SHA") != head_expected:
+              raise SystemExit("workflow run is not attached to the exact PR head")
+          if os.environ.get("GITHUB_REF_NAME") != pr.get("head", {}).get("ref"):
+              raise SystemExit("dispatch must run from the exact PR head ref")
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
               out.write(f"source_repository={repo}\n")
               out.write(f"source_head_sha={head_expected}\n")
@@ -123,3 +127,14 @@ jobs:
           set -euo pipefail
           test "$AUTHORIZATION_RESULT" = success
           test "$CAMPAIGN_RESULT" = success
+
+
+      - name: Recheck exact PR revision after campaign
+        env:
+          PR_NUMBER: ${{ needs.authorize.outputs.pull_request_number }}
+          EXPECTED_HEAD: ${{ needs.authorize.outputs.source_head_sha }}
+          EXPECTED_BASE: ${{ needs.authorize.outputs.source_base_sha }}
+          TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          python -c 'import json,os,urllib.request; repo="AnarchI-Technologies-MAIN/AnarchI-Brain"; req=urllib.request.Request(f"https://api.github.com/repos/{repo}/pulls/{os.environ[\"PR_NUMBER\"]}",headers={"Authorization":f"Bearer {os.environ[\"TOKEN\"]}","Accept":"application/vnd.github+json"}); pr=json.load(urllib.request.urlopen(req,timeout=20)); assert pr.get("state")=="open" and pr.get("base",{}).get("sha")==os.environ["EXPECTED_BASE"], "PR/base changed during Kiln campaign"; assert pr.get("head",{}).get("sha")==os.environ["EXPECTED_HEAD"], "PR head changed during Kiln campaign"'
