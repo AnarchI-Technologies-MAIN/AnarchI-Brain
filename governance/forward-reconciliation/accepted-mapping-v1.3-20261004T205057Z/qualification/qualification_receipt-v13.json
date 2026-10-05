@@ -1,0 +1,77 @@
+{
+  "scope": "OFFLINE_MAPPING_STATUS_RECONCILIATION",
+  "governing_baseline_adopted": true,
+  "mapping_adopted": false,
+  "runtime_crossings": 0,
+  "canonical_admissions": 0,
+  "production_ready": false,
+  "qualification_evidence": [
+    {
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\WINDOWS-QUALIFICATION-RESULTS-r2.json",
+      "bytes": 5085,
+      "sha256": "8d824fbfcf4de56dbfcc8f2d919c28669b7abc8644e8209c513e7ac9f91c1dc3"
+    },
+    {
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\ubuntu-verification-r2-20261004T2007\\ubuntu-verification-results.json",
+      "bytes": 11140,
+      "sha256": "2027dbd6c8a9a4cf9f06fe12205655f9ecc70f3bfb7ecf24287aefed1127998b"
+    }
+  ],
+  "reported_runs": {
+    "platforms": [
+      "Windows",
+      "Ubuntu"
+    ],
+    "python_modes": [
+      "normal",
+      "-O"
+    ],
+    "methods_per_focused_run": 23,
+    "subjects_per_corpus_run": 2736
+  },
+  "superseded_evidence": "Earlier v1.3 contract digest5caf84f5c990947ccc6d18aa76cdbe3881fecc4409f9978c3b9ad0af59754cf5 contained unintended double encoding in two unchanged lines. Those lines restored exactly from v1.2; current corrected contract digest61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4. Earlier outputs preserved and do not qualify current bytes.",
+  "new_kiln_campaign": false,
+  "limits": "Fixed-context custody verification, not remote live retrieval, principal authentication, runtime transport, three adjudications or durable canonical commit.",
+  "source_identities": [
+    {
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\CORTEX-FILAMENT-MAPPING-DRAFT.md",
+      "bytes": 11651,
+      "sha256": "61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4"
+    },
+    {
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\mapping_reference.py",
+      "bytes": 5952,
+      "sha256": "7561f2222762fca9904e4f1e8494d21b8b5b99dfc87d48d572922d52db5ac162"
+    },
+    {
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\qualify_mapping_reference.py",
+      "bytes": 9618,
+      "sha256": "dca04c960875ba11f29ab2c8ee8b6c823cfb1ca93153c3ca1b41a42df15372e5"
+    },
+    {
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\source-register.json",
+      "bytes": 3619,
+      "sha256": "796b0e8277d19f439a3ed11a9b18096bc60aafdf44f159f5508925527687f80e"
+    },
+    {
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\test_mapping_baseline_context.py",
+      "bytes": 5618,
+      "sha256": "d9409b716d19bc6d45ec855044b8b078255df2b3d14c83908b03e76d15f25424"
+    },
+    {
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\test_mapping_custody.py",
+      "bytes": 10042,
+      "sha256": "97df7cf7f1d17a6def7907e554250327a75eb5ca36e564a16e6c132c46cf8eab"
+    },
+    {
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\test_mapping_qualification.py",
+      "bytes": 1844,
+      "sha256": "9a88c88f003d8a4f774343a3089635c9c99718cb51ae5423830b1b9391700187"
+    },
+    {
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\test_mapping_reference.py",
+      "bytes": 5934,
+      "sha256": "f54a92e796fe3c3331478303ac81184e5239593f06bb3d9b04c5672d7de0ee65"
+    }
+  ]
+}

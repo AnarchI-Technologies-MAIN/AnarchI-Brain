@@ -1,0 +1,107 @@
+{
+  "source_pins": {
+    "corpus-O0.json": "2fb451302f0a9c083016aa8d5766cb0d1fbb9ac9c8e6eae6b2ba7a859fcefc7c",
+    "corpus-O1.json": "2fb451302f0a9c083016aa8d5766cb0d1fbb9ac9c8e6eae6b2ba7a859fcefc7c",
+    "CORTEX-FILAMENT-MAPPING-DRAFT.md": "61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4",
+    "mapping_reference.py": "7561f2222762fca9904e4f1e8494d21b8b5b99dfc87d48d572922d52db5ac162",
+    "qualify_mapping_reference.py": "dca04c960875ba11f29ab2c8ee8b6c823cfb1ca93153c3ca1b41a42df15372e5",
+    "source-register.json": "796b0e8277d19f439a3ed11a9b18096bc60aafdf44f159f5508925527687f80e",
+    "test_mapping_baseline_context.py": "d9409b716d19bc6d45ec855044b8b078255df2b3d14c83908b03e76d15f25424",
+    "test_mapping_custody.py": "97df7cf7f1d17a6def7907e554250327a75eb5ca36e564a16e6c132c46cf8eab",
+    "test_mapping_qualification.py": "9a88c88f003d8a4f774343a3089635c9c99718cb51ae5423830b1b9391700187",
+    "test_mapping_reference.py": "f54a92e796fe3c3331478303ac81184e5239593f06bb3d9b04c5672d7de0ee65",
+    "WINDOWS-QUALIFICATION-RESULTS.json": "3b9428a9af96cb3bd6a31b8abed9b2176067d7651bd03b9059cd0840224523b7"
+  },
+  "runs": [
+    {
+      "command": [
+        "C:\\Users\\alexg\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-I",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004",
+        "-p",
+        "test_mapping*.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ".......................\n----------------------------------------------------------------------\nRan 23 tests in 2.574s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\alexg\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-I",
+        "-B",
+        "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\qualify_mapping_reference.py",
+        "--mapping-sha256",
+        "7561f2222762fca9904e4f1e8494d21b8b5b99dfc87d48d572922d52db5ac162",
+        "--mapping-contract-sha256",
+        "61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4",
+        "--source-register-sha256",
+        "796b0e8277d19f439a3ed11a9b18096bc60aafdf44f159f5508925527687f80e",
+        "--baseline-acceptance-sha256",
+        "10bd8c050b4a39553a553bdad868f14a4f680709cb4c2b9669d01084ab3fd2bc",
+        "--baseline-retention-sha256",
+        "8aa2d5af0c3f46d0fba46e784d86d459d104954467552a9dad0a6b8849da8742",
+        "--out",
+        "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\corpus-r2-O0.json"
+      ],
+      "returncode": 0,
+      "stdout": "{\"status\": \"PASS\", \"checked_subjects\": 2736, \"canonical_admissions\": 0, \"runtime_crossings\": 0, \"production_ready\": false}\n",
+      "stderr": "",
+      "elapsed_seconds": 4.047000000020489,
+      "output_sha256": "27a3ca20a147b0042ce967e964652cdd315adf999ebb827179d0cbd2758b0a58"
+    },
+    {
+      "command": [
+        "C:\\Users\\alexg\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-I",
+        "-B",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004",
+        "-p",
+        "test_mapping*.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ".......................\n----------------------------------------------------------------------\nRan 23 tests in 2.326s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\alexg\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-I",
+        "-B",
+        "-O",
+        "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\qualify_mapping_reference.py",
+        "--mapping-sha256",
+        "7561f2222762fca9904e4f1e8494d21b8b5b99dfc87d48d572922d52db5ac162",
+        "--mapping-contract-sha256",
+        "61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4",
+        "--source-register-sha256",
+        "796b0e8277d19f439a3ed11a9b18096bc60aafdf44f159f5508925527687f80e",
+        "--baseline-acceptance-sha256",
+        "10bd8c050b4a39553a553bdad868f14a4f680709cb4c2b9669d01084ab3fd2bc",
+        "--baseline-retention-sha256",
+        "8aa2d5af0c3f46d0fba46e784d86d459d104954467552a9dad0a6b8849da8742",
+        "--out",
+        "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\corpus-r2-O1.json"
+      ],
+      "returncode": 0,
+      "stdout": "{\"status\": \"PASS\", \"checked_subjects\": 2736, \"canonical_admissions\": 0, \"runtime_crossings\": 0, \"production_ready\": false}\n",
+      "stderr": "",
+      "elapsed_seconds": 4.73499999998603,
+      "output_sha256": "27a3ca20a147b0042ce967e964652cdd315adf999ebb827179d0cbd2758b0a58"
+    }
+  ],
+  "runtime_crossings": 0,
+  "canonical_admissions": 0,
+  "mapping_adopted": false,
+  "production_ready": false
+}
