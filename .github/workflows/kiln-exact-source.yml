@@ -107,7 +107,7 @@ jobs:
       pull_request_number: ${{ needs.authorize.outputs.pull_request_number }}
       authorization_actor: ${{ github.actor }}
       authorization_method: owner_exact_sha_dispatch
-      kiln_ref: f828610566cfca426b31dd9cbf5a9aba63224ddb
+      kiln_ref: b6294c264b0b9cd3dec216665d6e2a20b162fd73
       max_passes: 8
       until: stable
 
