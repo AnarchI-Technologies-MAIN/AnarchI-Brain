@@ -1,0 +1,17 @@
+# Principal and modeled independence draft
+
+PROPOSED / NOT ADOPTED / NO PRINCIPAL ENROLLMENT.
+
+Principal identity, role label, key identity, process identity and infrastructure ownership are distinct coordinates. Two keys or processes controlled by one effective principal do not satisfy proposer-authorizer independence. Fixture principal IDs identify modeled records only; they do not authenticate actors.
+
+The reference distinguishes grant_issuer, issuer, verifier and grantee. grant_issuer issues the Authorize grant; issuer is its grantee and issues the separate Authorization; grantee consumes that Authorization for the requested effect. Admission, key bindings and modeled independence must be checked for the applicable four-role relationships, not collapsed into the earlier three-role fixture. A grant to issue is not a decision authorizing a consumer's transition.
+
+Required modeled independence pairs in this profile are grant_issuer versus verifier, issuer (authorizer) versus verifier, and grantee (requesting consumer) versus issuer (authorizer). Apply effective-controller, administrator, signing-custody, evidence-provenance and authority-lineage checks to those pairs; do not impose unsupported blanket all-role independence. The consumer is explicitly the requestor in this initial profile. This does not establish an arbitrary unrepresented proposal principal; a separate requestor role requires a new explicit representation/profile.
+
+An independently supplied fixture reference identifies proposer, issuing principal, grantee, verifier, root and known control/lineage relationships. Claimed IDs in the submitted grant must exactly match those expected records. Unknown membership, omitted required relations, duplicate identity presented as independent, common effective control where separation is required, circular issuer evidence, or a verifier relying solely on the proposed grant cannot establish independence.
+
+Each stable principal has separately identified principal_class, effective_controller_id, authority_purpose and jurisdiction. Independent key-binding records associate principal_id with key_id/key_fingerprint, generation, activation_time, predecessor_key_id, issuer_authority_ref and verifier_admission_ref. A changing key does not create a new independent principal. The modeled independence comparison includes admin_domain_id, signing_custody_domain_id, evidence_provenance_domain_id, effective_controller_id and authority_lineage_ref; different labels alone cannot satisfy it. Unknown required control relationships remain unresolved, not independent by default. A shared governing policy/bootstrap root alone neither proves independence nor automatically defeats it: effective control, signing/admin custody, evidence provenance and authority-lineage independence must still satisfy their separate checks.
+
+Each required independence finding remains orthogonal to grant syntax, byte integrity and scope. An explicitly shared required principal/control relation is BLOCKED; missing evidence is UNRESOLVED. A satisfied finite relation means MODELED_INDEPENDENCE_ONLY, never actual organizational, cryptographic, host or fault-domain independence. Shared host/admin/kernel/storage risks remain outside this proof.
+
+No constitutional cell is assigned to a free-form M12 specification-owner label. No key, recorder, administrator or signing service becomes an issuer merely by existing. Operational identity/control admission needs its own adopted custody procedure and verified inputs, absent from Unit B.

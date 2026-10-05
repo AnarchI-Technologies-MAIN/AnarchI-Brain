@@ -1,0 +1,111 @@
+{
+  "files": [
+    {
+      "bytes": 22341,
+      "label": "lyra_direction",
+      "path": "inputs/lyra_direction.txt",
+      "role": "ARCHITECTURAL_ADVICE_NOT_ADOPTION",
+      "sha256": "d69c4b5a47d488e543d63f77b3df4c2f4840fec72fb4a6de1097b0df977c9928",
+      "source": "LYRA-UNIT-B-DIRECTION-20261004.txt#exact-last-assistant-response-DOM-excerpt"
+    },
+    {
+      "bytes": 6385,
+      "label": "procedure",
+      "path": "inputs/procedure.md",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "3f6f9393be17bcd448fdebc1e65f4195b700036cdb200d5f435fd90f6f558992",
+      "source": "forward-reconciliation-procedure-accepted-20261004T062855Z/accepted-procedure.md"
+    },
+    {
+      "bytes": 2151,
+      "label": "procedure_acceptance",
+      "path": "inputs/procedure_acceptance.json",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "e813b8242f84fc0b6c6bb4cbf08ee8d0794c703f512c8bb8ad18d0f8aa42eac0",
+      "source": "forward-reconciliation-procedure-accepted-20261004T062855Z/acceptance.json"
+    },
+    {
+      "bytes": 43287,
+      "label": "baseline_catalog",
+      "path": "inputs/baseline_catalog.json",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "421b5d5bab28a32afe557e17970a14beb75a99eddc9f536a75bb1bcda9d26eb3",
+      "source": "forward-baseline-proposal-v1.2/proposal-inventory.json"
+    },
+    {
+      "bytes": 7551,
+      "label": "baseline_acceptance",
+      "path": "inputs/baseline_acceptance.json",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "10bd8c050b4a39553a553bdad868f14a4f680709cb4c2b9669d01084ab3fd2bc",
+      "source": "forward-baseline-accepted-20261004T195646Z/acceptance.json"
+    },
+    {
+      "bytes": 4532,
+      "label": "unit_a_catalog",
+      "path": "inputs/unit_a_catalog.json",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "7db495b0a1034c9211c3d08c90569c3b0bccc3209a31f9f9e1885889b99b75c3",
+      "source": "ingress-review-foundation-unit-a-v1.2-20261004/unit-a-catalog.json"
+    },
+    {
+      "bytes": 11726,
+      "label": "unit_a_matrix",
+      "path": "inputs/unit_a_matrix.md",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "796d3cf128b7843c1e3897cc0567fc9b819f40c0e64d805cd4f0ae550e9b1e8b",
+      "source": "ingress-review-foundation-unit-a-v1.2-20261004/AUTHORITY-MATRIX-SUCCESSOR-DRAFT.md"
+    },
+    {
+      "bytes": 9389,
+      "label": "unit_a_acceptance",
+      "path": "inputs/unit_a_acceptance.json",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "79d46e4c1a41c48bcca88a04c42cc2b08068134c971df456a7a59f0aff0d8d1c",
+      "source": "unit-a-v1.2-accepted-20261004T222337Z/acceptance.json"
+    },
+    {
+      "bytes": 19729,
+      "label": "unit_a_retention",
+      "path": "inputs/unit_a_retention.json",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "fc95e1f43f40dc576ab7295435bad3effd8ad99e6fc8be4f9263e8d55154a155",
+      "source": "unit-a-v1.2-accepted-20261004T222337Z/external-retention-receipt.json"
+    },
+    {
+      "bytes": 1100,
+      "label": "unit_a_retention_publication",
+      "path": "inputs/unit_a_retention_publication.json",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "66f8d48f52ef07658042574721582eb1015fa1af2996638c21afe136032c3b0c",
+      "source": "unit-a-v1.2-accepted-20261004T222337Z/retention-receipt-publication.json"
+    },
+    {
+      "bytes": 27550,
+      "label": "historical_m09",
+      "path": "inputs/historical_m09.json",
+      "role": "HISTORICAL_COMPARISON_ONLY",
+      "sha256": "81e620fad556ed2db89793e40d881a9a0317097c16083b0872b9b763a8ae07e1",
+      "source": "github-m08-review-20261004/development-review/m08-v8/successor/machines/M09.proposal.json"
+    },
+    {
+      "bytes": 48138,
+      "label": "historical_m12",
+      "path": "inputs/historical_m12.json",
+      "role": "HISTORICAL_COMPARISON_ONLY",
+      "sha256": "f545e783e70b647cae9e57c1b7bf3213f1faf951cf62f31fccf2109bc9e1af42",
+      "source": "github-m08-review-20261004/development-review/m08-v8/successor/machines/M12.proposal.json"
+    },
+    {
+      "bytes": 1998,
+      "label": "historical_grant_v1",
+      "path": "inputs/historical_grant_v1.json",
+      "role": "HISTORICAL_COMPARISON_ONLY",
+      "sha256": "6a2f51458f32bb552de57e253a0b2f004ac5e80d1d16ab80e6ca455895b77e77",
+      "source": "github-m08-review-20261004/schemas/root/authority-grant.v1.schema.json"
+    }
+  ],
+  "runtime_authority": false,
+  "schema": "UNIT-B-PREDECESSOR-CAPTURE-1",
+  "status": "DRAFT_NOT_ADOPTED"
+}

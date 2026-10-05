@@ -1,0 +1,49 @@
+{
+  "actual_root_selection": "UNRESOLVED",
+  "context": {
+    "unit_a_acceptance_sha256": "79d46e4c1a41c48bcca88a04c42cc2b08068134c971df456a7a59f0aff0d8d1c",
+    "unit_a_catalog_sha256": "7db495b0a1034c9211c3d08c90569c3b0bccc3209a31f9f9e1885889b99b75c3",
+    "unit_a_retention_sha256": "fc95e1f43f40dc576ab7295435bad3effd8ad99e6fc8be4f9263e8d55154a155"
+  },
+  "effects": "NONE",
+  "evaluation_layers": [
+    "GrantEvaluation",
+    "AuthorizationEvaluation",
+    "ConsumptionEvaluation"
+  ],
+  "events": [
+    {
+      "historical": "authorize_projection",
+      "prospective": "CONSUME_PROJECTION_AUTHORIZATION"
+    },
+    {
+      "historical": "authorize_maintenance",
+      "prospective": "CONSUME_MAINTENANCE_AUTHORIZATION"
+    }
+  ],
+  "historical_source": {
+    "original_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\github-m08-review-20261004\\development-review\\m08-v8\\successor\\machines\\M09.proposal.json",
+    "path": "inputs/historical_m09.json",
+    "role": "HISTORICAL_REFERENCE_NOT_WHOLE_MACHINE_ADOPTION",
+    "sha256": "81e620fad556ed2db89793e40d881a9a0317097c16083b0872b9b763a8ae07e1"
+  },
+  "historical_source_limitation": "machine_specific_semantics.authority already states VERIFY_AND_CONSUME distinct grants, never issue them; S3 Authorize operational UNRESOLVED",
+  "matrix_cell_changes": [],
+  "modeled_roles": [
+    "grant_issuer",
+    "issuer",
+    "verifier",
+    "grantee"
+  ],
+  "reconciliation": "EXPLICIT_OPERATION_NAMES_PRESERVING_HISTORICAL_VERIFY_AND_CONSUME_LIMITATION_FINITE_INTERPRETATION_ONLY",
+  "runtime_activation": false,
+  "s3_authorize": "unresolved",
+  "schema": "UNIT-B-M09-RECONCILIATION-DRAFT-1",
+  "selected_contract": "contracts/M09-CONSUMPTION-DRAFT.md",
+  "separate_objects": [
+    "grant",
+    "authorization",
+    "requested_effect"
+  ],
+  "status": "PROPOSED_NOT_ADOPTED"
+}
