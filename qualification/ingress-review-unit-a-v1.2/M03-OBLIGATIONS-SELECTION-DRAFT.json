@@ -1,0 +1,33 @@
+{
+  "status": "PROPOSED_NOT_ADOPTED",
+  "scope": "M03_ROW_ONLY_NO_OTHER_MACHINE_ADOPTION",
+  "source_obligations_sha256": "30874d4a21d6b01463e3ff96b90cea5ff0b45e6db9fe20672f10b9597ca4908b",
+  "source_pointer": "/machines/2",
+  "selected_obligation": {
+    "authority_assignment": "NOT_GRANTED_BY_THIS_MAP",
+    "id": "M03",
+    "registry_name": "Cartologist normalization and proposal lifecycle",
+    "required_dimensions_where_applicable": [
+      "Observe",
+      "Propose"
+    ],
+    "required_evidence": [
+      "exact source identity and retained original bytes",
+      "normalization schema/version and original-to-normalized derivation binding",
+      "applicable Observe/Propose authority path under adopted governing baseline",
+      "predecessor/policy/scope/freshness evidence",
+      "bounded resource enforcement",
+      "exact bounded non-authoritative attempt/proposal recording",
+      "explicit separation from downstream M04/S1 qualification and S2 canonical admission"
+    ],
+    "responsibilities": [
+      "lossless source custody and provenance normalization",
+      "separately identified normalized representation",
+      "bounded noncanonical proposal with ambiguity and contradiction retained"
+    ],
+    "specification_owner": "Cartologist",
+    "status": "AMENDMENT_DRAFT_UNADOPTED_UNIMPLEMENTED"
+  },
+  "runtime_authority": "UNRESOLVED",
+  "runtime_activation": false
+}

@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "serialization_profile",
+    "schema_id",
+    "schema_version",
+    "grantee",
+    "authority_dimension",
+    "authority_root"
+  ],
+  "properties": {
+    "serialization_profile": {
+      "type": "string",
+      "const": "ACS-1"
+    },
+    "schema_id": {
+      "type": "string",
+      "const": "anarchi.brain.authority-grant"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "1"
+    },
+    "grantee": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "integer",
+        "boolean"
+      ]
+    },
+    "authority_dimension": {
+      "type": "string",
+      "enum": [
+        "Observe",
+        "Propose",
+        "Qualify",
+        "Authorize",
+        "Canonicalize",
+        "Project",
+        "Execute",
+        "Revoke",
+        "Migrate",
+        "Reconstruct",
+        "Attest",
+        "Administer"
+      ]
+    },
+    "authority_root": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "integer",
+        "boolean"
+      ]
+    },
+    "scope": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "integer",
+        "boolean"
+      ]
+    },
+    "operation": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "integer",
+        "boolean"
+      ]
+    },
+    "conditions": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "integer",
+        "boolean"
+      ]
+    },
+    "temporal_bounds": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "integer",
+        "boolean"
+      ]
+    },
+    "delegation": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "integer",
+        "boolean"
+      ]
+    },
+    "revocation": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "integer",
+        "boolean"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

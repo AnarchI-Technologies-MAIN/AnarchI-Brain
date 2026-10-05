@@ -1,0 +1,173 @@
+{
+  "observed_utc": "2026-10-04T10:06:57.649088+00:00",
+  "status": "BOUNDED_OFFLINE_HANDOFF_REPAIR_QUALIFIED",
+  "scope": "OFFLINE_PROPOSAL_REPRESENTATION_AND_CUSTODY_NOT_RUNTIME_CORTEX",
+  "full_corpus_runs": [
+    {
+      "output": "epistemaddy-deposit-native-v5_1",
+      "producer_version": "v5.1",
+      "qualification_sha256": "ed4d0e9786d4689aef2377a5dfd8e21f5f077b18e24876752c1ba6a79c44b497",
+      "verified": {
+        "verified_pairs": 2736,
+        "canonical_admission": false
+      },
+      "brain_stream_sha256": "5f13a1338b7f4fe5a43d047dba41075db9c7cd782adf75eeb04a52a6a6fcecd3",
+      "producer_stream_sha256": "a66d7d59db6ec71aa07e9838d3ef23643706ccf11fea672323f091e0bc342c45"
+    },
+    {
+      "output": "ubuntu-deposit-v5/deposit-O0",
+      "producer_version": "v5",
+      "qualification_sha256": "ab680bc0088b03387cf4358ae6a8835e8e80f9a86277b0299887fdcedfb0f9c2",
+      "verified": {
+        "verified_pairs": 2736,
+        "canonical_admission": false
+      },
+      "brain_stream_sha256": "5f13a1338b7f4fe5a43d047dba41075db9c7cd782adf75eeb04a52a6a6fcecd3",
+      "producer_stream_sha256": "a66d7d59db6ec71aa07e9838d3ef23643706ccf11fea672323f091e0bc342c45"
+    },
+    {
+      "output": "ubuntu-deposit-v5/deposit-O1",
+      "producer_version": "v5",
+      "qualification_sha256": "ab680bc0088b03387cf4358ae6a8835e8e80f9a86277b0299887fdcedfb0f9c2",
+      "verified": {
+        "verified_pairs": 2736,
+        "canonical_admission": false
+      },
+      "brain_stream_sha256": "5f13a1338b7f4fe5a43d047dba41075db9c7cd782adf75eeb04a52a6a6fcecd3",
+      "producer_stream_sha256": "a66d7d59db6ec71aa07e9838d3ef23643706ccf11fea672323f091e0bc342c45"
+    }
+  ],
+  "version_note": "Final v5.1 full corpus executed on Windows. Ubuntu full corpus executed v5 normal/-O; final v5.1 added rejection-only newline preflight and independent normalization verifier were tested on Windows and Ubuntu normal/-O. Both proposal streams remain identical across listed full runs.",
+  "focused_results": {
+    "runs": [
+      {
+        "platform": "windows",
+        "optimization": 0,
+        "exit_code": 0,
+        "log_sha256": "7d1d0afe309cf866b98f6fbdccd9762e71b376a3d8aae567c48700991ca1b813",
+        "test_methods": 12,
+        "targeted_mutations": 34
+      },
+      {
+        "platform": "windows",
+        "optimization": 1,
+        "exit_code": 0,
+        "log_sha256": "f10572221dde2bb67ff81f78b1f9e97bbabce70935eb5d38364850d801409a5e",
+        "test_methods": 12,
+        "targeted_mutations": 34
+      },
+      {
+        "platform": "ubuntu",
+        "optimization": 0,
+        "exit_code": 0,
+        "log_sha256": "d0cf586689c591aa1d818cf0eb4ad79588550fe3ec0f449ce76a7ad258dfa2ee",
+        "test_methods": 12,
+        "targeted_mutations": 34
+      },
+      {
+        "platform": "ubuntu",
+        "optimization": 1,
+        "exit_code": 0,
+        "log_sha256": "cdbcaa4e9b8c48c295f02cc463ef604fac7e7414330b7ad6e8cbc6d721c09e67",
+        "test_methods": 12,
+        "targeted_mutations": 34
+      }
+    ],
+    "unique_mutation_cases": 34,
+    "scope": "FOCUSED_HANDOFF_AND_ANCESTRY_NOT_COMPLETE_ATTACK_SURFACE",
+    "source_pins": {
+      "test_handoff_v5_1.py": "c5acbdcc608a39f902f72235d13370e281f508ce4819c1e57b1ecc9b0661aed9",
+      "test_ancestry_v5_1.py": "6093c62898a28465d692fc88c3d6abb3eb42667c809a0df6a4ae6d1153137f5e",
+      "epistemaddy_cortex_deposit_v5_1.py": "0348cad154766097737fdf9bc08269973ecf5d20030e70bdce4531f6fbb217d5",
+      "verify_handoff_v5_1.py": "af44421bd22f753bcb5c3a8a87f3e290becd94e5f14dff9fe3684c92ac2d5670"
+    }
+  },
+  "ubuntu_full_corpus_peak_bytes": [
+    212922368,
+    212082688
+  ],
+  "resource_hold_128mib": {
+    "memory_limit_mib": 128,
+    "returncode": 1,
+    "state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": true,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 1,
+      "Error": "",
+      "StartedAt": "2026-10-04T09:49:04.138137343Z",
+      "FinishedAt": "2026-10-04T09:51:35.762930291Z"
+    },
+    "qualified_output_exists": false,
+    "canon_admissions": 0,
+    "scope": "RESOURCE_PRESSURE_OFFLINE_PROPOSAL_PRODUCER_NO_CANONICAL_WRITER",
+    "reported_results": [
+      {
+        "exit_code": -9,
+        "memory_events": "low 0\nhigh 0\nmax 54\noom 1\noom_kill 1\noom_group_kill 0\n",
+        "cgroup_peak_bytes": 134217728
+      }
+    ],
+    "disposition": "RESOURCE_FAILURE"
+  },
+  "lyra_disposition": {
+    "scope": "OFFLINE_PRODUCER_TO_ACS_TO_BRAIN_R3_PROPOSAL_SOURCE_DESIGN",
+    "status": "NO_FURTHER_CONCRETE_SOURCE_BLOCKER_IDENTIFIED",
+    "reviewer": "Lyra-Brain",
+    "chat_url": "https://chatgpt.com/c/6ac173bf-82bc-83e9-8669-80b62d674507",
+    "reviewed_source_package": "lyra-v5_1-review.json",
+    "reviewed_package_sha256": "99fcf1f2d55007ef861b32588b3e5ec20cf8de7fff92578f8200ee52b54f8b78",
+    "source_artifacts_current": {
+      "epistemaddy_cortex_deposit_v5_1.py": {
+        "bytes": 11307,
+        "sha256": "0348cad154766097737fdf9bc08269973ecf5d20030e70bdce4531f6fbb217d5"
+      },
+      "verify_handoff_v5_1.py": {
+        "bytes": 4014,
+        "sha256": "af44421bd22f753bcb5c3a8a87f3e290becd94e5f14dff9fe3684c92ac2d5670"
+      },
+      "test_handoff_v5_1.py": {
+        "bytes": 3772,
+        "sha256": "c5acbdcc608a39f902f72235d13370e281f508ce4819c1e57b1ecc9b0661aed9"
+      },
+      "test_ancestry_v5_1.py": {
+        "bytes": 3110,
+        "sha256": "6093c62898a28465d692fc88c3d6abb3eb42667c809a0df6a4ae6d1153137f5e"
+      },
+      "OFFLINE-HANDOFF-CONTRACT-v5_1.md": {
+        "bytes": 3525,
+        "sha256": "4da69c8fbaf2ef15eaffa0384ab7ce734040d2e33f7e7fd733f6731ad1b099e8"
+      }
+    },
+    "test_note": "After source review submission a focused coherent-cross-binding normalization regression was added; adapter, verifier and contract bytes are unchanged. Final tests bind current test source separately.",
+    "execution_evidence": "CODEX_EXECUTED_NOT_INDEPENDENTLY_RERUN_BY_LYRA",
+    "remaining_holds": [
+      "LIVE_CORTEX_TRANSPORT",
+      "CORTEX_NAMESPACE_MAPPING",
+      "AUTHENTICATED_VISIBILITY",
+      "ISSUER_VERIFIER_ROOTS",
+      "GOVERNING_BASELINE_ADOPTION",
+      "CONTENT_SEMANTIC_ADJUDICATION",
+      "THREE_INDEPENDENT_CANONICAL_ADJUDICATIONS",
+      "GUARDED_DURABLE_CANONICAL_COMMIT",
+      "PRODUCTION_READINESS"
+    ],
+    "canonical_admissions": 0,
+    "deployment": false
+  },
+  "original_brain_head": "79fd607b3b8983fdd2d0254f3af59df9a92257b8",
+  "original_epistemaddy_status": [
+    "?? FIXED_QUEUE_REASONING_CONTRACT.md",
+    "?? core/fixed_queue_reasoning.py",
+    "?? core/flash_drift.py",
+    "?? tests/test_fixed_queue_reasoning.py",
+    "?? tests/test_flash_drift.py"
+  ],
+  "canonical_admissions": 0,
+  "production_ready": false,
+  "deployed": false
+}

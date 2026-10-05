@@ -1,0 +1,15 @@
+# Unit B documentary bootstrap draft
+
+PROPOSED / NOT ADOPTED / FINITE OFFLINE INTERPRETATION ONLY.
+
+Predecessor Unit A catalog: 7db495b0a1034c9211c3d08c90569c3b0bccc3209a31f9f9e1885889b99b75c3. Accepted record: 79d46e4c1a41c48bcca88a04c42cc2b08068134c971df456a7a59f0aff0d8d1c. Retention receipt: fc95e1f43f40dc576ab7295435bad3effd8ad99e6fc8be4f9263e8d55154a155. Prospective effectiveness floor: 2026-10-04T22:28:23Z. These pins identify documentary decisions, not runtime grants.
+
+Unit B defines a modeled external-root reference supplied independently of the proposed grant. No root is admitted because the grant cites it, its own issuer signs it, a process runs, a GitHub repository contains it, or a human accepted this document. Every root lineage must terminate at the separately supplied expected fixture anchor; missing, conflicting, circular, substituted or unsupported lineage is blocked or unresolved. No enrollment, cryptographic authentication or key materialization occurs.
+
+The bootstrap fixture explicitly binds root identity/digest/class/generation/lineage, effective_not_before, admitted grant_issuer/issuer/verifier/grantee principal and key-binding records, authority_dimensions, genesis_predecessor, documentary_status, selection_ref and bootstrap_procedure_digest. Its independently supplied governance_selection has kind MODELED_GOVERNANCE_SELECTION_NOT_ADOPTED, selection_origin EXTERNAL_MODELED_GOVERNANCE, decision_ref and selected_bootstrap_sha256. This models a prospective selection; it is not an adopted governance root. ROOT_SELF_ATTESTATION cannot supply the external selection. Every selected coordinate is checked within the finite profile; unconsumed descriptive fields cannot be credited as completed bootstrap verification.
+
+The accepted baseline, mapping and Unit A decision references are separate documentary context. None selects a specific operational root. No actual adopted bootstrap/root exists in this evidence set, and real ROOT_UNRESOLVED remains held even when the modeled fixture evaluates ALLOW. A root-specific governance decision and its operational custody would require a future separately reviewed and accepted exact contract/selection.
+
+Operational bootstrap remains held until an adopted operational contract specifies actual accountable governance authority, out-of-band root material/fingerprint custody, enrolled principal/key binding, independent verifier, generation/revocation publication and recovery. This documentary selection supplies none. Alexander's accepted forward procedure remains document-decision authority; Lyra, Codex, models and administrative owners cannot self-enroll as issuers.
+
+The finite root references are test inputs, not authenticated principals. Unit B can evaluate their exact relationships and reject contradictions, but cannot assert operational independence, identity assurance or fresh authority. Root replacement, issuer rotation and live enrollment are excluded. Rejection needs no positive reopening grant; successful fixture interpretation never opens effects.

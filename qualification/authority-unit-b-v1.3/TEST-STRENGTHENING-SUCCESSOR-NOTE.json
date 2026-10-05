@@ -1,0 +1,22 @@
+{
+  "schema": "UNIT-B-TEST-STRENGTHENING-SUCCESSOR-1",
+  "predecessor_catalog_sha256": "9554dbd31b660948028e23837f62683b57726a93d70136c6549bba4ff7d57986",
+  "predecessor_cross_platform_checks": 16,
+  "predecessor_kiln": {
+    "cycle": "AD4FB82056B4E73BA620",
+    "mutations": 136,
+    "behavioral_test_failures": 126,
+    "survivors": 10,
+    "loader_setup_failures": 0,
+    "execution_failures": 0
+  },
+  "reason": "Six survivors exposed four focused test-sensitivity gaps. Strengthen the tests using independent canonical-byte/hash oracles, exact field-length boundaries, cross-coordinate control collisions and an unconsumed receipt contradiction. Four other survivors were reviewed as explicit-default or redundant validated-domain guards; no exhaustive assurance is claimed.",
+  "core_source_unchanged": true,
+  "core_sha256": "f151574c1254cfc16edb00f85ffa9173dab659d15209669ae2db40309175bf87",
+  "new_focused_methods": 41,
+  "new_focused_test_sha256": "d0cfc55b33e4836a2f6ee8f0ad167eb77ab0f803fd761996f29a1384183216f5",
+  "review_capture_change": "Replace whole private browser DOM captures with exact observed assistant-response excerpts. Navigation, other chat metadata and earlier conversation stay local. Record extraction provenance separately; governing predecessor bytes and authority semantics do not change.",
+  "adopted": false,
+  "runtime_authority": false,
+  "production_ready": false
+}

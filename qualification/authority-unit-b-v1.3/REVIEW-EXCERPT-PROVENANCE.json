@@ -1,0 +1,26 @@
+{
+  "private_full_dom_preserved_locally": true,
+  "records": [
+    {
+      "excerpt_bytes": 22341,
+      "excerpt_sha256": "d69c4b5a47d488e543d63f77b3df4c2f4840fec72fb4a6de1097b0df977c9928",
+      "original_dom_bytes": 87638,
+      "original_dom_sha256": "6e5b1f2b45bbc92ea729541eb70d5a40e8dee1b01478e523e0d8bf326e554456",
+      "path": "inputs/lyra_direction.txt",
+      "role": "ARCHITECTURAL_ADVICE_NOT_ADOPTION",
+      "selection": "Exact UTF-8 substring from last observed assistant heading through the response body, ending before response controls. Navigation/sidebar and earlier conversation excluded."
+    },
+    {
+      "excerpt_bytes": 14045,
+      "excerpt_sha256": "c5c0cfd752bbce15c6be941a3f4d52e507db309204bad30d286c1fa017f71eb5",
+      "original_dom_bytes": 83526,
+      "original_dom_sha256": "8c6fcb45313e38cb5898408460830bdf90a70deaf723a8892dc1b3a1fcde4c31",
+      "path": "inputs/lyra_authorization_repair.txt",
+      "role": "ARCHITECTURAL_ADVICE_NOT_ADOPTION",
+      "selection": "Exact UTF-8 substring from last observed assistant heading through the response body, ending before response controls. Navigation/sidebar and earlier conversation excluded."
+    }
+  ],
+  "runtime_authority": false,
+  "schema": "UNIT-B-REVIEW-EXCERPT-PROVENANCE-1",
+  "status": "SOURCE_EVIDENCE_NOT_ADOPTION"
+}

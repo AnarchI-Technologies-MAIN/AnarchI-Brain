@@ -1,0 +1,87 @@
+{
+  "files": [
+    {
+      "bytes": 5807,
+      "label": "baseline_retention",
+      "path": "inputs/baseline_retention.json",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "8aa2d5af0c3f46d0fba46e784d86d459d104954467552a9dad0a6b8849da8742",
+      "source": "forward-baseline-accepted-20261004T195646Z/external-retention-receipt.json"
+    },
+    {
+      "bytes": 11651,
+      "label": "mapping_contract",
+      "path": "inputs/mapping_contract.md",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4",
+      "source": "cortex-filament-mapping-v1.3-20261004/CORTEX-FILAMENT-MAPPING-DRAFT.md"
+    },
+    {
+      "bytes": 5829,
+      "label": "mapping_acceptance",
+      "path": "inputs/mapping_acceptance.json",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "810fd63b517c513c9dfead469368d5d01938daaac66b35826fb6fb68cce5f5ee",
+      "source": "mapping-v1.3-accepted-20261004T205057Z/acceptance.json"
+    },
+    {
+      "bytes": 10407,
+      "label": "mapping_retention",
+      "path": "inputs/mapping_retention.json",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "7ecc3c446680deb959f9fa9873bd3670f44c18e64c141c741217721f4790bfa1",
+      "source": "mapping-v1.3-accepted-20261004T205057Z/external-retention-receipt.json"
+    },
+    {
+      "bytes": 1518,
+      "label": "mapping_question_supplement",
+      "path": "inputs/mapping_question_supplement.json",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "7f754986a7f478149e6c1013cfcf9defb3cea663adc2b87134f35098cd7b6dcf",
+      "source": "mapping-v1.3-accepted-20261004T205057Z/question-context-supplement.json"
+    },
+    {
+      "bytes": 9908,
+      "label": "mapping_supplement_retention",
+      "path": "inputs/mapping_supplement_retention.json",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "9916d1e5192860e840f7cf03910e8745164116fc7937f38145f470e6f9b3a073",
+      "source": "mapping-v1.3-accepted-20261004T205057Z/external-retention-supplement-receipt.json"
+    },
+    {
+      "bytes": 12377,
+      "label": "semantic_language",
+      "path": "inputs/semantic_language.md",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "33c438c541f02c97d9e9eab205610f52bc56fe226dbfd2345776c498a630d7d3",
+      "source": "forward-baseline-proposal-v1.2/candidate/semantic-language.md"
+    },
+    {
+      "bytes": 17514,
+      "label": "authority_dimensions",
+      "path": "inputs/authority_dimensions.md",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "a1143481b4f6d24354cf5e28bfcdb5fa5706fcc162969601098241c124bad0fa",
+      "source": "forward-baseline-proposal-v1.2/candidate/authority-dimensions.md"
+    },
+    {
+      "bytes": 14694,
+      "label": "cortex_contract",
+      "path": "inputs/cortex_contract.md",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "51da5c27fdddf24ef3c822da565b7d8e3cec9d6a7df0a8d864e35422b79d3e1a",
+      "source": "forward-baseline-proposal-v1.2/candidate/cortex-contract.md"
+    },
+    {
+      "bytes": 10947,
+      "label": "baseline_matrix",
+      "path": "inputs/baseline_matrix.md",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "sha256": "1ceaf312b74500548654c7a7244ebc9222c93cf2e9bdfb2522669ad7359cb98e",
+      "source": "forward-baseline-proposal-v1.2/candidate/authority-matrix.md"
+    }
+  ],
+  "runtime_authority": false,
+  "schema": "UNIT-B-CHAIN-SUPPLEMENT-1",
+  "status": "DRAFT_NOT_ADOPTED"
+}

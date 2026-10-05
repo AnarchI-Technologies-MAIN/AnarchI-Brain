@@ -1,0 +1,170 @@
+{
+  "accepted_procedure": {
+    "bytes": 6385,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/context/accepted_procedure.source",
+    "sha256": "3f6f9393be17bcd448fdebc1e65f4195b700036cdb200d5f435fd90f6f558992",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-reconciliation-procedure-accepted-20261004T062855Z\\accepted-procedure.md"
+  },
+  "baseline_acceptance": {
+    "bytes": 7551,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/context/baseline_acceptance.source",
+    "sha256": "10bd8c050b4a39553a553bdad868f14a4f680709cb4c2b9669d01084ab3fd2bc",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-accepted-20261004T195646Z\\acceptance.json"
+  },
+  "baseline_authority-dimensions.md": {
+    "bytes": 17514,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/baseline/authority-dimensions.md",
+    "sha256": "a1143481b4f6d24354cf5e28bfcdb5fa5706fcc162969601098241c124bad0fa",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-proposal-v1.2\\candidate\\authority-dimensions.md"
+  },
+  "baseline_authority-matrix.md": {
+    "bytes": 10947,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/baseline/authority-matrix.md",
+    "sha256": "1ceaf312b74500548654c7a7244ebc9222c93cf2e9bdfb2522669ad7359cb98e",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-proposal-v1.2\\candidate\\authority-matrix.md"
+  },
+  "baseline_catalog": {
+    "bytes": 43287,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/context/baseline_catalog.source",
+    "sha256": "421b5d5bab28a32afe557e17970a14beb75a99eddc9f536a75bb1bcda9d26eb3",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-proposal-v1.2\\proposal-inventory.json"
+  },
+  "baseline_cortex-contract.md": {
+    "bytes": 14694,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/baseline/cortex-contract.md",
+    "sha256": "51da5c27fdddf24ef3c822da565b7d8e3cec9d6a7df0a8d864e35422b79d3e1a",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-proposal-v1.2\\candidate\\cortex-contract.md"
+  },
+  "baseline_retention": {
+    "bytes": 5807,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/context/baseline_retention.source",
+    "sha256": "8aa2d5af0c3f46d0fba46e784d86d459d104954467552a9dad0a6b8849da8742",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-accepted-20261004T195646Z\\external-retention-receipt.json"
+  },
+  "baseline_semantic-language.md": {
+    "bytes": 12377,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/baseline/semantic-language.md",
+    "sha256": "33c438c541f02c97d9e9eab205610f52bc56fe226dbfd2345776c498a630d7d3",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-proposal-v1.2\\candidate\\semantic-language.md"
+  },
+  "code_custody": {
+    "bytes": 4014,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/code/custody.py",
+    "sha256": "af44421bd22f753bcb5c3a8a87f3e290becd94e5f14dff9fe3684c92ac2d5670",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\atlas-ubuntu-substrate-20261004\\verify_handoff_v5_1.py"
+  },
+  "code_m03": {
+    "bytes": 1635,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/code/m03.py",
+    "sha256": "4d95d6dd4f002936ef23780c083758703cb2cf30fbaff352caf16dad5d38dfa2",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\m03-route-b-amendment-draft-v1.3\\reference_m03.py"
+  },
+  "code_m08": {
+    "bytes": 11743,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/code/m08.py",
+    "sha256": "deb4282ece47e0ee2e390b8ed9604a05765a0bb24f309712756c18dbfe536bcc",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\github-development-main-sync-20261004\\development-review\\m08-v8\\reference_semantics.py"
+  },
+  "code_mapping": {
+    "bytes": 5952,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/code/mapping.py",
+    "sha256": "7561f2222762fca9904e4f1e8494d21b8b5b99dfc87d48d572922d52db5ac162",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\mapping_reference.py"
+  },
+  "m03_M03.proposal.json": {
+    "bytes": 24366,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/m03/M03.proposal.json",
+    "sha256": "c4be6649f64b70406f72a83ebccf44f3775cc4a0cd84ae5867e52236ab6ef63c",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\m03-route-b-amendment-draft-v1.3\\M03.proposal.json"
+  },
+  "m03_bindings": {
+    "bytes": 3495,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/m03/draft-bindings.json",
+    "sha256": "93d20d6cb5ab43a8d859560f5ef82ecab881173079024a904dc4ba9dd903cc4a",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\m03-route-b-amendment-draft-v1.3\\draft-bindings.json"
+  },
+  "m03_obligations.json": {
+    "bytes": 15160,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/m03/obligations.json",
+    "sha256": "30874d4a21d6b01463e3ff96b90cea5ff0b45e6db9fe20672f10b9597ca4908b",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\m03-route-b-amendment-draft-v1.3\\obligations.json"
+  },
+  "m08_package_manifest": {
+    "bytes": 12039,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/m08/package-manifest.json",
+    "sha256": "a44def170668cf17d25c51f50fcbf4556f491dfc69d4bc5e4cea0d2ff0102f79",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\github-development-main-sync-20261004\\development-review\\m08-v8\\package-manifest.json"
+  },
+  "m08_successor/m08-denial-routing-table.json": {
+    "bytes": 270122,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/m08/successor/m08-denial-routing-table.json",
+    "sha256": "23de4796fa572bae329ce1de1117418d50fe9e01b3485ec3bff23f234f507ade",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\github-development-main-sync-20261004\\development-review\\m08-v8\\successor\\m08-denial-routing-table.json"
+  },
+  "m08_successor/machines/M08.proposal.json": {
+    "bytes": 46783,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/m08/successor/machines/M08.proposal.json",
+    "sha256": "0aa12f1baa4da12f7bae1996135e011d0b7621702c09b49a7438af2102418268",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\github-development-main-sync-20261004\\development-review\\m08-v8\\successor\\machines\\M08.proposal.json"
+  },
+  "mapping_acceptance": {
+    "bytes": 5829,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/context/mapping_acceptance.source",
+    "sha256": "810fd63b517c513c9dfead469368d5d01938daaac66b35826fb6fb68cce5f5ee",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\mapping-v1.3-accepted-20261004T205057Z\\acceptance.json"
+  },
+  "mapping_contract": {
+    "bytes": 11651,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/context/mapping_contract.source",
+    "sha256": "61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\CORTEX-FILAMENT-MAPPING-DRAFT.md"
+  },
+  "mapping_retention": {
+    "bytes": 10407,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/context/mapping_retention.source",
+    "sha256": "7ecc3c446680deb959f9fa9873bd3670f44c18e64c141c741217721f4790bfa1",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\mapping-v1.3-accepted-20261004T205057Z\\external-retention-receipt.json"
+  },
+  "mapping_retention_supplement": {
+    "bytes": 9908,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/context/mapping_retention_supplement.source",
+    "sha256": "9916d1e5192860e840f7cf03910e8745164116fc7937f38145f470e6f9b3a073",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\mapping-v1.3-accepted-20261004T205057Z\\external-retention-supplement-receipt.json"
+  },
+  "prior_handoff_report": {
+    "bytes": 6779,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/context/prior_handoff_report.source",
+    "sha256": "5826e6b8cce74a5554d6045f45ac7ac71971a13f19f61754dbff6139f57e54a8",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\atlas-ubuntu-substrate-20261004\\FINAL-HANDOFF-REPAIR-RESULT.json"
+  },
+  "procedure_acceptance": {
+    "bytes": 2151,
+    "custody_class": "EXACT_CAPTURE_NOT_OPERATIVE_GRANT",
+    "path": "inputs/context/procedure_acceptance.source",
+    "sha256": "e813b8242f84fc0b6c6bb4cbf08ee8d0794c703f512c8bb8ad18d0f8aa42eac0",
+    "source_path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-reconciliation-procedure-accepted-20261004T062855Z\\acceptance.json"
+  }
+}

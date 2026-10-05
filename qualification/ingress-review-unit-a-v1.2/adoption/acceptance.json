@@ -1,0 +1,173 @@
+{
+  "accepted_scope": "Prospective semantic/constitutional eligibility and pure finite reference only: selected M03 Route-B semantics and M03-only obligations; M04/S1 bounded noncanonical structural/provenance qualification contract/reference; the sole S1/Qualify unresolved-to-bounded matrix delta with named bound YES_BOUNDED_NONCANONICAL_QUALIFICATION and unchanged other131cells; crosswalk/delta; selected M08 machine and720-case routing semantics. No operative runtime authority or effects.",
+  "adoption_unit": "All eleven selected artifacts atomically or none; scoped only to M03 Route B, M04 bounded noncanonical qualification and M08 routing/freshness semantics. Full captured package and other machines are supporting evidence, not adopted.",
+  "atomic_all_eleven_or_none": true,
+  "catalog": {
+    "bytes": 4532,
+    "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\ingress-review-foundation-unit-a-v1.2-20261004\\unit-a-catalog.json",
+    "sha256": "7db495b0a1034c9211c3d08c90569c3b0bccc3209a31f9f9e1885889b99b75c3"
+  },
+  "decision": {
+    "acceptance_response_exact": "I approve the decision on catalog 7db495b0a1034c9211c3d08c90569c3b0bccc3209a31f9f9e1885889b99b75c3",
+    "actor": "Alexander Gudde",
+    "actor_identity_evidence": "Direct user reply in the ongoing Alexander Gudde session under the accepted forward procedure; no independent legal identity authentication or runtime issuer enrollment claimed.",
+    "actual_event_at_utc": null,
+    "actual_event_timestamp_verified": false,
+    "decision_disposition": "ACCEPT_ALL_ELEVEN_ATOMICALLY",
+    "effectiveness_rule": "Prospective only, no earlier than independently verified external retention, recorded separately.",
+    "observed_at_utc": "2026-10-04T22:23:37Z",
+    "referent_context": "The preceding reviewed proposal was one atomic Unit A decision identifying this exact catalog and all eleven selected artifacts under the already accepted forward procedure. Human approval refers to that exact decision, not a Git merge or runtime activation. This context is a summary, not invented verbatim question bytes.",
+    "source_surface": "direct user reply in this Codex conversation",
+    "thread_id": "01a102bd-7c86-77c2-9b3e-b99133e7f8f2"
+  },
+  "excluded_effects": [
+    "operative runtime authority",
+    "authenticated producer identity",
+    "live submission permission",
+    "live visibility authority",
+    "M12 issuer/verifier/root enrollment",
+    "M09/S3 authorization",
+    "M14 durable effects and runtime receipts",
+    "three independent S2 adjudications",
+    "canonical commit or admission",
+    "runtime ingress implementation or activation",
+    "staging qualification or clearance",
+    "deployment",
+    "production readiness",
+    "historical closure",
+    "other captured machine adoption"
+  ],
+  "execution_reference": {
+    "bytes": 10771,
+    "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\github-unit-a-v1.1-20261004\\qualification\\ingress-review-unit-a-v1.2\\evidence\\UNIT-A-EXECUTION-QUALIFICATION-v1.2.json",
+    "sha256": "b23d92c618847e8ea1924a86ed8c8a5066f80670a1cd1233bfcc72b5abb520a5"
+  },
+  "execution_scope": "Codex-recorded Windows/Ubuntu normal/-O focused/corpus execution; reviewer did not independently execute tests. Passing finite tests are not runtime/production proof.",
+  "external_retention_required_before_operative_claim": true,
+  "immutable_storage_claim": false,
+  "operative": false,
+  "predecessor_linkage": {
+    "accepted_procedure": {
+      "bytes": 6385,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\ingress-review-foundation-unit-a-v1.2-20261004\\inputs\\context\\accepted_procedure.source",
+      "sha256": "3f6f9393be17bcd448fdebc1e65f4195b700036cdb200d5f435fd90f6f558992"
+    },
+    "baseline_acceptance": {
+      "bytes": 7551,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\ingress-review-foundation-unit-a-v1.2-20261004\\inputs\\context\\baseline_acceptance.source",
+      "sha256": "10bd8c050b4a39553a553bdad868f14a4f680709cb4c2b9669d01084ab3fd2bc"
+    },
+    "baseline_catalog": {
+      "bytes": 43287,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\ingress-review-foundation-unit-a-v1.2-20261004\\inputs\\context\\baseline_catalog.source",
+      "sha256": "421b5d5bab28a32afe557e17970a14beb75a99eddc9f536a75bb1bcda9d26eb3"
+    },
+    "baseline_retention": {
+      "bytes": 5807,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\ingress-review-foundation-unit-a-v1.2-20261004\\inputs\\context\\baseline_retention.source",
+      "sha256": "8aa2d5af0c3f46d0fba46e784d86d459d104954467552a9dad0a6b8849da8742"
+    },
+    "mapping_acceptance": {
+      "bytes": 5829,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\ingress-review-foundation-unit-a-v1.2-20261004\\inputs\\context\\mapping_acceptance.source",
+      "sha256": "810fd63b517c513c9dfead469368d5d01938daaac66b35826fb6fb68cce5f5ee"
+    },
+    "mapping_contract": {
+      "bytes": 11651,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\ingress-review-foundation-unit-a-v1.2-20261004\\inputs\\context\\mapping_contract.source",
+      "sha256": "61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4"
+    },
+    "mapping_retention": {
+      "bytes": 10407,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\ingress-review-foundation-unit-a-v1.2-20261004\\inputs\\context\\mapping_retention.source",
+      "sha256": "7ecc3c446680deb959f9fa9873bd3670f44c18e64c141c741217721f4790bfa1"
+    },
+    "mapping_retention_supplement": {
+      "bytes": 9908,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\ingress-review-foundation-unit-a-v1.2-20261004\\inputs\\context\\mapping_retention_supplement.source",
+      "sha256": "9916d1e5192860e840f7cf03910e8745164116fc7937f38145f470e6f9b3a073"
+    },
+    "procedure_acceptance": {
+      "bytes": 2151,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\ingress-review-foundation-unit-a-v1.2-20261004\\inputs\\context\\procedure_acceptance.source",
+      "sha256": "e813b8242f84fc0b6c6bb4cbf08ee8d0794c703f512c8bb8ad18d0f8aa42eac0"
+    }
+  },
+  "preservation": "Exact candidate/catalog/draft headers and qualification/review records remain unchanged historical evidence. The new adoption record and separate verified retention receipt establish prospective effect.",
+  "review_references": [
+    {
+      "bytes": 15127,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\github-unit-a-v1.1-20261004\\qualification\\ingress-review-unit-a-v1.2\\evidence\\LYRA-UNIT-A-v1.2-FINAL-DISPOSITION.json",
+      "sha256": "6d56b4620bd8d125617d6d68fc5ffa777dd558651faf9df06fa0bb96261f1442"
+    },
+    {
+      "bytes": 16967,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\github-unit-a-v1.1-20261004\\qualification\\ingress-review-unit-a-v1.2\\evidence\\LYRA-UNIT-A-v1.2-REVIEW-DOM.json",
+      "sha256": "d443d0dd3d45eb3a5c0532d6091ca6bac269453d2538df1cf4fdd2dde60bbcfe"
+    },
+    {
+      "bytes": 183412,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\unit-a-lyra-source-package-v1.2.json",
+      "sha256": "07093ec6f0ee6f7e35733c984a24bdb8353e4711c68023f1157cb4e68bd0440d"
+    }
+  ],
+  "schema": "UNIT-A-ATOMIC-HUMAN-ADOPTION-RECORD-1",
+  "selected_artifacts": {
+    "M03_machine": {
+      "bytes": 24366,
+      "path": "inputs/m03/M03.proposal.json",
+      "sha256": "c4be6649f64b70406f72a83ebccf44f3775cc4a0cd84ae5867e52236ab6ef63c"
+    },
+    "M03_obligations": {
+      "bytes": 1399,
+      "path": "M03-OBLIGATIONS-SELECTION-DRAFT.json",
+      "sha256": "8f9ad7deb86647516573e663ab5f9e75bd27da53e153ac3fc0476dd63cf70b15"
+    },
+    "M03_selection": {
+      "bytes": 1142,
+      "path": "M03-FORWARD-SELECTION-DRAFT.json",
+      "sha256": "7c7a838f5fda50d607dca21569a8f9e3534f7b70feaddaaf38945cb73a593f3a"
+    },
+    "M04_contract": {
+      "bytes": 8557,
+      "path": "M04-S1-QUALIFICATION-DRAFT.md",
+      "sha256": "916c09009ce3706fe9225e934de344ec102fe99828ee75e6c3b147bbed18d070"
+    },
+    "M08_denial_routing_table": {
+      "bytes": 270122,
+      "path": "inputs/m08/successor/m08-denial-routing-table.json",
+      "sha256": "23de4796fa572bae329ce1de1117418d50fe9e01b3485ec3bff23f234f507ade"
+    },
+    "M08_machine": {
+      "bytes": 46783,
+      "path": "inputs/m08/successor/machines/M08.proposal.json",
+      "sha256": "0aa12f1baa4da12f7bae1996135e011d0b7621702c09b49a7438af2102418268"
+    },
+    "M08_selection": {
+      "bytes": 1572,
+      "path": "M08-FORWARD-SELECTION-DRAFT.json",
+      "sha256": "1b595607e32dba85de7d43d411c295aae82554eaefc4d5621e073c0fe1491798"
+    },
+    "authority_crosswalk": {
+      "bytes": 5802,
+      "path": "authority-crosswalk-unit-a.json",
+      "sha256": "6020e77fedbf704ded72f02762a875818b4eb13a65360a445eef797b819c7703"
+    },
+    "authority_delta": {
+      "bytes": 3591,
+      "path": "AUTHORITY-DELTA-DRAFT.md",
+      "sha256": "8d7cde6a081a9a4e14ee073a502a44bca22db1df8a5c9e2dc5ee5895f839619a"
+    },
+    "authority_matrix": {
+      "bytes": 11726,
+      "path": "AUTHORITY-MATRIX-SUCCESSOR-DRAFT.md",
+      "sha256": "796d3cf128b7843c1e3897cc0567fc9b819f40c0e64d805cd4f0ae550e9b1e8b"
+    },
+    "reference": {
+      "bytes": 12405,
+      "path": "ingress_review_reference.py",
+      "sha256": "a52d1def780fc53bc485dab2f9321670842b57f4ecd8990ad24259f10a5399d3"
+    }
+  },
+  "status": "HUMAN_ACCEPTANCE_RECORDED_EXTERNAL_RETENTION_PENDING"
+}

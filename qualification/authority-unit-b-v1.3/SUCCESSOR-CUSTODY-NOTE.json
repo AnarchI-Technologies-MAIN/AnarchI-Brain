@@ -1,0 +1,18 @@
+{
+  "adopted": false,
+  "affected_path": "reference/test_authority_reference.py",
+  "predecessor_catalog_sha256": "10532c35bcf3a53312e47502be976dec7f2dde87bfaefecdeb91a27967240c0f",
+  "predecessor_descriptor": {
+    "bytes": 22728,
+    "path": "reference/test_authority_reference.py",
+    "sha256": "ba873e97ebba132a8d5d910dd45ca5091a59ef347fcf9c320aa5d0b0020ab777"
+  },
+  "predecessor_qualification": "FAIL_BOUND_BYTES_DRIFT",
+  "reason": "Supporting test bytes changed after the initial catalog seal. The Ubuntu qualification and independent custody review rejected the mismatch. The failed catalog and execution logs remain preserved.",
+  "recorded_at_utc": "2026-10-04T23:16:16.875664+00:00",
+  "runtime_authority": false,
+  "schema": "UNIT-B-SUCCESSOR-CUSTODY-NOTE-1",
+  "source_snapshot_rule": "New isolated successor; no repinning or rewriting the failed predecessor catalog. Later exact source review must bind the successor catalog.",
+  "successor_test_bytes": 23397,
+  "successor_test_sha256": "34664299bed0c12895cdb0b593b602ca8f836fb5a84badaa3d473af8967750de"
+}
