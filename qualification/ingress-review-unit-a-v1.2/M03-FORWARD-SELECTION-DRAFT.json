@@ -1,0 +1,23 @@
+{
+  "forward_context": {
+    "baseline_acceptance_sha256": "10bd8c050b4a39553a553bdad868f14a4f680709cb4c2b9669d01084ab3fd2bc",
+    "baseline_catalog_sha256": "421b5d5bab28a32afe557e17970a14beb75a99eddc9f536a75bb1bcda9d26eb3",
+    "mapping_acceptance_sha256": "810fd63b517c513c9dfead469368d5d01938daaac66b35826fb6fb68cce5f5ee",
+    "mapping_contract_sha256": "61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4",
+    "mapping_retention_sha256": "7ecc3c446680deb959f9fa9873bd3670f44c18e64c141c741217721f4790bfa1"
+  },
+  "full_package_role": "SUPPORTING_SOURCE_CUSTODY_AND_PRIOR_QUALIFICATION_ONLY",
+  "historical_capture_headers_not_current_governing_status": true,
+  "machine": "M03",
+  "original_artifact_status_preserved": true,
+  "other_18_m08_package_machines_adopted": false,
+  "runtime_activation": false,
+  "runtime_authority": "UNRESOLVED",
+  "scope": "PROSPECTIVE_UNIT_A_NONCANONICAL_REVIEW_SEMANTICS_ONLY",
+  "selected_artifact": {
+    "bytes": 24366,
+    "path": "inputs/m03/M03.proposal.json",
+    "sha256": "c4be6649f64b70406f72a83ebccf44f3775cc4a0cd84ae5867e52236ab6ef63c"
+  },
+  "status": "PROPOSED_NOT_ADOPTED"
+}

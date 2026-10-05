@@ -1,0 +1,88 @@
+{
+  "scope": "BOUNDED_TRUSTED_LOCAL_FIRST_PARTY_NOT_OS_SANDBOX",
+  "observed_at_utc": "2026-10-04T21:58:33.227584+00:00",
+  "version": "v1.2-r2",
+  "source_commit": "38757d9f66dd91e6825e4bf54435bf1677081166",
+  "cycle_id": "KILN-CYCLE-B10583DA3F396D717C3A",
+  "baseline_passed": true,
+  "passes_executed": 68,
+  "kiln_reported_fractures": 63,
+  "kiln_reported_survivors": 5,
+  "kiln_reported_execution_failures": 0,
+  "independent_evidence_classification": [
+    {
+      "path": "ingress_review_reference.py",
+      "classification": "EXECUTED_TEST_FAILURE",
+      "count": 54
+    },
+    {
+      "path": "ingress_review_reference.py",
+      "classification": "SETUP_OR_LOADER_FAILURE_NOT_BEHAVIORAL_KILL",
+      "count": 9
+    },
+    {
+      "path": "ingress_review_reference.py",
+      "classification": "SURVIVED",
+      "count": 5
+    }
+  ],
+  "survivors": [
+    {
+      "mutation_id": "KILN-MUTATION-A4B64CE54F8CCF99A79F",
+      "line": 92,
+      "original_token": "True",
+      "replacement_token": "False",
+      "relative_path": "ingress_review_reference.py",
+      "test_evidence_path": "workers/KILN-SANDBOX-455077DB4F4D2809D723/process.json",
+      "source_line": "        exec(compile(raw, module.__file__, 'exec', dont_inherit=True), module.__dict__)"
+    },
+    {
+      "mutation_id": "KILN-MUTATION-B538A09D2806A10779B7",
+      "line": 122,
+      "original_token": "not",
+      "replacement_token": " ",
+      "relative_path": "ingress_review_reference.py",
+      "test_evidence_path": "workers/KILN-SANDBOX-9CBA8E1B05844D79A438/process.json",
+      "source_line": "    \"\"\"Expected subject/pins come from independent qualified custody, not this input.\"\"\""
+    },
+    {
+      "mutation_id": "KILN-MUTATION-FEDB7CA6D38914CB0879",
+      "line": 135,
+      "original_token": "False",
+      "replacement_token": "True",
+      "relative_path": "ingress_review_reference.py",
+      "test_evidence_path": "workers/KILN-SANDBOX-D130CB12CC416E6E8CA8/process.json",
+      "source_line": "    dependency_pin = sha(json.dumps({'source_pins':dependencies.source_pins,'qualification_contract_sha256':dependencies.qualification_contract_sha256,'mapping_contract_sha256':MAPPING_CONTRACT_PIN,'baseline_catalog_sha256':dependencies.mapping.BASELINE_CATALOG},sort_keys=True,separators=(',',':'),ensure_ascii=False).encode('utf-8'))"
+    },
+    {
+      "mutation_id": "KILN-MUTATION-3B613A028CB980DFA564",
+      "line": 166,
+      "original_token": "True",
+      "replacement_token": "False",
+      "relative_path": "ingress_review_reference.py",
+      "test_evidence_path": "workers/KILN-SANDBOX-A0BEA02A60567752F865/process.json",
+      "source_line": "        original = base64.b64decode(payload['source_record_utf8_base64'], validate=True)"
+    },
+    {
+      "mutation_id": "KILN-MUTATION-D02DCDE3276032E084CB",
+      "line": 188,
+      "original_token": "False",
+      "replacement_token": "True",
+      "relative_path": "ingress_review_reference.py",
+      "test_evidence_path": "workers/KILN-SANDBOX-9009EE93B6232FB41DEC/process.json",
+      "source_line": "    context_pin = sha(json.dumps({field:getattr(snapshot,field) for field in Snapshot.__dataclass_fields__},sort_keys=True,separators=(',',':'),ensure_ascii=False).encode('utf-8'))"
+    }
+  ],
+  "original_head_preserved": true,
+  "specimen_removed": true,
+  "mutation_operator_scope": [
+    "boolean replacement",
+    "equality inversion",
+    "not removal"
+  ],
+  "non_exhaustive": true,
+  "canonical_admissions": 0,
+  "runtime_crossings": 0,
+  "production_ready": false,
+  "result_sha256": "a9353aebdd25fef69a5b4f6048150344e8e61d6de23f048c9d4087c320d68ce4"
+}

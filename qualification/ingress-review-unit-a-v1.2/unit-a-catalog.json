@@ -1,0 +1,121 @@
+{
+  "adoption_record": null,
+  "adoption_unit": "All eleven selected artifacts atomically or none; scoped only to M03 Route B, M04 bounded noncanonical qualification and M08 routing/freshness semantics. Full captured package and other machines are supporting evidence, not adopted.",
+  "atomic_adoption": true,
+  "authority_delta": {
+    "dimension": "Qualify",
+    "named_bound": "YES_BOUNDED_NONCANONICAL_QUALIFICATION",
+    "other_cells_unchanged": 131,
+    "predecessor": "unresolved",
+    "principal": "S1",
+    "successor": "bounded"
+  },
+  "canonical_membership": false,
+  "exclusions": [
+    "M09/S3 authorization",
+    "M12 root/issuer/verifier enrollment",
+    "M14 runtime receipts and durable effects",
+    "S2 canonical adjudication",
+    "readiness profile",
+    "runtime-machine state transitions",
+    "transport",
+    "canonical commit",
+    "deployment"
+  ],
+  "input_count": 24,
+  "input_register": {
+    "bytes": 9135,
+    "path": "input-register.json",
+    "sha256": "696637d8ba99691cd913f898f4c6e03a61762515520b5f955d233ed90864faeb"
+  },
+  "limits": "Constitutional eligibility constraints and pure finite reference only. No actor principal authentication or operation-specific grant. Fixture freshness is not live authority freshness.",
+  "operative_authority": "UNRESOLVED",
+  "production_ready": false,
+  "runtime_activation": false,
+  "schema": "PROPOSED-NON-EFFECTING-INGRESS-REVIEW-FOUNDATION-1",
+  "selected_artifacts": {
+    "M03_machine": {
+      "bytes": 24366,
+      "path": "inputs/m03/M03.proposal.json",
+      "sha256": "c4be6649f64b70406f72a83ebccf44f3775cc4a0cd84ae5867e52236ab6ef63c"
+    },
+    "M03_obligations": {
+      "bytes": 1399,
+      "path": "M03-OBLIGATIONS-SELECTION-DRAFT.json",
+      "sha256": "8f9ad7deb86647516573e663ab5f9e75bd27da53e153ac3fc0476dd63cf70b15"
+    },
+    "M03_selection": {
+      "bytes": 1142,
+      "path": "M03-FORWARD-SELECTION-DRAFT.json",
+      "sha256": "7c7a838f5fda50d607dca21569a8f9e3534f7b70feaddaaf38945cb73a593f3a"
+    },
+    "M04_contract": {
+      "bytes": 8557,
+      "path": "M04-S1-QUALIFICATION-DRAFT.md",
+      "sha256": "916c09009ce3706fe9225e934de344ec102fe99828ee75e6c3b147bbed18d070"
+    },
+    "M08_denial_routing_table": {
+      "bytes": 270122,
+      "path": "inputs/m08/successor/m08-denial-routing-table.json",
+      "sha256": "23de4796fa572bae329ce1de1117418d50fe9e01b3485ec3bff23f234f507ade"
+    },
+    "M08_machine": {
+      "bytes": 46783,
+      "path": "inputs/m08/successor/machines/M08.proposal.json",
+      "sha256": "0aa12f1baa4da12f7bae1996135e011d0b7621702c09b49a7438af2102418268"
+    },
+    "M08_selection": {
+      "bytes": 1572,
+      "path": "M08-FORWARD-SELECTION-DRAFT.json",
+      "sha256": "1b595607e32dba85de7d43d411c295aae82554eaefc4d5621e073c0fe1491798"
+    },
+    "authority_crosswalk": {
+      "bytes": 5802,
+      "path": "authority-crosswalk-unit-a.json",
+      "sha256": "6020e77fedbf704ded72f02762a875818b4eb13a65360a445eef797b819c7703"
+    },
+    "authority_delta": {
+      "bytes": 3591,
+      "path": "AUTHORITY-DELTA-DRAFT.md",
+      "sha256": "8d7cde6a081a9a4e14ee073a502a44bca22db1df8a5c9e2dc5ee5895f839619a"
+    },
+    "authority_matrix": {
+      "bytes": 11726,
+      "path": "AUTHORITY-MATRIX-SUCCESSOR-DRAFT.md",
+      "sha256": "796d3cf128b7843c1e3897cc0567fc9b819f40c0e64d805cd4f0ae550e9b1e8b"
+    },
+    "reference": {
+      "bytes": 12405,
+      "path": "ingress_review_reference.py",
+      "sha256": "a52d1def780fc53bc485dab2f9321670842b57f4ecd8990ad24259f10a5399d3"
+    }
+  },
+  "status": "PROPOSED_NOT_ADOPTED",
+  "supporting_artifacts": {
+    "fixture_first_brain.json": {
+      "bytes": 23462,
+      "path": "fixture_first_brain.json",
+      "sha256": "2820de81d3e4699f8086f18655e3a23f38b0aa9460e03fbb097bcea0cbd27d84"
+    },
+    "fixture_first_producer.json": {
+      "bytes": 10341,
+      "path": "fixture_first_producer.json",
+      "sha256": "ce2042084b61b562dcc5cb750365579a25ab48d4475c7deec562889f296b8763"
+    },
+    "qualify_unit_a.py": {
+      "bytes": 18075,
+      "path": "qualify_unit_a.py",
+      "sha256": "87b425a2e1999efb10652710b60e21c7176bb74ea24d42d2cdc6457e703e4457"
+    },
+    "test_ingress_review_reference.py": {
+      "bytes": 12632,
+      "path": "test_ingress_review_reference.py",
+      "sha256": "e83204faec5783f198713ffe1bb4b0f727c1f401de4c5766a6783bf158119193"
+    },
+    "test_unit_a_custody.py": {
+      "bytes": 14497,
+      "path": "test_unit_a_custody.py",
+      "sha256": "12eb5d1046d2bb574f27b856aa874c4998f7acf854254a314c5c71acbe63fc7d"
+    }
+  }
+}

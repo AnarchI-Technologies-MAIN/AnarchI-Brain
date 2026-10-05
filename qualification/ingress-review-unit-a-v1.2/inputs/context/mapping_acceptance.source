@@ -1,0 +1,91 @@
+{
+  "adoption_unit": {
+    "bytes": 11651,
+    "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\CORTEX-FILAMENT-MAPPING-DRAFT.md",
+    "sha256": "61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4"
+  },
+  "decision": {
+    "acceptance_response_exact": "approved",
+    "actor": "Alexander Gudde",
+    "actor_identity_evidence": "Direct user reply in the ongoing Alexander Gudde session under the accepted forward procedure; no independent legal authentication or runtime issuer enrollment claimed.",
+    "decision_disposition": "ACCEPT_EXACT_MAPPING_V1_3",
+    "effectiveness_rule": "Prospective only, no earlier than verified external retention; publication observation is a separate append-only receipt.",
+    "exact_event_at_utc": null,
+    "exact_event_timestamp_verified": false,
+    "observed_at_utc": "2026-10-04T20:50:57Z",
+    "pending_question_context": "Do you accept Mapping v1.3 at C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\CORTEX-FILAMENT-MAPPING-DRAFT.md, SHA-256 61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4, prospectively under the accepted forward procedure, solely governing the Epistemaddy-filament to Brain-ingress relationship definition against accepted Baseline v1.2? This grants no transport activation, authenticated submission permission, visibility grant, S0/S1/S2 authority, canonical admission, deployment approval or production readiness.",
+    "question_custody_limit": "Question text transcribed from the supplied continuation context; its original tool-event identifier and exact original byte serialization are not independently available in this recording turn. The immediately preceding mapping-specific explanation and option make the direct approval referent unambiguous.",
+    "referent_context": "The pending option is \u201cAccept the exact Mapping v1.3.\u201d The preceding explanation identifies mapping v1.3 at the exact local path, defines noncanonical proposals, byte/provenance/identity/scope preservation and full Brain qualification/adjudication, and distinguishes contract acceptance from runtime wiring and deployment.",
+    "replied_to_option_exact": "Accept the exact Mapping v1.3",
+    "source_surface": "direct user reply in this Codex conversation",
+    "thread_id": "01a102bd-7c86-77c2-9b3e-b99133e7f8f2"
+  },
+  "excluded_effects": [
+    "runtime transport activation",
+    "authenticated submission permission",
+    "visibility grants",
+    "S0/S1/S2 authority",
+    "operative issuer/verifier/root enrollment",
+    "canonical admission",
+    "historical closure",
+    "numbered gate closure",
+    "machine-amendment adoption",
+    "staging clearance",
+    "deployment approval",
+    "production readiness"
+  ],
+  "external_retention_required_before_operative_claim": true,
+  "immutable_storage_claim": false,
+  "operative": false,
+  "predecessors": {
+    "accepted_procedure": {
+      "bytes": 6385,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-reconciliation-procedure-accepted-20261004T062855Z\\accepted-procedure.md",
+      "sha256": "3f6f9393be17bcd448fdebc1e65f4195b700036cdb200d5f435fd90f6f558992"
+    },
+    "baseline_acceptance": {
+      "bytes": 7551,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-accepted-20261004T195646Z\\acceptance.json",
+      "sha256": "10bd8c050b4a39553a553bdad868f14a4f680709cb4c2b9669d01084ab3fd2bc"
+    },
+    "baseline_catalog": {
+      "bytes": 43287,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-proposal-v1.2\\proposal-inventory.json",
+      "sha256": "421b5d5bab28a32afe557e17970a14beb75a99eddc9f536a75bb1bcda9d26eb3"
+    },
+    "baseline_effective_not_before_utc": "2026-10-04T20:00:46Z",
+    "baseline_external_retention": {
+      "bytes": 5807,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-baseline-accepted-20261004T195646Z\\external-retention-receipt.json",
+      "sha256": "8aa2d5af0c3f46d0fba46e784d86d459d104954467552a9dad0a6b8849da8742"
+    },
+    "procedure_acceptance": {
+      "bytes": 2151,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\forward-reconciliation-procedure-accepted-20261004T062855Z\\acceptance.json",
+      "sha256": "e813b8242f84fc0b6c6bb4cbf08ee8d0794c703f512c8bb8ad18d0f8aa42eac0"
+    }
+  },
+  "preservation": "Original draft header, historical unadopted review and qualification reports remain unchanged. This new decision and separate retention receipt establish prospective status without rewriting historical evidence.",
+  "qualification_references": [
+    {
+      "bytes": 3571,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\qualification_receipt-v13.json",
+      "sha256": "eed0653c1dec9e8a6c16a6220941c417d35dae5d67e89826b0f0610e411c8978"
+    }
+  ],
+  "review_references": [
+    {
+      "bytes": 1208,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\LYRA-SOURCE-DISPOSITION-v13.json",
+      "sha256": "6b9eac7786399e261c0b152da3728578648398654749234e343dbd19b409e059"
+    },
+    {
+      "bytes": 78430,
+      "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\lyra-v13-source-review.json",
+      "sha256": "f5ea1aff2b714b52396574254600eab38e014a817e0373a68a35b4770231431c"
+    }
+  ],
+  "schema": "FORWARD-MAPPING-HUMAN-ACCEPTANCE-RECORD-1",
+  "scope": "Prospective Epistemaddy-filament to Brain-ingress relationship definition only, under accepted Forward Baseline v1.2. Only the exact mapping Markdown contract is adopted; checker code, fixtures, tests and execution reports are supporting evidence, not adopted runtime machinery.",
+  "status": "HUMAN_ACCEPTANCE_RECORDED_EXTERNAL_RETENTION_PENDING"
+}
