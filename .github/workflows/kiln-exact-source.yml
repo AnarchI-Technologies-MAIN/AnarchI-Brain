@@ -99,7 +99,7 @@ jobs:
     name: Kiln bounded campaign
     needs: authorize
     if: needs.authorize.result == 'success'
-    uses: AnarchI-Technologies-MAIN/kiln/.github/workflows/kiln-exact-source.yml@f828610566cfca426b31dd9cbf5a9aba63224ddb
+    uses: AnarchI-Technologies-MAIN/kiln/.github/workflows/kiln-exact-source.yml@7ae023a380e406731bdcadafe133c7db207f156e
     with:
       source_repository: ${{ needs.authorize.outputs.source_repository }}
       source_head_sha: ${{ needs.authorize.outputs.source_head_sha }}
@@ -137,4 +137,26 @@ jobs:
           TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          python -c 'import json,os,urllib.request; repo="AnarchI-Technologies-MAIN/AnarchI-Brain"; req=urllib.request.Request(f"https://api.github.com/repos/{repo}/pulls/{os.environ[\"PR_NUMBER\"]}",headers={"Authorization":f"Bearer {os.environ[\"TOKEN\"]}","Accept":"application/vnd.github+json"}); pr=json.load(urllib.request.urlopen(req,timeout=20)); assert pr.get("state")=="open" and pr.get("base",{}).get("sha")==os.environ["EXPECTED_BASE"], "PR/base changed during Kiln campaign"; assert pr.get("head",{}).get("sha")==os.environ["EXPECTED_HEAD"], "PR head changed during Kiln campaign"'
+          python - <<'PY'
+          import json
+          import os
+          import urllib.request
+          repo = "AnarchI-Technologies-MAIN/AnarchI-Brain"
+          number = os.environ["PR_NUMBER"]
+          token = os.environ["TOKEN"]
+          request = urllib.request.Request(
+              f"https://api.github.com/repos/{repo}/pulls/{number}",
+              headers={
+                  "Authorization": f"Bearer {token}",
+                  "Accept": "application/vnd.github+json",
+              },
+          )
+          with urllib.request.urlopen(request, timeout=20) as response:
+              pr = json.load(response)
+          if pr.get("state") != "open":
+              raise SystemExit("PR closed during Kiln campaign")
+          if pr.get("base", {}).get("sha") != os.environ["EXPECTED_BASE"]:
+              raise SystemExit("PR/base changed during Kiln campaign")
+          if pr.get("head", {}).get("sha") != os.environ["EXPECTED_HEAD"]:
+              raise SystemExit("PR head changed during Kiln campaign")
+          PY
