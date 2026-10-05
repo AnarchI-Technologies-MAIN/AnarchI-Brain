@@ -1,0 +1,15 @@
+{
+  "acceptance_record_sha256": "810fd63b517c513c9dfead469368d5d01938daaac66b35826fb6fb68cce5f5ee",
+  "acceptance_record_unchanged": true,
+  "acceptance_response_exact": "approved",
+  "immediately_preceding_option_exact": "The pending option is **\u201cAccept the exact Mapping v1.3.\u201d**.",
+  "options_exact": [
+    "Accept the exact Mapping v1.3",
+    "Hold for further review"
+  ],
+  "original_tool_event_id": null,
+  "original_tool_wrapper_and_event_timestamp_verified": false,
+  "question_text_exact_as_supplied_from_current_history": "Do you accept Mapping v1.3 at C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\CORTEX-FILAMENT-MAPPING-DRAFT.md, SHA-256 61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4, prospectively under the accepted forward procedure, solely as the governing Epistemaddy-filament \u2192 Brain-ingress relationship definition against accepted Forward Baseline v1.2? This separate decision activates no transport, authenticates no producer, grants no submission/visibility or S0/S1/S2 authority, and authorizes no canonical admission, deployment or production-readiness claim.",
+  "schema": "MAPPING-QUESTION-CONTEXT-SUPPLEMENT-1",
+  "source": "Parent agent supplied exact question text from current provided history after acceptance record was serialized. This supplement supersedes the paraphrased pending_question_context for question-text fidelity only; it does not change the accepted subject, scope, decision or effective time."
+}

@@ -1,0 +1,282 @@
+{
+  "image": "sha256:44139036372a7d324887594267fb91391ef50fbcf00b549e609efc64d871e47c",
+  "production_ready": false,
+  "results": [
+    {
+      "command": [
+        "docker",
+        "run",
+        "--rm",
+        "--read-only",
+        "--network",
+        "none",
+        "--cap-drop",
+        "ALL",
+        "--security-opt",
+        "no-new-privileges:true",
+        "--pids-limit",
+        "32",
+        "--cpus",
+        "1",
+        "--memory",
+        "64m",
+        "--memory-swap",
+        "64m",
+        "--tmpfs",
+        "/tmp:rw,noexec,nosuid,size=16m,mode=1777",
+        "--mount",
+        "type=bind,source=C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004,target=/source,readonly",
+        "sha256:44139036372a7d324887594267fb91391ef50fbcf00b549e609efc64d871e47c",
+        "python3",
+        "-I",
+        "-B",
+        "-c",
+        "import pathlib,shutil,unittest; p=pathlib.Path('/tmp/mapping'); p.mkdir(); [shutil.copy2(x,p/x.name) for x in pathlib.Path('/source').glob('*.py')]; shutil.copy2('/source/CORTEX-FILAMENT-MAPPING-DRAFT.md',p/'CORTEX-FILAMENT-MAPPING-DRAFT.md'); shutil.copy2('/source/source-register.json',p/'source-register.json'); shutil.copytree('/source/inputs',p/'inputs'); result=unittest.TextTestRunner(verbosity=2).run(unittest.defaultTestLoader.discover(str(p),pattern='test_mapping*.py')); raise SystemExit(not result.wasSuccessful())"
+      ],
+      "elapsed_seconds": 3.453,
+      "exit_code": 0,
+      "finished_at_utc": "2026-10-04T20:06:59.040657+00:00",
+      "kind": "focused",
+      "log": "focused-O0.log",
+      "log_sha256": "52c9f49085ec2aaffbc7124b702be35b0e06161be8e47e30a17d61df6d23dde0",
+      "optimization": 0,
+      "platform": "ubuntu",
+      "started_at_utc": "2026-10-04T20:06:55.593613+00:00"
+    },
+    {
+      "baseline_context": {
+        "acceptance_sha256": "10bd8c050b4a39553a553bdad868f14a4f680709cb4c2b9669d01084ab3fd2bc",
+        "catalog_sha256": "421b5d5bab28a32afe557e17970a14beb75a99eddc9f536a75bb1bcda9d26eb3",
+        "commit": "7a23a5edba4f814991db604f8f85e02df1adc1ad",
+        "effective_not_before_utc": "2026-10-04T20:00:46Z",
+        "external_retention_sha256": "8aa2d5af0c3f46d0fba46e784d86d459d104954467552a9dad0a6b8849da8742",
+        "repository": "https://github.com/AnarchI-Technologies-MAIN/AnarchI-Brain",
+        "scope": "FORWARD_INTERPRETIVE_FOUNDATION_ONLY_NOT_RUNTIME_AUTHORITY"
+      },
+      "canonical_admissions": 0,
+      "checked_subjects": 2736,
+      "command": [
+        "docker",
+        "run",
+        "--rm",
+        "--read-only",
+        "--network",
+        "none",
+        "--cap-drop",
+        "ALL",
+        "--security-opt",
+        "no-new-privileges:true",
+        "--pids-limit",
+        "32",
+        "--cpus",
+        "1",
+        "--memory",
+        "512m",
+        "--memory-swap",
+        "512m",
+        "--mount",
+        "type=bind,source=C:\\Users\\alexg\\AnarchI-Brain-Development,target=/development,readonly",
+        "--mount",
+        "type=bind,source=C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\ubuntu-verification-r2-20261004T2007,target=/output",
+        "sha256:44139036372a7d324887594267fb91391ef50fbcf00b549e609efc64d871e47c",
+        "python3",
+        "-I",
+        "-B",
+        "/development/cortex-filament-mapping-v1.3-20261004/qualify_mapping_reference.py",
+        "--mapping-sha256",
+        "7561f2222762fca9904e4f1e8494d21b8b5b99dfc87d48d572922d52db5ac162",
+        "--mapping-contract-sha256",
+        "61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4",
+        "--source-register-sha256",
+        "796b0e8277d19f439a3ed11a9b18096bc60aafdf44f159f5508925527687f80e",
+        "--baseline-acceptance-sha256",
+        "10bd8c050b4a39553a553bdad868f14a4f680709cb4c2b9669d01084ab3fd2bc",
+        "--baseline-retention-sha256",
+        "8aa2d5af0c3f46d0fba46e784d86d459d104954467552a9dad0a6b8849da8742",
+        "--out",
+        "/output/corpus-O0.json"
+      ],
+      "elapsed_seconds": 31.672,
+      "exit_code": 0,
+      "finished_at_utc": "2026-10-04T20:07:30.722405+00:00",
+      "kind": "corpus",
+      "log": "corpus-O0.log",
+      "log_sha256": "17b636371f059a6121a1e3656d1c2cb3d4e331b9995abb3d3a4e9cd223936914",
+      "optimization": 0,
+      "platform": "ubuntu",
+      "receipt": "corpus-O0.json",
+      "receipt_sha256": "f082e8dfdff4af7cccb31b0e572ccea8e7acfb59f753a90f15d9ded5dd38512c",
+      "runtime_crossings": 0,
+      "started_at_utc": "2026-10-04T20:06:59.041585+00:00"
+    },
+    {
+      "command": [
+        "docker",
+        "run",
+        "--rm",
+        "--read-only",
+        "--network",
+        "none",
+        "--cap-drop",
+        "ALL",
+        "--security-opt",
+        "no-new-privileges:true",
+        "--pids-limit",
+        "32",
+        "--cpus",
+        "1",
+        "--memory",
+        "64m",
+        "--memory-swap",
+        "64m",
+        "--tmpfs",
+        "/tmp:rw,noexec,nosuid,size=16m,mode=1777",
+        "--mount",
+        "type=bind,source=C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004,target=/source,readonly",
+        "sha256:44139036372a7d324887594267fb91391ef50fbcf00b549e609efc64d871e47c",
+        "python3",
+        "-I",
+        "-B",
+        "-O",
+        "-c",
+        "import pathlib,shutil,unittest; p=pathlib.Path('/tmp/mapping'); p.mkdir(); [shutil.copy2(x,p/x.name) for x in pathlib.Path('/source').glob('*.py')]; shutil.copy2('/source/CORTEX-FILAMENT-MAPPING-DRAFT.md',p/'CORTEX-FILAMENT-MAPPING-DRAFT.md'); shutil.copy2('/source/source-register.json',p/'source-register.json'); shutil.copytree('/source/inputs',p/'inputs'); result=unittest.TextTestRunner(verbosity=2).run(unittest.defaultTestLoader.discover(str(p),pattern='test_mapping*.py')); raise SystemExit(not result.wasSuccessful())"
+      ],
+      "elapsed_seconds": 4.25,
+      "exit_code": 0,
+      "finished_at_utc": "2026-10-04T20:07:34.983218+00:00",
+      "kind": "focused",
+      "log": "focused-O1.log",
+      "log_sha256": "9917cdacec51d49e694c9d6e9387cd7b5969875b7f7a723d483f029e6af2bd6c",
+      "optimization": 1,
+      "platform": "ubuntu",
+      "started_at_utc": "2026-10-04T20:07:30.738444+00:00"
+    },
+    {
+      "baseline_context": {
+        "acceptance_sha256": "10bd8c050b4a39553a553bdad868f14a4f680709cb4c2b9669d01084ab3fd2bc",
+        "catalog_sha256": "421b5d5bab28a32afe557e17970a14beb75a99eddc9f536a75bb1bcda9d26eb3",
+        "commit": "7a23a5edba4f814991db604f8f85e02df1adc1ad",
+        "effective_not_before_utc": "2026-10-04T20:00:46Z",
+        "external_retention_sha256": "8aa2d5af0c3f46d0fba46e784d86d459d104954467552a9dad0a6b8849da8742",
+        "repository": "https://github.com/AnarchI-Technologies-MAIN/AnarchI-Brain",
+        "scope": "FORWARD_INTERPRETIVE_FOUNDATION_ONLY_NOT_RUNTIME_AUTHORITY"
+      },
+      "canonical_admissions": 0,
+      "checked_subjects": 2736,
+      "command": [
+        "docker",
+        "run",
+        "--rm",
+        "--read-only",
+        "--network",
+        "none",
+        "--cap-drop",
+        "ALL",
+        "--security-opt",
+        "no-new-privileges:true",
+        "--pids-limit",
+        "32",
+        "--cpus",
+        "1",
+        "--memory",
+        "512m",
+        "--memory-swap",
+        "512m",
+        "--mount",
+        "type=bind,source=C:\\Users\\alexg\\AnarchI-Brain-Development,target=/development,readonly",
+        "--mount",
+        "type=bind,source=C:\\Users\\alexg\\AnarchI-Brain-Development\\cortex-filament-mapping-v1.3-20261004\\ubuntu-verification-r2-20261004T2007,target=/output",
+        "sha256:44139036372a7d324887594267fb91391ef50fbcf00b549e609efc64d871e47c",
+        "python3",
+        "-I",
+        "-B",
+        "-O",
+        "/development/cortex-filament-mapping-v1.3-20261004/qualify_mapping_reference.py",
+        "--mapping-sha256",
+        "7561f2222762fca9904e4f1e8494d21b8b5b99dfc87d48d572922d52db5ac162",
+        "--mapping-contract-sha256",
+        "61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4",
+        "--source-register-sha256",
+        "796b0e8277d19f439a3ed11a9b18096bc60aafdf44f159f5508925527687f80e",
+        "--baseline-acceptance-sha256",
+        "10bd8c050b4a39553a553bdad868f14a4f680709cb4c2b9669d01084ab3fd2bc",
+        "--baseline-retention-sha256",
+        "8aa2d5af0c3f46d0fba46e784d86d459d104954467552a9dad0a6b8849da8742",
+        "--out",
+        "/output/corpus-O1.json"
+      ],
+      "elapsed_seconds": 31.828,
+      "exit_code": 0,
+      "finished_at_utc": "2026-10-04T20:08:06.816176+00:00",
+      "kind": "corpus",
+      "log": "corpus-O1.log",
+      "log_sha256": "17b636371f059a6121a1e3656d1c2cb3d4e331b9995abb3d3a4e9cd223936914",
+      "optimization": 1,
+      "platform": "ubuntu",
+      "receipt": "corpus-O1.json",
+      "receipt_sha256": "f082e8dfdff4af7cccb31b0e572ccea8e7acfb59f753a90f15d9ded5dd38512c",
+      "runtime_crossings": 0,
+      "started_at_utc": "2026-10-04T20:07:34.983218+00:00"
+    }
+  ],
+  "scope": "UBUNTU_OFFLINE_MAPPING_REFERENCE_VERIFICATION",
+  "source_bytes_unchanged": true,
+  "source_files": {
+    "CORTEX-FILAMENT-MAPPING-DRAFT.md": {
+      "bytes": 11651,
+      "sha256": "61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4"
+    },
+    "WINDOWS-QUALIFICATION-RESULTS-r2.json": {
+      "bytes": 5085,
+      "sha256": "8d824fbfcf4de56dbfcc8f2d919c28669b7abc8644e8209c513e7ac9f91c1dc3"
+    },
+    "WINDOWS-QUALIFICATION-RESULTS.json": {
+      "bytes": 4787,
+      "sha256": "3b9428a9af96cb3bd6a31b8abed9b2176067d7651bd03b9059cd0840224523b7"
+    },
+    "corpus-O0.json": {
+      "bytes": 1406059,
+      "sha256": "2fb451302f0a9c083016aa8d5766cb0d1fbb9ac9c8e6eae6b2ba7a859fcefc7c"
+    },
+    "corpus-O1.json": {
+      "bytes": 1406059,
+      "sha256": "2fb451302f0a9c083016aa8d5766cb0d1fbb9ac9c8e6eae6b2ba7a859fcefc7c"
+    },
+    "corpus-r2-O0.json": {
+      "bytes": 1406059,
+      "sha256": "27a3ca20a147b0042ce967e964652cdd315adf999ebb827179d0cbd2758b0a58"
+    },
+    "corpus-r2-O1.json": {
+      "bytes": 1406059,
+      "sha256": "27a3ca20a147b0042ce967e964652cdd315adf999ebb827179d0cbd2758b0a58"
+    },
+    "mapping_reference.py": {
+      "bytes": 5952,
+      "sha256": "7561f2222762fca9904e4f1e8494d21b8b5b99dfc87d48d572922d52db5ac162"
+    },
+    "qualify_mapping_reference.py": {
+      "bytes": 9618,
+      "sha256": "dca04c960875ba11f29ab2c8ee8b6c823cfb1ca93153c3ca1b41a42df15372e5"
+    },
+    "source-register.json": {
+      "bytes": 3619,
+      "sha256": "796b0e8277d19f439a3ed11a9b18096bc60aafdf44f159f5508925527687f80e"
+    },
+    "test_mapping_baseline_context.py": {
+      "bytes": 5618,
+      "sha256": "d9409b716d19bc6d45ec855044b8b078255df2b3d14c83908b03e76d15f25424"
+    },
+    "test_mapping_custody.py": {
+      "bytes": 10042,
+      "sha256": "97df7cf7f1d17a6def7907e554250327a75eb5ca36e564a16e6c132c46cf8eab"
+    },
+    "test_mapping_qualification.py": {
+      "bytes": 1844,
+      "sha256": "9a88c88f003d8a4f774343a3089635c9c99718cb51ae5423830b1b9391700187"
+    },
+    "test_mapping_reference.py": {
+      "bytes": 5934,
+      "sha256": "f54a92e796fe3c3331478303ac81184e5239593f06bb3d9b04c5672d7de0ee65"
+    }
+  }
+}
