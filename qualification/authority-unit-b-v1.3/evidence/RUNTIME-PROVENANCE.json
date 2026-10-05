@@ -1,0 +1,1191 @@
+{
+  "baseline_test_argv": [
+    "C:\\Users\\alexg\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-I",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    ".",
+    "-v"
+  ],
+  "bounds": {
+    "actual_mutations": 137,
+    "maximum_passes": 512,
+    "mutation_target": "authority_reference.py",
+    "operators": [
+      "boolean replacement",
+      "equality inversion",
+      "not removal"
+    ],
+    "until": "stable",
+    "workers": 4
+  },
+  "capture_kind": "POST_CAMPAIGN_READ_ONLY_CURRENT_RUNTIME_IDENTITY_NOT_REEXECUTION",
+  "coal_contract": {
+    "bytes": 1652,
+    "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\unit-b-kiln-specimen-v1.3-20261004\\kiln.coal.json",
+    "sha256": "37dfd1b68b2bec94112866568d1b0f3c6c7fdd55f312f91309b65745c408aac9"
+  },
+  "command_argv": [
+    "C:\\Users\\alexg\\AnarchI-Brain-Development\\kiln-runtime-0.1.4-f5fe466\\Scripts\\kiln.exe",
+    "cycle",
+    "C:\\Users\\alexg\\AnarchI-Brain-Development\\unit-b-kiln-specimen-v1.3-20261004",
+    "--adapter",
+    "auto",
+    "--entry",
+    "tests",
+    "--destructive",
+    "--max-passes",
+    "512",
+    "--workers",
+    "4",
+    "--until",
+    "stable",
+    "--session-root",
+    "C:\\Users\\alexg\\AnarchI-Brain-Development\\unit-b-kiln-evidence-v1.3-20261004",
+    "--json"
+  ],
+  "cycle_id": "KILN-CYCLE-646D370236599DE79054",
+  "distribution_record": {
+    "bytes": 20459,
+    "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\kiln-runtime-0.1.4-f5fe466\\Lib\\site-packages\\anarchi_kiln-0.1.4.dist-info\\RECORD",
+    "sha256": "d7e267acb0ce9d7c1d2aa72ad31cde5079eb5a3f8603595c503d4cf5fbed30e0"
+  },
+  "durable_consumption": false,
+  "effect_permitted": false,
+  "installed_hashed_record_entries": [
+    {
+      "bytes": 108431,
+      "record_matches": true,
+      "relative_path": "../../Scripts/kiln.exe",
+      "sha256": "4fd75f97879a7f40224fdf868ec4a0e8a08d74f597db4745c23031f7a9a9f547"
+    },
+    {
+      "bytes": 3683,
+      "record_matches": true,
+      "relative_path": "../../share/anarchi-kiln/schemas/kiln.coal-contract.v1.schema.json",
+      "sha256": "ad3690e269acd8303e96913dc82f436f94630d72e1d83f92c803e2d4d0d7df13"
+    },
+    {
+      "bytes": 799,
+      "record_matches": true,
+      "relative_path": "../../share/anarchi-kiln/schemas/kiln.coal-fixture.v1.schema.json",
+      "sha256": "d11356460fec303fe7622fc7b15ccc21bbc6c6a2c168307501d0309ddc3e612a"
+    },
+    {
+      "bytes": 1395,
+      "record_matches": true,
+      "relative_path": "../../share/anarchi-kiln/schemas/kiln.coal-pack.v1.schema.json",
+      "sha256": "24937c0227d6e3ed37fd820fd222e27eb739f0d10ceb930d3fb99cf398e9e31f"
+    },
+    {
+      "bytes": 895,
+      "record_matches": true,
+      "relative_path": "../../share/anarchi-kiln/schemas/kiln.coal-venv.v1.schema.json",
+      "sha256": "cae010d743f36c04882e271dcee39c313b46b252237c0fb59ff240cd79d3bf5e"
+    },
+    {
+      "bytes": 4,
+      "record_matches": true,
+      "relative_path": "anarchi_kiln-0.1.4.dist-info/INSTALLER",
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "bytes": 10729,
+      "record_matches": true,
+      "relative_path": "anarchi_kiln-0.1.4.dist-info/METADATA",
+      "sha256": "7913b2879472aec789a07897f7c0673637e52f584eab64aa4a186204c0bd3959"
+    },
+    {
+      "bytes": 0,
+      "record_matches": true,
+      "relative_path": "anarchi_kiln-0.1.4.dist-info/REQUESTED",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 91,
+      "record_matches": true,
+      "relative_path": "anarchi_kiln-0.1.4.dist-info/WHEEL",
+      "sha256": "61532836a2b3111b7ec23519c09df7c41180c27165fb872a6d8913b566b88ad1"
+    },
+    {
+      "bytes": 312,
+      "record_matches": true,
+      "relative_path": "anarchi_kiln-0.1.4.dist-info/direct_url.json",
+      "sha256": "24da8809c7ad9fc720869ead48c0df9ce8aee22959ff243c2d96fe0849fbb43f"
+    },
+    {
+      "bytes": 41,
+      "record_matches": true,
+      "relative_path": "anarchi_kiln-0.1.4.dist-info/entry_points.txt",
+      "sha256": "ef3f66933dcfcfcaa0043bc5c0b59a1716c9e6eeb7beb317c8a6cb03cdcf747c"
+    },
+    {
+      "bytes": 18,
+      "record_matches": true,
+      "relative_path": "anarchi_kiln-0.1.4.dist-info/top_level.txt",
+      "sha256": "4820c031baf09875ceb0f09dd31c7d8c644238c616f407c4905fdb9c59e91d62"
+    },
+    {
+      "bytes": 248,
+      "record_matches": true,
+      "relative_path": "coal_house/__init__.py",
+      "sha256": "954265eb602d99df3b39c7bbf302038f071b9f5675ef03b57b384d71afdf7026"
+    },
+    {
+      "bytes": 1839,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/CAPABILITY-MATRIX.md",
+      "sha256": "0a01c2605480394c2fa8722c165f5f6bdd303646ea71363b0fc362fe9ca6eb05"
+    },
+    {
+      "bytes": 561,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/c-cmake/capability.json",
+      "sha256": "2832b9ebedd66c5b8c19f9362dbcbdf120828e3feaef4d68995e09e56884779c"
+    },
+    {
+      "bytes": 833,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/c-cmake/qualification.json",
+      "sha256": "8449763b779af6c1f53597fb486fd67e9c4a857b3151fdfc7bdca058edab0db9"
+    },
+    {
+      "bytes": 11477,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/capability-matrix.json",
+      "sha256": "c2b58fd5f9073ac7c99212f4927af196bc0f63df11eadf3c1d35bf0bb2b15db1"
+    },
+    {
+      "bytes": 565,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/cpp-cmake/capability.json",
+      "sha256": "aaf7bfae6a5a69406dfef96c259b885bccd4d6e087f4aa21f4cdbd2e9574963e"
+    },
+    {
+      "bytes": 835,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/cpp-cmake/qualification.json",
+      "sha256": "152463e60a93dd6050759094c9b14d5b694f2ed25f75f0a4fc2d121fd341c30d"
+    },
+    {
+      "bytes": 551,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/dart/capability.json",
+      "sha256": "e161b5bd07f39fd4f8099e77a68f0c9895cf7debee0f5753b6c3cefb8ac4e586"
+    },
+    {
+      "bytes": 822,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/dart/qualification.json",
+      "sha256": "5783a515bd54be9071e3f3ca3445d141943215bf6733f044c9a539dd17f7c1e8"
+    },
+    {
+      "bytes": 560,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/dotnet/capability.json",
+      "sha256": "fcc709f9c51ea8c250c4d59adf9c745456c45ba6053eb5e7a195419554e74d1f"
+    },
+    {
+      "bytes": 826,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/dotnet/qualification.json",
+      "sha256": "1cdf06be6df25c5c2cf85df95b1846d97c5dcec0180ad7d6a70b7dd594ad56e4"
+    },
+    {
+      "bytes": 550,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/elixir-mix/capability.json",
+      "sha256": "55aaa78e847c1f61ecc4179cdd3e127485c33b53e16d9de633219f0a82ce7ad0"
+    },
+    {
+      "bytes": 827,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/elixir-mix/qualification.json",
+      "sha256": "fab0cb6038950fca53b954080246c4ff17ca4db435dd0e16c1aaee2c48f758b8"
+    },
+    {
+      "bytes": 10846,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/evidence-manifest.json",
+      "sha256": "e4b318e08e2b2b5a74778c53adca79c8b3fe063268b9a525de43b1ad44ede0fc"
+    },
+    {
+      "bytes": 545,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/go/capability.json",
+      "sha256": "70c69b63e389831647476862e6f8c5162bf0a99e48267c6228fd35c178a80b49"
+    },
+    {
+      "bytes": 818,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/go/qualification.json",
+      "sha256": "95e793bff373cdbe6fcd6a0e761f68d7043c36189379fcc5b94a137f1799a417"
+    },
+    {
+      "bytes": 565,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/haskell-cabal/capability.json",
+      "sha256": "2ee42de2835bd24834c562ee474020d2efdeda2a327bf8b8b20b97afad97c5ef"
+    },
+    {
+      "bytes": 832,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/haskell-cabal/qualification.json",
+      "sha256": "c0e5aca5d900eb940af4246f7ed01958f89bfddbb2be608600c52454d834a496"
+    },
+    {
+      "bytes": 579,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/java-maven/capability.json",
+      "sha256": "1f8ae83ba6efdde1b783276ca0cbc93331420067141c0c29156352244f471fbc"
+    },
+    {
+      "bytes": 827,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/java-maven/qualification.json",
+      "sha256": "0838b5b91bad2a4087a579a196e6c4f2b5c037709f29aeed2cf21898c5fdec9b"
+    },
+    {
+      "bytes": 569,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/kotlin-gradle/capability.json",
+      "sha256": "83a55fed9e6d60f44c913ae67debe4055c10c9a31423336199d8954378a6e6c9"
+    },
+    {
+      "bytes": 833,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/kotlin-gradle/qualification.json",
+      "sha256": "92845c3ffbef449bfbfdee450ce581957b49766ccedc0aa76dbd45797f5eedae"
+    },
+    {
+      "bytes": 554,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/lua/capability.json",
+      "sha256": "b03e082d6f37ce53c79fde25c359f684c73774b53098100ebb40baa89c1fd3d0"
+    },
+    {
+      "bytes": 820,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/lua/qualification.json",
+      "sha256": "11f74b210308f5ee397cc5438a97a6059dd507d1c3654d119b9bc37135dabf81"
+    },
+    {
+      "bytes": 576,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/php-composer/capability.json",
+      "sha256": "60cb94c327058918ddd514a4d06daa2abbc38d815235b3ee7c6f8c8f40ab03a4"
+    },
+    {
+      "bytes": 839,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/php-composer/qualification.json",
+      "sha256": "0f53818b2edd0ef49ff9d3b83143c869be147935997021d4a8f3e837617a4d18"
+    },
+    {
+      "bytes": 618,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/python-unittest/capability.json",
+      "sha256": "66ecb4fa5937914ffc83f84949bcac8c46fba00dc6474db7f5c2e27f2358c9c5"
+    },
+    {
+      "bytes": 1079,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/python-unittest/mutation-trials.csv",
+      "sha256": "5ec49ada1d38cf7ef3582c5fc053e172bcdd9e4772071a5e51bf50e41158d48e"
+    },
+    {
+      "bytes": 4864,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/python-unittest/production-mutation-trials.csv",
+      "sha256": "d7003de657494f5c8c9be0a292e9827cfded940a58609fde6f209d3df58fe35a"
+    },
+    {
+      "bytes": 35002,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/python-unittest/production-proof-metadata.json",
+      "sha256": "c8beb7d157a1b84faa5a2758a45f4bb0bacabe689bf7ea7c4952d128c6b14fe4"
+    },
+    {
+      "bytes": 3824,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/python-unittest/proof-metadata.json",
+      "sha256": "053ff918348ce8ce5837295051727c0370edad9d1efaa7ba3ae0d5d6bd27c25e"
+    },
+    {
+      "bytes": 1058,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/python-unittest/qualification.json",
+      "sha256": "503acaced433277c15405106abf93ee7e198b683d32fc3cd92cbfab98cddb848"
+    },
+    {
+      "bytes": 545,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/r/capability.json",
+      "sha256": "19422ee4fe963ebfba687d7aef30843d7d56e1b353dd9f79a966dd603e8d7021"
+    },
+    {
+      "bytes": 822,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/r/qualification.json",
+      "sha256": "2df16a44c36a3212da4a81694e5c3a3d442ec07ea74f7bdf486697a780797f18"
+    },
+    {
+      "bytes": 573,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/ruby-bundler/capability.json",
+      "sha256": "801884afed2bc9570d6705059c12501e0898ec575f142975545e3c302d104d58"
+    },
+    {
+      "bytes": 838,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/ruby-bundler/qualification.json",
+      "sha256": "a86e3834b01159d540091c284e57ea21675e3dbd576524335e58ebe145c89a4d"
+    },
+    {
+      "bytes": 610,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/rust-cargo/capability.json",
+      "sha256": "8bdc57a51628920b28ca3d9f8d7dfc93180f263ced5838a60e05aac72621926b"
+    },
+    {
+      "bytes": 988,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/rust-cargo/mutation-trials.csv",
+      "sha256": "bf587183ace369a4085990abf6dfc1f52d9e7c3e4c49733f94ee006322881abf"
+    },
+    {
+      "bytes": 832,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/rust-cargo/production-mutation-trials.csv",
+      "sha256": "b1cab617f9ed15d00aa93ccd15c65fc27acdc6c279a6d7d163a592bc63bddbc8"
+    },
+    {
+      "bytes": 702,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/rust-cargo/production-proof-metadata.json",
+      "sha256": "2a1e94a73ae47562a56a27dba8c21d5dbe5f1d5b3ef942ca0c17f70ed3e55e4c"
+    },
+    {
+      "bytes": 3683,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/rust-cargo/proof-metadata.json",
+      "sha256": "662f8ea4577b0cb92517c5a77f3fe07254c547858a34ceb28cf441441d64de62"
+    },
+    {
+      "bytes": 1097,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/rust-cargo/qualification.json",
+      "sha256": "3f44c89a14dfe6f99f45c1a303711ea5b0ce91ba90ddfce8125be50e124927f7"
+    },
+    {
+      "bytes": 242,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/survivors-requiring-adjudication.json",
+      "sha256": "2d68a46100498b716d22d1607a8c90fbe839647e21a11f5e2f3b6ba83e6385a4"
+    },
+    {
+      "bytes": 575,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/swift-swiftpm/capability.json",
+      "sha256": "2da7a4198d97b2f5191bd7247851eb1401ee3690fba2b1db2bdea4437f7a8dfd"
+    },
+    {
+      "bytes": 832,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/swift-swiftpm/qualification.json",
+      "sha256": "b904fc346d55670b561a4d875db7eb83279b2807304426e5e36124b40236aeb1"
+    },
+    {
+      "bytes": 547,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/zig/capability.json",
+      "sha256": "219b786924451e6d1e13439b6a8ceb4c7ad3f3080f3753efe341724238040012"
+    },
+    {
+      "bytes": 820,
+      "record_matches": true,
+      "relative_path": "coal_house/evidence/zig/qualification.json",
+      "sha256": "a0d727535d7aca64ff223095efbfe644bb70efeb162542104f5d2e1b8fc89609"
+    },
+    {
+      "bytes": 971,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/c-cmake/fixture.json",
+      "sha256": "ff1aee18eef850dc22af4e272b5e9a6d9902c734b15b97f7c3daf2f21c517697"
+    },
+    {
+      "bytes": 1364,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/c-cmake/kiln.coal.json",
+      "sha256": "4a7ca2b4f0df3d42c82b6b43a1c10b556e0a4ac9df0f8d21a6ac9ea2bacb38b0"
+    },
+    {
+      "bytes": 399,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/c-cmake/pack.json",
+      "sha256": "2ab8b4c1c325d6a6e1b0d7740ca4a0317a1e28159da3385aadd27c19c15204d0"
+    },
+    {
+      "bytes": 1026,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/cpp-cmake/fixture.json",
+      "sha256": "c38f140d18d41d16eab948abb01c832bb4bdd2efab58ca33618091de24676e6f"
+    },
+    {
+      "bytes": 1420,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/cpp-cmake/kiln.coal.json",
+      "sha256": "c4847b691a72b50d4974aa8633a4220e7c6d888ada9cc59826a85e77cfb803c0"
+    },
+    {
+      "bytes": 401,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/cpp-cmake/pack.json",
+      "sha256": "430ca44ff04e29f7c1bce696714c92c5c437cd1af6e97a5a925a9114387fbb7d"
+    },
+    {
+      "bytes": 603,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/dart/fixture.json",
+      "sha256": "77050241eb8b7e2dcec23d635a1efc5deb9c13f42ca026cf35230fc07b6c384e"
+    },
+    {
+      "bytes": 1177,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/dart/kiln.coal.json",
+      "sha256": "560c75958e4579ebcb6b202f9804f93dff46244be7be6917182700cbbc6edeb1"
+    },
+    {
+      "bytes": 371,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/dart/pack.json",
+      "sha256": "49f9c3c15c7e5662691798e3de2010e16d3a14132a92c11d875a2c739981c62a"
+    },
+    {
+      "bytes": 1666,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/dotnet/fixture.json",
+      "sha256": "1fbb4436d1809b93736fd68cbb7908bdbb178a721bd98622cd7261ca78362853"
+    },
+    {
+      "bytes": 1603,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/dotnet/kiln.coal.json",
+      "sha256": "51f3492db72b236660a089a508cb8ff5fddadb2a4567f3f56bac54a61ea19ab7"
+    },
+    {
+      "bytes": 367,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/dotnet/pack.json",
+      "sha256": "cf5e92c96ef5c6286c619bf96a8aea240869f2eb9b4c46a16b696756217fda8f"
+    },
+    {
+      "bytes": 914,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/elixir-mix/fixture.json",
+      "sha256": "c804cb6bebdb539d5677d70ecaf2f0e393eb312080dead6d8d1309dea3459db9"
+    },
+    {
+      "bytes": 1249,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/elixir-mix/kiln.coal.json",
+      "sha256": "3d0f4c2362bae69a53a258669b237bc3d99484e672de2d5432f5bd35fd1fe4da"
+    },
+    {
+      "bytes": 359,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/elixir-mix/pack.json",
+      "sha256": "a8877056959250eee67061e7e7661a706c12613f41fb409c719e8e0574a180e8"
+    },
+    {
+      "bytes": 541,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/go/fixture.json",
+      "sha256": "28c847ab538070e4bba8cc76c1cb97e694f3cac12a5d2e802beed4af4eca3995"
+    },
+    {
+      "bytes": 1316,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/go/kiln.coal.json",
+      "sha256": "ff224cf8016b68ed7796632b3fbc6a7063aa09cb86494c90028350d64b32b488"
+    },
+    {
+      "bytes": 354,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/go/pack.json",
+      "sha256": "117593381ebb172ee424239438c5ed35ae2d2cb43dc3fe9bde56352a0dee2e8b"
+    },
+    {
+      "bytes": 1022,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/haskell-cabal/fixture.json",
+      "sha256": "9dec7144e9e9eab296e27ec99a72f00f1d69a5e36c073224772ea1763d7b961c"
+    },
+    {
+      "bytes": 1313,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/haskell-cabal/kiln.coal.json",
+      "sha256": "f4df8026eb1fb61cd416ec7010c62b445ec04e443b24b58456569e620d3dcee1"
+    },
+    {
+      "bytes": 394,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/haskell-cabal/pack.json",
+      "sha256": "58337b5de1c56a886a6a31ec7799cb660b876e93abd8de7d6f2e677d218d72e4"
+    },
+    {
+      "bytes": 1858,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/java-maven/fixture.json",
+      "sha256": "74fc40d4afc3ea3649e6829c75eb64b12b3aedc6579bc00930ba1a20a67da467"
+    },
+    {
+      "bytes": 1290,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/java-maven/kiln.coal.json",
+      "sha256": "f26d3c60894358aaaa02071104a5fd5f364c5e7643967b00ec7c87e598cabef5"
+    },
+    {
+      "bytes": 374,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/java-maven/pack.json",
+      "sha256": "a72311cdb2f5b87b143c540cc0790419cfdf82819df9eba7f59da26f2f582295"
+    },
+    {
+      "bytes": 1084,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/kotlin-gradle/fixture.json",
+      "sha256": "fcee4ff4c47b567060509e1298e32b007a37b2574883e86c1124f90f82498a66"
+    },
+    {
+      "bytes": 1231,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/kotlin-gradle/kiln.coal.json",
+      "sha256": "b9c930ce7ff497f9f15794451811d82565265ec53c6e6e1ba94b0db10a9f53dc"
+    },
+    {
+      "bytes": 398,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/kotlin-gradle/pack.json",
+      "sha256": "c9bb77a70e927ae935df7e680df3662e4eca22435449f9189f33209ca441a866"
+    },
+    {
+      "bytes": 525,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/lua/fixture.json",
+      "sha256": "32078d64264c271f1c02cab63feaff472b9a3d382b12dc4747c074c5c72a1360"
+    },
+    {
+      "bytes": 1120,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/lua/kiln.coal.json",
+      "sha256": "9d41f34322473a5d69fa9ebcb4a756143cf5796cdc4295380179afdcc782465a"
+    },
+    {
+      "bytes": 347,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/lua/pack.json",
+      "sha256": "bdcf4f875b4180f5eec02626efb02dfaf85c9d268a853fd77a9c72059b7f14a5"
+    },
+    {
+      "bytes": 725,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/php-composer/fixture.json",
+      "sha256": "87e8d2eef34213bec3581ff1a197a63eb8546178af3153f1603c1b71fe2c519a"
+    },
+    {
+      "bytes": 1334,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/php-composer/kiln.coal.json",
+      "sha256": "c16cccc4ebffc3e642d61fcb90d44f7244d66f4a4ec5b635d15e3c73a90b494d"
+    },
+    {
+      "bytes": 432,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/php-composer/pack.json",
+      "sha256": "c6a734a056a1e10fde8abc922297a395d0417baeef8b83f8c7f0a1d49aa60ec8"
+    },
+    {
+      "bytes": 691,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/python-unittest/fixture.json",
+      "sha256": "851d23055d8a2549003706c988426a4b82149b63d790b7b13d5fdffb211d9752"
+    },
+    {
+      "bytes": 1211,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/python-unittest/kiln.coal.json",
+      "sha256": "b9ef6627549f5b2b1b211883d29f899961189a378093c0b64cdb378087e0b512"
+    },
+    {
+      "bytes": 409,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/python-unittest/pack.json",
+      "sha256": "19f6c59b5f544123925985515751060794de0357994d88e42b906fbf137324d6"
+    },
+    {
+      "bytes": 705,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/r/fixture.json",
+      "sha256": "f797ec841ef4a5f72c9bed8e087acad5304b6f9fbd02c39395436219d27c4bfa"
+    },
+    {
+      "bytes": 1101,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/r/kiln.coal.json",
+      "sha256": "fa40be52e45d39d107ff64468d358761635505f8992718f5adafe4cbe089bf16"
+    },
+    {
+      "bytes": 364,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/r/pack.json",
+      "sha256": "e00cda72e55c85cd5580cdb4f74a6658668ca70c89896d68aaec1fab58e87fc7"
+    },
+    {
+      "bytes": 564,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/ruby-bundler/fixture.json",
+      "sha256": "6da19f831432936117bfbb3f0252f57335317f112ef6b9c588451864faf623b6"
+    },
+    {
+      "bytes": 1452,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/ruby-bundler/kiln.coal.json",
+      "sha256": "75e1eb3b0bcbfeb3f31d3850edae72956e574406d338091c184ae99c67a844f0"
+    },
+    {
+      "bytes": 421,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/ruby-bundler/pack.json",
+      "sha256": "a3a937c3597561dd40bc4f2cdc336a65c2891cff57c37fa35890166b496be44d"
+    },
+    {
+      "bytes": 758,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/rust-cargo/fixture.json",
+      "sha256": "cfe9521b35f48c32db2ec8f7f5b44c384e2856b4fc3e9d1c9f83394d03d8926a"
+    },
+    {
+      "bytes": 1485,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/rust-cargo/kiln.coal.json",
+      "sha256": "ef3c7678826718d855a5bca84c8c310048f003c14317051d0c81d664749784b0"
+    },
+    {
+      "bytes": 372,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/rust-cargo/pack.json",
+      "sha256": "630ea98ee883a4113dece6f610313f6307110ab8545d0c14f1ea7b2cfae1ecf2"
+    },
+    {
+      "bytes": 975,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/swift-swiftpm/fixture.json",
+      "sha256": "b592a6879bab4efbedd4304c49857c55c783b29c1358978e5cf1f729a759e02b"
+    },
+    {
+      "bytes": 1243,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/swift-swiftpm/kiln.coal.json",
+      "sha256": "e218d50733b7cad8fa6616973de5a2b947f256488bc0d5a79e68e159980b4e6c"
+    },
+    {
+      "bytes": 399,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/swift-swiftpm/pack.json",
+      "sha256": "e0473974b9e4024f1db831a5722ac2a0d912cfb14c5f7800d136d4523e322744"
+    },
+    {
+      "bytes": 984,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/zig/fixture.json",
+      "sha256": "bce31287211ad95db9b1d0b024d4c62204c58a9824eb22665b162e2d9ddd9539"
+    },
+    {
+      "bytes": 1362,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/zig/kiln.coal.json",
+      "sha256": "7586097364aea553a149599fb4357b7ab94d4ab16caa66eda8b9890bc8a4412d"
+    },
+    {
+      "bytes": 364,
+      "record_matches": true,
+      "relative_path": "coal_house/packs/zig/pack.json",
+      "sha256": "ab115a0c29e5374488fc0af3dff934d050308e138693af93082b118e42ac2059"
+    },
+    {
+      "bytes": 161,
+      "record_matches": true,
+      "relative_path": "coal_house/venvs/cmake-sandbox.json",
+      "sha256": "b88f717e4a2a19c69a62f53c491752db3886f1a08d4708eac6949e4454249ea9"
+    },
+    {
+      "bytes": 167,
+      "record_matches": true,
+      "relative_path": "coal_house/venvs/dart-pub.json",
+      "sha256": "f78706cea5cd5bf894b1c6710fbe0c88206b44b4e2513d702f5d1a4820e68578"
+    },
+    {
+      "bytes": 272,
+      "record_matches": true,
+      "relative_path": "coal_house/venvs/dotnet-nuget.json",
+      "sha256": "73959afcb53d93b5b7856b974a1072c4b7bb7aad8d01c082f05609f6cc2cbd4e"
+    },
+    {
+      "bytes": 260,
+      "record_matches": true,
+      "relative_path": "coal_house/venvs/elixir-mix.json",
+      "sha256": "89d2eeb093b05759ef9a75f9f3c3bebe801b2d40e7fa84e74b9be3b1c838e117"
+    },
+    {
+      "bytes": 315,
+      "record_matches": true,
+      "relative_path": "coal_house/venvs/go-modules.json",
+      "sha256": "5d67b4471bfb039bd88be483c5d5e86971a30b8d2803d91c08aefaa3c99f3380"
+    },
+    {
+      "bytes": 185,
+      "record_matches": true,
+      "relative_path": "coal_house/venvs/haskell-cabal.json",
+      "sha256": "0951457d48b679d651eb1c3999bd35626410153b8ccdee5a718df864397d42aa"
+    },
+    {
+      "bytes": 197,
+      "record_matches": true,
+      "relative_path": "coal_house/venvs/java-maven.json",
+      "sha256": "af47449176c3b53f18ed90e8bb8344fa1d00427efc981bf13223632c2d3019e1"
+    },
+    {
+      "bytes": 173,
+      "record_matches": true,
+      "relative_path": "coal_house/venvs/kotlin-gradle.json",
+      "sha256": "61d0f9aa2f037924123bb9fb27da6016e3f527bf484f4d795146151fdac03a83"
+    },
+    {
+      "bytes": 184,
+      "record_matches": true,
+      "relative_path": "coal_house/venvs/lua-path.json",
+      "sha256": "13ae20d1d856ea7c826310a6411325c548717b9a9035b71e944658f4db962346"
+    },
+    {
+      "bytes": 262,
+      "record_matches": true,
+      "relative_path": "coal_house/venvs/php-composer.json",
+      "sha256": "c477392d128f026e2187905d0eda85d60fc3231e69eac951fd29c87890aa6cc5"
+    },
+    {
+      "bytes": 189,
+      "record_matches": true,
+      "relative_path": "coal_house/venvs/python-runtime.json",
+      "sha256": "63a8f7c7f372bed860c14e3402243b11bf5b55a012350e5b5f3ab481d2540afe"
+    },
+    {
+      "bytes": 170,
+      "record_matches": true,
+      "relative_path": "coal_house/venvs/r-library.json",
+      "sha256": "48ff73fa4af8b4d6f42809cad3d4b944fdc967577b04ba399365c99c6450df52"
+    },
+    {
+      "bytes": 228,
+      "record_matches": true,
+      "relative_path": "coal_house/venvs/ruby-bundler.json",
+      "sha256": "c86bee7b7f586f563daf7e86e5c9c34f25f7a60b34466730dbd1a8095ba9c995"
+    },
+    {
+      "bytes": 254,
+      "record_matches": true,
+      "relative_path": "coal_house/venvs/rust-cargo.json",
+      "sha256": "28d81fb5ec45f0085cf95d919cc756f37881c96375f175d2259dff407d18a62c"
+    },
+    {
+      "bytes": 124,
+      "record_matches": true,
+      "relative_path": "coal_house/venvs/swift-swiftpm.json",
+      "sha256": "a8a5582240c597551b90aa7ad541f71490b1af47fb376fbf1b0284938aeaf222"
+    },
+    {
+      "bytes": 147,
+      "record_matches": true,
+      "relative_path": "coal_house/venvs/zig-cache.json",
+      "sha256": "67f3078d68255f4a70a53cff4b32856f202a18a38d70fa7467703080280ae137"
+    },
+    {
+      "bytes": 318,
+      "record_matches": true,
+      "relative_path": "engine/__init__.py",
+      "sha256": "b0853a302547e3b5b733dc5474bd60f4ad0113e03c26d32d66b5a8916fc3f2e7"
+    },
+    {
+      "bytes": 7213,
+      "record_matches": true,
+      "relative_path": "engine/annotations.py",
+      "sha256": "6c7c23f177f23ec7825b8e54afe86e434c596913960b657175ae8b26b850bbd3"
+    },
+    {
+      "bytes": 6159,
+      "record_matches": true,
+      "relative_path": "engine/attack_surface_admission.py",
+      "sha256": "5c0fab1a65347ea428ad56127b058cd0a86335cdc46cf9d9d0eaf4d31deaa8f5"
+    },
+    {
+      "bytes": 2319,
+      "record_matches": true,
+      "relative_path": "engine/baseline_adjudication.py",
+      "sha256": "3fb74f7ec22549854713c05f7c51a2cc242ebc836c81df61b1f58372359272be"
+    },
+    {
+      "bytes": 8524,
+      "record_matches": true,
+      "relative_path": "engine/baseline_executor.py",
+      "sha256": "4bdf196e4a42a97ef66bc06b03bd59adfa089dd4062b45491114535d5b2cc5a5"
+    },
+    {
+      "bytes": 3437,
+      "record_matches": true,
+      "relative_path": "engine/baseline_snapshot.py",
+      "sha256": "53c63c6384dfffd50d9c8f811bc0feac624b2cdd2be2263cafe7163e90a1c537"
+    },
+    {
+      "bytes": 18949,
+      "record_matches": true,
+      "relative_path": "engine/behavioral_fragments.py",
+      "sha256": "856328ef165547677bf1624d1dbd7fa221c07284378276350f5cfc10b344687b"
+    },
+    {
+      "bytes": 3669,
+      "record_matches": true,
+      "relative_path": "engine/campaign_closure.py",
+      "sha256": "1fdf790d3e7ddffc4cbe3884b4494b4236547592ef542628810e15545845ae81"
+    },
+    {
+      "bytes": 4709,
+      "record_matches": true,
+      "relative_path": "engine/candidate_selection.py",
+      "sha256": "a488371a5c8633fa7d2b15881d215dd4a3db8824787e2dfa9c5b3617d0a5a825"
+    },
+    {
+      "bytes": 5439,
+      "record_matches": true,
+      "relative_path": "engine/capability_negotiation.py",
+      "sha256": "31218f13a2ed2e341f9c600bf46981be1e42dbec1468a3a360db3fa7bb795afe"
+    },
+    {
+      "bytes": 28702,
+      "record_matches": true,
+      "relative_path": "engine/cli.py",
+      "sha256": "f176b080c86606926e0048d68ecb3d8baee776812d453ae3968b31a6564e3d7c"
+    },
+    {
+      "bytes": 13418,
+      "record_matches": true,
+      "relative_path": "engine/cli_advanced.py",
+      "sha256": "0558a812919722031baeed807b3c39e71034e64e8596388a58245acb4a5c2a95"
+    },
+    {
+      "bytes": 10290,
+      "record_matches": true,
+      "relative_path": "engine/cli_workflows.py",
+      "sha256": "a283b9fbd594bc305f254e60ffb14ed9faf16352b3e3f280f12e2ad7c6f178ab"
+    },
+    {
+      "bytes": 2212,
+      "record_matches": true,
+      "relative_path": "engine/coal_adapters.py",
+      "sha256": "108f247d9d0df3ac9eb86f7fad5398fbc80cbad86f4b4d7e2e44cfcb59f35881"
+    },
+    {
+      "bytes": 29221,
+      "record_matches": true,
+      "relative_path": "engine/coal_contracts.py",
+      "sha256": "cd5770507a69f837c590df9a245591c0ea28f4c368ccd16468574171dcd18e97"
+    },
+    {
+      "bytes": 1458,
+      "record_matches": true,
+      "relative_path": "engine/coal_schemas.py",
+      "sha256": "73ee3439956f01f3805aa7f2b84b0f5495513ef9c1299cc1f036c4664ea99fcc"
+    },
+    {
+      "bytes": 38954,
+      "record_matches": true,
+      "relative_path": "engine/coal_tongs.py",
+      "sha256": "cb4c12d25f4414336711b4ffb9c20536c6ef563ad2d1f4e141c974294245d136"
+    },
+    {
+      "bytes": 6888,
+      "record_matches": true,
+      "relative_path": "engine/coal_venvs.py",
+      "sha256": "9d355ea83ee7baa9d6315b38133d6022f4268d65ec6b3379306d353e88c317b1"
+    },
+    {
+      "bytes": 8948,
+      "record_matches": true,
+      "relative_path": "engine/compatibility_graph.py",
+      "sha256": "85089df1090a078820c3485fadb173284618a91b4e47dfcfdaaf8b71d94183a9"
+    },
+    {
+      "bytes": 19361,
+      "record_matches": true,
+      "relative_path": "engine/constructive_redesign.py",
+      "sha256": "5f974a5d85137c0033cc123b6d1ec17933e5fcc96742a7ca614cf94c6b3333ff"
+    },
+    {
+      "bytes": 2350,
+      "record_matches": true,
+      "relative_path": "engine/coupling_adjudication.py",
+      "sha256": "0044a6866976541e914f4956f809fb4865d4f48c14eba27b25797e3639228a13"
+    },
+    {
+      "bytes": 3547,
+      "record_matches": true,
+      "relative_path": "engine/coupling_authorization.py",
+      "sha256": "49ef45586b48ec8cf3fabe72c5f56e489aa2fc916dd51ca5d99eeca41798e74e"
+    },
+    {
+      "bytes": 3565,
+      "record_matches": true,
+      "relative_path": "engine/coupling_contracts.py",
+      "sha256": "99c77152050cba9259a2e5205989590d1da402dd670da40d8a421e345c2a0c73"
+    },
+    {
+      "bytes": 32428,
+      "record_matches": true,
+      "relative_path": "engine/cycle_orchestrator.py",
+      "sha256": "9c0f038529cd838ac7228a83cb467a0e563006f4c626eaebba23b3fc09318048"
+    },
+    {
+      "bytes": 4179,
+      "record_matches": true,
+      "relative_path": "engine/dry_run_executor.py",
+      "sha256": "db6b6ba2f752d6037f90718affb03bddc14a3856a71862fdd2cd013df86e0344"
+    },
+    {
+      "bytes": 6528,
+      "record_matches": true,
+      "relative_path": "engine/eligibility_admission.py",
+      "sha256": "5f3c96f89a116c308ffec33a203a4c3309fcd11e32838c27e3d9902e1bea00dd"
+    },
+    {
+      "bytes": 25124,
+      "record_matches": true,
+      "relative_path": "engine/environment_reconstruction.py",
+      "sha256": "5884b8a3589093d771cdb6eb44889ea97dd18c9f88c3b4a46aa19156d486f40c"
+    },
+    {
+      "bytes": 2120,
+      "record_matches": true,
+      "relative_path": "engine/evidence_digest.py",
+      "sha256": "4b01004e6bed0449cd975009006376d660b556d307819f956d697d7774c3837c"
+    },
+    {
+      "bytes": 5533,
+      "record_matches": true,
+      "relative_path": "engine/evidence_manifest.py",
+      "sha256": "7f4343a02aaaf9d5810f4a65ead114c4a610e52894ff04351ec2aae5f83fadaa"
+    },
+    {
+      "bytes": 3561,
+      "record_matches": true,
+      "relative_path": "engine/execution_authorization.py",
+      "sha256": "a5d080265f15889eea4deb7f0cf7798ce73be196a327548d0918e0e6eb5f22f6"
+    },
+    {
+      "bytes": 4135,
+      "record_matches": true,
+      "relative_path": "engine/execution_planning.py",
+      "sha256": "3c1f835161b3da6a1800cd10387b1ba336a878989dd15370b1da55c6623464d3"
+    },
+    {
+      "bytes": 2866,
+      "record_matches": true,
+      "relative_path": "engine/fracture_classification.py",
+      "sha256": "a6f988d37fd8a8b630798b34a27a1b5a1bbbece0f993d8b607f0ad585385d1f9"
+    },
+    {
+      "bytes": 5202,
+      "record_matches": true,
+      "relative_path": "engine/fracture_records.py",
+      "sha256": "a687bd30d75910ee957373a9dab80c09718e59d73573fad0f4732f046bcde3fa"
+    },
+    {
+      "bytes": 40926,
+      "record_matches": true,
+      "relative_path": "engine/fragment_contracts.py",
+      "sha256": "764cb57e29cf8f645302a032e4a891d4a4cb4d1cf959448ce57bdf8880427c6a"
+    },
+    {
+      "bytes": 29492,
+      "record_matches": true,
+      "relative_path": "engine/frankentest.py",
+      "sha256": "14e209357b6c0426e8e181761ac99856217c59956039bd8d1b306ad92c433a67"
+    },
+    {
+      "bytes": 5975,
+      "record_matches": true,
+      "relative_path": "engine/github_adjudication.py",
+      "sha256": "8fe16daf2b34b875dd6e08fc3708910bd3e532f63076b4ce0462a2ab2a457ede"
+    },
+    {
+      "bytes": 3848,
+      "record_matches": true,
+      "relative_path": "engine/injector_authorization.py",
+      "sha256": "052f229dc580f177bb1eda0ca6946baf3af029e052702a3d2d57a9b5e3d6359f"
+    },
+    {
+      "bytes": 4157,
+      "record_matches": true,
+      "relative_path": "engine/injector_discovery.py",
+      "sha256": "b808254466f220909388071a34284a8d3a899099f1c8b4fd92a1427a1efc8075"
+    },
+    {
+      "bytes": 6256,
+      "record_matches": true,
+      "relative_path": "engine/isolation_boundary.py",
+      "sha256": "b4c52c71544f4ffa5c95a1497ddab08f0fbc918e2327192dc2991a75244e5676"
+    },
+    {
+      "bytes": 7184,
+      "record_matches": true,
+      "relative_path": "engine/library_index.py",
+      "sha256": "4b584434c7100c9784b933b93ee2fa54b22346b3af893c08b67d0c64ff202d36"
+    },
+    {
+      "bytes": 5792,
+      "record_matches": true,
+      "relative_path": "engine/live_preflight.py",
+      "sha256": "7d7c95dd1a8782e54bbe6499052f3a7b0f9272fad9f920619279132f8143bf2e"
+    },
+    {
+      "bytes": 9692,
+      "record_matches": true,
+      "relative_path": "engine/load_coupling_executor.py",
+      "sha256": "50efae8a8724be1cda9ee0f8653d58d65ae386b2bf0bfea31fa8481d2b1cb56d"
+    },
+    {
+      "bytes": 7707,
+      "record_matches": true,
+      "relative_path": "engine/load_pressure_executor.py",
+      "sha256": "c658f9bd9db7c3a43349e8e335f49ee5f3d38391d2f7090763aca450ba9f6605"
+    },
+    {
+      "bytes": 21445,
+      "record_matches": true,
+      "relative_path": "engine/mutation_adapters.py",
+      "sha256": "2e2cb60a14518de92c73edc726116845b674755d6193461e57e3cde13d12c641"
+    },
+    {
+      "bytes": 7163,
+      "record_matches": true,
+      "relative_path": "engine/mutation_executor.py",
+      "sha256": "fa22b1be239e4dccb133171b2278d0992bae83076de9f154dab41d7a07543969"
+    },
+    {
+      "bytes": 3739,
+      "record_matches": true,
+      "relative_path": "engine/pressure_adjudication.py",
+      "sha256": "718ceb381503414ba65dc7150200e1731b126d0181a49241d951f9ea3909c251"
+    },
+    {
+      "bytes": 2878,
+      "record_matches": true,
+      "relative_path": "engine/pressure_authorization.py",
+      "sha256": "00a03dc412dbe7ba44b7c817cc03324464baf17009f4a06a96e12d982ece765f"
+    },
+    {
+      "bytes": 3522,
+      "record_matches": true,
+      "relative_path": "engine/pressure_contracts.py",
+      "sha256": "cb992b93384680d08a692b5d34f3b0d9833246a67ab85f4b1a971c16b20be50e"
+    },
+    {
+      "bytes": 27941,
+      "record_matches": true,
+      "relative_path": "engine/proof_metadata.py",
+      "sha256": "8073d12d6d6f50ed255164434289ae39f89d085217a4255b2d2986a7769c7365"
+    },
+    {
+      "bytes": 33951,
+      "record_matches": true,
+      "relative_path": "engine/sandbox_execution.py",
+      "sha256": "b7deffcf1ea97d1f7043e005752469e3f9681bed2c236b18776042eaa2d424ac"
+    },
+    {
+      "bytes": 5067,
+      "record_matches": true,
+      "relative_path": "engine/specimen_membership.py",
+      "sha256": "4efa6e240e3549cf23fc35ebd1ef75459cedab3e7e783492fa5fc14597de78d1"
+    },
+    {
+      "bytes": 4492,
+      "record_matches": true,
+      "relative_path": "engine/state_machine.py",
+      "sha256": "a56cfb2fdea8ce11a2b84396ffb01edc7b77cabfbf319b54dbe420c8ff512d70"
+    },
+    {
+      "bytes": 3698,
+      "record_matches": true,
+      "relative_path": "engine/surface_readiness.py",
+      "sha256": "a5f08b1d3642b4eddf27871043b26335df496840f0a48e698ddd200ff6b0234d"
+    },
+    {
+      "bytes": 11223,
+      "record_matches": true,
+      "relative_path": "engine/synthetic_contracts.py",
+      "sha256": "296b9bd555f638e8df16819fc4f6c043fee9691faee5d64679f397730788d20a"
+    },
+    {
+      "bytes": 12560,
+      "record_matches": true,
+      "relative_path": "engine/target_intake.py",
+      "sha256": "0c5a0846f270f9f92cf320bdbb1b2e15d427652e516d1b6960d2f82effa47b1c"
+    },
+    {
+      "bytes": 18,
+      "record_matches": true,
+      "relative_path": "engine/version.py",
+      "sha256": "af8262004c4c35ee9d144ce2971a9621de51f5d034749796ca9f1627c05f2a12"
+    }
+  ],
+  "installed_origin": {
+    "archive_info": {
+      "hash": "sha256=bd94b0eed0cab6336384b6eeffb8ddbec4bf3e1ae6c41d2c5cdcc2dcbc363480",
+      "hashes": {
+        "sha256": "bd94b0eed0cab6336384b6eeffb8ddbec4bf3e1ae6c41d2c5cdcc2dcbc363480"
+      }
+    },
+    "url": "file:///C:/Users/alexg/AnarchI-Brain-Development/kiln-release-v014-f5fe466/anarchi_kiln-0.1.4-py3-none-any.whl"
+  },
+  "launcher": {
+    "bytes": 108431,
+    "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\kiln-runtime-0.1.4-f5fe466\\Scripts\\kiln.exe",
+    "sha256": "4fd75f97879a7f40224fdf868ec4a0e8a08d74f597db4745c23031f7a9a9f547"
+  },
+  "limitations": [
+    "Wheel and RECORD verification binds current installed distribution bytes; no historical tamper-proof runtime measurement.",
+    "Detached worktrees are not OS isolation.",
+    "Campaign operators and fixtures are finite and non-exhaustive."
+  ],
+  "operative_grant": false,
+  "production_ready": false,
+  "record_mismatches": [],
+  "runtime_authority": false,
+  "runtime_version": "kiln 0.1.4",
+  "schema": "UNIT_B_KILN_RUNTIME_PROVENANCE_SUPPLEMENT_1",
+  "scope": "BOUNDED_TRUSTED_LOCAL_FIRST_PARTY_NOT_OS_SANDBOX",
+  "stdout_capture": "C:\\Users\\alexg\\AnarchI-Brain-Development\\unit-b-kiln-evidence-v1.3-20261004\\cycle-result.json",
+  "test_python": {
+    "bytes": 104952,
+    "path": "C:\\Users\\alexg\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "sha256": "4d6f5f81a4bca11191c4c7c6b43632694d0a4ce74e068619d8fdc161d469859a"
+  },
+  "test_python_version": "Python 3.12.10",
+  "venv_configuration": "home = C:\\Users\\alexg\\AppData\\Local\\Programs\\Python\\Python312\ninclude-system-site-packages = false\nversion = 3.12.10\nexecutable = C:\\Users\\alexg\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\ncommand = C:\\Users\\alexg\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -m venv C:\\Users\\alexg\\AnarchI-Brain-Development\\kiln-runtime-0.1.4-f5fe466\n",
+  "wheel": {
+    "bytes": 227987,
+    "path": "C:\\Users\\alexg\\AnarchI-Brain-Development\\kiln-release-v014-f5fe466\\anarchi_kiln-0.1.4-py3-none-any.whl",
+    "sha256": "bd94b0eed0cab6336384b6eeffb8ddbec4bf3e1ae6c41d2c5cdcc2dcbc363480"
+  }
+}

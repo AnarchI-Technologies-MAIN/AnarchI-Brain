@@ -1,0 +1,15 @@
+{
+  "schema": "UNIT-B-MATRIX-SUPPORT-1",
+  "status": "DRAFT_NOT_ADOPTED",
+  "runtime_authority": false,
+  "files": [
+    {
+      "label": "unit_a_crosswalk",
+      "path": "custody/inputs/unit_a_crosswalk.json",
+      "bytes": 5802,
+      "sha256": "6020e77fedbf704ded72f02762a875818b4eb13a65360a445eef797b819c7703",
+      "role": "DOCUMENTARY_PREDECESSOR_CUSTODY",
+      "source": "ingress-review-foundation-unit-a-v1.2-20261004/authority-crosswalk-unit-a.json"
+    }
+  ]
+}

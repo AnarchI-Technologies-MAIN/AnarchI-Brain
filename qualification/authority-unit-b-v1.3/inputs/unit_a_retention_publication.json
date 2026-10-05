@@ -1,0 +1,24 @@
+{
+  "commit": "62d3c73046f65e70e7ab7545549b2d70d8a04e2d",
+  "immutable_storage_claim": false,
+  "original_acceptance_and_receipt_unchanged": true,
+  "prospective_effective_not_before_utc": "2026-10-04T22:28:23Z",
+  "pull_request": "https://github.com/AnarchI-Technologies-MAIN/AnarchI-Brain/pull/16",
+  "receipt_sha256": "fc95e1f43f40dc576ab7295435bad3effd8ad99e6fc8be4f9263e8d55154a155",
+  "retrieved_at_utc": "2026-10-04T22:28:29Z",
+  "schema": "UNIT-A-RETENTION-RECEIPT-PUBLICATION-1",
+  "verified_files": [
+    {
+      "bytes": 19729,
+      "path": "qualification/ingress-review-unit-a-v1.2/adoption/external-retention-receipt.json",
+      "remote_git_blob_oid": "7865cba737e5f8263adbeaac316bc716f7fbbee4",
+      "sha256": "fc95e1f43f40dc576ab7295435bad3effd8ad99e6fc8be4f9263e8d55154a155"
+    },
+    {
+      "bytes": 98,
+      "path": "qualification/ingress-review-unit-a-v1.2/adoption/external-retention-receipt.json.sha256",
+      "remote_git_blob_oid": "f0de3d436bb0883aa26f3cd330b8d8407cb2866c",
+      "sha256": "f8d944108d5228a1579d1390996fe0cad7c2ee21e6b16b6602eed304a4723f1d"
+    }
+  ]
+}

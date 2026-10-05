@@ -1,0 +1,409 @@
+{
+  "acceptance_record_unchanged": true,
+  "acceptance_sha256": "79d46e4c1a41c48bcca88a04c42cc2b08068134c971df456a7a59f0aff0d8d1c",
+  "accepted_scope": "Prospective semantic/constitutional eligibility and pure finite reference only: selected M03 Route-B semantics and M03-only obligations; M04/S1 bounded noncanonical structural/provenance qualification contract/reference; the sole S1/Qualify unresolved-to-bounded matrix delta with named bound YES_BOUNDED_NONCANONICAL_QUALIFICATION and unchanged other131cells; crosswalk/delta; selected M08 machine and720-case routing semantics. No operative runtime authority or effects.",
+  "base_branch": "development",
+  "branch": "docs/ingress-review-unit-a-20261004",
+  "catalog_sha256": "7db495b0a1034c9211c3d08c90569c3b0bccc3209a31f9f9e1885889b99b75c3",
+  "commit": "6d9dafae5fe720b413befc90862e77c3b9768460",
+  "custody_limits": "Create-only fsynced local records plus remotely retrieved GitHub commit bytes. Git history/hosted storage are not immutable, hostile-administrator-proof or permanently guaranteed. Session identity is not legal authentication or runtime issuer enrollment.",
+  "disposition": "EXTERNAL_GITHUB_RETENTION_VERIFIED",
+  "effective_not_before_utc": "2026-10-04T22:28:23Z",
+  "excluded_effects": [
+    "operative runtime authority",
+    "authenticated producer identity",
+    "live submission permission",
+    "live visibility authority",
+    "M12 issuer/verifier/root enrollment",
+    "M09/S3 authorization",
+    "M14 durable effects and runtime receipts",
+    "three independent S2 adjudications",
+    "canonical commit or admission",
+    "runtime ingress implementation or activation",
+    "staging qualification or clearance",
+    "deployment",
+    "production readiness",
+    "historical closure",
+    "other captured machine adoption"
+  ],
+  "immutable_storage_claim": false,
+  "independent_remote_retrieval_verified_at_utc": "2026-10-04T22:28:23Z",
+  "merged": false,
+  "pull_request": "https://github.com/AnarchI-Technologies-MAIN/AnarchI-Brain/pull/16",
+  "schema": "UNIT-A-EXTERNAL-RETENTION-RECEIPT-1",
+  "verification_method": "GitHub Git blobs independently retrieved at exact commit, base64 decoded, byte compared against exact local package; not local tracking-branch evidence.",
+  "verified_files": [
+    {
+      "bytes": 121,
+      "path": "qualification/ingress-review-unit-a-v1.2/.gitattributes",
+      "remote_git_blob_oid": "20d3ad3e0527762e8af0380480a8f8b24cafab86",
+      "sha256": "96ce4a16f9f1b489a4804907e7dfb1429b6d95f9b187a388553e314dca5b420d"
+    },
+    {
+      "bytes": 3591,
+      "path": "qualification/ingress-review-unit-a-v1.2/AUTHORITY-DELTA-DRAFT.md",
+      "remote_git_blob_oid": "d6901c958a855eeaccbd52d5e440c01ce5bc2310",
+      "sha256": "8d7cde6a081a9a4e14ee073a502a44bca22db1df8a5c9e2dc5ee5895f839619a"
+    },
+    {
+      "bytes": 11726,
+      "path": "qualification/ingress-review-unit-a-v1.2/AUTHORITY-MATRIX-SUCCESSOR-DRAFT.md",
+      "remote_git_blob_oid": "70bd8b22a229d50cb8cd616a54dd6d4fd9e1c9bd",
+      "sha256": "796d3cf128b7843c1e3897cc0567fc9b819f40c0e64d805cd4f0ae550e9b1e8b"
+    },
+    {
+      "bytes": 1142,
+      "path": "qualification/ingress-review-unit-a-v1.2/M03-FORWARD-SELECTION-DRAFT.json",
+      "remote_git_blob_oid": "47f51ebc4c14241a5bc8e453c6a9e853e8c660d7",
+      "sha256": "7c7a838f5fda50d607dca21569a8f9e3534f7b70feaddaaf38945cb73a593f3a"
+    },
+    {
+      "bytes": 1399,
+      "path": "qualification/ingress-review-unit-a-v1.2/M03-OBLIGATIONS-SELECTION-DRAFT.json",
+      "remote_git_blob_oid": "aaad2d377183a234584fdd1ee58eaab7f39b2ebb",
+      "sha256": "8f9ad7deb86647516573e663ab5f9e75bd27da53e153ac3fc0476dd63cf70b15"
+    },
+    {
+      "bytes": 8557,
+      "path": "qualification/ingress-review-unit-a-v1.2/M04-S1-QUALIFICATION-DRAFT.md",
+      "remote_git_blob_oid": "48a53c55db90c787ffde638841695d796075ad9e",
+      "sha256": "916c09009ce3706fe9225e934de344ec102fe99828ee75e6c3b147bbed18d070"
+    },
+    {
+      "bytes": 1572,
+      "path": "qualification/ingress-review-unit-a-v1.2/M08-FORWARD-SELECTION-DRAFT.json",
+      "remote_git_blob_oid": "a3f6cba4dd8003fd9651c15464f6208b7e8c93d8",
+      "sha256": "1b595607e32dba85de7d43d411c295aae82554eaefc4d5621e073c0fe1491798"
+    },
+    {
+      "bytes": 2374,
+      "path": "qualification/ingress-review-unit-a-v1.2/README.md",
+      "remote_git_blob_oid": "4a760d9e07a96a821d3496c8a6e93fe26e5a00d1",
+      "sha256": "b9eee60b156324002fa35bc6eedd019031e974a1bc9716ce3c6e9c36af554b4c"
+    },
+    {
+      "bytes": 52,
+      "path": "qualification/ingress-review-unit-a-v1.2/adoption/.gitattributes",
+      "remote_git_blob_oid": "8b0bea37c2a2a49bbfb65db4f237d51d47124e3a",
+      "sha256": "61796fc1f498847e9a7a839480fa6c85c6af3467b794c0916ff0cce3af3b2912"
+    },
+    {
+      "bytes": 611,
+      "path": "qualification/ingress-review-unit-a-v1.2/adoption/CURRENT-DISPOSITION.md",
+      "remote_git_blob_oid": "0b22a5650b5ac4d126627fb3eace754be903c946",
+      "sha256": "c6d74c2373ab545842438532478551d685137a25ae417a168633f91a824e2043"
+    },
+    {
+      "bytes": 9389,
+      "path": "qualification/ingress-review-unit-a-v1.2/adoption/acceptance.json",
+      "remote_git_blob_oid": "321fdc1fd7ec3465bcddb8619b5d4601d402690e",
+      "sha256": "79d46e4c1a41c48bcca88a04c42cc2b08068134c971df456a7a59f0aff0d8d1c"
+    },
+    {
+      "bytes": 82,
+      "path": "qualification/ingress-review-unit-a-v1.2/adoption/acceptance.json.sha256",
+      "remote_git_blob_oid": "cd9f9afbd491aa01fd161c59dffaf8d31b6dbad6",
+      "sha256": "41f18388859ff676ca6cfe8bcb5f00cdcc276896212d58b51591fc93d50fe526"
+    },
+    {
+      "bytes": 183412,
+      "path": "qualification/ingress-review-unit-a-v1.2/adoption/review-source-package-v1.2.json",
+      "remote_git_blob_oid": "71f8f63671e1761cba2bb32c7870ff10e03a2c53",
+      "sha256": "07093ec6f0ee6f7e35733c984a24bdb8353e4711c68023f1157cb4e68bd0440d"
+    },
+    {
+      "bytes": 5802,
+      "path": "qualification/ingress-review-unit-a-v1.2/authority-crosswalk-unit-a.json",
+      "remote_git_blob_oid": "4038a70d6367db616efd7e84e95215e3f394bbce",
+      "sha256": "6020e77fedbf704ded72f02762a875818b4eb13a65360a445eef797b819c7703"
+    },
+    {
+      "bytes": 16996,
+      "path": "qualification/ingress-review-unit-a-v1.2/evidence/LYRA-UNIT-A-v1.1-REVIEW-DOM.json",
+      "remote_git_blob_oid": "048c5c78fab22c6f4200e0b3401eb8fef456c206",
+      "sha256": "8b3b3dccb5d9a4d1f402e775efa82d3b2743f8677be372e182e277380e4a3748"
+    },
+    {
+      "bytes": 15127,
+      "path": "qualification/ingress-review-unit-a-v1.2/evidence/LYRA-UNIT-A-v1.2-FINAL-DISPOSITION.json",
+      "remote_git_blob_oid": "eca080566ad2ce9136ab7c2d8830e6ff4ae28c0c",
+      "sha256": "6d56b4620bd8d125617d6d68fc5ffa777dd558651faf9df06fa0bb96261f1442"
+    },
+    {
+      "bytes": 16967,
+      "path": "qualification/ingress-review-unit-a-v1.2/evidence/LYRA-UNIT-A-v1.2-REVIEW-DOM.json",
+      "remote_git_blob_oid": "1d954d8ef29ba64a6b24aae0abf897ed85ac8713",
+      "sha256": "d443d0dd3d45eb3a5c0532d6091ca6bac269453d2538df1cf4fdd2dde60bbcfe"
+    },
+    {
+      "bytes": 797,
+      "path": "qualification/ingress-review-unit-a-v1.2/evidence/REVIEW-STATUS.md",
+      "remote_git_blob_oid": "7f8c2d0b41bac32155312f40725fb2aa6e8249bd",
+      "sha256": "f27088a4db14622f60ddfa0ed967f0d2281b8224e10e1c2e5b31e7461bedca74"
+    },
+    {
+      "bytes": 10771,
+      "path": "qualification/ingress-review-unit-a-v1.2/evidence/UNIT-A-EXECUTION-QUALIFICATION-v1.2.json",
+      "remote_git_blob_oid": "9ddf91ee683685a99e2fd454dde9cc0b2682693e",
+      "sha256": "b23d92c618847e8ea1924a86ed8c8a5066f80670a1cd1233bfcc72b5abb520a5"
+    },
+    {
+      "bytes": 3715,
+      "path": "qualification/ingress-review-unit-a-v1.2/evidence/kiln-INDEPENDENT-EVIDENCE-DISPOSITION.json",
+      "remote_git_blob_oid": "924ae84792912b6a32f506d2eb7301c7c34bf0f2",
+      "sha256": "67c06fd168c1660b66183ea0539f90acbb0ff6863f88d932e00b60247c1cbae0"
+    },
+    {
+      "bytes": 2741,
+      "path": "qualification/ingress-review-unit-a-v1.2/evidence/kiln-SURVIVOR-REVIEW.json",
+      "remote_git_blob_oid": "29d3fc9a651130155e9cb511bef44346361c7894",
+      "sha256": "a187ab8b6d153ed75e24acc54179c067fee428de089df21cf17b03481c8509b3"
+    },
+    {
+      "bytes": 221,
+      "path": "qualification/ingress-review-unit-a-v1.2/evidence/ubuntu-corpus-O0.txt",
+      "remote_git_blob_oid": "dd187c01eb09f578288f131c894f3de108c4d36b",
+      "sha256": "9bb4763baf7d349973a85a5badcba088777eee730e6252b2b5eb3ec896dfb7ca"
+    },
+    {
+      "bytes": 221,
+      "path": "qualification/ingress-review-unit-a-v1.2/evidence/ubuntu-corpus-O1.txt",
+      "remote_git_blob_oid": "dd187c01eb09f578288f131c894f3de108c4d36b",
+      "sha256": "9bb4763baf7d349973a85a5badcba088777eee730e6252b2b5eb3ec896dfb7ca"
+    },
+    {
+      "bytes": 151,
+      "path": "qualification/ingress-review-unit-a-v1.2/evidence/ubuntu-focused-O0.txt",
+      "remote_git_blob_oid": "ab627c17c23fddfae540ca15f8e85cae40730d71",
+      "sha256": "d043d067e3c060798b855229f508a5b0425ebaf24556359460f64c4be8389ba4"
+    },
+    {
+      "bytes": 151,
+      "path": "qualification/ingress-review-unit-a-v1.2/evidence/ubuntu-focused-O1.txt",
+      "remote_git_blob_oid": "2a4d6034ba87c1f725e49f4cf4964bdc9f6175d4",
+      "sha256": "35a125ddeab7001d42da61b9ea7cfe13dde0448ca6f9ca50de33d9d48319a28c"
+    },
+    {
+      "bytes": 8360,
+      "path": "qualification/ingress-review-unit-a-v1.2/evidence/verification-results.json",
+      "remote_git_blob_oid": "358f199d67f151296984f20583ab096be2a370b7",
+      "sha256": "10e5b192ac895191a9991dad2ab0dac89798ca1e745b2dc0417ebe86ea7e69ac"
+    },
+    {
+      "bytes": 222,
+      "path": "qualification/ingress-review-unit-a-v1.2/evidence/windows-corpus-O0.txt",
+      "remote_git_blob_oid": "eb5867ecb4dd419abe9bc27cd1cf07084945c876",
+      "sha256": "8aa028080e885a3f092a80d41712fa46edae8be5a0092d1a9fc6d1e3b7804bcf"
+    },
+    {
+      "bytes": 222,
+      "path": "qualification/ingress-review-unit-a-v1.2/evidence/windows-corpus-O1.txt",
+      "remote_git_blob_oid": "eb5867ecb4dd419abe9bc27cd1cf07084945c876",
+      "sha256": "8aa028080e885a3f092a80d41712fa46edae8be5a0092d1a9fc6d1e3b7804bcf"
+    },
+    {
+      "bytes": 155,
+      "path": "qualification/ingress-review-unit-a-v1.2/evidence/windows-focused-O0.txt",
+      "remote_git_blob_oid": "fb6ffbcff29c0936978dd643b153ea56b6fc8256",
+      "sha256": "6f7b7d299e074a166b38eac78bd9c9995c40c7391f0f8af0eea078a0ad1187ea"
+    },
+    {
+      "bytes": 155,
+      "path": "qualification/ingress-review-unit-a-v1.2/evidence/windows-focused-O1.txt",
+      "remote_git_blob_oid": "44b9ae2fa6b9fdd3a44d1ace8a64ec70da6656f6",
+      "sha256": "a0ac5c0a99c111413fc731f2eb1cebcb45976852892bbc1321dbf540862ca0af"
+    },
+    {
+      "bytes": 23462,
+      "path": "qualification/ingress-review-unit-a-v1.2/fixture_first_brain.json",
+      "remote_git_blob_oid": "3684d7ae12c479bc08dc10971dec94d0a7c5f310",
+      "sha256": "2820de81d3e4699f8086f18655e3a23f38b0aa9460e03fbb097bcea0cbd27d84"
+    },
+    {
+      "bytes": 10341,
+      "path": "qualification/ingress-review-unit-a-v1.2/fixture_first_producer.json",
+      "remote_git_blob_oid": "906f7337270a7a8dca7a9974b21558495ad93510",
+      "sha256": "ce2042084b61b562dcc5cb750365579a25ab48d4475c7deec562889f296b8763"
+    },
+    {
+      "bytes": 12405,
+      "path": "qualification/ingress-review-unit-a-v1.2/ingress_review_reference.py",
+      "remote_git_blob_oid": "99a4dc524c4c4bc31db3ce5ebbf230c2d418f3bb",
+      "sha256": "a52d1def780fc53bc485dab2f9321670842b57f4ecd8990ad24259f10a5399d3"
+    },
+    {
+      "bytes": 9135,
+      "path": "qualification/ingress-review-unit-a-v1.2/input-register.json",
+      "remote_git_blob_oid": "cfda4d54b93f0fdf5fe87dc3bc98c662ee630682",
+      "sha256": "696637d8ba99691cd913f898f4c6e03a61762515520b5f955d233ed90864faeb"
+    },
+    {
+      "bytes": 17514,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/baseline/authority-dimensions.md",
+      "remote_git_blob_oid": "51607875ab7395455b646b5c596f7243bd049bfc",
+      "sha256": "a1143481b4f6d24354cf5e28bfcdb5fa5706fcc162969601098241c124bad0fa"
+    },
+    {
+      "bytes": 10947,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/baseline/authority-matrix.md",
+      "remote_git_blob_oid": "19c82ee5085053e4499cdba7233a2bc43d592fc7",
+      "sha256": "1ceaf312b74500548654c7a7244ebc9222c93cf2e9bdfb2522669ad7359cb98e"
+    },
+    {
+      "bytes": 14694,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/baseline/cortex-contract.md",
+      "remote_git_blob_oid": "69fa76a1c38c921d047f44d2691d11170dd5e898",
+      "sha256": "51da5c27fdddf24ef3c822da565b7d8e3cec9d6a7df0a8d864e35422b79d3e1a"
+    },
+    {
+      "bytes": 12377,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/baseline/semantic-language.md",
+      "remote_git_blob_oid": "871a2ad6297ef1f10afd1bfdbb3d0e4bbd8effba",
+      "sha256": "33c438c541f02c97d9e9eab205610f52bc56fe226dbfd2345776c498a630d7d3"
+    },
+    {
+      "bytes": 4014,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/code/custody.py",
+      "remote_git_blob_oid": "b006a1fb473a7e3f8aa79fbfedefacc77f68d66b",
+      "sha256": "af44421bd22f753bcb5c3a8a87f3e290becd94e5f14dff9fe3684c92ac2d5670"
+    },
+    {
+      "bytes": 1635,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/code/m03.py",
+      "remote_git_blob_oid": "260881ec3b6eb4f3ed996f4c150a761c08da033b",
+      "sha256": "4d95d6dd4f002936ef23780c083758703cb2cf30fbaff352caf16dad5d38dfa2"
+    },
+    {
+      "bytes": 11743,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/code/m08.py",
+      "remote_git_blob_oid": "98f4a6a50ecf9df702695579663e64937431dac8",
+      "sha256": "deb4282ece47e0ee2e390b8ed9604a05765a0bb24f309712756c18dbfe536bcc"
+    },
+    {
+      "bytes": 5952,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/code/mapping.py",
+      "remote_git_blob_oid": "e508691be6c48bffcf6363851f54a0541aefa4b7",
+      "sha256": "7561f2222762fca9904e4f1e8494d21b8b5b99dfc87d48d572922d52db5ac162"
+    },
+    {
+      "bytes": 6385,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/context/accepted_procedure.source",
+      "remote_git_blob_oid": "0d4d7015853a3b8703cb554e79b605e7be36a888",
+      "sha256": "3f6f9393be17bcd448fdebc1e65f4195b700036cdb200d5f435fd90f6f558992"
+    },
+    {
+      "bytes": 7551,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/context/baseline_acceptance.source",
+      "remote_git_blob_oid": "6614d01ccc95b34f34011230114b7bdc3c6b9dea",
+      "sha256": "10bd8c050b4a39553a553bdad868f14a4f680709cb4c2b9669d01084ab3fd2bc"
+    },
+    {
+      "bytes": 43287,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/context/baseline_catalog.source",
+      "remote_git_blob_oid": "cf85e3f3f53c8e664df0a710dbcbf341c473c419",
+      "sha256": "421b5d5bab28a32afe557e17970a14beb75a99eddc9f536a75bb1bcda9d26eb3"
+    },
+    {
+      "bytes": 5807,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/context/baseline_retention.source",
+      "remote_git_blob_oid": "12ac478f9956e110b44bb696087b5d96826d19eb",
+      "sha256": "8aa2d5af0c3f46d0fba46e784d86d459d104954467552a9dad0a6b8849da8742"
+    },
+    {
+      "bytes": 5829,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/context/mapping_acceptance.source",
+      "remote_git_blob_oid": "7c3129050d7229e8a2e1ee35b4c9c10a88abf2d5",
+      "sha256": "810fd63b517c513c9dfead469368d5d01938daaac66b35826fb6fb68cce5f5ee"
+    },
+    {
+      "bytes": 11651,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/context/mapping_contract.source",
+      "remote_git_blob_oid": "5564634e52055b14c59307c83228b168ee88aa7d",
+      "sha256": "61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4"
+    },
+    {
+      "bytes": 10407,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/context/mapping_retention.source",
+      "remote_git_blob_oid": "462e793c50c8a7ae07faf25293003cd41bc4e1ca",
+      "sha256": "7ecc3c446680deb959f9fa9873bd3670f44c18e64c141c741217721f4790bfa1"
+    },
+    {
+      "bytes": 9908,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/context/mapping_retention_supplement.source",
+      "remote_git_blob_oid": "36e54d2b906d0f2dbe631a10ef4b978dabf3b8bc",
+      "sha256": "9916d1e5192860e840f7cf03910e8745164116fc7937f38145f470e6f9b3a073"
+    },
+    {
+      "bytes": 6779,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/context/prior_handoff_report.source",
+      "remote_git_blob_oid": "c5918a192f919736d107e850ab6ffbfac52f1e8a",
+      "sha256": "5826e6b8cce74a5554d6045f45ac7ac71971a13f19f61754dbff6139f57e54a8"
+    },
+    {
+      "bytes": 2151,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/context/procedure_acceptance.source",
+      "remote_git_blob_oid": "c15bd8d3cb290ed6eff118cdc5bc66e8e976566e",
+      "sha256": "e813b8242f84fc0b6c6bb4cbf08ee8d0794c703f512c8bb8ad18d0f8aa42eac0"
+    },
+    {
+      "bytes": 24366,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/m03/M03.proposal.json",
+      "remote_git_blob_oid": "a506c96db8d4ee524b82f789bccc5c6e7fd1d5c4",
+      "sha256": "c4be6649f64b70406f72a83ebccf44f3775cc4a0cd84ae5867e52236ab6ef63c"
+    },
+    {
+      "bytes": 3495,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/m03/draft-bindings.json",
+      "remote_git_blob_oid": "c4e9c68ffcca1a2035f3a68655cd45d750417535",
+      "sha256": "93d20d6cb5ab43a8d859560f5ef82ecab881173079024a904dc4ba9dd903cc4a"
+    },
+    {
+      "bytes": 15160,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/m03/obligations.json",
+      "remote_git_blob_oid": "baedf8850b7008ae76cbd554457c11d860810ac8",
+      "sha256": "30874d4a21d6b01463e3ff96b90cea5ff0b45e6db9fe20672f10b9597ca4908b"
+    },
+    {
+      "bytes": 12039,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/m08/package-manifest.json",
+      "remote_git_blob_oid": "53275a6b00739a9220ffb75ebf151a44c4568f4d",
+      "sha256": "a44def170668cf17d25c51f50fcbf4556f491dfc69d4bc5e4cea0d2ff0102f79"
+    },
+    {
+      "bytes": 270122,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/m08/successor/m08-denial-routing-table.json",
+      "remote_git_blob_oid": "3be301cc18b302f14dec2f447028d47182ae14c0",
+      "sha256": "23de4796fa572bae329ce1de1117418d50fe9e01b3485ec3bff23f234f507ade"
+    },
+    {
+      "bytes": 46783,
+      "path": "qualification/ingress-review-unit-a-v1.2/inputs/m08/successor/machines/M08.proposal.json",
+      "remote_git_blob_oid": "0fdff052518bc54d7c4dafb8474950d4431d0c65",
+      "sha256": "0aa12f1baa4da12f7bae1996135e011d0b7621702c09b49a7438af2102418268"
+    },
+    {
+      "bytes": 18075,
+      "path": "qualification/ingress-review-unit-a-v1.2/qualify_unit_a.py",
+      "remote_git_blob_oid": "c710894e74141bcb725633ee626a78ea9276c6be",
+      "sha256": "87b425a2e1999efb10652710b60e21c7176bb74ea24d42d2cdc6457e703e4457"
+    },
+    {
+      "bytes": 12632,
+      "path": "qualification/ingress-review-unit-a-v1.2/test_ingress_review_reference.py",
+      "remote_git_blob_oid": "67bfb54bd178916d4ccdb95e6a45229d54300455",
+      "sha256": "e83204faec5783f198713ffe1bb4b0f727c1f401de4c5766a6783bf158119193"
+    },
+    {
+      "bytes": 14497,
+      "path": "qualification/ingress-review-unit-a-v1.2/test_unit_a_custody.py",
+      "remote_git_blob_oid": "ceee413f440c774c57a0ecdf9bfe46d991adc6dd",
+      "sha256": "12eb5d1046d2bb574f27b856aa874c4998f7acf854254a314c5c71acbe63fc7d"
+    },
+    {
+      "bytes": 4532,
+      "path": "qualification/ingress-review-unit-a-v1.2/unit-a-catalog.json",
+      "remote_git_blob_oid": "5a06c54d3477b50a3b51ec32bfa26e8bc762230f",
+      "sha256": "7db495b0a1034c9211c3d08c90569c3b0bccc3209a31f9f9e1885889b99b75c3"
+    }
+  ]
+}

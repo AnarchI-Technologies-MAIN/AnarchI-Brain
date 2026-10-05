@@ -1,0 +1,1691 @@
+{
+  "$defs": {
+    "authorization": {
+      "additionalProperties": false,
+      "properties": {
+        "authorization_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "authorization_version": {
+          "maximum": 9223372036854775807,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "conditions": {
+          "$ref": "#/$defs/authorization_conditions"
+        },
+        "consumer": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "consumer_principal_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "contract_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "decision_disposition": {
+          "enum": [
+            "AUTHORIZE"
+          ],
+          "type": "string"
+        },
+        "effect_actor_principal_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "effect_class": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "effect_description_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "epoch": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "evidence_time": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "expires_at": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "generation": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "grant_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "issued_at": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "issuer_key_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "issuer_principal_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "job": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "not_before": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "operation": {
+          "enum": [
+            "CONSUME_PROJECTION_AUTHORIZATION",
+            "CONSUME_MAINTENANCE_AUTHORIZATION"
+          ],
+          "type": "string"
+        },
+        "policy_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "predecessor_digest": {
+          "anyOf": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "const": "NONE"
+            }
+          ]
+        },
+        "purpose": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "recipient": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "requested_effect_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "resource_class": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "resource_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "resource_version": {
+          "maximum": 9223372036854775807,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "revocation_generation": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "revocation_ref": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "revocation_state": {
+          "enum": [
+            "ACTIVE",
+            "REVOKED",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "root_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "root_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "schema_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "schema_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "schema_version": {
+          "maximum": 9223372036854775807,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "subject_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "subject_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "subject_version": {
+          "maximum": 9223372036854775807,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "supersedes_authorization_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "tenant": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "verifier_admission_ref": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "verifier_principal_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "authorization_id",
+        "authorization_version",
+        "conditions",
+        "consumer",
+        "consumer_principal_id",
+        "contract_digest",
+        "decision_disposition",
+        "effect_actor_principal_id",
+        "effect_class",
+        "effect_description_digest",
+        "epoch",
+        "evidence_time",
+        "expires_at",
+        "generation",
+        "grant_digest",
+        "issued_at",
+        "issuer_key_id",
+        "issuer_principal_id",
+        "job",
+        "not_before",
+        "operation",
+        "policy_digest",
+        "predecessor_digest",
+        "purpose",
+        "recipient",
+        "requested_effect_digest",
+        "resource_class",
+        "resource_id",
+        "resource_version",
+        "revocation_generation",
+        "revocation_ref",
+        "revocation_state",
+        "root_digest",
+        "root_id",
+        "schema_digest",
+        "schema_id",
+        "schema_version",
+        "subject_digest",
+        "subject_id",
+        "subject_version",
+        "supersedes_authorization_id",
+        "tenant",
+        "verifier_admission_ref",
+        "verifier_principal_id"
+      ],
+      "type": "object"
+    },
+    "authorization_conditions": {
+      "additionalProperties": false,
+      "properties": {
+        "epoch": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "extra_conditions": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "generation": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "prior_consumption": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "revocation": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "time": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "epoch",
+        "extra_conditions",
+        "generation",
+        "prior_consumption",
+        "revocation",
+        "time"
+      ],
+      "type": "object"
+    },
+    "bootstrap": {
+      "additionalProperties": false,
+      "properties": {
+        "admitted_key_bindings": {
+          "$ref": "#/$defs/key_bindings"
+        },
+        "admitted_principals": {
+          "$ref": "#/$defs/principals"
+        },
+        "authority_dimensions": {
+          "items": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 64,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "bootstrap_procedure_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "documentary_status": {
+          "enum": [
+            "PRESENT_FIXTURE",
+            "MISSING",
+            "CONFLICT"
+          ],
+          "type": "string"
+        },
+        "effective_not_before": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "genesis_predecessor": {
+          "anyOf": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "const": "NONE"
+            }
+          ]
+        },
+        "maximum_evidence_age": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "minimum_epoch": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "minimum_generation": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "minimum_revocation_generation": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "root_class": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "root_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "root_generation": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "root_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "root_lineage": {
+          "items": {
+            "$ref": "#/$defs/lineage_entry"
+          },
+          "maxItems": 8,
+          "minItems": 1,
+          "type": "array"
+        },
+        "selection_ref": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "admitted_key_bindings",
+        "admitted_principals",
+        "authority_dimensions",
+        "bootstrap_procedure_digest",
+        "documentary_status",
+        "effective_not_before",
+        "genesis_predecessor",
+        "maximum_evidence_age",
+        "minimum_epoch",
+        "minimum_generation",
+        "minimum_revocation_generation",
+        "root_class",
+        "root_digest",
+        "root_generation",
+        "root_id",
+        "root_lineage",
+        "selection_ref"
+      ],
+      "type": "object"
+    },
+    "bundle": {
+      "additionalProperties": false,
+      "properties": {
+        "authorization": {
+          "$ref": "#/$defs/authorization"
+        },
+        "bootstrap": {
+          "$ref": "#/$defs/bootstrap"
+        },
+        "consumption": {
+          "$ref": "#/$defs/consumption"
+        },
+        "current_observation": {
+          "$ref": "#/$defs/current_observation"
+        },
+        "governance_selection": {
+          "$ref": "#/$defs/governance_selection"
+        },
+        "grant": {
+          "$ref": "#/$defs/grant"
+        },
+        "grant_attestation": {
+          "$ref": "#/$defs/grant_attestation"
+        },
+        "issuer_attestation": {
+          "$ref": "#/$defs/issuer_attestation"
+        },
+        "key_bindings": {
+          "$ref": "#/$defs/key_bindings"
+        },
+        "principals": {
+          "$ref": "#/$defs/principals"
+        },
+        "profile": {
+          "enum": [
+            "OFFLINE_FIXTURE_ONLY"
+          ],
+          "type": "string"
+        },
+        "requested_effect": {
+          "$ref": "#/$defs/requested_effect"
+        },
+        "verifier_admission": {
+          "$ref": "#/$defs/verifier_admission"
+        }
+      },
+      "required": [
+        "authorization",
+        "bootstrap",
+        "consumption",
+        "current_observation",
+        "governance_selection",
+        "grant",
+        "grant_attestation",
+        "issuer_attestation",
+        "key_bindings",
+        "principals",
+        "profile",
+        "requested_effect",
+        "verifier_admission"
+      ],
+      "type": "object"
+    },
+    "consumption": {
+      "additionalProperties": false,
+      "properties": {
+        "authorization_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "authorization_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "authorization_version": {
+          "maximum": 9223372036854775807,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "context_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "effect_observation": {
+          "enum": [
+            "NOT_OCCURRED",
+            "OCCURRED",
+            "UNKNOWN",
+            "PARTIAL_EFFECT",
+            "RECEIPT_WITHOUT_EFFECT",
+            "EFFECT_WITHOUT_RECEIPT",
+            "CRASH_AFTER_FENCE"
+          ],
+          "type": "string"
+        },
+        "evaluation_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "generation": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "grant_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "grant_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "request_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "state": {
+          "enum": [
+            "NOT_CONSUMED",
+            "PREPARED",
+            "CONSUMED",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "terminal_receipt_digest": {
+          "anyOf": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "authorization_digest",
+        "authorization_id",
+        "authorization_version",
+        "context_digest",
+        "effect_observation",
+        "evaluation_digest",
+        "generation",
+        "grant_digest",
+        "grant_id",
+        "request_digest",
+        "state",
+        "terminal_receipt_digest"
+      ],
+      "type": "object"
+    },
+    "current_observation": {
+      "additionalProperties": false,
+      "properties": {
+        "authorization_revocation_feed_status": {
+          "enum": [
+            "COMPLETE_FIXTURE",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "denial_feed_status": {
+          "enum": [
+            "COMPLETE_FIXTURE",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "denials": {
+          "items": {
+            "$ref": "#/$defs/denial"
+          },
+          "maxItems": 64,
+          "type": "array"
+        },
+        "epoch": {
+          "anyOf": [
+            {
+              "maximum": 9223372036854775807,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "generation": {
+          "anyOf": [
+            {
+              "maximum": 9223372036854775807,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "now_earliest": {
+          "anyOf": [
+            {
+              "maximum": 9223372036854775807,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "now_latest": {
+          "anyOf": [
+            {
+              "maximum": 9223372036854775807,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "principal_key_generations": {
+          "$ref": "#/$defs/observed_key_generations"
+        },
+        "revocation_feed_status": {
+          "enum": [
+            "COMPLETE_FIXTURE",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "revocation_generation": {
+          "anyOf": [
+            {
+              "maximum": 9223372036854775807,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "revoked_authorization_refs": {
+          "items": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 64,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "revoked_refs": {
+          "items": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 64,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "root_digest": {
+          "anyOf": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "root_generation": {
+          "anyOf": [
+            {
+              "maximum": 9223372036854775807,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "root_id": {
+          "anyOf": [
+            {
+              "maxLength": 512,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "root_status": {
+          "enum": [
+            "KNOWN_FIXTURE",
+            "UNKNOWN",
+            "CONFLICT"
+          ],
+          "type": "string"
+        },
+        "time_status": {
+          "enum": [
+            "KNOWN_FIXTURE",
+            "UNKNOWN",
+            "CONFLICT"
+          ],
+          "type": "string"
+        },
+        "verifier_status": {
+          "enum": [
+            "KNOWN_FIXTURE",
+            "UNKNOWN",
+            "COMPROMISED"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "authorization_revocation_feed_status",
+        "denial_feed_status",
+        "denials",
+        "epoch",
+        "generation",
+        "now_earliest",
+        "now_latest",
+        "principal_key_generations",
+        "revocation_feed_status",
+        "revocation_generation",
+        "revoked_authorization_refs",
+        "revoked_refs",
+        "root_digest",
+        "root_generation",
+        "root_id",
+        "root_status",
+        "time_status",
+        "verifier_status"
+      ],
+      "type": "object"
+    },
+    "denial": {
+      "additionalProperties": false,
+      "properties": {
+        "denial_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "scope": {
+          "$ref": "#/$defs/requested_effect"
+        },
+        "source_ref": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "denial_id",
+        "scope",
+        "source_ref"
+      ],
+      "type": "object"
+    },
+    "governance_selection": {
+      "additionalProperties": false,
+      "properties": {
+        "decision_ref": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "MODELED_GOVERNANCE_SELECTION_NOT_ADOPTED"
+          ],
+          "type": "string"
+        },
+        "selected_bootstrap_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "selection_origin": {
+          "enum": [
+            "EXTERNAL_MODELED_GOVERNANCE",
+            "ROOT_SELF_ATTESTATION"
+          ],
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "SELECTED",
+            "UNKNOWN",
+            "CONFLICT"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "decision_ref",
+        "kind",
+        "selected_bootstrap_sha256",
+        "selection_origin",
+        "status"
+      ],
+      "type": "object"
+    },
+    "grant": {
+      "additionalProperties": false,
+      "properties": {
+        "authority_dimension": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "consumer": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "contract_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "delegation": {
+          "type": "boolean"
+        },
+        "effect_actor_principal_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "effect_class": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "effect_description_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "epoch": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "evidence_time": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "expires_at": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "generation": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "grant_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "grant_version": {
+          "maximum": 9223372036854775807,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "grantee_principal_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "issuer_key_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "issuer_principal_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "job": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "not_before": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "operation": {
+          "enum": [
+            "CONSUME_PROJECTION_AUTHORIZATION",
+            "CONSUME_MAINTENANCE_AUTHORIZATION"
+          ],
+          "type": "string"
+        },
+        "policy_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "predecessor_digest": {
+          "anyOf": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "const": "NONE"
+            }
+          ]
+        },
+        "purpose": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "recipient": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "resource_class": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "resource_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "resource_version": {
+          "maximum": 9223372036854775807,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "revocation_generation": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "revocation_ref": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "revocation_state": {
+          "enum": [
+            "ACTIVE",
+            "REVOKED",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "root_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "root_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "root_lineage": {
+          "items": {
+            "$ref": "#/$defs/lineage_entry"
+          },
+          "maxItems": 8,
+          "minItems": 1,
+          "type": "array"
+        },
+        "schema_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "schema_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "schema_version": {
+          "maximum": 9223372036854775807,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "subject_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "subject_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "subject_version": {
+          "maximum": 9223372036854775807,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "supersedes_grant_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "tenant": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "verifier_admission_ref": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "authority_dimension",
+        "consumer",
+        "contract_digest",
+        "delegation",
+        "effect_actor_principal_id",
+        "effect_class",
+        "effect_description_digest",
+        "epoch",
+        "evidence_time",
+        "expires_at",
+        "generation",
+        "grant_id",
+        "grant_version",
+        "grantee_principal_id",
+        "issuer_key_id",
+        "issuer_principal_id",
+        "job",
+        "not_before",
+        "operation",
+        "policy_digest",
+        "predecessor_digest",
+        "purpose",
+        "recipient",
+        "resource_class",
+        "resource_id",
+        "resource_version",
+        "revocation_generation",
+        "revocation_ref",
+        "revocation_state",
+        "root_digest",
+        "root_id",
+        "root_lineage",
+        "schema_digest",
+        "schema_id",
+        "schema_version",
+        "subject_digest",
+        "subject_id",
+        "subject_version",
+        "supersedes_grant_id",
+        "tenant",
+        "verifier_admission_ref"
+      ],
+      "type": "object"
+    },
+    "grant_attestation": {
+      "additionalProperties": false,
+      "properties": {
+        "attestation_kind": {
+          "enum": [
+            "DOCUMENTARY_FIXTURE_BINDING",
+            "SELF_ATTESTED_ROOT"
+          ],
+          "type": "string"
+        },
+        "evidence_time": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "grant_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "issuer_key_fingerprint": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "issuer_key_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "issuer_principal_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "selection_ref": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "attestation_kind",
+        "evidence_time",
+        "grant_sha256",
+        "issuer_key_fingerprint",
+        "issuer_key_id",
+        "issuer_principal_id",
+        "selection_ref"
+      ],
+      "type": "object"
+    },
+    "issuer_attestation": {
+      "additionalProperties": false,
+      "properties": {
+        "attestation_kind": {
+          "enum": [
+            "DOCUMENTARY_FIXTURE_BINDING",
+            "SELF_ATTESTED_ROOT"
+          ],
+          "type": "string"
+        },
+        "authorization_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "evidence_time": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "grant_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "issuer_key_fingerprint": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "issuer_key_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "issuer_principal_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "selection_ref": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "attestation_kind",
+        "authorization_sha256",
+        "evidence_time",
+        "grant_sha256",
+        "issuer_key_fingerprint",
+        "issuer_key_id",
+        "issuer_principal_id",
+        "selection_ref"
+      ],
+      "type": "object"
+    },
+    "key_binding": {
+      "additionalProperties": false,
+      "properties": {
+        "activation_time": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "generation": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "issuer_authority_ref": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "key_fingerprint": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "key_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "predecessor_key_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "principal_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "verifier_admission_ref": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "activation_time",
+        "generation",
+        "issuer_authority_ref",
+        "key_fingerprint",
+        "key_id",
+        "predecessor_key_id",
+        "principal_id",
+        "verifier_admission_ref"
+      ],
+      "type": "object"
+    },
+    "key_bindings": {
+      "additionalProperties": false,
+      "properties": {
+        "grant_issuer": {
+          "$ref": "#/$defs/key_binding"
+        },
+        "grantee": {
+          "$ref": "#/$defs/key_binding"
+        },
+        "issuer": {
+          "$ref": "#/$defs/key_binding"
+        },
+        "verifier": {
+          "$ref": "#/$defs/key_binding"
+        }
+      },
+      "required": [
+        "grant_issuer",
+        "grantee",
+        "issuer",
+        "verifier"
+      ],
+      "type": "object"
+    },
+    "lineage_entry": {
+      "additionalProperties": false,
+      "properties": {
+        "predecessor_root_digest": {
+          "anyOf": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "const": "NONE"
+            }
+          ]
+        },
+        "root_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "root_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "predecessor_root_digest",
+        "root_digest",
+        "root_id"
+      ],
+      "type": "object"
+    },
+    "observed_key_generations": {
+      "additionalProperties": false,
+      "properties": {
+        "grant_issuer": {
+          "anyOf": [
+            {
+              "maximum": 9223372036854775807,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "grantee": {
+          "anyOf": [
+            {
+              "maximum": 9223372036854775807,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "issuer": {
+          "anyOf": [
+            {
+              "maximum": 9223372036854775807,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "verifier": {
+          "anyOf": [
+            {
+              "maximum": 9223372036854775807,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "grant_issuer",
+        "grantee",
+        "issuer",
+        "verifier"
+      ],
+      "type": "object"
+    },
+    "principal": {
+      "additionalProperties": false,
+      "properties": {
+        "admin_domain_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "authority_lineage_ref": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "authority_purpose": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "effective_controller_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "evidence_provenance_domain_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "jurisdiction": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "principal_class": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "principal_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "signing_custody_domain_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "admin_domain_id",
+        "authority_lineage_ref",
+        "authority_purpose",
+        "effective_controller_id",
+        "evidence_provenance_domain_id",
+        "jurisdiction",
+        "principal_class",
+        "principal_id",
+        "signing_custody_domain_id"
+      ],
+      "type": "object"
+    },
+    "principals": {
+      "additionalProperties": false,
+      "properties": {
+        "grant_issuer": {
+          "$ref": "#/$defs/principal"
+        },
+        "grantee": {
+          "$ref": "#/$defs/principal"
+        },
+        "issuer": {
+          "$ref": "#/$defs/principal"
+        },
+        "verifier": {
+          "$ref": "#/$defs/principal"
+        }
+      },
+      "required": [
+        "grant_issuer",
+        "grantee",
+        "issuer",
+        "verifier"
+      ],
+      "type": "object"
+    },
+    "requested_effect": {
+      "additionalProperties": false,
+      "properties": {
+        "consumer": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "contract_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "effect_actor_principal_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "effect_class": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "effect_description": {
+          "maxLength": 2048,
+          "minLength": 1,
+          "type": "string"
+        },
+        "effect_description_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "grantee_principal_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "job": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "operation": {
+          "enum": [
+            "CONSUME_PROJECTION_AUTHORIZATION",
+            "CONSUME_MAINTENANCE_AUTHORIZATION"
+          ],
+          "type": "string"
+        },
+        "policy_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "predecessor_digest": {
+          "anyOf": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "const": "NONE"
+            }
+          ]
+        },
+        "purpose": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "recipient": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "resource_class": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "resource_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "resource_version": {
+          "maximum": 9223372036854775807,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "schema_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "schema_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "schema_version": {
+          "maximum": 9223372036854775807,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "subject_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "subject_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "subject_version": {
+          "maximum": 9223372036854775807,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "tenant": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "consumer",
+        "contract_digest",
+        "effect_actor_principal_id",
+        "effect_class",
+        "effect_description",
+        "effect_description_digest",
+        "grantee_principal_id",
+        "job",
+        "operation",
+        "policy_digest",
+        "predecessor_digest",
+        "purpose",
+        "recipient",
+        "resource_class",
+        "resource_id",
+        "resource_version",
+        "schema_digest",
+        "schema_id",
+        "schema_version",
+        "subject_digest",
+        "subject_id",
+        "subject_version",
+        "tenant"
+      ],
+      "type": "object"
+    },
+    "verifier_admission": {
+      "additionalProperties": false,
+      "properties": {
+        "admission_kind": {
+          "enum": [
+            "DOCUMENTARY_FIXTURE_ADMISSION",
+            "SELF_ADMISSION"
+          ],
+          "type": "string"
+        },
+        "admission_ref": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "root_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "root_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "selection_ref": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "verifier_key_fingerprint": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "verifier_key_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        "verifier_principal_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "admission_kind",
+        "admission_ref",
+        "root_digest",
+        "root_id",
+        "selection_ref",
+        "verifier_key_fingerprint",
+        "verifier_key_id",
+        "verifier_principal_id"
+      ],
+      "type": "object"
+    }
+  },
+  "$ref": "#/$defs/bundle",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "DRAFT_NOT_ADOPTED; OFFLINE_FIXTURE_ONLY. All coordinates required; null is permitted solely in explicitly unknown observation fields. Structural validity confers no runtime authority. Semantic binding, duplicate JSON names, UTF-8 validity and whole-input resource bounds require the pinned reference validator; no effect or grant is issued.",
+  "title": "Unit B documentary bundle"
+}

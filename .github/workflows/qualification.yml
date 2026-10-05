@@ -1,15 +1,19 @@
 name: Brain qualification
+
 on:
   push:
     branches: ['**']
   pull_request:
     branches: [main, development]
   workflow_dispatch:
+
 permissions:
   contents: read
+
 concurrency:
   group: qualification-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
+
 jobs:
   qualify:
     name: qualify (${{ matrix.os }})
@@ -25,17 +29,15 @@ jobs:
     runs-on: ${{ matrix.runner }}
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          persist-credentials: false
-      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: python -m pip install jsonschema==4.26.0
       - run: python -I -B -m unittest discover -s ci -p "test_*.py"
       - run: python -I -B -O -m unittest discover -s ci -p "test_*.py"
       - run: python -I -B ci/qualify.py
-      - name: Unit A offline reference and custody checks
-        run: python -I -B -m unittest discover -s qualification/ingress-review-unit-a-v1.2 -p "test_*.py"
-      - name: Unit A checks with optimization enabled
-        run: python -I -B -O -m unittest discover -s qualification/ingress-review-unit-a-v1.2 -p "test_*.py"
+      - run: python -I -B qualification/authority-unit-b-v1.3/qualify_unit_b.py --catalog-sha256 e51c99c81c61cc1cc69ddbfd193503a1b659fcf694ffcc2d5d76cc47ba6d5792
+      - run: python -I -B -O qualification/authority-unit-b-v1.3/qualify_unit_b.py --catalog-sha256 e51c99c81c61cc1cc69ddbfd193503a1b659fcf694ffcc2d5d76cc47ba6d5792
+      - run: python -I -B ci/run_unit_b_tests.py
+      - run: python -I -B -O ci/run_unit_b_tests.py
