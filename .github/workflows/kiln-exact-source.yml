@@ -29,7 +29,7 @@ concurrency:
 
 jobs:
   authorize:
-    name: Kiln exact-source qualification
+    name: Kiln authorization
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     outputs:
@@ -106,3 +106,20 @@ jobs:
       kiln_ref: 6f909042d2c756cb5d0b44b84e259d5fc7fcb1ae
       max_passes: 8
       until: stable
+
+
+  gate:
+    name: Kiln exact-source qualification
+    needs: [authorize, kiln]
+    if: always()
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Require authorization and campaign success
+        env:
+          AUTHORIZATION_RESULT: ${{ needs.authorize.result }}
+          CAMPAIGN_RESULT: ${{ needs.kiln.result }}
+        run: |
+          set -euo pipefail
+          test "$AUTHORIZATION_RESULT" = success
+          test "$CAMPAIGN_RESULT" = success
