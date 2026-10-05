@@ -1,0 +1,186 @@
+{
+  "commit": "83343a0c137000789e0616e3126afe9a19f0b6b3",
+  "custody_limits": "GitHub commit bytes independently retrieved and compared; no legal identity authentication, hostile-administrator immutability or runtime grant.",
+  "first_verified_external_retention_effective_not_before_utc": "2026-10-04T20:55:00Z",
+  "immutable_storage_claim": false,
+  "original_acceptance_and_retention_receipt_unchanged": true,
+  "pull_request": "https://github.com/AnarchI-Technologies-MAIN/AnarchI-Brain/pull/15",
+  "schema": "MAPPING-RETENTION-SUPPLEMENT-RECEIPT-1",
+  "supplement_independently_retrieved_at_utc": "2026-10-04T20:56:13Z",
+  "verified_files": [
+    {
+      "bytes": 52,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/.gitattributes",
+      "remote_git_blob_oid": "8b0bea37c2a2a49bbfb65db4f237d51d47124e3a",
+      "sha256": "61796fc1f498847e9a7a839480fa6c85c6af3467b794c0916ff0cce3af3b2912"
+    },
+    {
+      "bytes": 5829,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/acceptance.json",
+      "remote_git_blob_oid": "7c3129050d7229e8a2e1ee35b4c9c10a88abf2d5",
+      "sha256": "810fd63b517c513c9dfead469368d5d01938daaac66b35826fb6fb68cce5f5ee"
+    },
+    {
+      "bytes": 82,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/acceptance.json.sha256",
+      "remote_git_blob_oid": "dcf03fc644427616a45d5db3f57aedbe31279c44",
+      "sha256": "db02d283ac2f7246081e2f23259a6de322bdeaf2fb04f2a4cf692252945f5f74"
+    },
+    {
+      "bytes": 11651,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/contract/CORTEX-FILAMENT-MAPPING-DRAFT.md",
+      "remote_git_blob_oid": "5564634e52055b14c59307c83228b168ee88aa7d",
+      "sha256": "61411344381e31149a1b652a34e75f65438a4e18c98970115454ab3ad785d9a4"
+    },
+    {
+      "bytes": 10407,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/external-retention-receipt.json",
+      "remote_git_blob_oid": "462e793c50c8a7ae07faf25293003cd41bc4e1ca",
+      "sha256": "7ecc3c446680deb959f9fa9873bd3670f44c18e64c141c741217721f4790bfa1"
+    },
+    {
+      "bytes": 98,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/external-retention-receipt.json.sha256",
+      "remote_git_blob_oid": "b2ee9021a954514b4c18dc8a6a22ab80806c4bf5",
+      "sha256": "af23da99a13c1b6e5a46b92a7031c51e34e7627690bbff8b306100558a7a802a"
+    },
+    {
+      "bytes": 6385,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/predecessor/accepted-procedure.md",
+      "remote_git_blob_oid": "0d4d7015853a3b8703cb554e79b605e7be36a888",
+      "sha256": "3f6f9393be17bcd448fdebc1e65f4195b700036cdb200d5f435fd90f6f558992"
+    },
+    {
+      "bytes": 7551,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/predecessor/baseline-acceptance.json",
+      "remote_git_blob_oid": "6614d01ccc95b34f34011230114b7bdc3c6b9dea",
+      "sha256": "10bd8c050b4a39553a553bdad868f14a4f680709cb4c2b9669d01084ab3fd2bc"
+    },
+    {
+      "bytes": 5807,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/predecessor/baseline-external-retention-receipt.json",
+      "remote_git_blob_oid": "12ac478f9956e110b44bb696087b5d96826d19eb",
+      "sha256": "8aa2d5af0c3f46d0fba46e784d86d459d104954467552a9dad0a6b8849da8742"
+    },
+    {
+      "bytes": 17514,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/predecessor/candidate/authority-dimensions.md",
+      "remote_git_blob_oid": "51607875ab7395455b646b5c596f7243bd049bfc",
+      "sha256": "a1143481b4f6d24354cf5e28bfcdb5fa5706fcc162969601098241c124bad0fa"
+    },
+    {
+      "bytes": 10947,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/predecessor/candidate/authority-matrix.md",
+      "remote_git_blob_oid": "19c82ee5085053e4499cdba7233a2bc43d592fc7",
+      "sha256": "1ceaf312b74500548654c7a7244ebc9222c93cf2e9bdfb2522669ad7359cb98e"
+    },
+    {
+      "bytes": 14694,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/predecessor/candidate/cortex-contract.md",
+      "remote_git_blob_oid": "69fa76a1c38c921d047f44d2691d11170dd5e898",
+      "sha256": "51da5c27fdddf24ef3c822da565b7d8e3cec9d6a7df0a8d864e35422b79d3e1a"
+    },
+    {
+      "bytes": 12377,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/predecessor/candidate/semantic-language.md",
+      "remote_git_blob_oid": "871a2ad6297ef1f10afd1bfdbb3d0e4bbd8effba",
+      "sha256": "33c438c541f02c97d9e9eab205610f52bc56fe226dbfd2345776c498a630d7d3"
+    },
+    {
+      "bytes": 2151,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/predecessor/procedure-acceptance.json",
+      "remote_git_blob_oid": "c15bd8d3cb290ed6eff118cdc5bc66e8e976566e",
+      "sha256": "e813b8242f84fc0b6c6bb4cbf08ee8d0794c703f512c8bb8ad18d0f8aa42eac0"
+    },
+    {
+      "bytes": 43287,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/predecessor/proposal-inventory.json",
+      "remote_git_blob_oid": "cf85e3f3f53c8e664df0a710dbcbf341c473c419",
+      "sha256": "421b5d5bab28a32afe557e17970a14beb75a99eddc9f536a75bb1bcda9d26eb3"
+    },
+    {
+      "bytes": 3571,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/qualification/qualification_receipt-v13.json",
+      "remote_git_blob_oid": "4fdb7394ccb053a1099a6981b028251d6cf3e3f0",
+      "sha256": "eed0653c1dec9e8a6c16a6220941c417d35dae5d67e89826b0f0610e411c8978"
+    },
+    {
+      "bytes": 11140,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/qualification/ubuntu-verification-results.json",
+      "remote_git_blob_oid": "3066b7b4f560d7c7b36377d6217a70b3a9706e85",
+      "sha256": "2027dbd6c8a9a4cf9f06fe12205655f9ecc70f3bfb7ecf24287aefed1127998b"
+    },
+    {
+      "bytes": 5085,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/qualification/WINDOWS-QUALIFICATION-RESULTS-r2.json",
+      "remote_git_blob_oid": "f69ccabfa75a20f7132daa98662d327c9868a4f8",
+      "sha256": "8d824fbfcf4de56dbfcc8f2d919c28669b7abc8644e8209c513e7ac9f91c1dc3"
+    },
+    {
+      "bytes": 1518,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/question-context-supplement.json",
+      "remote_git_blob_oid": "54e16fd6132b7e7d4d9de9083d86ecbda41526ab",
+      "sha256": "7f754986a7f478149e6c1013cfcf9defb3cea663adc2b87134f35098cd7b6dcf"
+    },
+    {
+      "bytes": 7702,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/retention-package-manifest.json",
+      "remote_git_blob_oid": "d11e6e5e4dc9a97648f85a5755f885fbb7137268",
+      "sha256": "ddf14cf7c51695ce995d8280a2392adaaa06f9a4fd4954ae5cf54445ba453922"
+    },
+    {
+      "bytes": 1208,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/review/LYRA-SOURCE-DISPOSITION-v13.json",
+      "remote_git_blob_oid": "c730c7b0ea789cd32a07117f52f43d8acbc5a30d",
+      "sha256": "6b9eac7786399e261c0b152da3728578648398654749234e343dbd19b409e059"
+    },
+    {
+      "bytes": 78430,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/review/lyra-v13-source-review.json",
+      "remote_git_blob_oid": "8766c77b6ec3830a429f834eda2232c4619f54a3",
+      "sha256": "f5ea1aff2b714b52396574254600eab38e014a817e0373a68a35b4770231431c"
+    },
+    {
+      "bytes": 5952,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/supporting-source/mapping_reference.py",
+      "remote_git_blob_oid": "e508691be6c48bffcf6363851f54a0541aefa4b7",
+      "sha256": "7561f2222762fca9904e4f1e8494d21b8b5b99dfc87d48d572922d52db5ac162"
+    },
+    {
+      "bytes": 9618,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/supporting-source/qualify_mapping_reference.py",
+      "remote_git_blob_oid": "3475c3da4f660acc22775b9a970218a34fdd2e4e",
+      "sha256": "dca04c960875ba11f29ab2c8ee8b6c823cfb1ca93153c3ca1b41a42df15372e5"
+    },
+    {
+      "bytes": 3619,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/supporting-source/source-register.json",
+      "remote_git_blob_oid": "6ab3fd64a44e9818b3ef3a31d365d9e6c51a77ba",
+      "sha256": "796b0e8277d19f439a3ed11a9b18096bc60aafdf44f159f5508925527687f80e"
+    },
+    {
+      "bytes": 5618,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/supporting-source/test_mapping_baseline_context.py",
+      "remote_git_blob_oid": "1c0dd3231f6e0913f37b9ae1f19adf5d50560332",
+      "sha256": "d9409b716d19bc6d45ec855044b8b078255df2b3d14c83908b03e76d15f25424"
+    },
+    {
+      "bytes": 10042,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/supporting-source/test_mapping_custody.py",
+      "remote_git_blob_oid": "e3a6dddbed50a7e6576177dbefae6b543879438d",
+      "sha256": "97df7cf7f1d17a6def7907e554250327a75eb5ca36e564a16e6c132c46cf8eab"
+    },
+    {
+      "bytes": 1844,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/supporting-source/test_mapping_qualification.py",
+      "remote_git_blob_oid": "282a7e609bf261d92cc44491b3ec1065b7e57605",
+      "sha256": "9a88c88f003d8a4f774343a3089635c9c99718cb51ae5423830b1b9391700187"
+    },
+    {
+      "bytes": 5934,
+      "path": "governance/forward-reconciliation/accepted-mapping-v1.3-20261004T205057Z/supporting-source/test_mapping_reference.py",
+      "remote_git_blob_oid": "4207fcc2049d28d5f09f7982b686f6a355d77cd8",
+      "sha256": "f54a92e796fe3c3331478303ac81184e5239593f06bb3d9b04c5672d7de0ee65"
+    }
+  ]
+}

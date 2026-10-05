@@ -1,0 +1,365 @@
+{
+  "authority_resolution": "UNRESOLVED_REQUIRES_GOVERNING_CONTRACT_NOT_ROLE_NAME",
+  "evidence_required": [
+    "exact source identity and retained original bytes",
+    "normalization schema/version and original-to-normalized derivation binding",
+    "applicable Observe/Propose authority path under adopted governing baseline",
+    "predecessor/policy/scope/freshness evidence",
+    "bounded resource enforcement",
+    "exact bounded non-authoritative attempt/proposal recording",
+    "explicit separation from downstream M04/S1 qualification and S2 canonical admission",
+    "externally verified issuer/key/root/epoch/generation for the applicable Observe/Propose operation; unrelated Qualify grants cannot satisfy this binding"
+  ],
+  "failure": "No protected effect on BLOCKED or UNRESOLVED; preserve prior committed state, retain evidence under permitted scope; recognized verifier compromise closes shared epoch. Durable recording failure cannot imply success.",
+  "idempotency": "Identity is scoped to consumer/tenant/job/purpose/operation/subject/predecessor and fenced generation. No wall-clock or caller string alone establishes global uniqueness.",
+  "illegal_transitions": "Every unlisted (source,event,gate_outcome) is forbidden. Failure findings are orthogonal; a rejected attempt cannot publish canon or restore revoked access.",
+  "issuer": "UNRESOLVED_REQUIRES_EXACT_GOVERNING_CONTRACT; logical fin ownership is not a principal or permission grant.",
+  "legal_transitions": [
+    {
+      "authorizer": "UNRESOLVED_GOVERNING_OBSERVE_PROPOSE_AUTHORITY",
+      "concrete_receipt": "ATTEMPT",
+      "crash_replay": "Same idempotency key and exact subject returns original terminal receipt only if freshly authorized to disclose it; changed subject rejects key reuse; missing terminal receipt remains UNRESOLVED, never blind effect replay.",
+      "event": "normalize_with_provenance",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "from": "RECEIVED",
+      "gate_outcome": "SATISFIED",
+      "ordinary_access_eligibility": "CLOSED: these M03 transitions confer no ordinary data access; any distinct read/disclosure operation needs separate current scope and authority.",
+      "proposer": "Cartologist",
+      "receipt_boundary": "Bounded non-authoritative diagnostic/attempt only under eventually adopted M14 schema; no qualification/admission/attestation/canonical-success result.",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "required_predicates": [
+        "M03.normalize_with_provenance.exact_subject=SATISFIED",
+        "M03.normalize_with_provenance.applicable_semantics=SATISFIED",
+        "M03.normalize_with_provenance.current_predecessor=SATISFIED",
+        "M03.normalize_with_provenance.applicable_authority=SATISFIED",
+        "M03.normalize_with_provenance.resource_bounds=SATISFIED",
+        "M03.normalize_with_provenance.applicable_dimension.Observe=SATISFIED",
+        "M03.normalize_with_provenance.applicable_dimension.Propose=SATISFIED"
+      ],
+      "side_effect": "NONCANONICAL_LOCAL_NORMALIZATION_ONLY_AFTER_EXACT_OBSERVE_AND_PROPOSE_FENCE",
+      "state_update": "RECEIVED -> NORMALIZED_CANDIDATE; exact causal receipt required before claiming corresponding result",
+      "to": "NORMALIZED_CANDIDATE"
+    },
+    {
+      "authorizer": "NO_POSITIVE_AUTHORITY_REQUIRED_TO_REFUSE_OR_HOLD",
+      "concrete_receipt": "ATTEMPT",
+      "crash_replay": "Same idempotency key and exact subject returns original terminal receipt only if freshly authorized to disclose it; changed subject rejects key reuse; missing terminal receipt remains UNRESOLVED, never blind effect replay.",
+      "event": "normalize_with_provenance",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "from": "RECEIVED",
+      "gate_outcome": "BLOCKED",
+      "ordinary_access_eligibility": "CLOSED: these M03 transitions confer no ordinary data access; any distinct read/disclosure operation needs separate current scope and authority.",
+      "proposer": "Cartologist",
+      "receipt_boundary": "Bounded non-authoritative diagnostic/attempt only under eventually adopted M14 schema; no qualification/admission/attestation/canonical-success result.",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "required_predicates": [
+        "M03.normalize_with_provenance.evaluation=BLOCKED"
+      ],
+      "side_effect": "NONE",
+      "state_update": "preserve actual prior lifecycle state; retain all findings; no protected effect",
+      "to": "RECEIVED"
+    },
+    {
+      "authorizer": "NO_POSITIVE_AUTHORITY_REQUIRED_TO_REFUSE_OR_HOLD",
+      "concrete_receipt": "ATTEMPT",
+      "crash_replay": "Same idempotency key and exact subject returns original terminal receipt only if freshly authorized to disclose it; changed subject rejects key reuse; missing terminal receipt remains UNRESOLVED, never blind effect replay.",
+      "event": "normalize_with_provenance",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "from": "RECEIVED",
+      "gate_outcome": "UNRESOLVED",
+      "ordinary_access_eligibility": "CLOSED: these M03 transitions confer no ordinary data access; any distinct read/disclosure operation needs separate current scope and authority.",
+      "proposer": "Cartologist",
+      "receipt_boundary": "Bounded non-authoritative diagnostic/attempt only under eventually adopted M14 schema; no qualification/admission/attestation/canonical-success result.",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "required_predicates": [
+        "M03.normalize_with_provenance.evaluation=UNRESOLVED"
+      ],
+      "side_effect": "NONE",
+      "state_update": "preserve actual prior lifecycle state; retain all findings; no protected effect",
+      "to": "RECEIVED"
+    },
+    {
+      "authorizer": "UNRESOLVED_GOVERNING_OBSERVE_PROPOSE_AUTHORITY",
+      "concrete_receipt": "ATTEMPT",
+      "crash_replay": "Same idempotency key and exact subject returns original terminal receipt only if freshly authorized to disclose it; changed subject rejects key reuse; missing terminal receipt remains UNRESOLVED, never blind effect replay.",
+      "event": "propose_neighborhood",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "from": "NORMALIZED_CANDIDATE",
+      "gate_outcome": "SATISFIED",
+      "ordinary_access_eligibility": "CLOSED: these M03 transitions confer no ordinary data access; any distinct read/disclosure operation needs separate current scope and authority.",
+      "proposer": "Cartologist",
+      "receipt_boundary": "Bounded non-authoritative diagnostic/attempt only under eventually adopted M14 schema; no qualification/admission/attestation/canonical-success result.",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "required_predicates": [
+        "M03.propose_neighborhood.exact_subject=SATISFIED",
+        "M03.propose_neighborhood.applicable_semantics=SATISFIED",
+        "M03.propose_neighborhood.current_predecessor=SATISFIED",
+        "M03.propose_neighborhood.applicable_authority=SATISFIED",
+        "M03.propose_neighborhood.resource_bounds=SATISFIED",
+        "M03.propose_neighborhood.applicable_dimension.Propose=SATISFIED"
+      ],
+      "side_effect": "NONCANONICAL_LOCAL_PROPOSAL_ONLY_AFTER_EXACT_PROPOSE_FENCE",
+      "state_update": "NORMALIZED_CANDIDATE -> PROPOSED; exact causal receipt required before claiming corresponding result",
+      "to": "PROPOSED"
+    },
+    {
+      "authorizer": "NO_POSITIVE_AUTHORITY_REQUIRED_TO_REFUSE_OR_HOLD",
+      "concrete_receipt": "ATTEMPT",
+      "crash_replay": "Same idempotency key and exact subject returns original terminal receipt only if freshly authorized to disclose it; changed subject rejects key reuse; missing terminal receipt remains UNRESOLVED, never blind effect replay.",
+      "event": "propose_neighborhood",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "from": "NORMALIZED_CANDIDATE",
+      "gate_outcome": "BLOCKED",
+      "ordinary_access_eligibility": "CLOSED: these M03 transitions confer no ordinary data access; any distinct read/disclosure operation needs separate current scope and authority.",
+      "proposer": "Cartologist",
+      "receipt_boundary": "Bounded non-authoritative diagnostic/attempt only under eventually adopted M14 schema; no qualification/admission/attestation/canonical-success result.",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "required_predicates": [
+        "M03.propose_neighborhood.evaluation=BLOCKED"
+      ],
+      "side_effect": "NONE",
+      "state_update": "preserve actual prior lifecycle state; retain all findings; no protected effect",
+      "to": "NORMALIZED_CANDIDATE"
+    },
+    {
+      "authorizer": "NO_POSITIVE_AUTHORITY_REQUIRED_TO_REFUSE_OR_HOLD",
+      "concrete_receipt": "ATTEMPT",
+      "crash_replay": "Same idempotency key and exact subject returns original terminal receipt only if freshly authorized to disclose it; changed subject rejects key reuse; missing terminal receipt remains UNRESOLVED, never blind effect replay.",
+      "event": "propose_neighborhood",
+      "exact_input_binding": [
+        "subject/package/dependencies",
+        "consumer/tenant/job/purpose/recipient",
+        "policy/schema/authority roots",
+        "predecessor root",
+        "epoch/external generation",
+        "operation/idempotency identity"
+      ],
+      "from": "NORMALIZED_CANDIDATE",
+      "gate_outcome": "UNRESOLVED",
+      "ordinary_access_eligibility": "CLOSED: these M03 transitions confer no ordinary data access; any distinct read/disclosure operation needs separate current scope and authority.",
+      "proposer": "Cartologist",
+      "receipt_boundary": "Bounded non-authoritative diagnostic/attempt only under eventually adopted M14 schema; no qualification/admission/attestation/canonical-success result.",
+      "receipt_issuance_failure": "retain actual state/exclusion; receipt result UNRESOLVED; never fabricate durable receipt",
+      "recheck_location": "actual state/effect boundary for protected updates; fail-closed triggers do not depend on positive authority/recovery predicates",
+      "required_predicates": [
+        "M03.propose_neighborhood.evaluation=UNRESOLVED"
+      ],
+      "side_effect": "NONE",
+      "state_update": "preserve actual prior lifecycle state; retain all findings; no protected effect",
+      "to": "NORMALIZED_CANDIDATE"
+    }
+  ],
+  "machine": "M03",
+  "machine_specific_predicates": {
+    "atlas_root_vs_current_canonical_root": "EQUAL/DIFFERENT only from exact trusted observed roots; unknown observation UNRESOLVED.",
+    "cutover_occurrence": "NOT_OCCURRED only when durable journal/current canonical root establish no cutover; missing receipt is not this proof.",
+    "maintained_history_vs_access": "Historical lifecycle retention never implies managed access eligibility. Separate exact current lease/authority fence must satisfy before any retrieval.",
+    "shadow_or_rollback_evidence": "BLOCKED only for determinate failed exact shadow-reconstruction/rollback proof; missing evidence UNRESOLVED."
+  },
+  "machine_specific_semantics": {
+    "authority_dimensions": {
+      "normalize_with_provenance": [
+        "Observe",
+        "Propose"
+      ],
+      "propose_neighborhood": [
+        "Propose"
+      ]
+    },
+    "lineage": "Normalized-representation validity, original provenance, and source-dependence findings remain separate axes. M03 preserves observed source/dependency relations and ambiguity; it does not decide corroboration independence. M04/S1 qualifies independence under its separately adopted contract.",
+    "normalization_authority": "Observe permits bounded access/processing of exact source; Propose separately permits creation of the proposed noncanonical derived candidate under an adopted M03 representation contract. Both exact scopes must resolve before this positive transition. No Execute, Qualify or disclosure power is inferred.",
+    "role_boundary": "M03 does not qualify evidence, attest truth, authorize action or establish canonical membership."
+  },
+  "normative_source": "captured-r2-source/evidence/stonewall-0/m01-r2/obligations.json",
+  "owner": "Cartologist",
+  "predicate_definitions": {
+    "applicable_authority": {
+      "BLOCKED": "Authentically resolved wrong dimension, forbidden scope, revocation, expiry, invalid ancestor or rejected signature. Keep all other findings.",
+      "SATISFIED": "Adopted independent issuer/verifier resolves governing baseline and authenticates every exact operation-specific grant, parent, scope, roots, revocation/expiry/epoch/generation at the protected boundary. Normalization requires both Observe and Propose; proposal requires Propose. Qualify alone never satisfies either.",
+      "UNRESOLVED": "Governing baseline, amendment authority, actual issuer/verifier/grant contract or trusted freshness source missing. Captured matrix labels and role ownership do not grant authority.",
+      "bindings": [
+        "grant exact bytes/signature",
+        "issuer/key/version and authority-root",
+        "scope operation/consumer/tenant/recipient/job/purpose/resource/version",
+        "parent delegation chain",
+        "revocation/expiry and external generation/epoch",
+        "exact current event-to-dimension set: normalize_with_provenance requires Observe AND Propose; propose_neighborhood requires Propose"
+      ]
+    },
+    "applicable_dimensions": {
+      "event_dimensions": {
+        "normalize_with_provenance": [
+          "Observe",
+          "Propose"
+        ],
+        "propose_neighborhood": [
+          "Propose"
+        ]
+      },
+      "rule": "Every listed dimension independently satisfies its exact current scoped grant/freshness binding. Missing/unverified grant yields UNRESOLVED, authenticated denial BLOCKED. Preserve all findings; possession of an unrelated grant implies nothing.",
+      "type": "EXACT_EVENT_AUTHORITY_DIMENSION_SET"
+    },
+    "applicable_semantics": {
+      "BLOCKED": "Resolved applicable semantics identify determinate incompatible/forbidden input.",
+      "SATISFIED": "Named adopted resolver interprets exact pinned subject under the applicable contract; all required dimensions satisfied.",
+      "UNRESOLVED": "No adopted resolver/profile, ambiguous meaning, or missing required premise. Default here remains UNRESOLVED.",
+      "bindings": [
+        "contract identity/version/digest",
+        "operation semantics profile",
+        "resolver identity/version",
+        "input meanings and lineage",
+        "all required predicate findings"
+      ]
+    },
+    "current_predecessor": {
+      "BLOCKED": "At boundary, observed roots differ or causal ordering contradicts required predecessor.",
+      "SATISFIED": "At actual boundary, both exact predecessor and state roots equal and causal ordering is valid.",
+      "UNRESOLVED": "Current root cannot be obtained through trusted boundary or causal evidence incomplete.",
+      "bindings": [
+        "expected predecessor commit/root",
+        "actual guarded current commit/root",
+        "causal operation identity"
+      ]
+    },
+    "decision": {
+      "BLOCKED": "Resolved determinate denial; safe refusal does not require a positive action grant.",
+      "SATISFIED": "Resolved applicable M03 transition decision for the exact source/derivation/proposal subject; not qualification, admission, downstream action authority or canonical membership.",
+      "UNRESOLVED": "No applicable M03 transition decision/interpretation; never manufacture rejection of truth or success.",
+      "bindings": [
+        "exact attempt subject/predecessor",
+        "named decision issuer and contract",
+        "lossless decision findings"
+      ]
+    },
+    "evaluation": {
+      "BLOCKED": "Determinate denial route under applicable composition; no protected effect.",
+      "SATISFIED": "Required predicate set resolved and satisfied; lossless findings remain.",
+      "UNRESOLVED": "Required governing semantics/evidence incomplete; known blocks still retained. No Boolean coercion.",
+      "bindings": [
+        "all original independent findings",
+        "exact subject and event",
+        "applicable composition contract"
+      ]
+    },
+    "exact_attempt_identity": {
+      "BLOCKED": "Supplied identity is determinately malformed or contradictory.",
+      "SATISFIED": "Bounded attempt captured with exact supplied identities; receipt discloses only authorized nonsensitive fields.",
+      "UNRESOLVED": "Cannot establish exact attempt binding; only bounded local diagnostic possible, no false subject-bound receipt.",
+      "bindings": [
+        "attempt ID",
+        "submitted-byte identity",
+        "job/purpose/resource scope",
+        "causal predecessor"
+      ]
+    },
+    "exact_subject": {
+      "BLOCKED": "A present required byte/identity binding is determinate contradictory or structurally invalid.",
+      "SATISFIED": "Original bytes are retained separately and unchanged; exact original/normalized digest, length, schema/version, derivation and dependency identities match within bounds. No qualification or admission is inferred.",
+      "UNRESOLVED": "Required bytes, applicable representation profile, or source evidence unavailable. No substitute normalized bytes.",
+      "bindings": [
+        "captured immutable source bytes SHA256+length",
+        "separate normalized representation SHA256+schema",
+        "package digest and dependency root",
+        "original-to-normalized derivation binding and exact noncanonical proposal subject digest"
+      ]
+    },
+    "fail_closed_trigger_observed": {
+      "BLOCKED": "Monitor report fails authenticity; required trust becomes unknown and ordinary eligibility still closes pending reconciliation.",
+      "SATISFIED": "Recognized compromise or required trust becomes unknown; governed executor latches CLOSED without a reopening grant.",
+      "UNRESOLVED": "Signal or executor trust cannot be resolved; ordinary eligibility remains CLOSED. No automatic reopening.",
+      "bindings": [
+        "governed monitor result or loss of required trust/freshness",
+        "current integrity epoch",
+        "fail-safe executor identity/policy"
+      ]
+    },
+    "lifecycle_trigger_observed": {
+      "BLOCKED": "Known contradiction in lifecycle evidence; refuse ordinary use pending reconciliation.",
+      "SATISFIED": "Exact expiry/revocation/completion/root-drift event observed through applicable governed source.",
+      "UNRESOLVED": "Validity cannot be freshly established; retain history while closing managed access.",
+      "bindings": [
+        "exact lease/grant/capability/root identity",
+        "governed clock/causal lifecycle event",
+        "current generation/revocation lineage"
+      ]
+    },
+    "resource_bounds": {
+      "BLOCKED": "Known malformed limits, exceeded bound or length contradiction.",
+      "SATISFIED": "Validated nonnegative integer limits from applicable adopted profile are enforced before allocation/traversal/disclosure and actual use stays within them.",
+      "UNRESOLVED": "Applicable profile or measurement unavailable; no unbounded default.",
+      "bindings": [
+        "pinned request budget/profile",
+        "measured node/depth/byte/decompression/time limits",
+        "declared original/decoded lengths"
+      ]
+    }
+  },
+  "predicate_semantics": "SATISFIED/BLOCKED/UNRESOLVED remain separate findings. Positive M03 transition requires all applicable predicates SATISFIED, including every exact event-specific Observe/Propose dimension; no missing callback defaults true. This is not qualification, admission, downstream action authorization or canonical membership; pinned R3 composition is not amended by this draft.",
+  "receipt_required": [
+    "bounded non-authoritative diagnostic/attempt record only under eventually adopted M14 schema",
+    "exact original and normalized subject identities, derivation version, scope and causal predecessor",
+    "lossless independent predicate findings, without claiming independence adjudication",
+    "actual local terminal state and durable-record identity only when verified; no fabricated acknowledgment",
+    "no QUALIFICATION, ATTESTATION, ADMISSION or canonical-success receipt"
+  ],
+  "receipt_schema_resolution": "UNRESOLVED: ATTEMPT is an inherited proposed label, not adopted issuance authority. Only bounded non-authoritative diagnostic/attempt recording under eventually adopted M14 schema; no new receipt kind granted.",
+  "registry_name": "Cartologist normalization and proposal lifecycle",
+  "replay": "Same idempotency key and exact subject returns original terminal receipt only if freshly authorized to disclose it; changed subject rejects key reuse; missing terminal receipt remains UNRESOLVED, never blind effect replay.",
+  "source_responsibilities": [
+    "lossless source custody and provenance normalization",
+    "separately identified normalized representation",
+    "bounded noncanonical proposal with ambiguity and contradiction retained"
+  ],
+  "state_meanings": {
+    "NORMALIZED_CANDIDATE": "Separate normalized representation with preserved originals and provenance. No S1 qualification, truth adjudication or action permission.",
+    "PROPOSED": "Noncanonical proposal submitted for separately governed downstream qualification/admission. No canonical membership or positive action grant.",
+    "RECEIVED": "Submitted bytes captured, not normalized, qualified or canonical."
+  },
+  "state_model": "Machine lifecycle state plus orthogonal attempt findings and receipt/durability status; failure findings do not themselves mutate canonical state.",
+  "states": [
+    "RECEIVED",
+    "NORMALIZED_CANDIDATE",
+    "PROPOSED"
+  ],
+  "status": "M03_ROUTE_B_AMENDMENT_DRAFT_UNADOPTED_NOT_RUNTIME"
+}

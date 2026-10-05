@@ -1,0 +1,1 @@
+{"status": "PASS", "scope": "OFFLINE_STRUCTURE_PROVENANCE_FIXTURE_QUALIFICATION_NOT_RUNTIME", "checked_subjects": 2736, "unit_adopted": false, "runtime_crossings": 0, "canonical_admissions": 0, "production_ready": false}

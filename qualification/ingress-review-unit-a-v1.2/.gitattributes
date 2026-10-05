@@ -1,0 +1,2 @@
+# Preserve exact captured and catalog-bound bytes on every checkout.
+** -text -filter -ident !eol !working-tree-encoding
