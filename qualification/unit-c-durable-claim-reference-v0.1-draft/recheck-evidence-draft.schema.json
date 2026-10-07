@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Unit C recheck evidence PROPOSED NOT ADOPTED",
+  "type": "object",
+  "properties": {
+    "initial_binding_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "minLength": 64,
+      "maxLength": 64
+    },
+    "raw_fresh_bundle_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "minLength": 64,
+      "maxLength": 64
+    },
+    "fresh_context_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "minLength": 64,
+      "maxLength": 64
+    },
+    "fresh_grant_evaluation_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "minLength": 64,
+      "maxLength": 64
+    },
+    "fresh_authorization_evaluation_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "minLength": 64,
+      "maxLength": 64
+    },
+    "fresh_consumption_evaluation_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "minLength": 64,
+      "maxLength": 64
+    },
+    "subject_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "minLength": 64,
+      "maxLength": 64
+    },
+    "policy_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "minLength": 64,
+      "maxLength": 64
+    },
+    "root_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "minLength": 64,
+      "maxLength": 64
+    },
+    "grant_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "minLength": 64,
+      "maxLength": 64
+    },
+    "authorization_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "minLength": 64,
+      "maxLength": 64
+    },
+    "request_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "minLength": 64,
+      "maxLength": 64
+    },
+    "subject_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "root_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "consumer_principal_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "effect_actor_principal_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "subject_version": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9223372036854775807
+    },
+    "generation": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9223372036854775807
+    },
+    "epoch": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9223372036854775807
+    },
+    "now_earliest": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9223372036854775807
+    },
+    "now_latest": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9223372036854775807
+    }
+  },
+  "required": [
+    "initial_binding_digest",
+    "raw_fresh_bundle_digest",
+    "fresh_context_digest",
+    "fresh_grant_evaluation_digest",
+    "fresh_authorization_evaluation_digest",
+    "fresh_consumption_evaluation_digest",
+    "subject_digest",
+    "policy_digest",
+    "root_digest",
+    "grant_digest",
+    "authorization_digest",
+    "request_digest",
+    "subject_id",
+    "root_id",
+    "consumer_principal_id",
+    "effect_actor_principal_id",
+    "subject_version",
+    "generation",
+    "epoch",
+    "now_earliest",
+    "now_latest"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,345 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "journal-record-draft.schema.json PROPOSED NOT ADOPTED",
+  "type": "object",
+  "properties": {
+    "serialization_profile": {
+      "const": "UNIT-C-CANONICAL-JSON-1"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9223372036854775807
+    },
+    "predecessor_hash": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        {
+          "const": "NONE"
+        }
+      ]
+    },
+    "binding": {
+      "type": "object",
+      "properties": {
+        "operation_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "operation": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "consumer_principal_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "effect_actor_principal_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "target_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "subject_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "grant_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "authorization_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "tenant": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "job": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "recipient": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "root_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "subject_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "request_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "context_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "grant_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "authorization_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "grant_evaluation_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "authorization_evaluation_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "consumption_evaluation_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "policy_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "schema_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "contract_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "root_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "subject_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9223372036854775807
+        },
+        "grant_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9223372036854775807
+        },
+        "authorization_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9223372036854775807
+        },
+        "generation": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9223372036854775807
+        },
+        "epoch": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9223372036854775807
+        },
+        "predecessor_digest": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$",
+              "minLength": 64,
+              "maxLength": 64
+            },
+            {
+              "const": "NONE"
+            }
+          ]
+        }
+      },
+      "required": [
+        "operation_id",
+        "operation",
+        "consumer_principal_id",
+        "effect_actor_principal_id",
+        "target_id",
+        "subject_id",
+        "grant_id",
+        "authorization_id",
+        "tenant",
+        "job",
+        "purpose",
+        "recipient",
+        "root_id",
+        "subject_digest",
+        "request_digest",
+        "context_digest",
+        "grant_digest",
+        "authorization_digest",
+        "grant_evaluation_digest",
+        "authorization_evaluation_digest",
+        "consumption_evaluation_digest",
+        "policy_digest",
+        "schema_digest",
+        "contract_digest",
+        "root_digest",
+        "subject_version",
+        "grant_version",
+        "authorization_version",
+        "generation",
+        "epoch",
+        "predecessor_digest"
+      ],
+      "additionalProperties": false
+    },
+    "state": {
+      "enum": [
+        "PREPARED",
+        "EVALUATION_RECORDED",
+        "FENCED",
+        "CLAIMED",
+        "RECHECK_ALLOWED",
+        "TARGET_OBSERVED",
+        "COMPLETED",
+        "ABORTED_NO_EFFECT",
+        "EFFECT_OUTCOME_UNRESOLVED"
+      ]
+    },
+    "event_kind": {
+      "enum": [
+        "PREPARE",
+        "RECORD_EVALUATION",
+        "ACQUIRE_FENCE",
+        "RESERVE_CLAIM",
+        "RECORD_RECHECK",
+        "OBSERVE_TARGET",
+        "RECORD_COMPLETION",
+        "ABORT_NO_EFFECT",
+        "MARK_UNRESOLVED"
+      ]
+    },
+    "evaluation_disposition": {
+      "enum": [
+        "ALLOW",
+        "DENY",
+        "CONFLICT",
+        "UNRESOLVED"
+      ]
+    },
+    "target_evidence_digest": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        {
+          "const": "NONE"
+        }
+      ]
+    },
+    "event_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "minLength": 64,
+      "maxLength": 64
+    },
+    "runtime_authority": {
+      "const": false
+    },
+    "operative_grant": {
+      "const": false
+    },
+    "effect_permitted": {
+      "const": false
+    },
+    "durable_consumption": {
+      "const": false
+    },
+    "production_ready": {
+      "const": false
+    },
+    "recheck_evidence_digest": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        {
+          "const": "NONE"
+        }
+      ]
+    }
+  },
+  "required": [
+    "serialization_profile",
+    "schema_version",
+    "sequence",
+    "predecessor_hash",
+    "binding",
+    "state",
+    "event_kind",
+    "evaluation_disposition",
+    "target_evidence_digest",
+    "event_digest",
+    "runtime_authority",
+    "operative_grant",
+    "effect_permitted",
+    "durable_consumption",
+    "production_ready",
+    "recheck_evidence_digest"
+  ],
+  "additionalProperties": false
+}

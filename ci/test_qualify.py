@@ -1,15 +1,30 @@
 """Adversarial tests for the CI invoking handoff (not historical corpus edits)."""
 import hashlib
 import importlib.util
+import io
 import json
 from pathlib import Path
 import subprocess
+import tarfile
 import tempfile
 import unittest
+from unittest.mock import patch
 
 SPEC = importlib.util.spec_from_file_location("ci_qualify", Path(__file__).with_name("qualify.py"))
 q = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(q)
+TEST_ROOT = Path(__file__).resolve().parents[1]
+TEST_MANIFEST = "evidence/stonewall-0/m01-r3/repair-manifest.json"
+TEST_PREIMAGES = {
+    ".gitignore": "ci/r3-original.gitignore",
+    "README.md": "ci/r3-original.README.md",
+}
+
+
+def fixture_git(repo, *args):
+    return subprocess.run(
+        ["git", "-C", str(repo), *args], check=True, capture_output=True
+    ).stdout
 
 
 class QualificationBoundaryTests(unittest.TestCase):
@@ -19,9 +34,37 @@ class QualificationBoundaryTests(unittest.TestCase):
         cls.addClassCleanup(cls.temporary.cleanup)
         cls.base = Path(cls.temporary.name)
         cls.candidate = cls.base / "candidate"
-        cls.source_status = q.git(q.ROOT, "status", "--porcelain")
-        cls.source_head = q.git(q.ROOT, "rev-parse", "HEAD")
-        cls.manifest = q.prepare_candidate(q.ROOT, cls.candidate)
+        cls.source_status = fixture_git(TEST_ROOT, "status", "--porcelain")
+        cls.source_head = fixture_git(TEST_ROOT, "rev-parse", "HEAD")
+        cls.candidate.mkdir()
+        archive_bytes = fixture_git(TEST_ROOT, "archive", "HEAD")
+        with tarfile.open(fileobj=io.BytesIO(archive_bytes)) as archive:
+            archive.extractall(cls.candidate, filter="data")
+        cls.manifest = json.loads(
+            (cls.candidate / TEST_MANIFEST).read_text(encoding="utf-8-sig")
+        )
+        for name, preserved in TEST_PREIMAGES.items():
+            data = (cls.candidate / preserved).read_bytes()
+            if hashlib.sha256(data).hexdigest() != cls.manifest["bound_files"][name]:
+                raise AssertionError("source preimage does not match manifest: " + name)
+            (cls.candidate / name).write_bytes(data)
+        fixture_git(cls.candidate, "init", "--quiet")
+        fixture_git(cls.candidate, "-c", "core.autocrlf=false", "add", "--all", "--force", ".")
+        fixture_git(
+            cls.candidate,
+            "-c", "user.name=Disposable qualification",
+            "-c", "user.email=qualification@example.invalid",
+            "-c", "commit.gpgsign=false",
+            "commit", "--quiet", "-m", "Disposable reference candidate",
+        )
+
+    def test_git_helper_requires_checked_captured_output(self):
+        completed = subprocess.CompletedProcess(
+            args=["git"], returncode=0, stdout=b"expected", stderr=b""
+        )
+        with patch.object(q.subprocess, "run", return_value=completed) as run:
+            self.assertEqual(q.git(q.ROOT, "rev-parse", "HEAD"), b"expected")
+        self.assertEqual(run.call_args.kwargs, {"check": True, "capture_output": True})
 
     def snapshot(self, mode="false"):
         temporary = tempfile.TemporaryDirectory(prefix="brain-ci-checkout-")
@@ -101,8 +144,8 @@ class QualificationBoundaryTests(unittest.TestCase):
         self.assertNotEqual((target / name).read_bytes(), original)
 
     def test_source_checkout_and_index_remain_unchanged(self):
-        self.assertEqual(q.git(q.ROOT, "status", "--porcelain"), self.source_status)
-        self.assertEqual(q.git(q.ROOT, "rev-parse", "HEAD"), self.source_head)
+        self.assertEqual(fixture_git(TEST_ROOT, "status", "--porcelain"), self.source_status)
+        self.assertEqual(fixture_git(TEST_ROOT, "rev-parse", "HEAD"), self.source_head)
 
 
 if __name__ == "__main__":

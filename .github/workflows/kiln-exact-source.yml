@@ -1,9 +1,6 @@
 name: Kiln exact-source qualification
 
 on:
-  pull_request:
-    branches: [main]
-    types: [opened, synchronize, reopened, ready_for_review]
   workflow_dispatch:
     inputs:
       pull_request_number:
@@ -112,7 +109,7 @@ jobs:
       source_repository: ${{ needs.authorize.outputs.source_repository }}
       source_head_sha: ${{ needs.authorize.outputs.source_head_sha }}
       source_base_sha: ${{ needs.authorize.outputs.source_base_sha }}
-      pull_request_number: ${{ needs.authorize.outputs.pull_request_number }}
+      pull_request_number: ${{ fromJSON(needs.authorize.outputs.pull_request_number) }}
       authorization_actor: ${{ github.actor }}
       authorization_method: owner_exact_sha_dispatch
       kiln_ref: 0d10d43d770054108443398d79508e2855485e1e

@@ -1,0 +1,48 @@
+{
+  "candidate": "Unit C durable-claim reference v0.1",
+  "status": "PROPOSED_NOT_ADOPTED",
+  "contract_order": "UNRESOLVED",
+  "unit_b_accepted_catalog_sha256": "e51c99c81c61cc1cc69ddbfd193503a1b659fcf694ffcc2d5d76cc47ba6d5792",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "93c88e0a3661335a8a331fd6f8f271adcae61eb917fa647fe3f154653f282164"
+    },
+    {
+      "path": "IMPLEMENTATION-WORK-ORDER-DRAFT.md",
+      "sha256": "58d4ceb0b37f63725904a538b1aa2cfbfbdd717263ad6435da8ae000e4d75368"
+    },
+    {
+      "path": "ORDERING-CONFLICT-REVIEW.md",
+      "sha256": "20ee0b925618071329dd6ddb01eb1946d78bc1d66a8f243bc9150b9edc0200e2"
+    },
+    {
+      "path": "REFERENCE-CONTRACT-DRAFT.md",
+      "sha256": "cdaa8eda6d6b26674601afe00954c33fdaba41cd8f50a7acad32afdf2fb7896b"
+    },
+    {
+      "path": "journal-record-draft.schema.json",
+      "sha256": "385836fe60b7e4b6de0156302f9b8438915f578e81ee494093c8d63182d516ec"
+    },
+    {
+      "path": "qualify_unit_c.py",
+      "sha256": "ededb0806fa9f77f28c219a0213eb3bc81ea232562b57885a74a4e9fc6e6ac20"
+    },
+    {
+      "path": "recheck-evidence-draft.schema.json",
+      "sha256": "f577fc89cebb8bd7ac0688d41bbdc2191789f22b99b7223540e7c7e963ab415e"
+    },
+    {
+      "path": "target-evidence-draft.schema.json",
+      "sha256": "b3e35e7cf652a4952d271815679c9027afdc0a5cf75d7e2a1392067b8cf90036"
+    },
+    {
+      "path": "test_qualification.py",
+      "sha256": "7bd0cbccedc6b387bcc32d9f1cd192ff5f501c44dbd81dbb3261ccf9f8b0e9c2"
+    },
+    {
+      "path": "unit_canonical.py",
+      "sha256": "0b81354abb35922446793e39142a4bb4ef2764be3d943d9f8979cb02fadaf6e0"
+    }
+  ]
+}

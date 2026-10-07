@@ -1,0 +1,4 @@
+/.gitattributes -text -filter -ident !eol !working-tree-encoding
+/*.md -text -filter -ident !eol !working-tree-encoding
+/*.json -text -filter -ident !eol !working-tree-encoding
+/*.py -text -filter -ident !eol !working-tree-encoding
