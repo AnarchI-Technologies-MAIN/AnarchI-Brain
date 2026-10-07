@@ -4,6 +4,7 @@ import shutil
 import os
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 import qualify_unit_c
@@ -84,6 +85,30 @@ class UnitCPackageQualificationTests(unittest.TestCase):
         ):
             qualify_unit_c._check_closed_schema(schema)
 
+    def test_digest_schemas_reject_trailing_newline_and_require_exact_length(self):
+        def digest_schemas(value):
+            if isinstance(value, dict):
+                if value.get("pattern") == "^[0-9a-f]{64}$":
+                    yield value
+                for child in value.values():
+                    yield from digest_schemas(child)
+            elif isinstance(value, list):
+                for child in value:
+                    yield from digest_schemas(child)
+
+        checked = 0
+        for filename in qualify_unit_c.SCHEMA_FILES:
+            schema = qualify_unit_c._read_json(PACKAGE / filename)
+            for digest_schema in digest_schemas(schema):
+                with self.subTest(filename=filename, schema=digest_schema):
+                    self.assertEqual(digest_schema.get("minLength"), 64)
+                    self.assertEqual(digest_schema.get("maxLength"), 64)
+                    validator = qualify_unit_c.Draft202012Validator(digest_schema)
+                    self.assertTrue(validator.is_valid("a" * 64))
+                    self.assertFalse(validator.is_valid("a" * 64 + "\n"))
+                checked += 1
+        self.assertGreater(checked, 0)
+
     def test_changed_schema_bytes_fail_against_manifest(self):
         with tempfile.TemporaryDirectory() as temporary:
             copy = Path(temporary) / "package"
@@ -127,6 +152,34 @@ class CanonicalJSONTests(unittest.TestCase):
             unit_canonical.parse_bytes(b'"' + b"a" * unit_canonical.MAX_RAW_BYTES + b'"')
         with self.assertRaisesRegex(unit_canonical.CanonicalJSONError, "CANONICAL_BYTES_LIMIT_EXCEEDED"):
             unit_canonical.canonical_bytes({"x": "a" * unit_canonical.MAX_RAW_BYTES})
+
+    def test_aggregate_string_size_is_rejected_before_json_encoding(self):
+        value = ["a" * (unit_canonical.MAX_RAW_BYTES // 2)] * 2
+        with patch.object(
+            unit_canonical.json.JSONEncoder,
+            "iterencode",
+            side_effect=AssertionError("encoder must not materialize oversized strings"),
+        ):
+            with self.assertRaisesRegex(
+                unit_canonical.CanonicalJSONError, "CANONICAL_BYTES_LIMIT_EXCEEDED"
+            ):
+                unit_canonical.canonical_bytes(value)
+
+    def test_incremental_encoder_stops_at_output_limit(self):
+        continued = []
+
+        def chunks(_encoder, _value):
+            yield "x" * unit_canonical.MAX_RAW_BYTES
+            yield "y"
+            continued.append(True)
+            yield "z"
+
+        with patch.object(unit_canonical.json.JSONEncoder, "iterencode", chunks):
+            with self.assertRaisesRegex(
+                unit_canonical.CanonicalJSONError, "CANONICAL_BYTES_LIMIT_EXCEEDED"
+            ):
+                unit_canonical.canonical_bytes(None)
+        self.assertEqual(continued, [])
 
     def test_digest_domains_are_separated_and_closed(self):
         binding = unit_canonical.digest_object("UNIT-C:BINDING:v1", {"x": 1})

@@ -51,12 +51,36 @@ def _object_from_pairs(pairs):
     return result
 
 
+def _json_string_size(value):
+    size = 2
+    for character in value:
+        codepoint = ord(character)
+        if 0xD800 <= codepoint <= 0xDFFF:
+            raise CanonicalJSONError("INVALID_UNICODE_SCALAR")
+        if character in ('"', "\\"):
+            size += 2
+        elif codepoint <= 0x1F:
+            size += 2 if character in "\b\f\n\r\t" else 6
+        elif codepoint <= 0x7F:
+            size += 1
+        elif codepoint <= 0x7FF:
+            size += 2
+        elif codepoint <= 0xFFFF:
+            size += 3
+        else:
+            size += 4
+        if size > MAX_RAW_BYTES:
+            raise CanonicalJSONError("CANONICAL_BYTES_LIMIT_EXCEEDED")
+    return size
+
+
 def _validate_value(value):
     nodes = 0
+    string_bytes = 0
     active = set()
 
     def visit(item, depth):
-        nonlocal nodes
+        nonlocal nodes, string_bytes
         nodes += 1
         if nodes > MAX_NODES:
             raise CanonicalJSONError("NODE_LIMIT_EXCEEDED")
@@ -70,10 +94,9 @@ def _validate_value(value):
                 raise CanonicalJSONError("INTEGER_OUT_OF_RANGE")
             return
         if kind is str:
-            try:
-                item.encode("utf-8", "strict")
-            except UnicodeEncodeError as exc:
-                raise CanonicalJSONError("INVALID_UNICODE_SCALAR") from exc
+            string_bytes += _json_string_size(item)
+            if string_bytes > MAX_RAW_BYTES:
+                raise CanonicalJSONError("CANONICAL_BYTES_LIMIT_EXCEEDED")
             return
         if kind is list:
             identity = id(item)
@@ -107,19 +130,24 @@ def _validate_value(value):
 
 def canonical_bytes(value):
     _validate_value(value)
+    output = bytearray()
     try:
-        encoded = json.dumps(
-            value,
+        encoder = json.JSONEncoder(
             sort_keys=True,
             separators=(",", ":"),
             ensure_ascii=False,
             allow_nan=False,
-        ).encode("utf-8", "strict")
+        )
+        for chunk in encoder.iterencode(value):
+            encoded_chunk = chunk.encode("utf-8", "strict")
+            if len(output) + len(encoded_chunk) > MAX_RAW_BYTES:
+                raise CanonicalJSONError("CANONICAL_BYTES_LIMIT_EXCEEDED")
+            output.extend(encoded_chunk)
+    except CanonicalJSONError:
+        raise
     except (TypeError, ValueError, UnicodeError, RecursionError) as exc:
         raise CanonicalJSONError("CANONICALIZATION_FAILED") from exc
-    if len(encoded) > MAX_RAW_BYTES:
-        raise CanonicalJSONError("CANONICAL_BYTES_LIMIT_EXCEEDED")
-    return encoded
+    return bytes(output)
 
 
 def parse_bytes(raw):
