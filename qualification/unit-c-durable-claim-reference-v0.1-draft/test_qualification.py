@@ -92,6 +92,18 @@ class UnitCPackageQualificationTests(unittest.TestCase):
         ):
             qualify_unit_c._check_closed_schema(schema)
 
+    def test_object_keywords_without_explicit_type_must_still_be_closed(self):
+        open_schema = {"properties": {"known": {"type": "string"}}}
+        with self.assertRaisesRegex(
+            qualify_unit_c.QualificationError, "OPEN_OBJECT_SCHEMA"
+        ):
+            qualify_unit_c._check_closed_schema(open_schema)
+        closed_schema = {
+            "properties": {"known": {"type": "string"}},
+            "unevaluatedProperties": False,
+        }
+        qualify_unit_c._check_closed_schema(closed_schema)
+
     def test_digest_schemas_reject_trailing_newline_and_require_exact_length(self):
         def digest_schemas(value):
             if isinstance(value, dict):

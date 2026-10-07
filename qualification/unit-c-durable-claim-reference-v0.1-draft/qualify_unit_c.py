@@ -37,6 +37,11 @@ SCHEMA_SINGLE_KEYWORDS = (
     "if", "items", "not", "propertyNames", "then", "unevaluatedItems",
     "unevaluatedProperties",
 )
+SCHEMA_OBJECT_KEYWORDS = (
+    "additionalProperties", "dependentRequired", "dependentSchemas", "maxProperties",
+    "minProperties", "patternProperties", "properties", "propertyNames", "required",
+    "unevaluatedProperties",
+)
 
 
 class QualificationError(ValueError):
@@ -73,7 +78,14 @@ def _check_closed_schema(node, location="$", depth=0):
     includes_object = schema_type == "object" or (
         isinstance(schema_type, list) and "object" in schema_type
     )
-    if includes_object and node.get("additionalProperties") is not False:
+    may_validate_objects = includes_object or (
+        "type" not in node and any(keyword in node for keyword in SCHEMA_OBJECT_KEYWORDS)
+    )
+    object_is_closed = (
+        node.get("additionalProperties") is False
+        or node.get("unevaluatedProperties") is False
+    )
+    if may_validate_objects and not object_is_closed:
         raise QualificationError(f"OPEN_OBJECT_SCHEMA:{location}")
     for keyword in SCHEMA_MAP_KEYWORDS:
         children = node.get(keyword, {})
