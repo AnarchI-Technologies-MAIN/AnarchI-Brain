@@ -32,6 +32,13 @@ class UnitCPackageQualificationTests(unittest.TestCase):
         with self.assertRaisesRegex(qualify_unit_c.QualificationError, "SOURCE_DIGEST_MISMATCH:candidate-manifest.json"):
             qualify_unit_c.verify(PACKAGE, REPO, "0" * 64)
 
+    def test_implementation_work_order_holds_lifecycle_until_order_is_adopted(self):
+        work_order = (PACKAGE / "IMPLEMENTATION-WORK-ORDER-DRAFT.md").read_text(encoding="utf-8")
+        self.assertIn("HOLD lifecycle composition until the ordering decision", work_order)
+        self.assertIn("do not implement a fence/claim/recheck/target transition sequence", work_order)
+        self.assertIn("while ordering is unresolved, no lifecycle transition sequence", work_order)
+        self.assertNotIn("durable one-shot claim -> fresh post-claim recheck", work_order)
+
     def test_unmanifested_package_files_and_directories_are_rejected(self):
         for relative in ("unlisted.json", "nested/unlisted.json"):
             with self.subTest(relative=relative), tempfile.TemporaryDirectory() as temporary:

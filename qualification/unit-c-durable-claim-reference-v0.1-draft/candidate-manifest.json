@@ -10,7 +10,7 @@
     },
     {
       "path": "IMPLEMENTATION-WORK-ORDER-DRAFT.md",
-      "sha256": "5414b241fe247564dba8ce6a2b6b0e45877d5e32d6493f52a276f37890e3d752"
+      "sha256": "58d4ceb0b37f63725904a538b1aa2cfbfbdd717263ad6435da8ae000e4d75368"
     },
     {
       "path": "ORDERING-CONFLICT-REVIEW.md",
@@ -38,7 +38,7 @@
     },
     {
       "path": "test_qualification.py",
-      "sha256": "6410a867f74f15870f98f15f9a365a600f459dbe617d3a763f178e9a8b9a9859"
+      "sha256": "16de6c28f776725ba531146e911d8f5e60b3d552256bdf1bf0ba8e08fbd8a523"
     },
     {
       "path": "unit_canonical.py",
