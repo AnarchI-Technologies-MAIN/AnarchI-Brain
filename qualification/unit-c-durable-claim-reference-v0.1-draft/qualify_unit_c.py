@@ -28,6 +28,15 @@ EXPECTED_FILES = (
 )
 SCHEMA_FILES = tuple(name for name in EXPECTED_FILES if name.endswith(".schema.json"))
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
+SCHEMA_MAP_KEYWORDS = (
+    "$defs", "definitions", "properties", "patternProperties", "dependentSchemas",
+)
+SCHEMA_ARRAY_KEYWORDS = ("allOf", "anyOf", "oneOf", "prefixItems")
+SCHEMA_SINGLE_KEYWORDS = (
+    "additionalItems", "additionalProperties", "contentSchema", "contains", "else",
+    "if", "items", "not", "propertyNames", "then", "unevaluatedItems",
+    "unevaluatedProperties",
+)
 
 
 class QualificationError(ValueError):
@@ -62,13 +71,15 @@ def _check_closed_schema(node, location="$", depth=0):
         return
     if node.get("type") == "object" and node.get("additionalProperties") is not False:
         raise QualificationError(f"OPEN_OBJECT_SCHEMA:{location}")
-    properties = node.get("properties", {})
-    if isinstance(properties, dict):
-        for name, child in properties.items():
-            _check_closed_schema(child, f"{location}.{name}", depth + 1)
-    if "items" in node:
-        _check_closed_schema(node["items"], f"{location}[]", depth + 1)
-    for keyword in ("allOf", "anyOf", "oneOf"):
+    for keyword in SCHEMA_MAP_KEYWORDS:
+        children = node.get(keyword, {})
+        if isinstance(children, dict):
+            for name, child in children.items():
+                _check_closed_schema(child, f"{location}.{keyword}.{name}", depth + 1)
+    for keyword in SCHEMA_SINGLE_KEYWORDS:
+        if keyword in node:
+            _check_closed_schema(node[keyword], f"{location}.{keyword}", depth + 1)
+    for keyword in SCHEMA_ARRAY_KEYWORDS:
         branches = node.get(keyword, [])
         if isinstance(branches, list):
             for index, child in enumerate(branches):
@@ -101,6 +112,16 @@ def verify(package: Path, repo: Path, expected_manifest_sha256: str):
     repo = repo.resolve(strict=True)
     if not HEX64.fullmatch(expected_manifest_sha256):
         raise QualificationError("INVALID_EXTERNAL_MANIFEST_PIN")
+    expected_entries = {"candidate-manifest.json", *EXPECTED_FILES}
+    try:
+        actual_entries = {
+            entry.relative_to(package).as_posix()
+            for entry in package.rglob("*")
+        }
+    except OSError as exc:
+        raise QualificationError("PACKAGE_CONTENT_ENUMERATION_FAILED") from exc
+    if actual_entries != expected_entries:
+        raise QualificationError("PACKAGE_CONTENT_SET_MISMATCH")
     manifest_path = _within_package(package, "candidate-manifest.json")
     if manifest_path.stat().st_size > 1024 * 1024:
         raise QualificationError("MANIFEST_TOO_LARGE")

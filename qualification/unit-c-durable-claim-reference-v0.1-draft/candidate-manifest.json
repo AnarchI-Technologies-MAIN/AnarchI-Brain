@@ -26,7 +26,7 @@
     },
     {
       "path": "qualify_unit_c.py",
-      "sha256": "2bb4d3d3e4a23a99619209b93d84e5f07b416d22e9e4374edf87c61793624cac"
+      "sha256": "3587e23b483c6ed7fde89ebec75832174415548c9ebceb9df675863121f38b46"
     },
     {
       "path": "recheck-evidence-draft.schema.json",
@@ -38,7 +38,7 @@
     },
     {
       "path": "test_qualification.py",
-      "sha256": "912149115666537612a331572f6e8607648f5c75e178136d821fe69838d85b45"
+      "sha256": "d1d587987c987b315c088aea73184f797bcec47200634c48d274e13a927c0839"
     },
     {
       "path": "unit_canonical.py",

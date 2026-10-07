@@ -31,6 +31,51 @@ class UnitCPackageQualificationTests(unittest.TestCase):
         with self.assertRaisesRegex(qualify_unit_c.QualificationError, "SOURCE_DIGEST_MISMATCH:candidate-manifest.json"):
             qualify_unit_c.verify(PACKAGE, REPO, "0" * 64)
 
+    def test_unmanifested_package_files_and_directories_are_rejected(self):
+        for relative in ("unlisted.json", "nested/unlisted.json"):
+            with self.subTest(relative=relative), tempfile.TemporaryDirectory() as temporary:
+                copy = Path(temporary) / "package"
+                shutil.copytree(PACKAGE, copy)
+                extra = copy / relative
+                extra.parent.mkdir(parents=True, exist_ok=True)
+                extra.write_text("{}", encoding="utf-8")
+                with self.assertRaisesRegex(
+                    qualify_unit_c.QualificationError, "PACKAGE_CONTENT_SET_MISMATCH"
+                ):
+                    qualify_unit_c.verify(copy, REPO, self.manifest_pin)
+
+    def test_closed_schema_walk_rejects_open_subschemas_in_2020_12_locations(self):
+        nested_schemas = (
+            ("$defs", {"$defs": {"hidden": {"type": "object"}}}),
+            ("patternProperties", {"patternProperties": {"^x$": {"type": "object"}}}),
+            ("dependentSchemas", {"dependentSchemas": {"x": {"type": "object"}}}),
+            ("if", {"if": {"type": "object"}}),
+            ("then", {"then": {"type": "object"}}),
+            ("else", {"else": {"type": "object"}}),
+            ("prefixItems", {"prefixItems": [{"type": "object"}]}),
+            ("not", {"not": {"type": "object"}}),
+            ("contentSchema", {"contentSchema": {"type": "object"}}),
+        )
+        for keyword, nested in nested_schemas:
+            with self.subTest(keyword=keyword):
+                schema = {"type": "object", "additionalProperties": False, **nested}
+                with self.assertRaisesRegex(
+                    qualify_unit_c.QualificationError, "OPEN_OBJECT_SCHEMA"
+                ):
+                    qualify_unit_c._check_closed_schema(schema)
+
+    def test_local_ref_to_open_definition_is_rejected(self):
+        schema = {
+            "type": "object",
+            "additionalProperties": False,
+            "$defs": {"open": {"type": "object"}},
+            "properties": {"value": {"$ref": "#/$defs/open"}},
+        }
+        with self.assertRaisesRegex(
+            qualify_unit_c.QualificationError, r"OPEN_OBJECT_SCHEMA:\$\.\$defs\.open"
+        ):
+            qualify_unit_c._check_closed_schema(schema)
+
     def test_changed_schema_bytes_fail_against_manifest(self):
         with tempfile.TemporaryDirectory() as temporary:
             copy = Path(temporary) / "package"
