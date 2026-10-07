@@ -76,6 +76,13 @@ class UnitCPackageQualificationTests(unittest.TestCase):
         ):
             qualify_unit_c._check_closed_schema(schema)
 
+    def test_type_union_including_object_must_be_closed(self):
+        schema = {"type": ["object", "null"]}
+        with self.assertRaisesRegex(
+            qualify_unit_c.QualificationError, "OPEN_OBJECT_SCHEMA"
+        ):
+            qualify_unit_c._check_closed_schema(schema)
+
     def test_changed_schema_bytes_fail_against_manifest(self):
         with tempfile.TemporaryDirectory() as temporary:
             copy = Path(temporary) / "package"

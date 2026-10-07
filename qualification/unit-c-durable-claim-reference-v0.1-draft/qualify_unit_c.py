@@ -69,7 +69,11 @@ def _check_closed_schema(node, location="$", depth=0):
         raise QualificationError("SCHEMA_DEPTH_LIMIT")
     if not isinstance(node, dict):
         return
-    if node.get("type") == "object" and node.get("additionalProperties") is not False:
+    schema_type = node.get("type")
+    includes_object = schema_type == "object" or (
+        isinstance(schema_type, list) and "object" in schema_type
+    )
+    if includes_object and node.get("additionalProperties") is not False:
         raise QualificationError(f"OPEN_OBJECT_SCHEMA:{location}")
     for keyword in SCHEMA_MAP_KEYWORDS:
         children = node.get(keyword, {})
