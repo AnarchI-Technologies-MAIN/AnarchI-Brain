@@ -43,10 +43,10 @@ jobs:
       - run: python -I -B -O qualification/authority-unit-b-v1.3/qualify_unit_b.py --catalog-sha256 e51c99c81c61cc1cc69ddbfd193503a1b659fcf694ffcc2d5d76cc47ba6d5792
       - run: python -I -B ci/run_unit_b_tests.py
       - run: python -I -B -O ci/run_unit_b_tests.py
-      - run: python -I -B qualification/unit-c-durable-claim-reference-v0.1-draft/qualify_unit_c.py --manifest-sha256 61bde9766eb49b6c5ee51dec2d0ec4af0bfcbb0c13ece71d24dafd384260aaf2
+      - run: python -I -B qualification/unit-c-durable-claim-reference-v0.1-draft/qualify_unit_c.py --manifest-sha256 411b6c9fa5c5e90a241c3ef3195830de9a160a40e889ea8faa6bbfede0aea090
       - run: python -I -B -m unittest discover -s qualification/unit-c-durable-claim-reference-v0.1-draft -p "test_*.py"
         env:
-          UNIT_C_MANIFEST_SHA256: 61bde9766eb49b6c5ee51dec2d0ec4af0bfcbb0c13ece71d24dafd384260aaf2
+          UNIT_C_MANIFEST_SHA256: 411b6c9fa5c5e90a241c3ef3195830de9a160a40e889ea8faa6bbfede0aea090
       - run: python -I -B -O -m unittest discover -s qualification/unit-c-durable-claim-reference-v0.1-draft -p "test_*.py"
         env:
-          UNIT_C_MANIFEST_SHA256: 61bde9766eb49b6c5ee51dec2d0ec4af0bfcbb0c13ece71d24dafd384260aaf2
+          UNIT_C_MANIFEST_SHA256: 411b6c9fa5c5e90a241c3ef3195830de9a160a40e889ea8faa6bbfede0aea090

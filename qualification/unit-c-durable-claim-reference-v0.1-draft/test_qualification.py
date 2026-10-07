@@ -45,20 +45,21 @@ class UnitCPackageQualificationTests(unittest.TestCase):
                     qualify_unit_c.verify(copy, REPO, self.manifest_pin)
 
     def test_closed_schema_walk_rejects_open_subschemas_in_2020_12_locations(self):
-        nested_schemas = (
-            ("$defs", {"$defs": {"hidden": {"type": "object"}}}),
-            ("patternProperties", {"patternProperties": {"^x$": {"type": "object"}}}),
-            ("dependentSchemas", {"dependentSchemas": {"x": {"type": "object"}}}),
-            ("if", {"if": {"type": "object"}}),
-            ("then", {"then": {"type": "object"}}),
-            ("else", {"else": {"type": "object"}}),
-            ("prefixItems", {"prefixItems": [{"type": "object"}]}),
-            ("not", {"not": {"type": "object"}}),
-            ("contentSchema", {"contentSchema": {"type": "object"}}),
-        )
-        for keyword, nested in nested_schemas:
+        nested_schemas = {
+            keyword: {keyword: {"nested": {"type": "object"}}}
+            for keyword in qualify_unit_c.SCHEMA_MAP_KEYWORDS
+        }
+        nested_schemas.update({
+            keyword: {keyword: [{"type": "object"}]}
+            for keyword in qualify_unit_c.SCHEMA_ARRAY_KEYWORDS
+        })
+        nested_schemas.update({
+            keyword: {keyword: {"type": "object"}}
+            for keyword in qualify_unit_c.SCHEMA_SINGLE_KEYWORDS
+        })
+        for keyword, nested in nested_schemas.items():
             with self.subTest(keyword=keyword):
-                schema = {"type": "object", "additionalProperties": False, **nested}
+                schema = dict(nested)
                 with self.assertRaisesRegex(
                     qualify_unit_c.QualificationError, "OPEN_OBJECT_SCHEMA"
                 ):
