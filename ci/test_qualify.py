@@ -6,10 +6,17 @@ from pathlib import Path
 import subprocess
 import tempfile
 import unittest
+from unittest.mock import patch
 
 SPEC = importlib.util.spec_from_file_location("ci_qualify", Path(__file__).with_name("qualify.py"))
 q = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(q)
+
+
+def fixture_git(repo, *args):
+    return subprocess.run(
+        ["git", "-C", str(repo), *args], check=True, capture_output=True
+    ).stdout
 
 
 class QualificationBoundaryTests(unittest.TestCase):
@@ -19,9 +26,22 @@ class QualificationBoundaryTests(unittest.TestCase):
         cls.addClassCleanup(cls.temporary.cleanup)
         cls.base = Path(cls.temporary.name)
         cls.candidate = cls.base / "candidate"
-        cls.source_status = q.git(q.ROOT, "status", "--porcelain")
-        cls.source_head = q.git(q.ROOT, "rev-parse", "HEAD")
-        cls.manifest = q.prepare_candidate(q.ROOT, cls.candidate)
+        cls.source_status = fixture_git(q.ROOT, "status", "--porcelain")
+        cls.source_head = fixture_git(q.ROOT, "rev-parse", "HEAD")
+        original_git = q.git
+        q.git = fixture_git
+        try:
+            cls.manifest = q.prepare_candidate(q.ROOT, cls.candidate)
+        finally:
+            q.git = original_git
+
+    def test_git_helper_requires_checked_captured_output(self):
+        completed = subprocess.CompletedProcess(
+            args=["git"], returncode=0, stdout=b"expected", stderr=b""
+        )
+        with patch.object(q.subprocess, "run", return_value=completed) as run:
+            self.assertEqual(q.git(q.ROOT, "rev-parse", "HEAD"), b"expected")
+        self.assertEqual(run.call_args.kwargs, {"check": True, "capture_output": True})
 
     def snapshot(self, mode="false"):
         temporary = tempfile.TemporaryDirectory(prefix="brain-ci-checkout-")
@@ -101,8 +121,8 @@ class QualificationBoundaryTests(unittest.TestCase):
         self.assertNotEqual((target / name).read_bytes(), original)
 
     def test_source_checkout_and_index_remain_unchanged(self):
-        self.assertEqual(q.git(q.ROOT, "status", "--porcelain"), self.source_status)
-        self.assertEqual(q.git(q.ROOT, "rev-parse", "HEAD"), self.source_head)
+        self.assertEqual(fixture_git(q.ROOT, "status", "--porcelain"), self.source_status)
+        self.assertEqual(fixture_git(q.ROOT, "rev-parse", "HEAD"), self.source_head)
 
 
 if __name__ == "__main__":
